@@ -214,14 +214,4 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: ${{ secrets.pypi_username }}
-          password: ${{ secrets.pypi_password }}
-        
-        
-        
-        
-        
-        
-        
-          user: ${{ secrets.test_pypi_username }}
-          password: ${{ secrets.test_pypi_password }}
-          repository_url: https://test.pypi.org/legacy/            
+          password: ${{ secrets.pypi_password }}               
