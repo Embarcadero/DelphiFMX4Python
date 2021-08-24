@@ -3,7 +3,7 @@
 requires = ["setuptools>=40.9.0", "wheel"]
 
 [tool.cibuildwheel]
-build = ["cp36-win*", "cp37-win*", "cp38-win*", "cp39-*"]
+build = ["cp36-win*", "cp37-win*", "cp38-win*", "cp36-manylinux*", "cp37-manylinux*", "cp38-manylinux.*", "cp39-*"]
 skip = "pp*"
 #archs = ["auto"]
 #repair-wheel-command = ""
