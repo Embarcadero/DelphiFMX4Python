@@ -185,8 +185,6 @@ jobs:
     name: Upload to PyPI test
     needs: [wheels]
     runs-on: ubuntu-latest
-    # upload to PyPI test on every tag starting with 'v'
-    #if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
     steps:                       
       - uses: actions/download-artifact@v2
         with:
@@ -212,7 +210,7 @@ jobs:
           name: artifact
           path: dist
           
-      - name: Publish package to TestPyPI      
+      - name: Publish package to PyPI      
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: ${{ secrets.pypi_username }}
