@@ -1,0 +1,229 @@
+name: Build
+
+on: 
+  push:
+    branches:
+      - main
+      # Release branches
+      - "[0-9]+.[0-9]+.X"
+
+    tags:
+      - '*'
+
+  # Manual run
+  workflow_dispatch:
+  
+jobs:    
+  sdist_win:
+    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7, 3.8, 3.9]
+        include:
+          - os: windows-2019
+            arch: "AMD64"
+            use_qemu: false         
+          - os: windows-2019
+            arch: "x86"
+            use_qemu: false    
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+            
+    - name: Build sdist
+      run: python setup.py sdist
+      
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.tar.gz
+            
+  sdist_linux:
+    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: [3.9]
+        include:
+          - os: ubuntu-20.04
+            arch: "x86_64"
+            use_qemu: false   
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Build sdist
+      run: python setup.py sdist
+      
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.tar.gz
+           
+  sdist_linux_aarch:
+    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      matrix:
+        os: [ubuntu-18.04]
+        PYTHON:
+          - {VERSION: "cp39-cp39"}
+      
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1.2.0
+      with:
+        platforms: arm64
+              
+    - name: Build sdist
+      uses: docker://quay.io/pypa/manylinux2014_aarch64
+      with:
+        args: | 
+          bash -c "set -xe;
+          /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python setup.py sdist"  
+               
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.tar.gz          
+            
+  sdist_mac:
+    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: [3.9]
+        include:            
+          - os: macos-10.15
+            arch: "x86_64"
+            use_qemu: false   
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Build sdist
+      run: python setup.py sdist
+      
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.tar.gz
+        
+  wheels:
+    name: Build ${{ matrix.arch }} WHEELS on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}    
+    needs: [sdist_win, sdist_linux, sdist_linux_aarch, sdist_mac]
+    strategy:      
+      #https://github.com/scikit-build/cmake-python-distributions/blob/master/.github/workflows/build.yml
+      matrix:
+        include:
+          - os: ubuntu-20.04
+            arch: "x86_64"
+            use_qemu: false
+          - os: ubuntu-20.04
+            arch: "aarch64"
+            use_qemu: true
+          - os: windows-2019
+            arch: "AMD64"
+            use_qemu: false
+          - os: windows-2019
+            arch: "x86"
+            use_qemu: false
+          - os: macos-10.15
+            arch: "x86_64"
+            use_qemu: false
+
+    steps:
+      - name: "Checkout files"
+        uses: actions/checkout@v2
+              
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1.2.0
+        if: matrix.use_qemu
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.1.1        
+        if: (!matrix.use_qemu)
+        env:
+          CIBW_ARCHS: "${{ matrix.arch }}"                       
+          
+      #https://github.com/pikepdf/pikepdf/blob/master/.github/workflows/build_wheels.yml    
+      - name: Build wheels (emulated)
+        uses: pypa/cibuildwheel@v2.1.1
+        if: (matrix.use_qemu)
+        env:
+          CIBW_ARCHS: "${{ matrix.arch }}"
+
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: wheels
+          path: ./wheelhouse/*.whl
+          if-no-files-found: error
+               
+  upload_pypi_test:
+    name: Upload to PyPI test
+    needs: [wheels]
+    runs-on: ubuntu-latest
+    # upload to PyPI test on every tag starting with 'v'
+    #if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags/v')
+    steps:                       
+      - uses: actions/download-artifact@v2
+        with:
+          name: artifact
+          path: dist
+          
+      - name: Publish package to TestPyPI      
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: ${{ secrets.test_pypi_username }}
+          password: ${{ secrets.test_pypi_password }}
+          repository_url: https://test.pypi.org/legacy/    
+          
+  upload_pypi:
+    name: Upload to PyPI
+    needs: [wheels]
+    runs-on: ubuntu-latest
+    # upload to PyPI test on every tag starting with 'v'
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    steps:                       
+      - uses: actions/download-artifact@v2
+        with:
+          name: artifact
+          path: dist
+          
+      - name: Publish package to TestPyPI      
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: ${{ secrets.pypi_username }}
+          password: ${{ secrets.pypi_password }}
+        
+        
+        
+        
+        
+        
+        
+          user: ${{ secrets.test_pypi_username }}
+          password: ${{ secrets.test_pypi_password }}
+          repository_url: https://test.pypi.org/legacy/            
