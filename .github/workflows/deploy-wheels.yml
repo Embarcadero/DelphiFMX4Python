@@ -62,7 +62,7 @@ jobs:
             use_qemu: false
           - os: macos-10.15
             arch: "x86_64"
-            use_qemu: false
+            use_qemu: false         
 
     steps:
       - name: "Checkout files"
@@ -84,6 +84,7 @@ jobs:
         if: (matrix.use_qemu)
         env:
           CIBW_ARCHS: "${{ matrix.arch }}"
+          #CIBW_BUILD: [cp39-manylinux_aarch64]
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2
