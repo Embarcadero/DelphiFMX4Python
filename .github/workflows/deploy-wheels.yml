@@ -14,104 +14,14 @@ on:
   workflow_dispatch:
   
 jobs:    
-  sdist_win:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
-        include:
-          - os: windows-2019
-            arch: "AMD64"
-            use_qemu: false         
-          - os: windows-2019
-            arch: "x86"
-            use_qemu: false    
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-      
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-            
-    - name: Build sdist
-      run: python setup.py sdist
-      
-    - name: Save sdist
-      uses: actions/upload-artifact@v2
-      with:
-        path: dist/*.tar.gz
-            
-  sdist_linux:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        python-version: [3.6, 3.7, 3.8, 3.9]
-        include:
-          - os: ubuntu-20.04
-            arch: "x86_64"
-            use_qemu: false   
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-      
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-        
-    - name: Build sdist
-      run: python setup.py sdist
-      
-    - name: Save sdist
-      uses: actions/upload-artifact@v2
-      with:
-        path: dist/*.tar.gz
-           
-  sdist_linux_aarch:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
-    runs-on: ${{ matrix.os }}
-    
-    strategy:
-      matrix:
-        os: [ubuntu-18.04]
-        PYTHON:
-          - {VERSION: "cp39-cp39"}
-      
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
-      
-    - name: Set up QEMU
-      uses: docker/setup-qemu-action@v1.2.0
-      with:
-        platforms: arm64
-              
-    - name: Build sdist
-      uses: docker://quay.io/pypa/manylinux2014_aarch64
-      with:
-        args: | 
-          bash -c "set -xe;
-          /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python setup.py sdist"  
-               
-    - name: Save sdist
-      uses: actions/upload-artifact@v2
-      with:
-        path: dist/*.tar.gz          
-            
-  sdist_mac:
-    name: Build ${{ matrix.arch }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+  sdist:
+    name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         python-version: [3.9]
-        include:            
-          - os: macos-10.15
-            arch: "x86_64"
-            use_qemu: false   
+        include:
+          - os: ubuntu-20.04
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
@@ -119,8 +29,8 @@ jobs:
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }}
-    
+        python-version: ${{ matrix.python-version }}     
+            
     - name: Build sdist
       run: python setup.py sdist
       
@@ -128,6 +38,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         path: dist/*.tar.gz
+        if-no-files-found: error
         
   wheels:
     name: Build ${{ matrix.arch }} WHEELS on ${{ matrix.os }}
@@ -177,7 +88,7 @@ jobs:
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2
         with:
-          name: wheels
+          name: artifact
           path: ./wheelhouse/*.whl
           if-no-files-found: error
                

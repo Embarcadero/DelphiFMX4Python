@@ -3,16 +3,10 @@ import importlib, importlib.util
 
 dirbname_full = os.path.dirname(__file__)
 
-print("difull", dirbname_full, "name", __name__)
-
-def imp_import(dirbname):
-    modulefullpath = os.path.join(dirbname, "DelphiFMX")
-    organiserfind = imp.find_module(modulefullpath)
-    delphifmx = imp.load_module("DelphiFMX", *organiserfind)
-    return delphifmx
+#print("difull", dirbname_full, "name", __name__)
     
 def findmodule():
-  sdir = os.path.join(os.curdir, dirbname_full)  
+  sdir = os.path.join(os.curdir, dirbname_full) 
   for fname in os.listdir(sdir):
     if 'DelphiFMX' in fname:
       return os.path.basename(fname)
@@ -26,11 +20,11 @@ def new_import(dirbname):
     #print("spec", spec, spec.loader, modulefullpath, __file__)
     ld = loader.create_module(spec)
     #print("ld", ld)
-    delphifmx = importlib.util.module_from_spec(spec)
-    sys.modules["DelphiFMX"] = delphifmx
+    package = importlib.util.module_from_spec(spec)
+    sys.modules["delphifmx"] = package
     #print("cmodelq", delphifmx)
-    spec.loader.exec_module(delphifmx)
+    spec.loader.exec_module(package)
     #print("cmodli", delphifmx)
-    return delphifmx
+    return package
 
-delphifmx = new_import(dirbname_full)
+package = new_import(dirbname_full)

@@ -1,5 +1,7 @@
 import setuptools, os, sys, platform, shutil
 
+pkgname = "delphifmx"
+
 #Force platform wheel
 try:
   from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
@@ -41,6 +43,9 @@ def buildfilepath():
       #Mac x86/64	
       platmacshort = "Darwin8664"
   
+  if not platmacshort:
+    raise ValueError("Undetermined platform.")
+  
   pyversionstrshort = f"{sys.version_info.major}{sys.version_info.minor}"
 
   return f"DelphiFMX_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
@@ -51,10 +56,7 @@ def copylibfiletopkg(slibfile, spkgfile):
   if not os.path.exists(spkgdirname):
     os.makedirs(spkgdirname)
   shutil.copy(slibfile, spkgfile)
-  
-  #libdirname = os.path.dirname(slibfile)
-  #shutil.rmtree(libdirname)
-  
+
 #Validate lib paths
 def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib dir: {slibdir}")    
@@ -63,85 +65,85 @@ def validatelibpaths(slibdir, slibfile):
     
   print(f"Check for lib path: {slibfile}")
   if not os.path.exists(slibfile):
-    raise ValueError(f"Invalid lib path: {slibfile}")
+    raise ValueError(f"File not found: {slibfile}")
   
 #Validate pkg paths
 def validatepkgpaths(spkgfile):
   print(f"Check for pkg path: {spkgfile}")
   if not os.path.exists(spkgfile):
-    raise ValueError(f"Invalid pkg path: {spkgfile}")
+    raise ValueError(f"File not found {spkgfile}")
     
-def isdistprocess():
-  sdir = os.path.join(os.curdir, "delphifmx")
-  for fname in os.listdir(sdir):
-    if 'DelphiFMX' in fname:
-      return True
-  return False
-  
-def distprocess():
-  sdir = os.path.join(os.curdir, "delphifmx")  
+#Clear pkg files (trash)
+def clearpkgtrashfiles():
+  sdir = os.path.join(os.curdir, pkgname)
+  files = os.listdir(sdir)
+  filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
+  for file in filtered_files:
+    fpath = os.path.join(sdir, file)
+    print("Removing trash file:", fpath)
+    os.remove(fpath)
+    
+def finddistfile():
+  sdir = os.path.join(os.curdir, pkgname)  
   for fname in os.listdir(sdir):
     if 'DelphiFMX' in fname:
       return os.path.basename(fname)
-  return None    
+  return None  
     
-def buildprocess():
+def copylibfile():
   spath = buildfilepath()
   sfilename = os.path.basename(spath)
-  
+
   slibdir = os.path.join(os.curdir, "lib")
   slibfile = os.path.join(slibdir, spath)
-
-  spkgdir = os.path.join(os.curdir, "delphifmx")
+  
+  spkgdir = os.path.join(os.curdir, pkgname)
   spkgfile = os.path.join(spkgdir, sfilename)
  
+  clearpkgtrashfiles()	  
   validatelibpaths(slibdir, slibfile)
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
   
-  return sfilename
-     
-sfilename = None  
-print("Check for process type") 
-if isdistprocess():
-  print("Found a distribution process")
-  sfilename = distprocess()
-else: 
-  print("Found a build process")
-  sfilename = buildprocess()
+  return sfilename 
   
-print("Working with file: ", sfilename)  
-  
-"""def list_files(startpath):
-    for root, dirs, files in os.walk(startpath):
-        level = root.replace(startpath, '').count(os.sep)
-        indent = ' ' * 4 * (level)
-        print('{}{}/'.format(indent, os.path.basename(root)))
-        subindent = ' ' * 4 * (level + 1)
-        for f in files:
-            print('{}{}'.format(subindent, f))
-            
-list_files(f"{os.curdir}")"""  
-
 def get_release_version():
-    """Creates a new version incrementing by 1 the number of build specified in the
-    DelphiFMX-0-01/__version__.py file."""
     lcals = locals()
     gbals = globals()
-    with open(os.path.join(os.getcwd(), "delphifmx", "__version__.py"), "rt") as opf:
+    with open(os.path.join(os.getcwd(), pkgname, "__version__.py"), "rt") as opf:
         opffilecontents = opf.read()
         retvalue = exec(opffilecontents, gbals, lcals)
     versorigstr = lcals["__version__"]
-    return versorigstr
+    return versorigstr     
+  
+extra_args = {}
+#We don't want to share the compiled files via sdist (we don't have them)
+if not ("sdist" in sys.argv):  
+  slibdir = os.path.join(os.curdir, "lib")
+  #Binary distribution
+  if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
+    bdata = copylibfile()
+    extra_args = {'package_data': {pkgname: [bdata]}}
+  else:
+    #Final user installation
+    bdata = finddistfile()
+    if bdata:
+      extra_args = {'package_data': {pkgname: [bdata]}}      
     
-versnewstr = get_release_version()         
+versnewstr = get_release_version()   
+
+with open("README.md", "r") as fh:
+  long_description = fh.read()     
 
 setuptools.setup(
-  name="delphifmx",
+  name=pkgname,
   version=versnewstr,
   description="Delphi FMX for Python",
+  author="Lucas Belo, Jim McKeeth",
+  author_email="lucas.belo@live.com",
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   packages=["delphifmx"],
-  package_data={"delphifmx": [sfilename]},
   classifiers=[
             'Development Status :: 1 - Planning',
             'Intended Audience :: Developers',
@@ -161,4 +163,5 @@ setuptools.setup(
             'Operating System :: Android',                        
         ],		
   cmdclass={'bdist_wheel': bdist_wheel},
+  **extra_args
 )
