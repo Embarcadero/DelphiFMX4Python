@@ -3,7 +3,7 @@
 requires = ["setuptools>=40.9.0", "wheel"]
 
 [tool.cibuildwheel]
-build = ["cp36-win*", "cp37-win*", "cp38-win*", "cp36-manylinux*", "cp37-manylinux*", "cp38-manylinux.*", "cp39-*"]
+build = ["cp36-win*", "cp37-win*", "cp38-win*", "cp37-manylinux*", "cp38-manylinux.*", "cp39-*"]
 skip = ["pp*", "cp36-manylinux_aarch64", "cp37-manylinux_aarch64", "cp38-manylinux_aarch64"]
 #archs = ["auto"]
 #repair-wheel-command = ""
@@ -18,7 +18,7 @@ manylinux-aarch64-image = "manylinux2014"
 #manylinux-pypy_i686-image = "manylinux2010"
 #manylinux-pypy_aarch64-image = "manylinux2014"
 archs = ["x86_64"]
-#repair-wheel-command = ""
+repair-wheel-command = ""
 
 [tool.cibuildwheel.macos]
 archs = ["x86_64", "arm64"]
