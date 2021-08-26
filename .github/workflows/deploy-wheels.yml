@@ -92,30 +92,30 @@ jobs:
           path: ./wheelhouse/*.whl
           if-no-files-found: error
                          
-  wheels_manylinux1:
-    name: Build ${{ matrix.arch }} manylinux1 wheels
-    runs-on: ubuntu-20.04
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - arch: "x86_64"
+  #wheels_manylinux1:
+  #  name: Build ${{ matrix.arch }} manylinux1 wheels
+  #  runs-on: ubuntu-20.04
+  #  strategy:
+  #    fail-fast: false
+  #    matrix:
+  #      include:
+  #        - arch: "x86_64"
 
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0  # required for versioneer to find tags
+  #  steps:
+  #    - uses: actions/checkout@v2
+  #      with:
+  #        fetch-depth: 0  # required for versioneer to find tags
 
-      - name: Build wheels
-        uses: pypa/cibuildwheel@v2.0.1
-        env:
-          CIBW_ARCHS: "${{ matrix.arch }}"
-          CIBW_MANYLINUX_X86_64_IMAGE: "manylinux_2_24"
+  #    - name: Build wheels
+  #      uses: pypa/cibuildwheel@v2.0.1
+  #      env:
+  #        CIBW_ARCHS: "${{ matrix.arch }}"
+  #        CIBW_MANYLINUX_X86_64_IMAGE: "manylinux_2_24"
           #CIBW_REPAIR_WHEEL_COMMAND: "auditwheel repair -w {dest_dir} {wheel}"
 
-      - uses: actions/upload-artifact@v2
-        with:
-          path: ./wheelhouse/*.whl               
+  #    - uses: actions/upload-artifact@v2
+  #      with:
+  #        path: ./wheelhouse/*.whl               
                               
   upload_pypi_test:
     name: Upload to PyPI test
