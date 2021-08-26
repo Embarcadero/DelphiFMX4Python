@@ -9,7 +9,7 @@ skip = ["pp*", "cp36-manylinux_aarch64", "cp37-manylinux_aarch64", "cp38-manylin
 #repair-wheel-command = ""
 
 [tool.cibuildwheel.linux]
-manylinux-x86_64-image = "manylinux1"
+manylinux-x86_64-image = "manylinux_2_24"
 #manylinux-i686-image = "manylinux2010"
 manylinux-aarch64-image = "manylinux2014"
 #manylinux-ppc64le-image = "manylinux2014"
@@ -18,7 +18,7 @@ manylinux-aarch64-image = "manylinux2014"
 #manylinux-pypy_i686-image = "manylinux2010"
 #manylinux-pypy_aarch64-image = "manylinux2014"
 archs = ["x86_64"]
-#repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
+repair-wheel-command = ""
 
 [tool.cibuildwheel.macos]
 archs = ["x86_64", "arm64"]
