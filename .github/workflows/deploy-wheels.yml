@@ -90,7 +90,7 @@ jobs:
         with:
           name: artifact
           path: ./wheelhouse/*.whl
-          if-no-files-found: error
+          #if-no-files-found: error
                          
   #wheels_manylinux1:
   #  name: Build ${{ matrix.arch }} manylinux1 wheels
