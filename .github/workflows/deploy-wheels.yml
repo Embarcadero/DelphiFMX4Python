@@ -91,6 +91,14 @@ jobs:
           name: artifact
           path: ./wheelhouse/*.whl
           if-no-files-found: error
+          
+  lint:
+    name: Lint
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: pre-commit/action@v2.0.3
                
   wheels_manylinux1:
     name: Build ${{ matrix.arch }} manylinux1 wheels
