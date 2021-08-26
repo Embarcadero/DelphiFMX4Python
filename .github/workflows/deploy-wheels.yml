@@ -85,12 +85,12 @@ jobs:
       #  env:
       #    CIBW_ARCHS: "${{ matrix.arch }}"
 
-      #- name: "Upload artifact"
-      #  uses: actions/upload-artifact@v2
-      #  with:
-      #    name: artifact
-      #    path: ./wheelhouse/*.whl
-      #    if-no-files-found: error
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifact
+          path: ./wheelhouse/*.whl
+          if-no-files-found: error
                          
   #wheels_manylinux1:
   #  name: Build ${{ matrix.arch }} manylinux1 wheels
