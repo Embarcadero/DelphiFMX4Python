@@ -84,7 +84,6 @@ jobs:
         if: (matrix.use_qemu)
         env:
           CIBW_ARCHS: "${{ matrix.arch }}"
-          #CIBW_BUILD: [cp39-manylinux_aarch64]
 
       - name: "Upload artifact"
         uses: actions/upload-artifact@v2
