@@ -110,8 +110,8 @@ jobs:
         uses: pypa/cibuildwheel@v2.0.1
         env:
           CIBW_ARCHS: "${{ matrix.arch }}"
-          CIBW_MANYLINUX_X86_64_IMAGE: "manylinux1"
-          CIBW_REPAIR_WHEEL_COMMAND: "auditwheel repair -w {dest_dir} {wheel}"
+          CIBW_MANYLINUX_X86_64_IMAGE: "manylinux_2_24"
+          #CIBW_REPAIR_WHEEL_COMMAND: "auditwheel repair -w {dest_dir} {wheel}"
 
       - uses: actions/upload-artifact@v2
         with:
