@@ -48,9 +48,9 @@ jobs:
       #https://github.com/scikit-build/cmake-python-distributions/blob/master/.github/workflows/build.yml
       matrix:
         include:
-          - os: ubuntu-20.04
-            arch: "x86_64"
-            use_qemu: false
+          #- os: ubuntu-20.04
+          #  arch: "x86_64"
+          #  use_qemu: false
           - os: ubuntu-20.04
             arch: "aarch64"
             use_qemu: true
@@ -92,6 +92,31 @@ jobs:
           path: ./wheelhouse/*.whl
           if-no-files-found: error
                
+  wheels_manylinux1:
+    name: Build ${{ matrix.arch }} manylinux1 wheels
+    needs: [lint]
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: "x86_64"
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # required for versioneer to find tags
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.0.1
+        env:
+          CIBW_ARCHS: "${{ matrix.arch }}"
+          CIBW_MANYLINUX_X86_64_IMAGE: "manylinux1"
+
+      - uses: actions/upload-artifact@v2
+        with:
+          path: ./wheelhouse/*.whl               
+                              
   upload_pypi_test:
     name: Upload to PyPI test
     needs: [wheels]
