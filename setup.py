@@ -38,7 +38,7 @@ def buildfilepath():
       #Linux x86/64
       platmacshort = "Linux8664"    
   elif ossys == "Darwin":
-    sfilename = "DelphiFMX.dylib" 	
+    sfilename = "libDelphiFMX.dylib" 	
     if platmac == "x86_64":
       #Mac x86/64	
       platmacshort = "Darwin8664"
