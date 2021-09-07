@@ -5,7 +5,7 @@ Installation:
 
     pip install delphifmx
    
-Supports 
+Supports:
 * Win32 x86, Win64 x86, Linux64 x86, Android64, and macOS64 architecturtes
 * Python cp36, cp37, cp38, cp39
 
