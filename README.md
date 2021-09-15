@@ -1,12 +1,15 @@
 # DelphiFMX4Python
 Delphi's FireMonkey framework as a Python module for Windows, MacOS, Linux, and Android GUI development.
 
-<b>Python installation requirements:</b>
+<b>About:</b>
 
 The delphifmx library is provided by the [Python4Delphi library](https://github.com/pyscripter/python4delphi) as a standard Python module.
-<br>It uses the Python interpreter, requiring Python to be compiled with the "--enable-shared" flag.
+
+<b>Python installation requirements on Linux:</b>
+
+It uses the Python interpreter, requiring Python to be compiled with the "--enable-shared" flag.
 <br>Make sure you've set the "LD_LIBRARY_PATH" and "PATH" environment variables and that Python loads the same libpython.so used by delphifmx.
-<br>Check out the [scripts directory](scripts) for further instructions in how to install Python and delphifmx library or for an automated installation process. 
+* Check out the [scripts directory](scripts) for further instructions in how to install Python or for an automated installation process. 
 
 <b>Installation:</b>
 
