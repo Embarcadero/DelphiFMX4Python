@@ -124,7 +124,7 @@ contained herein, the parties hereto also agree as follows:
     in this Section 3 shall apply to all licenses of Embarcadero C++
     Compiler licensed by Embarcadero to Customer:
 
-4.  Subject to the terms and conditions of this Agreement and Customer’s
+ > Subject to the terms and conditions of this Agreement and Customer’s
     full compliance herewith and according to the scope, time period and
     other terms indicated herein, Embarcadero grants Customer during the
     term (as defined in Section 8 below) a personal, nonexclusive
@@ -395,5 +395,5 @@ contained herein, the parties hereto also agree as follows:
     ANY LITIGATION ARISING FROM OR RELATING TO THIS AGREEMENT OR THE
     SUBJECT MATTER HEREOF SHALL BE IN AN APPROPRIATE FEDERAL OR STATE
     COURT IN THE STATE OF TEXAS LOCATED IN TRAVIS COUNTY**.
-    
+
 Embarcadero Freeware Edition SLA Ver. 060121ns
