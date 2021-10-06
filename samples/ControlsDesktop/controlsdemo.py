@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        ActivityIndicatorForm
+# Name:        CtrlsDemoFrm
 # Purpose:
 #
 # Author:      lmbelo
