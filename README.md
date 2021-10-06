@@ -9,7 +9,7 @@ The delphifmx library is provided by the [Python4Delphi library](https://github.
 
 It uses the Python interpreter, requiring Python to be compiled with the "--enable-shared" flag.
 <br>Make sure you've set the "LD_LIBRARY_PATH" and "PATH" environment variables and that Python loads the same libpython.so used by delphifmx.
-* Check out the [scripts directory](scripts) for further instructions in how to install Python or for an automated installation process. 
+* Check out the [scripts directory](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/scripts) for further instructions in how to install Python or for an automated installation process. 
 
 <b>Installation:</b>
 
