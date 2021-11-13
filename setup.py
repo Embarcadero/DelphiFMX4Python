@@ -1,8 +1,6 @@
 import setuptools, os, sys, platform, shutil
 
-pkgname = os.environ.get("PACKAGE_NAME", "delphifmx")
-
-#Force platform wheel
+# Force platform wheel
 try:
   from wheel.bdist_wheel import bdist_wheel as _bdist_wheel
   class bdist_wheel(_bdist_wheel):
@@ -10,9 +8,10 @@ try:
       _bdist_wheel.finalize_options(self)
       self.root_is_pure = False
 except ImportError:
-  bdist_wheel = None 
- 
-#Find sys/machine file
+  bdist_wheel = None
+
+
+# Find sys/machine file
 def buildfilepath():
   ossys = platform.system()
   platmac = platform.machine()
@@ -21,26 +20,26 @@ def buildfilepath():
   if ossys == "Windows":
     sfilename = "DelphiFMX.pyd"
     if platmac.endswith('64'):
-      #Win x64	
+      # Win x64
       platmacshort = "Win64"
     else:
-      #Win x86
+      # Win x86
       platmacshort = "Win32"
   elif ossys == "Linux":
     sfilename = "libDelphiFMX.so"
     if platmac == "arm":
-      #Linux/Android arm	
+      # Linux/Android arm
       platmacshort = "LinuxArm"
     elif platmac.startswith("arm") or platmac.startswith("aarch"):
-      #Linux/Android aarch64
+      # Linux/Android aarch64
       platmacshort = "LinuxAarch64"
     elif platmac == "x86_64":
-      #Linux x86/64
+      # Linux x86/64
       platmacshort = "Linux8664"    
   elif ossys == "Darwin":
     sfilename = "libDelphiFMX.dylib" 	
     if platmac == "x86_64":
-      #Mac x86/64	
+      # Mac x86/64
       platmacshort = "Darwin8664"
   
   if not platmacshort:
@@ -50,14 +49,16 @@ def buildfilepath():
 
   return f"DelphiFMX_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
 
-#Copy target file from lib to pkg folder
+
+# Copy target file from lib to pkg folder
 def copylibfiletopkg(slibfile, spkgfile): 
   spkgdirname = os.path.dirname(spkgfile)
   if not os.path.exists(spkgdirname):
     os.makedirs(spkgdirname)
   shutil.copy(slibfile, spkgfile)
 
-#Validate lib paths
+
+# Validate lib paths
 def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib dir: {slibdir}")    
   if not os.path.exists(f"{slibdir}"):
@@ -66,14 +67,16 @@ def validatelibpaths(slibdir, slibfile):
   print(f"Check for lib path: {slibfile}")
   if not os.path.exists(slibfile):
     raise ValueError(f"File not found: {slibfile}")
-  
-#Validate pkg paths
+
+
+# Validate pkg paths
 def validatepkgpaths(spkgfile):
   print(f"Check for pkg path: {spkgfile}")
   if not os.path.exists(spkgfile):
     raise ValueError(f"File not found {spkgfile}")
-    
-#Clear pkg files (trash)
+
+
+# Clear pkg files (trash)
 def clearpkgtrashfiles():
   sdir = os.path.join(os.curdir, "delphifmx")
   files = os.listdir(sdir)
@@ -82,67 +85,73 @@ def clearpkgtrashfiles():
     fpath = os.path.join(sdir, file)
     print("Removing trash file:", fpath)
     os.remove(fpath)
-    
+
+
 def finddistfile():
   sdir = os.path.join(os.curdir, "delphifmx")
   for fname in os.listdir(sdir):
     if 'DelphiFMX' in fname:
-      #return os.path.basename(fname)
-      return fname
-  return None  
-    
+      return os.path.basename(fname)
+  return None
+
+
 def copylibfile():
   spath = buildfilepath()
   sfilename = os.path.basename(spath)
 
   slibdir = os.path.join(os.curdir, "lib")
   slibfile = os.path.join(slibdir, spath)
-  
-  spkgdir = os.path.join(os.curdir, pkgname)
+
+  spkgdir = os.path.join(os.curdir, "delphifmx")
   spkgfile = os.path.join(spkgdir, sfilename)
  
-  clearpkgtrashfiles()	  
+  clearpkgtrashfiles()
   validatelibpaths(slibdir, slibfile)
   copylibfiletopkg(slibfile, spkgfile)
   validatepkgpaths(spkgfile)     
-  
-  return sfilename 
-  
+
+  return sfilename
+
+
 def get_release_version():
+    """Gets the version from the delphifmx/__version__.py file, or from the FORCE_VERSION
+    environment variable (this planned for develpoment only)."""
     if "FORCE_VERSION" in os.environ:
         return os.environ["FORCE_VERSION"]
     lcals = locals()
     gbals = globals()
-    with open(os.path.join(os.getcwd(), pkgname, "__version__.py"), "rt") as opf:
+    with open(os.path.join(os.getcwd(), "delphifmx", "__version__.py"), "rt") as opf:
         opffilecontents = opf.read()
         retvalue = exec(opffilecontents, gbals, lcals)
-    versorigstr = lcals["__version__"]
-    return versorigstr     
-  
+    version_orig_str = lcals["__version__"]
+    return version_orig_str
+
 extra_args = {}
-#We don't want to share the compiled files via sdist (we don't have them)
+# We don't want to share the compiled files via sdist (we don't have them)
 if not ("sdist" in sys.argv):  
   slibdir = os.path.join(os.curdir, "lib")
-  #Binary distribution
+  # Binary distribution
   if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
     bdata = copylibfile()
-    extra_args = {'package_data': {pkgname: [bdata]}}
+    extra_args = {'package_data': {"delphifmx": [bdata]}}
   else:
     #Final user installation
     bdata = finddistfile()
     if bdata:
-      extra_args = {'package_data': {pkgname: [bdata]}}      
+      extra_args = {'package_data': {"delphifmx": [bdata]}}
     
 versnewstr = get_release_version()   
 
 with open("README.md", "r") as fh:
   long_description = fh.read()     
 
+package_name = os.environ.get("PACKAGE_NAME", "delphifmx")
+
 setuptools.setup(
-  name=pkgname,
+  name=package_name,
   version=versnewstr,
   description="Delphi FMX for Python",
-  author="Lucas Belo, Jim McKeeth",
+  author="Lucas Belo, Lucio Montero, Jim McKeeth",
   author_email="lucas.belo@live.com",
   long_description=long_description,
   long_description_content_type="text/markdown",
