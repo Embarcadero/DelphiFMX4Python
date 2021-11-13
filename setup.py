@@ -1,6 +1,6 @@
 import setuptools, os, sys, platform, shutil
 
-pkgname = "delphifmx"
+pkgname = os.environ.get("PACKAGE_NAME", "delphifmx")
 
 #Force platform wheel
 try:
@@ -75,7 +75,7 @@ def validatepkgpaths(spkgfile):
     
 #Clear pkg files (trash)
 def clearpkgtrashfiles():
-  sdir = os.path.join(os.curdir, pkgname)
+  sdir = os.path.join(os.curdir, "delphifmx")
   files = os.listdir(sdir)
   filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
   for file in filtered_files:
@@ -84,10 +84,11 @@ def clearpkgtrashfiles():
     os.remove(fpath)
     
 def finddistfile():
-  sdir = os.path.join(os.curdir, pkgname)  
+  sdir = os.path.join(os.curdir, "delphifmx")
   for fname in os.listdir(sdir):
     if 'DelphiFMX' in fname:
-      return os.path.basename(fname)
+      #return os.path.basename(fname)
+      return fname
   return None  
     
 def copylibfile():
@@ -108,6 +109,8 @@ def copylibfile():
   return sfilename 
   
 def get_release_version():
+    if "FORCE_VERSION" in os.environ:
+        return os.environ["FORCE_VERSION"]
     lcals = locals()
     gbals = globals()
     with open(os.path.join(os.getcwd(), pkgname, "__version__.py"), "rt") as opf:
