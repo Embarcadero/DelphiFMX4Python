@@ -29,3 +29,16 @@ archs = ["x86", "AMD64"]
 [tool.isort]
 profile = "black"
 multi_line_output = 3
+
+[tool.poetry]
+name = "delphifmx"
+#version = "0.1.0"
+description = ""
+authors = ["Jim McKeth", "Lucas Belo<lucas.belo@live.com>", "Lucio Montero<lucioric2000@hotmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6<3.10"
+python-dotenv = "^0.19.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"

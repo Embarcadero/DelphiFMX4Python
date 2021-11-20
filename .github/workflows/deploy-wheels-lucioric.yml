@@ -1,9 +1,9 @@
-name: Build
+name: Build-lucioric
 
 on: 
   push:
     #branches:
-      #- main
+      #- lucioric
       # Release branches
       #- "[0-9]+.[0-9]+.X"
 
@@ -12,8 +12,10 @@ on:
 
   # Manual run
   workflow_dispatch:
-  
-jobs:   
+env:
+  PACKAGE_NAME: DelphiFMX-lucioric
+  FORCE_VERSION: 0.0.13
+jobs:
   #Empty distribution 
   sdist:
     name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
