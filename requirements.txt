@@ -4,3 +4,4 @@ pip
 setuptools
 wheel
 #twine
+#To use tox: pluggy tox tox-envfile pip setuptools wheel twine
