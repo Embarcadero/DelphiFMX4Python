@@ -1,0 +1,6 @@
+python-dotenv
+#tox-envfile
+pip
+setuptools
+wheel
+#twine
