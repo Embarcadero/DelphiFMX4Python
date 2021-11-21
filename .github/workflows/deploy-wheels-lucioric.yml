@@ -14,9 +14,9 @@ on:
   workflow_dispatch:
 env:
   PACKAGE_NAME: DelphiFMX-lucioric
-  FORCE_VERSION: 0.0.17
+  FORCE_VERSION: 0.0.18
 jobs:
-  #Empty distribution 
+  #Empty distribution
   sdist:
     name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
