@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 env:
   PACKAGE_NAME: DelphiFMX-lucioric
-  FORCE_VERSION: 0.0.18
+  FORCE_VERSION: 0.0.19
 jobs:
   #Empty distribution
   sdist:

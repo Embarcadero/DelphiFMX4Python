@@ -4,7 +4,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def new_import(internal_name=None, module_full_path=None,
+def new_import(internal_name="DelphiFMX", module_full_path=None,
                pyd_file_basename=None, external_name="delphifmx"):
     platmac = platform.machine()
     platsys = platform.system()
