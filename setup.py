@@ -20,7 +20,7 @@ def buildfilepath():
   sfilename = ""
   if ossys == "Windows":
     sfilename = "DelphiFMX.pyd"
-    if platmac.endswith('64'):
+    if (sys.maxsize > 2**32):
       #Win x64	
       platmacshort = "Win64"
     else:
@@ -46,9 +46,7 @@ def buildfilepath():
   if not platmacshort:
     raise ValueError("Undetermined platform.")
   
-  pyversionstrshort = f"{sys.version_info.major}{sys.version_info.minor}"
-
-  return f"DelphiFMX_{platmacshort}_{pyversionstrshort}{os.sep}{sfilename}"
+  return f"DelphiFMX_{platmacshort}{os.sep}{sfilename}"
 
 #Copy target file from lib to pkg folder
 def copylibfiletopkg(slibfile, spkgfile): 
@@ -146,9 +144,9 @@ setuptools.setup(
   license="Other/Proprietary License",
   license_files=["LICENSE.md"],
   url = "https://github.com/Embarcadero/DelphiFMX4Python",
-  packages=["delphifmx"],
-  classifiers=[
-            'Development Status :: 1 - Planning',
+  python_requires=">=3.3<=3.10",
+  packages=[pkgname],
+  classifiers=[            
             'Intended Audience :: Developers',
             'Topic :: Software Development',
             'License :: Other/Proprietary License',
@@ -158,6 +156,7 @@ setuptools.setup(
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
             'Programming Language :: Python :: 3 :: Only',
             'Operating System :: Microsoft :: Windows',
             'Operating System :: POSIX',

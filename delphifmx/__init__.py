@@ -1,30 +1,30 @@
-import imp, sys, platform, os, sys
-import importlib, importlib.util
+import sys, platform, os, sys, io
+import importlib, importlib.machinery, importlib.util
 
-dirbname_full = os.path.dirname(__file__)
+def init_module_defs():
+    pyversionstrshort = f"{sys.version_info.major}.{sys.version_info.minor}"
+    dirbname_full = os.path.dirname(os.path.abspath(__file__))
+    with io.open(os.path.join(dirbname_full, "moduledefs.json"), "w+") as moduledefs:
+        moduledefs.write(r'{"python_ver":  "@ver"}'.replace('@ver', pyversionstrshort))
 
-#print("difull", dirbname_full, "name", __name__)
-    
-def findmodule():
-  sdir = os.path.join(os.curdir, dirbname_full) 
+def findmodule(dirbname):
+  sdir = os.path.join(os.curdir, dirbname) 
   for fname in os.listdir(sdir):
     if 'DelphiFMX' in fname:
       return os.path.basename(fname)
   return None 
-          
-def new_import(dirbname):
-    modulefullpath = os.path.join(dirbname, findmodule())
+
+def new_import():  
+    dirbname_full = os.path.dirname(os.path.abspath(__file__)) 
+    modulefullpath = os.path.join(dirbname_full, findmodule(dirbname_full))   
     loader = importlib.machinery.ExtensionFileLoader("DelphiFMX", modulefullpath)
     spec = importlib.util.spec_from_file_location("DelphiFMX", modulefullpath,
         loader=loader, submodule_search_locations=None)
-    #print("spec", spec, spec.loader, modulefullpath, __file__)
     ld = loader.create_module(spec)
-    #print("ld", ld)
     package = importlib.util.module_from_spec(spec)
     sys.modules["delphifmx"] = package
-    #print("cmodelq", delphifmx)
     spec.loader.exec_module(package)
-    #print("cmodli", delphifmx)
     return package
 
-package = new_import(dirbname_full)
+init_module_defs()
+package = new_import()
