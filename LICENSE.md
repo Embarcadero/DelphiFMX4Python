@@ -124,7 +124,7 @@ contained herein, the parties hereto also agree as follows:
     in this Section 3 shall apply to all licenses of Embarcadero C++
     Compiler licensed by Embarcadero to Customer:
 
- > Subject to the terms and conditions of this Agreement and Customer’s
+    Subject to the terms and conditions of this Agreement and Customer’s
     full compliance herewith and according to the scope, time period and
     other terms indicated herein, Embarcadero grants Customer during the
     term (as defined in Section 8 below) a personal, nonexclusive
