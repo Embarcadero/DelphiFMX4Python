@@ -52,6 +52,12 @@ def set_python_lib(python_lib):
 def get_python_lib():
     return get_prop('python_lib')    
 
+def set_python_shared_lib(python_shared_lib):    
+    set_prop('python_shared_lib', python_shared_lib)
+
+def get_python_shared_lib():
+    return get_prop('python_shared_lib') 
+
 def set_python_ver(python_ver):
     set_prop('python_ver', python_ver)
 
@@ -77,7 +83,36 @@ def try_load_defs(force):
         if (ossys == 'Windows'):
             return sys.prefix
         else:
-            return os.path.join(os.path.dirname(os.path.dirname(sys.executable)), 'lib')
+            libpath = os.path.join(os.path.dirname(os.path.dirname(sys.executable)), 'lib')
+            return (libpath if os.path.exists(libpath) else '')
+
+    def find_python_shared_lib():
+        pylibdir = get_python_lib()
+        if (pylibdir == ''):
+            return ''
+
+        ossys = platform.system()
+        prefix = ''
+        ext = ''        
+        if (ossys == 'Windows'):
+            ext = '.dll'
+        elif ossys == "Linux":
+            prefix = 'lib'
+            ext = '.so'
+        elif ossys == "Darwin":
+            prefix = 'lib'
+            ext = '.dylib'
+
+        pyver = get_python_ver()
+        pysharedlib = f"{prefix}python{pyver}{ext}"        
+        if os.path.exists(os.path.join(pylibdir, pysharedlib)):
+            return pysharedlib
+        
+        pysharedlib = f"{prefix}python{pyver}m{ext}"    
+        if os.path.exists(os.path.join(pylibdir, pysharedlib) ):
+            return pysharedlib
+
+        return ''
 
     def find_python_ver():
         return f"{sys.version_info.major}.{sys.version_info.minor}"
@@ -89,13 +124,15 @@ def try_load_defs(force):
         set_python_bin(find_python_bin())
 
     if (get_python_lib() == '') or (force):
-        set_python_lib(find_python_lib())
+        set_python_lib(find_python_lib())    
 
     if (get_python_ver() == '') or (force):
         set_python_ver(find_python_ver())
 
-_auto_load_defs = True
+    if (get_python_shared_lib() == '') or (force):
+        set_python_shared_lib(find_python_shared_lib())
 
+_auto_load_defs = True
 def get_auto_load_defs():
     return _auto_load_defs
 
