@@ -52,7 +52,7 @@ jobs:
   #so we manually bdist_wheel forcing a plat-name
   #The same for aarch64
   linux_wheel:
-    name: Build ${{ matrix.architecture }} BINARY on ${{ matrix.os }} for Python ${{ matrix.python-version }}
+    name: Build ${{ matrix.architecture }} BINARY on ${{ matrix.os }} for Python ${{ matrix.python }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -63,10 +63,10 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v2
       
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }}     
+        python: ${{ matrix.python }}     
             
     - name: Build bdist
       run: |        
