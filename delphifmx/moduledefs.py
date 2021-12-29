@@ -1,4 +1,3 @@
-from json import decoder
 import sys, os, platform, json
 
 def get_defs_path():    
