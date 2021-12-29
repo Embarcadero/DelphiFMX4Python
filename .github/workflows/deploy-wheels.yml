@@ -57,7 +57,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python: ['3.7', '3.8', '3.9', '3.10']
         include:
           - os: ubuntu-20.04
             arch: "x86_64"  
