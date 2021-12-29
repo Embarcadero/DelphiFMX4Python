@@ -16,8 +16,8 @@ except ImportError:
   bdist_wheel = None 
 
 class BaseInstallCommand(object):
-  #Accepting install arguments (not supported by wheels)
-  #Easily used by --install-option
+  #Install arguments (not supported by wheels) for local installation
+  #Used by --install-option
   #  --install-option="--python-home=my_python_home"
   user_options = [
     ('python-home', None, 'The Python home path'),

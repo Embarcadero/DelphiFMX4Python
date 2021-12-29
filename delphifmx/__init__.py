@@ -1,11 +1,6 @@
-import sys, platform, os, sys, io
+import sys, os, sys
 import importlib, importlib.machinery, importlib.util
-
-def init_module_defs():
-    pyversionstrshort = f"{sys.version_info.major}.{sys.version_info.minor}"
-    dirbname_full = os.path.dirname(os.path.abspath(__file__))
-    with io.open(os.path.join(dirbname_full, "moduledefs.json"), "w+") as moduledefs:
-        moduledefs.write(r'{"python_ver":  "@ver"}'.replace('@ver', pyversionstrshort))
+from delphifmx import moduledefs
 
 def findmodule(dirbname):
   sdir = os.path.join(os.curdir, dirbname) 
@@ -25,6 +20,9 @@ def new_import():
     sys.modules["delphifmx"] = package
     spec.loader.exec_module(package)
     return package
-
-init_module_defs()
+    
+#Setup moduledefs.json
+if moduledefs.get_auto_load_defs():
+  moduledefs.try_load_defs(False)
+#Import the shared lib
 package = new_import()

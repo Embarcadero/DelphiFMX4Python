@@ -77,7 +77,7 @@ def try_load_defs(force):
         if (ossys == 'Windows'):
             return sys.prefix
         else:
-            return os.path.join( os.path.dirname(os.path.dirname(sys.executable)), 'lib')
+            return os.path.join(os.path.dirname(os.path.dirname(sys.executable)), 'lib')
 
     def find_python_ver():
         return f"{sys.version_info.major}.{sys.version_info.minor}"
@@ -94,3 +94,11 @@ def try_load_defs(force):
     if (get_python_ver() == '') or (force):
         set_python_ver(find_python_ver())
 
+_auto_load_defs = True
+
+def get_auto_load_defs():
+    return _auto_load_defs
+
+def set_auto_load_defs(auto_load_defs): 
+    global _auto_load_defs           
+    _auto_load_defs = auto_load_defs
