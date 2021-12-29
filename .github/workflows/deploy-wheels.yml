@@ -13,39 +13,40 @@ on:
   # Manual run
   workflow_dispatch:
   
-jobs:           
-#   bdist_aarch64:
-#     name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python-version }}
-#     runs-on: ${{ matrix.os }}
-#     strategy:
-#       matrix:        
-#         os: [ubuntu-20.04]
-#         PYTHON:
-#           - {VERSION: "cp39-cp39"}
-          
-#     steps:
-#     - name: Check out repository
-#       uses: actions/checkout@v2
-      
-#     - name: Set up QEMU
-#       uses: docker/setup-qemu-action@v1.2.0
-#       with:
-#         platforms: arm64       
+jobs:     
+  #We are currently using this for Android (will be removed and distributed by sdist)     
+  # aarch64_wheel:
+  #   name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python }}
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+  #     matrix:        
+  #       os: [ubuntu-20.04]
 
-#     - name: Build bdist
-#       uses: docker://quay.io/pypa/manylinux2014_aarch64
-#       with:
-#         args: | 
-#           bash -c "set -xe;
-#           /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install setuptools --upgrade
-#           /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install wheel --upgrade 
-#           /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python setup.py bdist_wheel --plat-name=manylinux2014_aarch64"  
+  #   steps:
+  #   - name: Check out repository
+  #     uses: actions/checkout@v2
       
-#     - name: Save sdist
-#       uses: actions/upload-artifact@v2
-#       with:
-#         path: dist/*.whl
-#         if-no-files-found: error 
+  #   - name: Set up QEMU
+  #     uses: docker/setup-qemu-action@v1.2.0
+  #     with:
+  #       platforms: arm64         
+  #       python-version: ${{ matrix.python }}       
+
+  #   - name: Build bdist
+  #     uses: docker://quay.io/pypa/manylinux2014_aarch64
+  #     with:
+  #       args: | 
+  #         bash -c "set -xe;
+  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install setuptools --upgrade
+  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install wheel --upgrade 
+  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python setup.py bdist_wheel --plat-name=manylinux2014_aarch64"  
+      
+  #   - name: Save sdist
+  #     uses: actions/upload-artifact@v2
+  #     with:
+  #       path: dist/*.whl
+  #       if-no-files-found: error 
         
    #PyPI requires specific Linux versions tagged into wheel name, and linux_x86_64 is not accepted by a generalization issue
   #auditwheel won't repair our wheel tag because it doesn't accept a shared library within package files
@@ -66,7 +67,7 @@ jobs:
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python: ${{ matrix.python }}     
+        python-version: ${{ matrix.python }}     
             
     - name: Build bdist
       run: |        
@@ -115,6 +116,7 @@ jobs:
     name: Upload to PyPI test
     needs: [linux_wheel, wheels]
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
     steps:                       
       - uses: actions/download-artifact@v2
         with:
