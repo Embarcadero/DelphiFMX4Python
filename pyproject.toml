@@ -16,7 +16,7 @@ manylinux-aarch64-image = "manylinux2014"
 #manylinux-pypy_x86_64-image = "manylinux2010"
 #manylinux-pypy_i686-image = "manylinux2010"
 #manylinux-pypy_aarch64-image = "manylinux2014"
-archs = ["x86_64", "arm64"]
+archs = ["x86_64"]
 repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
 
 [tool.cibuildwheel.macos]
