@@ -17,10 +17,13 @@ manylinux-aarch64-image = "manylinux2014"
 #manylinux-pypy_i686-image = "manylinux2010"
 #manylinux-pypy_aarch64-image = "manylinux2014"
 archs = ["x86_64"]
-repair-wheel-command = "auditwheel repair -w {dest_dir} {wheel}"
+#we can't repair wheel once we're sharing a platform library
+repair-wheel-command = ""
 
 [tool.cibuildwheel.macos]
 archs = ["x86_64", "arm64"]
+#we can't repair wheel once we're sharing a platform library
+repair-wheel-command = ""
 
 [tool.cibuildwheel.windows]
 archs = ["x86", "AMD64"]
