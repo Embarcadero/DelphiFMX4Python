@@ -1,7 +1,6 @@
-import setuptools, os, sys, platform, shutil
+import setuptools, os, sys, json, platform, shutil
 from setuptools.command.install import install
 from setuptools.command.develop import develop
-from delphifmx import moduledefs
 
 pkgname = "delphifmx"
 
@@ -20,9 +19,9 @@ class BaseInstallCommand(object):
   #Used by --install-option
   #  --install-option="--python-home=my_python_home"
   user_options = [
-    ('python-home', None, 'The Python home path'),
-    ('python-bin=', None, 'Python program name directory')
-    ('python-lib=', None, 'Python shared library directory')
+    ('python-home=', None, 'The Python home path'),
+    ('python-bin=', None, 'Python program name directory'),
+    ('python-lib=', None, 'Python shared library directory'),
   ]
 
   def initialize_options(self):
@@ -36,10 +35,16 @@ class BaseInstallCommand(object):
     super().finalize_options()
 
   def run(self):
-    moduledefs.set_python_home(self.python_home)
-    moduledefs.set_python_bin(self.python_bin)
-    moduledefs.set_python_lib(self.python_lib)
-    moduledefs.set_python_ver(self.python_ver)
+    moduledefs = {
+      "python_home": self.python_home,
+      "python_bin": self.python_bin,
+      "python_lib": self.python_lib,
+      "python_ver": self.python_ver,
+    }
+    moduledefs_path = os.path.join(os.path.join(os.curdir, pkgname), 'moduledefs.json')
+    with open(moduledefs_path, 'w+') as openfile: 
+       openfile.write(json.dumps(moduledefs))
+
     super().run()
 
 class InstallCommand(BaseInstallCommand, install):
