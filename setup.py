@@ -30,6 +30,7 @@ class BaseInstallCommand(object):
     self.python_home = ''
     self.python_bin = ''
     self.python_lib = ''
+    self.python_ver = f"{sys.version_info.major}.{sys.version_info.minor}"
 
   def finalize_options(self):
     super().finalize_options()
@@ -38,6 +39,7 @@ class BaseInstallCommand(object):
     moduledefs.set_python_home(self.python_home)
     moduledefs.set_python_bin(self.python_bin)
     moduledefs.set_python_lib(self.python_lib)
+    moduledefs.set_python_ver(self.python_ver)
     super().run()
 
 class InstallCommand(BaseInstallCommand, install):

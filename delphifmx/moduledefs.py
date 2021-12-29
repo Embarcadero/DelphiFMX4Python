@@ -1,15 +1,39 @@
-import json
+from json import decoder
+import sys, os, platform, json
+
+def get_defs_path():    
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), "moduledefs.json")
+
+def has_defs():
+    return os.path.exists(get_defs_path())
 
 def get_prop(prop_name):
-    with open('moduledefs.json', 'r+') as openfile:    
-        moduledefs = json.load(openfile)
-        return moduledefs[prop_name]
+    if not os.path.exists(get_defs_path()):
+        return ''
+
+    with open(get_defs_path(), 'r+') as openfile:   
+        try: 
+            moduledefs = json.load(openfile)
+            if not (prop_name in moduledefs):
+                return ''
+            else:
+                return moduledefs[prop_name]
+        except json.decoder.JSONDecodeError: #empty file
+            return ''         
 
 def set_prop(prop_name, value):
-    with open('moduledefs.json', 'w+') as openfile:    
-        moduledefs = json.load(openfile)
-        moduledefs[prop_name] = value
-        openfile.write(json.dump(moduledefs))
+    if os.path.exists(get_defs_path()):
+        with open(get_defs_path(), 'r+') as openfile:    
+            try:
+                moduledefs = json.load(openfile)
+            except json.decoder.JSONDecodeError:
+                moduledefs = {}
+    else:
+        moduledefs = {}
+
+    moduledefs[prop_name] = value
+    with open(get_defs_path(), 'w+') as openfile:              
+        openfile.write(json.dumps(moduledefs))
 
 def set_python_home(python_home):    
     set_prop('python_home', python_home)
@@ -28,3 +52,46 @@ def set_python_lib(python_lib):
 
 def get_python_lib():
     return get_prop('python_lib')    
+
+def set_python_ver(python_ver):
+    set_prop('python_ver', python_ver)
+
+def get_python_ver():
+    return get_prop('python_ver')
+
+def try_load_defs(force):
+    #def is_conda():
+    #    return os.path.exists(os.path.join(sys.prefix, 'conda-meta'))
+
+    def find_python_home():
+        return sys.prefix
+
+    def find_python_bin():
+        ossys = platform.system()
+        if (ossys == 'Windows'):
+            return sys.prefix
+        else:
+            return os.path.dirname(sys.executable)            
+
+    def find_python_lib():
+        ossys = platform.system()
+        if (ossys == 'Windows'):
+            return sys.prefix
+        else:
+            return os.path.join( os.path.dirname(os.path.dirname(sys.executable)), 'lib')
+
+    def find_python_ver():
+        return f"{sys.version_info.major}.{sys.version_info.minor}"
+
+    if (get_python_home() == '') or (force):
+        set_python_home(find_python_home())
+
+    if (get_python_bin() == '') or (force):
+        set_python_bin(find_python_bin())
+
+    if (get_python_lib() == '') or (force):
+        set_python_lib(find_python_lib())
+
+    if (get_python_ver() == '') or (force):
+        set_python_ver(find_python_ver())
+
