@@ -50,7 +50,7 @@ jobs:
   wheels:
     name: Build ${{ matrix.arch }} WHEELS on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}    
-    needs: [sdist]
+    #needs: [sdist]
     strategy:      
       #https://github.com/scikit-build/cmake-python-distributions/blob/master/.github/workflows/build.yml
       matrix:
