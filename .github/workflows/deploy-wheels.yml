@@ -51,11 +51,12 @@ jobs:
   #auditwheel won't repair our wheel tag because it doesn't accept a shared library within package files
   #so we manually bdist_wheel forcing a plat-name
   #The same for aarch64
-  bdist_linux:
+  linux_wheel:
     name: Build ${{ matrix.architecture }} BINARY on ${{ matrix.os }} for Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        python-version: [3.6, 3.7, 3.8, 3.9, 3.10]
         include:
           - os: ubuntu-20.04
     steps:
@@ -112,7 +113,7 @@ jobs:
                               
   upload_pypi_test:
     name: Upload to PyPI test
-    needs: [wheels]
+    needs: [linux_wheel, wheels]
     runs-on: ubuntu-latest
     steps:                       
       - uses: actions/download-artifact@v2
@@ -129,7 +130,7 @@ jobs:
           
   upload_pypi:
     name: Upload to PyPI
-    needs: [wheels]
+    needs: [linux_wheel, wheels]
     runs-on: ubuntu-latest
     # upload to PyPI test on every tag starting with 'v'
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
