@@ -1,4 +1,7 @@
 import setuptools, os, sys, platform, shutil
+from setuptools.command.install import install
+from setuptools.command.develop import develop
+from delphifmx import moduledefs
 
 pkgname = "delphifmx"
 
@@ -11,6 +14,37 @@ try:
       self.root_is_pure = False
 except ImportError:
   bdist_wheel = None 
+
+class BaseInstallCommand(object):
+  #Accepting install arguments (not supported by wheels)
+  #Easily used by --install-option
+  #  --install-option="--python-home=my_python_home"
+  user_options = [
+    ('python-home', None, 'The Python home path'),
+    ('python-bin=', None, 'Python program name directory')
+    ('python-lib=', None, 'Python shared library directory')
+  ]
+
+  def initialize_options(self):
+    super().initialize_options()
+    self.python_home = ''
+    self.python_bin = ''
+    self.python_lib = ''
+
+  def finalize_options(self):
+    super().finalize_options()
+
+  def run(self):
+    moduledefs.set_python_home(self.python_home)
+    moduledefs.set_python_bin(self.python_bin)
+    moduledefs.set_python_lib(self.python_lib)
+    super().run()
+
+class InstallCommand(BaseInstallCommand, install):
+    user_options = getattr(install, 'user_options', []) + BaseInstallCommand.user_options
+
+class DevelopCommand(BaseInstallCommand, develop):
+    user_options = getattr(develop, 'user_options', []) + BaseInstallCommand.user_options
  
 #Find sys/machine file
 def buildfilepath():
@@ -119,7 +153,7 @@ extra_args = {}
 if not ("sdist" in sys.argv):  
   slibdir = os.path.join(os.curdir, "lib")
   #Binary distribution
-  if ("bdist_wheel" in sys.argv) and os.path.exists(slibdir):
+  if ("bdist" in sys.argv) or (("bdist_wheel" in sys.argv) and os.path.exists(slibdir)):
     bdata = copylibfile()
     extra_args = {'package_data': {pkgname: [bdata]}}
   else:
@@ -164,6 +198,10 @@ setuptools.setup(
             'Operating System :: MacOS',
             'Operating System :: Android',                        
         ],		
-  cmdclass={'bdist_wheel': bdist_wheel},
+  cmdclass={
+    'bdist_wheel': bdist_wheel,
+    'install': InstallCommand,
+    'develop': DevelopCommand,
+  },
   **extra_args
 )
