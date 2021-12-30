@@ -136,7 +136,10 @@ jobs:
       #     python-version: ${{ matrix.python }}    
 
       - name: Display structure of download files
-        run: dir        
+        run: |
+          cd wheelhouse
+          dir
+                  
 
       # - name: Install ${{ matrix.python }} Windows
       #   run: |                  
