@@ -111,7 +111,26 @@ jobs:
         with:
           name: artifact
           path: ./wheelhouse/*.whl
-          if-no-files-found: error                                      
+          if-no-files-found: error            
+
+  windows_test:
+    name: Test ${{ matrix.python }} Windows
+    needs: wheels
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10']        
+    steps:
+      - name: "Checkout files"
+        uses: actions/checkout@v2              
+
+      - name: Build wheels
+        uses: pypa/cibuildwheel@v2.1.1   
+
+      - name: Run test
+        run: |        
+          python${{ matrix.python }} setup.py install
+          python${{ matrix.python }} -m .github/workflow/test.py                                    
                               
   upload_pypi_test:
     name: Upload to PyPI test
