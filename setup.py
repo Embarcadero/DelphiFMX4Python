@@ -160,7 +160,10 @@ extra_args = {}
 if not ("sdist" in sys.argv):  
   slibdir = os.path.join(os.curdir, "lib")
   #Binary distribution
-  if (("bdist" in sys.argv) or ("bdist_wheel" in sys.argv) or ("install" in sys.argv)) and os.path.exists(slibdir):
+  if (("bdist" in sys.argv) 
+    or ("bdist_wheel" in sys.argv) 
+    or ("install" in sys.argv)
+    or ("wheel" in sys.argv)) and os.path.exists(slibdir):
     bdata = copylibfile()
     extra_args = {'package_data': {pkgname: [bdata]}}
   else:

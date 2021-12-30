@@ -122,15 +122,25 @@ jobs:
         python: ['3.6', '3.7', '3.8', '3.9', '3.10']        
     steps:
       - name: "Checkout files"
-        uses: actions/checkout@v2              
+        uses: actions/checkout@v2   
 
-      - name: Build wheels
-        uses: pypa/cibuildwheel@v2.1.1   
+      - uses: actions/download-artifact@v1
+        with:
+          name: ${{ runner.os }}-${{ matrix.python }}-wheel
+          path: wheelhouse
+        
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python }}     
 
-      - name: Run test
-        run: |        
-          python${{ matrix.python }} setup.py install
-          python${{ matrix.python }} -m .github/workflow/test.py                                    
+      - name: Install ${{ matrix.python }} Windows
+        run: |                  
+          (cd wheelhouse && python -m pip install delphifmx-*.whl)          
+
+      - name: Test ${{ matrix.python }} Windows
+        run: |                            
+          python -m .github/workflow/test.py                                    
                               
   upload_pypi_test:
     name: Upload to PyPI test
