@@ -147,7 +147,7 @@ jobs:
                               
   upload_pypi_test:
     name: Upload to PyPI test
-    needs: [linux_wheel, wheels]
+    #needs: [linux_wheel, wheels]
     runs-on: ubuntu-latest    
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
     steps:                       
@@ -165,7 +165,7 @@ jobs:
           
   upload_pypi:
     name: Upload to PyPI
-    needs: [linux_wheel, wheels]
+    #needs: [linux_wheel, wheels]
     runs-on: ubuntu-latest
     # upload to PyPI test on every tag starting with 'v'
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
