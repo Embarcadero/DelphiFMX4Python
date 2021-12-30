@@ -52,35 +52,35 @@ jobs:
   #auditwheel won't repair our wheel tag because it doesn't accept a shared library within package files
   #so we manually bdist_wheel forcing a plat-name
   #The same for aarch64
-  linux_wheel:
-    name: Build ${{ matrix.architecture }} wheel on ${{ matrix.os }} for Python ${{ matrix.python }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        python: ['3.7', '3.8', '3.9', '3.10']
-        include:
-          - os: ubuntu-20.04
-            arch: "x86_64"  
-    steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
+  # linux_wheel:
+  #   name: Build ${{ matrix.architecture }} wheel on ${{ matrix.os }} for Python ${{ matrix.python }}
+  #   runs-on: ${{ matrix.os }}
+  #   strategy:
+  #     matrix:
+  #       python: ['3.7', '3.8', '3.9', '3.10']
+  #       include:
+  #         - os: ubuntu-20.04
+  #           arch: "x86_64"  
+  #   steps:
+  #   - name: Check out repository
+  #     uses: actions/checkout@v2
       
-    - name: Set up Python ${{ matrix.python }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python }}     
+  #   - name: Set up Python ${{ matrix.python }}
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: ${{ matrix.python }}     
             
-    - name: Build bdist
-      run: |        
-        python -m pip install setuptools --upgrade
-        python -m pip install wheel --upgrade                
-        python setup.py bdist_wheel --plat-name=manylinux1_x86_64
+  #   - name: Build bdist
+  #     run: |        
+  #       python -m pip install setuptools --upgrade
+  #       python -m pip install wheel --upgrade                
+  #       python setup.py bdist_wheel --plat-name=manylinux1_x86_64
       
-    - name: Save sdist
-      uses: actions/upload-artifact@v2
-      with:
-        path: dist/*.whl
-        if-no-files-found: error      
+  #   - name: Save sdist
+  #     uses: actions/upload-artifact@v2
+  #     with:
+  #       path: dist/*.whl
+  #       if-no-files-found: error      
 
   wheels:
     name: Build ${{ matrix.arch }} wheel on ${{ matrix.os }}
@@ -92,10 +92,10 @@ jobs:
         include:
           - os: windows-2019
             arch: "AMD64"
-          - os: windows-2019
-            arch: "x86"                 
-          - os: macos-10.15
-            arch: "x86_64"   
+          # - os: windows-2019
+          #   arch: "x86"                 
+          # - os: macos-10.15
+          #   arch: "x86_64"   
 
     steps:
       - name: "Checkout files"
@@ -129,18 +129,21 @@ jobs:
           name: ${{ runner.os }}-${{ matrix.python }}-wheel
           path: wheelhouse
         
-      - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python }}     
+      # - name: Set up Python ${{ matrix.python }}
+      #   uses: actions/setup-python@v2
+      #   with:
+      #     python-version: ${{ matrix.python }}    
 
-      - name: Install ${{ matrix.python }} Windows
-        run: |                  
-          (cd wheelhouse && python -m pip install delphifmx-*.whl)          
+      - name: Display structure of download files
+        run: dir        
 
-      - name: Test ${{ matrix.python }} Windows
-        run: |                            
-          python -m .github/workflow/test.py                                    
+      # - name: Install ${{ matrix.python }} Windows
+      #   run: |                  
+      #     (cd wheelhouse && python -m pip install delphifmx-*.whl)          
+
+      # - name: Test ${{ matrix.python }} Windows
+      #   run: |                            
+      #     python -m .github/workflow/test.py                                    
                               
   upload_pypi_test:
     name: Upload to PyPI test
