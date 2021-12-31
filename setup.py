@@ -1,4 +1,5 @@
-import setuptools, os, sys, json, platform, shutil
+import setuptools, os, sys, json, platform, shutil, distutils.dir_util
+from pathlib import Path
 from setuptools.command.install import install
 from setuptools.command.develop import develop
 
@@ -10,7 +11,7 @@ try:
   class bdist_wheel(_bdist_wheel):
     def finalize_options(self):
       _bdist_wheel.finalize_options(self)
-      self.root_is_pure = False
+      self.root_is_pure = ("--universal" in sys.argv)
 except ImportError:
   bdist_wheel = None 
 
@@ -52,100 +53,7 @@ class InstallCommand(BaseInstallCommand, install):
 
 class DevelopCommand(BaseInstallCommand, develop):
     user_options = getattr(develop, 'user_options', []) + BaseInstallCommand.user_options
- 
-#Find sys/machine file
-def buildfilepath():
-  ossys = platform.system()
-  platmac = platform.machine()
-  platmacshort = ""
-  sfilename = ""
-  if ossys == "Windows":
-    sfilename = "DelphiFMX.pyd"
-    if (sys.maxsize > 2**32):
-      #Win x64	
-      platmacshort = "Win64"
-    else:
-      #Win x86
-      platmacshort = "Win32"
-  elif ossys == "Linux":
-    sfilename = "libDelphiFMX.so"
-    if platmac == "arm":
-      #Linux/Android arm	
-      platmacshort = "LinuxArm"
-    elif platmac.startswith("arm") or platmac.startswith("aarch"):
-      #Linux/Android aarch64
-      platmacshort = "LinuxAarch64"
-    elif platmac == "x86_64":
-      #Linux x86/64
-      platmacshort = "Linux8664"    
-  elif ossys == "Darwin":
-    sfilename = "libDelphiFMX.dylib" 	
-    if platmac == "x86_64":
-      #Mac x86/64	
-      platmacshort = "Darwin8664"
-  
-  if not platmacshort:
-    raise ValueError("Undetermined platform.")
-  
-  return f"DelphiFMX_{platmacshort}{os.sep}{sfilename}"
 
-#Copy target file from lib to pkg folder
-def copylibfiletopkg(slibfile, spkgfile): 
-  spkgdirname = os.path.dirname(spkgfile)
-  if not os.path.exists(spkgdirname):
-    os.makedirs(spkgdirname)
-  shutil.copy(slibfile, spkgfile)
-
-#Validate lib paths
-def validatelibpaths(slibdir, slibfile):
-  print(f"Check for lib dir: {slibdir}")    
-  if not os.path.exists(f"{slibdir}"):
-    raise ValueError(f"Invalid lib path: {slibdir}")
-    
-  print(f"Check for lib path: {slibfile}")
-  if not os.path.exists(slibfile):
-    raise ValueError(f"File not found: {slibfile}")
-  
-#Validate pkg paths
-def validatepkgpaths(spkgfile):
-  print(f"Check for pkg path: {spkgfile}")
-  if not os.path.exists(spkgfile):
-    raise ValueError(f"File not found {spkgfile}")
-    
-#Clear pkg files (trash)
-def clearpkgtrashfiles():
-  sdir = os.path.join(os.curdir, pkgname)
-  files = os.listdir(sdir)
-  filtered_files = [file for file in files if file.endswith(".so") or file.endswith(".pyd")]
-  for file in filtered_files:
-    fpath = os.path.join(sdir, file)
-    print("Removing trash file:", fpath)
-    os.remove(fpath)
-    
-def finddistfile():
-  sdir = os.path.join(os.curdir, pkgname)  
-  for fname in os.listdir(sdir):
-    if 'DelphiFMX' in fname:
-      return os.path.basename(fname)
-  return None  
-    
-def copylibfile():
-  spath = buildfilepath()
-  sfilename = os.path.basename(spath)
-
-  slibdir = os.path.join(os.curdir, "lib")
-  slibfile = os.path.join(slibdir, spath)
-  
-  spkgdir = os.path.join(os.curdir, pkgname)
-  spkgfile = os.path.join(spkgdir, sfilename)
- 
-  clearpkgtrashfiles()	  
-  validatelibpaths(slibdir, slibfile)
-  copylibfiletopkg(slibfile, spkgfile)
-  validatepkgpaths(spkgfile)     
-  
-  return sfilename 
-  
 def get_release_version():
     lcals = locals()
     gbals = globals()
@@ -155,23 +63,46 @@ def get_release_version():
     versorigstr = lcals["__version__"]
     return versorigstr     
   
-extra_args = {}
-#We don't want to share the compiled files via sdist (we don't have them)
-if not ("sdist" in sys.argv):  
-  slibdir = os.path.join(os.curdir, "lib")
-  #Binary distribution
-  if (("bdist" in sys.argv) 
-    or ("bdist_wheel" in sys.argv) 
-    or ("install" in sys.argv)
-    or ("wheel" in sys.argv)) and os.path.exists(slibdir):
-    bdata = copylibfile()
-    extra_args = {'package_data': {pkgname: [bdata]}}
+pkg_dir = os.path.join(os.curdir, pkgname)
+if ("sdist" in sys.argv) or (("bdist_wheel" in sys.argv) and ("--universal" in sys.argv)):
+  #sdist deploys all shared libraries
+  distutils.dir_util.copy_tree("lib", pkg_dir)  
+else:
+  #Deploy the current platform shared library only
+  ossys = platform.system()
+  platmac = platform.machine()  
+  libdir = None
+  if ossys == "Windows":
+    if (sys.maxsize > 2**32):
+      #Win x64	
+      libdir = "Win64"
+    else:
+      #Win x86
+      libdir = "Win32"
+  elif ossys == "Linux":
+    if platmac == "x86_64":
+      #Linux x86/64
+      libdir = "Linux64"    
+  elif ossys == "Darwin":
+    if platmac == "x86_64":
+      #Mac x86/64	
+      libdir = "OSX64"
+
+  if libdir:
+    distutils.dir_util.copy_tree(os.path.join("lib", libdir), os.path.join(pkg_dir, libdir))  
   else:
-    #Final user installation
-    bdata = finddistfile()
-    if bdata:
-      extra_args = {'package_data': {pkgname: [bdata]}}      
-    
+    raise ValueError("Unsupported platform.")
+  
+#Create the package data.   
+pkgdata = []
+for dir_, _, files in os.walk(pkg_dir):
+  for file_name in files:
+    rel_dir = os.path.relpath(dir_, pkg_dir)
+    rel_file = os.path.join(rel_dir, file_name)    
+    if ''.join(Path(rel_file).suffixes) in ['.pyd', '.so', '.dylib']:
+      pkgdata.append(rel_file)
+print(pkgdata)
+#Read the current version from __version.py__
 versnewstr = get_release_version()   
 
 with open("README.md", "r") as fh:
@@ -190,6 +121,7 @@ setuptools.setup(
   url = "https://github.com/Embarcadero/DelphiFMX4Python",
   python_requires=">=3.3<=3.10",
   packages=[pkgname],
+  package_data={pkgname: pkgdata},
   classifiers=[            
             'Intended Audience :: Developers',
             'Topic :: Software Development',
@@ -212,6 +144,5 @@ setuptools.setup(
     'bdist_wheel': bdist_wheel,
     'install': InstallCommand,
     'develop': DevelopCommand,
-  },
-  **extra_args
+  }
 )
