@@ -13,147 +13,162 @@ on:
   # Manual run
   workflow_dispatch:
   
-jobs:     
-  #We are currently using this for Android (will be removed and distributed by sdist)     
-  # aarch64_wheel:
-  #   name: Build ${{ matrix.architecture }} SOURCE on ${{ matrix.os }} for Python ${{ matrix.python }}
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     python: ['3.6', '3.7', '3.8', '3.9', '3.10']
-  #     matrix:        
-  #       os: [ubuntu-20.04]
-
-  #   steps:
-  #   - name: Check out repository
-  #     uses: actions/checkout@v2
-      
-  #   - name: Set up QEMU
-  #     uses: docker/setup-qemu-action@v1.2.0
-  #     with:
-  #       platforms: arm64         
-  #       python-version: ${{ matrix.python }}       
-
-  #   - name: Build bdist
-  #     uses: docker://quay.io/pypa/manylinux2014_aarch64
-  #     with:
-  #       args: | 
-  #         bash -c "set -xe;
-  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install setuptools --upgrade
-  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python -m pip install wheel --upgrade 
-  #         /opt/python/${{ matrix.PYTHON.VERSION }}/bin/python setup.py bdist_wheel --plat-name=manylinux2014_aarch64"  
-      
-  #   - name: Save sdist
-  #     uses: actions/upload-artifact@v2
-  #     with:
-  #       path: dist/*.whl
-  #       if-no-files-found: error 
-        
-   #PyPI requires specific Linux versions tagged into wheel name, and linux_x86_64 is not accepted by a generalization issue
-  #auditwheel won't repair our wheel tag because it doesn't accept a shared library within package files
-  #so we manually bdist_wheel forcing a plat-name
-  #The same for aarch64
-  # linux_wheel:
-  #   name: Build ${{ matrix.architecture }} wheel on ${{ matrix.os }} for Python ${{ matrix.python }}
-  #   runs-on: ${{ matrix.os }}
-  #   strategy:
-  #     matrix:
-  #       python: ['3.7', '3.8', '3.9', '3.10']
-  #       include:
-  #         - os: ubuntu-20.04
-  #           arch: "x86_64"  
-  #   steps:
-  #   - name: Check out repository
-  #     uses: actions/checkout@v2
-      
-  #   - name: Set up Python ${{ matrix.python }}
-  #     uses: actions/setup-python@v2
-  #     with:
-  #       python-version: ${{ matrix.python }}     
-            
-  #   - name: Build bdist
-  #     run: |        
-  #       python -m pip install setuptools --upgrade
-  #       python -m pip install wheel --upgrade                
-  #       python setup.py bdist_wheel --plat-name=manylinux1_x86_64
-      
-  #   - name: Save sdist
-  #     uses: actions/upload-artifact@v2
-  #     with:
-  #       path: dist/*.whl
-  #       if-no-files-found: error      
-
-  wheels:
-    name: Build ${{ matrix.arch }} wheel on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}    
-    #needs: [sdist]
-    strategy:      
-      #https://github.com/scikit-build/cmake-python-distributions/blob/master/.github/workflows/build.yml
-      matrix:
-        include:
-          - os: windows-2019
-            arch: "AMD64"
-          # - os: windows-2019
-          #   arch: "x86"                 
-          # - os: macos-10.15
-          #   arch: "x86_64"   
-
-    steps:
-      - name: "Checkout files"
-        uses: actions/checkout@v2              
-
-      - name: Build wheels
-        uses: pypa/cibuildwheel@v2.1.1        
-        env:
-          CIBW_ARCHS: "${{ matrix.arch }}"                       
-
-      - name: "Upload artifact"
-        uses: actions/upload-artifact@v2
-        with:
-          name: artifact
-          path: ./wheelhouse/*.whl
-          if-no-files-found: error            
-
-  windows_test:
-    name: Test ${{ matrix.python }} Windows
-    needs: wheels
-    runs-on: windows-2019
+jobs: 
+  #This build makes delphifmx available for Android
+  build_universal_wheel:
+    name: Build universal wheel
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        #python: ['3.6', '3.7', '3.8', '3.9', '3.10']        
-        python: ['3.9']        
+        python: ['3.9']
+        include:
+          - os: ubuntu-20.04
+            arch: "x86_64"  
     steps:
-      - name: "Checkout files"
-        uses: actions/checkout@v2   
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}     
+            
+    - name: Build sdist
+      run: |        
+        python -m pip install setuptools --upgrade
+        python -m pip install wheel --upgrade                
+        python setup.py bdist_wheel --universal
+      
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.whl
+        if-no-files-found: error 
 
-      - uses: actions/download-artifact@v1
-        with:
-          name: artifact
-          path: wheelhouse
-        
-      # - name: Set up Python ${{ matrix.python }}
-      #   uses: actions/setup-python@v2
-      #   with:
-      #     python-version: ${{ matrix.python }}    
+  build_wheels_win_32:
+    name: Build Windows x86 wheels for Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        include:
+          - os: [windows-latest]
+            arch: ["x86"]  
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}     
+            
+    - name: Build bdist
+      run: |        
+        python -m pip install setuptools --upgrade
+        python -m pip install wheel --upgrade                
+        python setup.py bdist_wheel --plat-name=win32
+      
+    - name: Save sdist
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.whl
+        if-no-files-found: error      
 
-      - name: Display structure of download files
-        run: |
-          cd wheelhouse
-          dir
-                  
+  build_wheels_win_64:
+    name: Build Windows x64 wheels for Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        include:
+          - os: [windows-latest]
+            arch: ["AMD64"]  
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}     
+            
+    - name: Build bdist wheel
+      run: |        
+        python -m pip install setuptools --upgrade
+        python -m pip install wheel --upgrade                
+        python setup.py bdist_wheel --plat-name=win_amd64
+      
+    - name: Save wheel
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.whl
+        if-no-files-found: error 
 
-      # - name: Install ${{ matrix.python }} Windows
-      #   run: |                  
-      #     (cd wheelhouse && python -m pip install delphifmx-*.whl)          
+  build_wheels_manylinux:
+    name: Build ManyLinux x86_64 wheels for Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        include:
+          - os: [ubuntu-latest]
+            arch: ["x86_64"]  
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}     
+            
+    - name: Build bdist wheel
+      run: |        
+        python -m pip install setuptools --upgrade
+        python -m pip install wheel --upgrade                
+        python setup.py bdist_wheel --plat-name=manylinux1_x86_64
+      
+    - name: Save wheel
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.whl
+        if-no-files-found: error      
 
-      # - name: Test ${{ matrix.python }} Windows
-      #   run: |                            
-      #     python -m .github/workflow/test.py                                    
-                              
+  build_wheels_macos:
+    name: Build x86_64 macOS wheels for Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        include:
+          - os: [macos-latest]
+            arch: ["x86_64"]  
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}     
+            
+    - name: Build bdist wheel
+      run: |        
+        python -m pip install setuptools --upgrade
+        python -m pip install wheel --upgrade                
+        python setup.py bdist_wheel --plat-name=macosx_10_9_x86_64
+      
+    - name: Save wheel
+      uses: actions/upload-artifact@v2
+      with:
+        path: dist/*.whl
+        if-no-files-found: error                  
+          
   upload_pypi_test:
     name: Upload to PyPI test
-    #needs: [linux_wheel, wheels]
-    runs-on: ubuntu-latest    
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: [build_universal_wheel, build_wheels_win_32, build_wheels_win_64, build_wheels_manylinux, build_wheels_macos]
+    runs-on: ubuntu-latest        
     steps:                       
       - uses: actions/download-artifact@v2
         with:
@@ -169,7 +184,7 @@ jobs:
           
   upload_pypi:
     name: Upload to PyPI
-    #needs: [linux_wheel, wheels]
+    needs: [build_universal_wheel, build_wheels_win_32, build_wheels_win_64, build_wheels_manylinux, build_wheels_macos]
     runs-on: ubuntu-latest
     # upload to PyPI test on every tag starting with 'v'
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
