@@ -5,7 +5,7 @@ FireMonkey is a GUI framework originally from [Embarcadero Delphi](https://www.e
 
 <b>About:</b>
 
-The `delphifmx` is a natively compiled python module powered by the [Python4Delphi library](https://github.com/pyscripter/python4delphi). It gives Python developers access to the FireMonkey GUI framework from Python with no need to use Delphi in their development process, and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). 
+The `delphifmx` is a natively compiled Python module powered by the [Python4Delphi library](https://github.com/pyscripter/python4delphi). It gives Python developers access to the FireMonkey GUI framework from Python with no need to use Delphi in their development process, and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). 
 
 <b>Python installation requirements on Linux:</b>
 
