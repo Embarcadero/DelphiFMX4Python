@@ -1,9 +1,11 @@
-# DelphiFMX4Python
+# DelphiFMX for Python <img align="right" alt="DelphiFMX4Python" src="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/DelphiFMX4Python(256px).png?raw=true"> 
 Delphi's FireMonkey framework as a Python module for Windows, MacOS, Linux, and Android GUI development.
+
+FireMonkey is a GUI framework originally from [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) for native cross-platform application development. It uses the GPU via DirectX or OpenGL for hardware accellerated rendering. It includes a rich styling system and is user extensible. 
 
 <b>About:</b>
 
-The delphifmx library is provided by the [Python4Delphi library](https://github.com/pyscripter/python4delphi) as a standard Python module.
+The `delphifmx` is a natively compiled python module powered by the [Python4Delphi library](https://github.com/pyscripter/python4delphi). It gives Python developers access to the FireMonkey GUI framework from Python with no need to use Delphi in their development process, and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). 
 
 <b>Python installation requirements on Linux:</b>
 
@@ -23,3 +25,4 @@ Also check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Pytho
 
 Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/pyscripter/python4delphi).
 
+Sponsored by [Embarcadero](https://www.embarcadero.com/). 
