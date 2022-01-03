@@ -39,9 +39,6 @@ jobs:
         python -m pip install wheel --upgrade                
         python setup.py bdist_wheel --universal
 
-    - name: Create "universal" wheel for specific Python versions
-      run: bash .github/workflows/copy_wheel.sh
-
     - name: Save sdist
       uses: actions/upload-artifact@v2
       with:

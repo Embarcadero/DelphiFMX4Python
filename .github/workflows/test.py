@@ -1,3 +1,0 @@
-import delphifmx
-
-dir(delphifmx)
