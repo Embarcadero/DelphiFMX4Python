@@ -84,7 +84,7 @@ else:
       #Linux x86_64
       libdir = "Linux64"
   elif ossys == "Darwin":
-    if (platmac == "aarch64") or ("--plat-name=macosx_11_0_arm64" in sys.argv):
+    if (platmac == "arm64") or ("--plat-name=macosx_11_0_arm64" in sys.argv):
       #macOS arm64
       libdir = "OSXARM64"
     elif platmac == "x86_64":

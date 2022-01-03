@@ -31,7 +31,7 @@ def findmodule():
     if platmac == "x86_64":
       #macOS x86_64
       libdir = "OSX64"
-    elif platmac == "aarch64":
+    elif platmac == "arm64":
        #macOS arm64
       libdir = "OSXARM64"
   if libdir:
