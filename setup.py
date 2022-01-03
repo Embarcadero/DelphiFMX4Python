@@ -70,22 +70,25 @@ if ("sdist" in sys.argv) or (("bdist_wheel" in sys.argv) and ("--universal" in s
 else:
   #Deploy the current platform shared library only
   ossys = platform.system()
-  platmac = platform.machine()  
+  platmac = platform.machine()
   libdir = None
   if ossys == "Windows":
     if (sys.maxsize > 2**32):
-      #Win x64	
+      #Win x64
       libdir = "Win64"
     else:
       #Win x86
       libdir = "Win32"
   elif ossys == "Linux":
     if platmac == "x86_64":
-      #Linux x86/64
-      libdir = "Linux64"    
+      #Linux x86_64
+      libdir = "Linux64"
   elif ossys == "Darwin":
-    if platmac == "x86_64":
-      #Mac x86/64	
+    if (platmac == "aarch64") or ("--plat-name=macosx_11_0_arm64" in sys.argv):
+      #macOS arm64
+      libdir = "OSXARM64"
+    elif platmac == "x86_64":
+      #macOS x86_64
       libdir = "OSX64"
 
   if libdir:

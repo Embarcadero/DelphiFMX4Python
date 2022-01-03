@@ -25,12 +25,15 @@ def findmodule():
         libdir = "Android" 
     else:
       if platmac == "x86_64":
-        #Linux x86/64
-        libdir = "Linux64"    
+        #Linux x86_64
+        libdir = "Linux64"
   elif ossys == "Darwin":
     if platmac == "x86_64":
-      #Mac x86/64	
-      libdir = "OSX64"  
+      #macOS x86_64
+      libdir = "OSX64"
+    elif platmac == "aarch64":
+       #macOS arm64
+      libdir = "OSXARM64"
   if libdir:
     sdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), libdir) 
     if not os.path.exists(sdir):
