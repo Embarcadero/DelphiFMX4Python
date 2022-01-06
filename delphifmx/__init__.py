@@ -3,12 +3,19 @@ from os import environ
 import importlib, importlib.machinery, importlib.util
 from delphifmx import moduledefs
 
+class PyVerNotSupported(Exception):
+  pass
+
 def findmodule():
   is_conda = os.path.exists(os.path.join(sys.prefix, 'conda-meta'))
   pyver = f"{sys.version_info.major}.{sys.version_info.minor}"
   ossys = platform.system()
   platmac = platform.machine()  
   libdir = None
+
+  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]):
+    raise PyVerNotSupported(f"DelphiFMX doesn't support Python{pyver}.")
+
   if ossys == "Windows":
     if (sys.maxsize > 2**32):
       #Win x64	
@@ -27,14 +34,18 @@ def findmodule():
         libdir = "Android" 
     else:
       if is_conda and (pyver == "3.10"):
-        raise ValueError("Python3.10 is not supported on Linux with Conda environment yet.")
+        raise PyVerNotSupported("DelphiFMX doesn't support Python3.10 on Linux with Conda environment yet.")
+      elif (pyver == "3.6"):
+        raise PyVerNotSupported("DelphiFMX doesn't support Python3.6 on Linux.")
 
       if platmac == "x86_64":
         #Linux x86_64
         libdir = "Linux64"
   elif ossys == "Darwin":
     if is_conda:
-      raise ValueError("Python is not supported on macOS with Conda environment yet.")
+      raise PyVerNotSupported("DelphiFMX doesn't support Python on macOS with Conda environment yet.")
+    elif (pyver == "3.6"):
+      raise PyVerNotSupported("DelphiFMX doesn't support Python3.6 on macOS.")
 
     if platmac == "x86_64":
       #macOS x86_64
