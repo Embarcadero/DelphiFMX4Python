@@ -4,6 +4,8 @@ import importlib, importlib.machinery, importlib.util
 from delphifmx import moduledefs
 
 def findmodule():
+  is_conda = os.path.exists(os.path.join(sys.prefix, 'conda-meta'))
+  pyver = f"{sys.version_info.major}.{sys.version_info.minor}"
   ossys = platform.system()
   platmac = platform.machine()  
   libdir = None
@@ -24,10 +26,16 @@ def findmodule():
         #Android x32
         libdir = "Android" 
     else:
+      if is_conda and (pyver == "3.10"):
+        raise ValueError("Python3.10 is not supported on Linux with Conda environment yet.")
+
       if platmac == "x86_64":
         #Linux x86_64
         libdir = "Linux64"
   elif ossys == "Darwin":
+    if is_conda:
+      raise ValueError("Python is not supported on macOS with Conda environment yet.")
+
     if platmac == "x86_64":
       #macOS x86_64
       libdir = "OSX64"
