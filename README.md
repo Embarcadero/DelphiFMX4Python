@@ -19,7 +19,7 @@ It uses the Python interpreter, requiring Python to be compiled with the "--enab
    
 <b>Supports:</b>
 * Win32 x86, Win64 x86, Linux64 x86, Android64, and macOS64 architecturtes
-* Python cp36, cp37, cp38, cp39 (excluding cp3.6 on Linux and macOS)
+* Python cp3.6, cp3.7, cp3.8, cp3.9 and cp3.10 (excluding cp3.6 on Linux and macOS)
 
 <b>Conda support:</b>
 * Win x86 and x64 from Python cp3.6 to cp3.10 
