@@ -1,0 +1,79 @@
+#!/bin/bash
+
+PY_VER="3.8.9"
+PY_INTERPRETER="python3.8"
+PY_FILE_NAME="Python-$PY_VER"
+PY_DEV_PATH=~/Delphi4Python
+PY_SOURCE_PATH="$PY_DEV_PATH/source"
+PY_SOURCE_VER="$PY_SOURCE_PATH/$PY_FILE_NAME"
+PY_DIST_PATH="$PY_DEV_PATH/dist"
+PY_DIST_VER="$PY_DIST_PATH/$PY_FILE_NAME"
+
+if [ -d $PY_DIST_VER ]; then
+  read -p "You've already set the current distribution ($PY_VER). Do you want to proceed with a fresh installation (y/n)? " reply
+  if [ "$reply" = "n" ] || [ "$reply" = "N" ]; then
+    exit;
+  fi
+  sudo rm -Rf $PY_DIST_VER 
+fi
+
+#Required dependencies
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -y
+
+echo "Setting up Delphi4Python directory"
+#Check if Delphi4Python already exists and create it if not
+mkdir -p "$PY_DEV_PATH"
+cd "$PY_DEV_PATH"
+
+#Download only if it doesn't exist
+if ! [ -f "$PY_DEV_PATH/$PY_FILE_NAME.tgz" ]; then
+  echo "Downloading Python $PY_VER"
+  wget "https://www.python.org/ftp/python/$PY_VER/$PY_FILE_NAME.tgz"
+fi
+
+#Extract and take to source folder if doesn't exist
+if ! [ -d "$PY_SOURCE_PATH/$PY_FILE_NAME" ]; then
+  echo "Extracting files"
+  tar -xzf "$PY_DEV_PATH/$PY_FILE_NAME.tgz"
+  echo "Moving installation folder to source directory"
+  mkdir -p "$PY_SOURCE_PATH"
+  mv "$PY_DEV_PATH/$PY_FILE_NAME" "$PY_SOURCE_PATH/$PY_FILE_NAME"
+fi
+
+#Installing Python
+echo "Making and installing Python"
+cd "$PY_SOURCE_VER" 
+./configure --prefix="$PY_DIST_VER" --enable-shared #--enable-optimizations
+sudo make && sudo make altinstall
+
+#Setting up environment
+sed -i '/export LD_LIBRARY_PATH=/d' ~/.bashrc
+sed -i '/export PATH=/d' ~/.bashrc
+
+echo "export LD_LIBRARY_PATH=$PY_DIST_VER/lib:"'$LD_LIBRARY_PATH' >> ~/.bashrc
+echo "export PATH=$PY_DIST_VER/bin:"'$PATH' >> ~/.bashrc
+source ~/.bashrc
+
+export LD_LIBRARY_PATH=$PY_DIST_VER/lib:'$LD_LIBRARY_PATH'
+export PATH=$PY_DIST_VER/bin:'$PATH'
+
+#Installing DelphiFMX and running a sample
+echo "Installing DelphiFMX and running a sample"
+cd "$PY_DIST_VER/bin/"
+$PY_INTERPRETER -m pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org --upgrade pip
+$PY_INTERPRETER -m pip install delphifmx
+$PY_INTERPRETER -m pip install setuptools --force
+$PY_INTERPRETER -c $'from delphifmx import * 
+		     \nclass MainForm(Form):
+		     \n  def __init__(self, owner):
+		     \n    self.edtDelphiFMX = Edit(self)
+		     \n    self.edtDelphiFMX.parent = self
+		     \n    self.edtDelphiFMX.Align = "Client"
+		     \n    self.edtDelphiFMX.TextSettings.HorzAlign = "Center"
+		     \n    self.edtDelphiFMX.Text = "DelphiFMX for Python"
+		     \nApplication.Initialize() 
+		     \nApplication.Title = "D4P" 
+		     \nmainform = MainForm(Application) 
+		     \nmainform.Caption = "DelphiFMX4Python"             
+		     \nmainform.Show() 
+		     \nApplication.Run()' &
