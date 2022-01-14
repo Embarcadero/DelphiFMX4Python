@@ -61,15 +61,16 @@ jobs:
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python }}     
+        python-version: ${{ matrix.python }}
+        architecture: "x86"
             
-    - name: Build bdist
+    - name: Build bdist wheel
       run: |        
         python -m pip install setuptools --upgrade
         python -m pip install wheel --upgrade                
         python setup.py bdist_wheel --plat-name=win32
       
-    - name: Save sdist
+    - name: Save wheel
       uses: actions/upload-artifact@v2
       with:
         path: dist/*.whl
@@ -91,7 +92,8 @@ jobs:
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python }}     
+        python-version: ${{ matrix.python }}
+        architecture: "x64"
             
     - name: Build bdist wheel
       run: |        
