@@ -25,7 +25,7 @@ def findmodule():
       libdir = "Win32"
   elif ossys == "Linux":
     #Check if the current platform is Android
-    if "ANDROID_ARGUMENT" in environ:       
+    if "ANDROID_BOOTLOGO" in environ:       
       if (sys.maxsize > 2**32):
         #Android x64	
         libdir = "Android64" 
