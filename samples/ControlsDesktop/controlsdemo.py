@@ -78,7 +78,7 @@ class CtrlsDemoFrm(Form):
 
     def __config_comps(self):
         self.SetProps(Caption = "FireMonkey Controls - Form", ClientHeight = 539, ClientWidth = 835, Position = "poScreenCenter", DesignerMasterStyle = 0, FormFamily = "TForm")
-        self.SetProps(OnClose = self.__on_form_close, OnFocusChanged = self.__on_focus_changed)
+        self.SetProps(OnClose = self.__on_form_close, OnFocusChanged = self.__on_focus_changed, OnActivate = self.__on_activate)
 
         self.mm_menu.SetProps(Parent = self)
         self.mi_file.SetProps(Parent = self.mm_menu, Text = "File")
@@ -260,9 +260,13 @@ class CtrlsDemoFrm(Form):
         if not Application.MainForm.Active:
             Application.MainForm.Activate()
 
+    def __on_activate(self, sender):
+        #for macOS compatibility
+        self.mm_menu.SetProps(Parent = self)
+
     def __on_lo_control_resize(self, sender):
-        self.lo_control_root.Width = self.lo_control.Width;
-        self.lo_control_root.Height = self.lo_control.Height;
+        self.lo_control_root.Width = self.lo_control.Width
+        self.lo_control_root.Height = self.lo_control.Height
 
     def __on_form_close(self, sender, action):
         action.Value = "caFree"

@@ -102,7 +102,7 @@ for dir_, _, files in os.walk(pkg_dir):
   for file_name in files:
     rel_dir = os.path.relpath(dir_, pkg_dir)
     rel_file = os.path.join(rel_dir, file_name)    
-    if ''.join(Path(rel_file).suffixes) in ['.pyd', '.so', '.dylib']:
+    if ''.join(Path(rel_file).suffixes) in ['.pyd', '.tds', '.so', '.dylib', '.dylib.dSYM']:
       pkgdata.append(rel_file)
 print(pkgdata)
 #Read the current version from __version.py__

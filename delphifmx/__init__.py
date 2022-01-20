@@ -12,6 +12,7 @@ def findmodule():
   ossys = platform.system()
   platmac = platform.machine()  
   libdir = None
+  libext = None
 
   if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]):
     raise PyVerNotSupported(f"DelphiFMX doesn't support Python{pyver}.")
@@ -23,9 +24,11 @@ def findmodule():
     else:
       #Win x86
       libdir = "Win32"
+
+    libext = ".pyd"
   elif ossys == "Linux":
     #Check if the current platform is Android
-    if "ANDROID_ARGUMENT" in environ:       
+    if "ANDROID_BOOTLOGO" in environ:       
       if (sys.maxsize > 2**32):
         #Android x64	
         libdir = "Android64" 
@@ -41,6 +44,8 @@ def findmodule():
       if platmac == "x86_64":
         #Linux x86_64
         libdir = "Linux64"
+
+    libext = ".os"
   elif ossys == "Darwin":
     if is_conda:
       raise PyVerNotSupported("DelphiFMX doesn't support Python on macOS with Conda environment yet.")
@@ -53,12 +58,14 @@ def findmodule():
     elif platmac == "arm64":
        #macOS arm64
       libdir = "OSXARM64"
+
+    libext = ".dylib"
   if libdir:
     sdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), libdir) 
     if not os.path.exists(sdir):
       raise ValueError("DelphiFMX module not found. Try to reinstall the delphifmx package or check for support compatibility.")        
     for fname in os.listdir(sdir):      
-      if 'DelphiFMX' in fname:        
+      if ('DelphiFMX' in fname) and (fname.endswith(libext)):
         return os.path.join(sdir, os.path.basename(fname))
     raise ValueError("DelphiFMX module not found. Try to reinstall the delphifmx package.") 
   else:
