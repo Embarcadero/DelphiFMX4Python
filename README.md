@@ -18,7 +18,7 @@ It uses the Python interpreter, requiring Python to be compiled with the "--enab
     pip install delphifmx
    
 <b>Supports:</b>
-* Win32 x86, Win64 x86, Linux64 x86, Android64, and macOS64 architectures
+* Win32 x86, Win64 x86, Linux64 x86, Android64, macOS64 and macM1 architectures
 * Python cp3.6, cp3.7, cp3.8, cp3.9 and cp3.10 (excluding cp3.6 on Linux and macOS)
 
 <b>Conda support:</b>
