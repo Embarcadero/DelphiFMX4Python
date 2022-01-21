@@ -1,13 +1,14 @@
-#-------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------
 # Name:        CtrlsDemoFrm
-# Purpose:
+# Purpose:     More demonstration showing more controls, with more properties and 
+#              event handlers.
 #
 # Author:      lmbelo
 #
 # Created:     28/09/2021
 # Copyright:   1995-2021 Embarcadero Technologies, Inc.
-#              All rights reserved
-#-------------------------------------------------------------------------------
+#              https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md
+#----------------------------------------------------------------------------------
 
 from delphifmx import *
 
