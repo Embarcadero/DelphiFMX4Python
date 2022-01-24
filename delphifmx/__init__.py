@@ -45,7 +45,7 @@ def findmodule():
         #Linux x86_64
         libdir = "Linux64"
 
-    libext = ".os"
+    libext = ".so"
   elif ossys == "Darwin":
     if is_conda:
       raise PyVerNotSupported("DelphiFMX doesn't support Python on macOS with Conda environment yet.")
