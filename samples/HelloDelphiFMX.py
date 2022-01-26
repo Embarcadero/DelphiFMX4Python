@@ -14,18 +14,15 @@ class HelloForm(Form):
 
     def __init__(self, owner):
         self.SetProps(Caption = "Hello Python", 
-            Position = "poScreenCenter", 
-            OnShow = self.__form_show)
+            Position = "poScreenCenter", OnShow = self.__form_show)
 
         self.hello = Label(self)
-        self.hello.SetProps(Parent = self, 
-            Text = "Hello Python from Delphi FMX", 
-            Position = Position(PointF(20, 20)))
+        self.hello.SetProps(Parent = self, width = 200,
+            Text = "Hello Python from Delphi FMX", Position = Position(PointF(20, 20)))
 
         self.clickme = Button(self)
         self.clickme.SetProps(Parent = self, Text = "Click Me", 
-            Position = Position(PointF(20, 50)), 
-            OnClick = self.__button_click)
+            Position = Position(PointF(20, 50)), OnClick = self.__button_click)
 
     def __form_show(self, sender):
         self.SetProps(Width = 300, Height = 400)
