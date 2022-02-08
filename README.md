@@ -23,7 +23,7 @@ It uses the Python interpreter, requiring Python to be compiled with the "--enab
 
 <b>Conda support:</b>
 * Win x86 and x64 from Python cp3.6 to cp3.10 
-* Linux x86_64 from Python cp3.6 to cp3.10
+* Linux x86_64 from Python cp3.7 to cp3.10
 * macOS not supported yet
 
 Also check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python).
