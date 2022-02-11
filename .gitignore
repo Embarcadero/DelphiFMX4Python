@@ -2,4 +2,8 @@
 *.dcu
 *.local
 *.identcache
+*.dres
+*.res
+*.rc
 \__pycache__
+\__history
