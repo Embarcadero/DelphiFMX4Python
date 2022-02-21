@@ -36,10 +36,8 @@ def findmodule():
         #Android x32
         libdir = "Android" 
     else:
-      if is_conda and (pyver == "3.10"):
-        raise PyVerNotSupported("DelphiFMX doesn't support Python3.10 on Linux with Conda environment yet.")
-      elif (pyver == "3.6"):
-        raise PyVerNotSupported("DelphiFMX doesn't support Python3.6 on Linux.")
+      if not is_conda and (pyver == "3.6"):
+        raise PyVerNotSupported("DelphiFMX only supports Python3.6 on Linux under Conda.")
 
       if platmac == "x86_64":
         #Linux x86_64
