@@ -1,7 +1,6 @@
 import sys, os, sys, platform
 from os import environ
 import importlib, importlib.machinery, importlib.util
-from delphifmx import moduledefs
 
 class PyVerNotSupported(Exception):
   pass
@@ -36,9 +35,6 @@ def findmodule():
         #Android x32
         libdir = "Android" 
     else:
-      if not is_conda and (pyver == "3.6"):
-        raise PyVerNotSupported("DelphiFMX only supports Python3.6 on Linux under Conda.")
-
       if platmac == "x86_64":
         #Linux x86_64
         libdir = "Linux64"
@@ -80,8 +76,5 @@ def new_import():
     spec.loader.exec_module(package)
     return package
     
-#Setup moduledefs.json
-if moduledefs.get_auto_load_defs():
-  moduledefs.try_load_defs(False)
 #Import the shared lib
 package = new_import()

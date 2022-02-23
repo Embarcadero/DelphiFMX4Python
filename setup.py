@@ -15,45 +15,6 @@ try:
 except ImportError:
   bdist_wheel = None 
 
-class BaseInstallCommand(object):
-  #Install arguments (not supported by wheels) for local installation
-  #Used by --install-option
-  #  --install-option="--python-home=my_python_home"
-  user_options = [
-    ('python-home=', None, 'The Python home path'),
-    ('python-bin=', None, 'Python program name directory'),
-    ('python-lib=', None, 'Python shared library directory'),
-  ]
-
-  def initialize_options(self):
-    super().initialize_options()
-    self.python_home = ''
-    self.python_bin = ''
-    self.python_lib = ''
-    self.python_ver = f"{sys.version_info.major}.{sys.version_info.minor}"
-
-  def finalize_options(self):
-    super().finalize_options()
-
-  def run(self):
-    moduledefs = {
-      "python_home": self.python_home,
-      "python_bin": self.python_bin,
-      "python_lib": self.python_lib,
-      "python_ver": self.python_ver,
-    }
-    moduledefs_path = os.path.join(os.path.join(os.curdir, pkgname), 'moduledefs.json')
-    with open(moduledefs_path, 'w+') as openfile: 
-       openfile.write(json.dumps(moduledefs))
-
-    super().run()
-
-class InstallCommand(BaseInstallCommand, install):
-    user_options = getattr(install, 'user_options', []) + BaseInstallCommand.user_options
-
-class DevelopCommand(BaseInstallCommand, develop):
-    user_options = getattr(develop, 'user_options', []) + BaseInstallCommand.user_options
-
 def get_release_version():
     lcals = locals()
     gbals = globals()
@@ -144,8 +105,6 @@ setuptools.setup(
             'Operating System :: Android',                        
         ],		
   cmdclass={
-    'bdist_wheel': bdist_wheel,
-    'install': InstallCommand,
-    'develop': DevelopCommand,
+    'bdist_wheel': bdist_wheel
   }
 )
