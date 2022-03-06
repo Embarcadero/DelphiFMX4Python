@@ -41,11 +41,6 @@ def findmodule():
 
     libext = ".so"
   elif ossys == "Darwin":
-    if is_conda:
-      raise PyVerNotSupported("DelphiFMX doesn't support Python on macOS with Conda environment yet.")
-    elif (pyver == "3.6"):
-      raise PyVerNotSupported("DelphiFMX doesn't support Python3.6 on macOS.")
-
     if platmac == "x86_64":
       #macOS x86_64
       libdir = "OSX64"
