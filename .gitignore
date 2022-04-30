@@ -7,3 +7,5 @@
 *.rc
 \__pycache__
 \__history
+\Linux64
+\delphifmx.egg-info
