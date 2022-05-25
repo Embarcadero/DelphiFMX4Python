@@ -3,6 +3,8 @@ Delphi's FireMonkey framework as a Python module for Windows, MacOS, Linux, and 
 
 FireMonkey is a GUI framework originally from [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) for native cross-platform application development. It uses the GPU via DirectX or OpenGL for hardware accelerated rendering. It includes a rich styling system and is user extensible. 
 
+ <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
+
 <b>About:</b>
 
 The `delphifmx` is a natively compiled Python module powered by the [Python4Delphi library](https://github.com/pyscripter/python4delphi). It gives Python developers access to the FireMonkey GUI framework from Python with no need to use Delphi in their development process, and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). 
