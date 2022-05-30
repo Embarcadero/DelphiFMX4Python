@@ -37,8 +37,10 @@ The `delphifmx` is a natively compiled Python module powered by the [Python4Delp
 
 ## See Also
 
-Check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python) for native Windows GUI with Python.
+Check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python) for native Windows GUI in Python.
 
-Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/pyscripter/python4delphi).
+Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/Embarcadero/python4delphi).
+
+While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
 
 Sponsored by [Embarcadero](https://www.embarcadero.com/). 
