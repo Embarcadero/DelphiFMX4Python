@@ -42,4 +42,5 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
  - While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
  - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
 
-[![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)](https://www.embarcadero.com/)
+![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
+![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)
