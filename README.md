@@ -40,6 +40,7 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
  - Check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python) for native Windows GUI in Python.
  - Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/Embarcadero/python4delphi).
  - While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
+ - Special thanks to [PyScripter](https://github.com/pyscripter/). 
  - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
 
 ![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
