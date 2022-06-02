@@ -17,7 +17,6 @@ Be sure to check out the [PythonFMXBuilder](https://github.com/Embarcadero/Pytho
 There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
  <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
 
-
 ## Installation
 
     pip install delphifmx
@@ -42,3 +41,5 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
  - Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/Embarcadero/python4delphi).
  - While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
  - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
+
+[![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)](https://www.embarcadero.com/)
