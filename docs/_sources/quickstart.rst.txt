@@ -1,0 +1,21 @@
+Quickstart
+==========
+
+The simplest example using DelphiFMX for Python library.
+
+..  code-block:: Python
+   
+    from delphifmx import *
+
+    Application.Initialize()
+    Application.Title = "Hello Delphi FMX"
+    Application.MainForm = Form(Application)
+    Application.MainForm.SetProps(Caption = "Hello World")
+    msg = Label(Application.MainForm)
+    msg.SetProps(Parent = Application.MainForm,
+        Text = "Hello Python from Delphi FMX",
+        Position = Position(PointF(20, 20)),
+        Width = 200)
+    Application.MainForm.Show()
+    Application.Run() # This is the main loop
+    Application.MainForm.Destroy()

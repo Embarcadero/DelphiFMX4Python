@@ -1,0 +1,17 @@
+Installation
+============
+
+DelphiFMX for Python is a cross-platform Python module. It is available via PyPi or download the source via GitHub. Python versions from 3.6 to 3.10 are supported, including Conda.
+
+The easiest way to install is via PIP:
+
+.. code-block::
+   
+   pip install delphifmx
+
+ 
+You can also install manually by downloading or cloning the repository from GitHub:  https://github.com/Embarcadero/DelphiFMX4Python. After cloning or downloading, enter the root DelphiFMX4Python folder/directory and open the command prompt or Anaconda prompt with that path. Now install the package using:  
+
+.. code-block::
+   
+   python setup.py install

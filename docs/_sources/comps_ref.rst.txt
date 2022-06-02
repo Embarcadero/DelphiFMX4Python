@@ -1,0 +1,10 @@
+Components Reference
+====================
+
+Need to add all the components as Python classes and their methods for reference. Need to understand the whole inheritance structure of complete library.
+
+``Components``
+--------------
+
+.. autoclass:: delphifmx.layer_2.Form
+.. autoclass:: delphifmx.layer_2.Button
