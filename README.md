@@ -1,4 +1,4 @@
-# <a href="https://github.com/Embarcadero/DelphiFMX4Python/">DelphiFMX for Python<img align="right" alt="DelphiFMX for Python" src="https://github.com/Embarcadero/DelphiFMX4Python/raw/main/images/DelphiFMX4Python(256px).png"></a> 
+# <a href="https://github.com/Embarcadero/DelphiFMX4Python/">DelphiFMX for Python<img align="right" alt="DelphiFMX for Python" src="https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/DelphiFMX4Python(256px).png"></a> 
 
 Quick Links: &nbsp;
 [[Installation](https://github.com/Embarcadero/DelphiFMX4Python#installation)] &nbsp; [[eBook & Styles](https://embt.co/PythonGUIBundle)] &nbsp; [[Android Builder](https://github.com/Embarcadero/PythonFMXBuilder)] &nbsp; [[Docs](https://github.com/Embarcadero/DelphiFMX4Python/wiki)] &nbsp; [[Samples](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/samples)]
@@ -14,7 +14,7 @@ Be sure to check out the [PythonFMXBuilder](https://github.com/Embarcadero/Pytho
 ## eBook and Styles Bundle
 
 There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
- <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
+ <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://raw.githubusercontent.com/Embarcadero/PythonFMXBuilder/main/images/30_Banner_Ebook_GGetting%20Started%20with%20Python%20GUI_830x256.jpg"></a>
 
 ## Installation
 
@@ -42,5 +42,5 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
  - Special thanks to [PyScripter](https://github.com/pyscripter/). 
  - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
 
-![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
-![Embarcadero](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)
+![Embarcadero](https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
+![Embarcadero](https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)
