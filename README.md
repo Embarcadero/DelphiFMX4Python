@@ -42,5 +42,5 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
  - Special thanks to [PyScripter](https://github.com/pyscripter/). 
  - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
 
-![Embarcadero](https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
 ![Embarcadero](https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/Embarcadero-Black-50px.png#gh-light-mode-only)
+![Embarcadero](https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/Embarcadero-White-50px.png#gh-dark-mode-only])
