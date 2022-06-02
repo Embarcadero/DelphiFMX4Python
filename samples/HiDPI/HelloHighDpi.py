@@ -45,7 +45,7 @@ def main():
     E_ACCESSDENIED = 2147942405
     E_INVALIDARG = 2147942487
     """
-    print("or else we can set it by ourselves to PROCESS_PER_MONITOR_DPI_AWARE = 2: ", SetProcessDpiAwareness(2))
+    print("or else we can set it by ourselves to PROCESS_PER_MONITOR_DPI_AWARE = 2. Result: ", SetProcessDpiAwareness(2))
 
     """
     Possible result values:
@@ -54,9 +54,9 @@ def main():
     E_INVALIDARG = 2147942487
     """
     err_code, dpi_awareness = GetProcessDpiAwareness()
-    if (err_code <> 0):
-        print("Something went wrong while requesting for dpi awareness. ", "Err_code: " err_code)
-    else
+    if (err_code != 0):
+        print("Something went wrong while requesting for dpi awareness. ", "Err_code: ", err_code)
+    else:
         print("Which DPI awareness have we set?", dpi_awareness)
     print("Is DPI aware?", IsDpiAware())
 
