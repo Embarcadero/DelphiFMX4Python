@@ -1,7 +1,6 @@
 # <a href="https://github.com/Embarcadero/DelphiFMX4Python/">DelphiFMX for Python<img align="right" alt="DelphiFMX for Python" src="https://github.com/Embarcadero/DelphiFMX4Python/raw/main/images/DelphiFMX4Python(256px).png"></a> 
 
-Quick Links:
-
+Quick Links: &nbsp;
 [[Installation](https://github.com/Embarcadero/DelphiFMX4Python#installation)] &nbsp; [[eBook & Styles](https://embt.co/PythonGUIBundle)] &nbsp; [[Android Builder](https://github.com/Embarcadero/PythonFMXBuilder)] &nbsp; [[Docs](https://github.com/Embarcadero/DelphiFMX4Python/wiki)] &nbsp; [[Samples](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/samples)]
 
 ---
