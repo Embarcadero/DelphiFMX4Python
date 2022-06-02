@@ -197,22 +197,22 @@ jobs:
         path: dist/*.whl
         if-no-files-found: error
 
-  upload_pypi_test:
-    name: Upload to PyPI test
-    needs: [build_universal_wheel, build_wheels_win_32, build_wheels_win_64, build_wheels_manylinux, build_wheels_macos, build_wheels_macos_arm]
-    runs-on: ubuntu-latest
-    steps:                       
-      - uses: actions/download-artifact@v2
-        with:
-          name: artifact
-          path: dist
-          
-      - name: Publish package to TestPyPI      
-        uses: pypa/gh-action-pypi-publish@master
-        with:
-          user: ${{ secrets.test_pypi_username }}
-          password: ${{ secrets.test_pypi_password }}
-          repository_url: https://test.pypi.org/legacy/    
+  #upload_pypi_test:
+  #  name: Upload to PyPI test
+  #  needs: [build_universal_wheel, build_wheels_win_32, build_wheels_win_64, build_wheels_manylinux, build_wheels_macos, build_wheels_macos_arm]
+  #  runs-on: ubuntu-latest
+  #  steps:                       
+  #    - uses: actions/download-artifact@v2
+  #      with:
+  #        name: artifact
+  #        path: dist
+  #        
+  #    - name: Publish package to TestPyPI      
+  #      uses: pypa/gh-action-pypi-publish@master
+  #      with:
+  #        user: ${{ secrets.test_pypi_username }}
+  #        password: ${{ secrets.test_pypi_password }}
+  #        repository_url: https://test.pypi.org/legacy/    
           
   upload_pypi:
     name: Upload to PyPI
