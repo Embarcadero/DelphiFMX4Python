@@ -1,21 +1,22 @@
 # <a href="https://github.com/Embarcadero/DelphiFMX4Python/">DelphiFMX for Python<img align="right" alt="DelphiFMX for Python" src="https://github.com/Embarcadero/DelphiFMX4Python/raw/main/images/DelphiFMX4Python(256px).png"></a> 
-Delphi's FireMonkey framework as a Python module for Windows, MacOS, Linux, and Android GUI development.
 
-FireMonkey is a GUI framework originally from [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) for native cross-platform application development. It uses the GPU via DirectX or OpenGL for hardware accelerated rendering. It includes a rich styling system and is user extensible. 
+Quick Links:
+
+[[Installation](https://github.com/Embarcadero/DelphiFMX4Python#installation)] &nbsp; [[eBook & Styles](https://embt.co/PythonGUIBundle)] &nbsp; [[Android Builder](https://github.com/Embarcadero/PythonFMXBuilder)] &nbsp; [[Docs](https://github.com/Embarcadero/DelphiFMX4Python/wiki)] &nbsp; [[Samples](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/samples)]
+
+---
+
+`delphifmx` is a natively compiled Python module powered by the [Python4Delphi library](https://github.com/embarcadero/python4delphi). It gives Python developers access to the FireMonkey GUI framework and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). Supports Windows, MacOS, Linux, and Android GUI development.
+
+FireMonkey is a GUI framework originally from [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) for native cross-platform application development. It uses the GPU via DirectX or OpenGL for hardware accelerated rendering. It includes a rich styling system and is user extensible. DelphiFMX for Python does not require Delphi or any experience with Object Pascal. 
 
 Be sure to check out the [PythonFMXBuilder](https://github.com/Embarcadero/PythonFMXBuilder) for deploying your Python scripts on Android and the [Delphi for Python Exporter](https://github.com/Embarcadero/Delphi4PythonExporter) to simplify your UI design.
 
-## eBook, Webinar, and Styles Bundle
+## eBook and Styles Bundle
 
 There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
  <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://github.com/Embarcadero/PythonFMXBuilder/blob/main/images/30_Banner_Ebook_GGetting Started with Python GUI_830x256.jpg"></a>
- 
- **Webinar:** <a href="https://attendee.gotowebinar.com/register/3633463041072258318?source=github">Tkinter vs. DelphiFMX for Python GUI - Embarcadero Open Source Live Stream</a> - Thursday, Jun 2, 2022 at 10:00 AM CDT
-<a href="https://attendee.gotowebinar.com/register/3633463041072258318?source=github"><img src="https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2022/05/38_Banner_webina_Tkinter-vs.-DelphiFMX-for-Python-GUI_1220x330-7936856.png?resize=750%2C203&ssl=1" alt="Tkinter vs DelphiFMX in the Embarcadero Open Source Stream" width="750" ></a>
 
-## About
-
-The `delphifmx` is a natively compiled Python module powered by the [Python4Delphi library](https://github.com/pyscripter/python4delphi). It gives Python developers access to the FireMonkey GUI framework from Python with no need to use Delphi in their development process, and is [freely redistributable](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md). 
 
 ## Installation
 
@@ -37,10 +38,7 @@ The `delphifmx` is a natively compiled Python module powered by the [Python4Delp
 
 ## See Also
 
-Check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python) for native Windows GUI in Python.
-
-Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/Embarcadero/python4delphi).
-
-While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
-
-Sponsored by [Embarcadero](https://www.embarcadero.com/). 
+ - Check out [DelphiVCL4Python](https://github.com/Embarcadero/DelphiVCL4Python) for native Windows GUI in Python.
+ - Powered by [Embarcadero Delphi](https://www.embarcadero.com/products/delphi) and the [Python4Delphi library](https://github.com/Embarcadero/python4delphi).
+ - While this redistributable library is covered by the [Embarcadero Freeware License](https://github.com/Embarcadero/DelphiFMX4Python/blob/main/LICENSE.md), all the [source code](https://github.com/Embarcadero/python4delphi) for it is covered by the [MIT License](https://github.com/Embarcadero/python4delphi/blob/master/LICENSE).
+ - Sponsored by [Embarcadero](https://www.embarcadero.com/). 
