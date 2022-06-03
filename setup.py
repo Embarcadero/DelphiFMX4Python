@@ -84,7 +84,7 @@ setuptools.setup(
   license_files=["LICENSE.md"],
   url = "https://github.com/Embarcadero/DelphiFMX4Python",
   python_requires=">=3.3<=3.10",
-  packages=[pkgname],
+  packages = [pkgname],
   package_data={pkgname: pkgdata},
   classifiers=[            
             'Intended Audience :: Developers',
