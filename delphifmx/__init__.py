@@ -13,7 +13,7 @@ def findmodule():
   libdir = None
   libext = None
 
-  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]):
+  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]):
     raise PyVerNotSupported(f"DelphiFMX doesn't support Python{pyver}.")
 
   if ossys == "Windows":

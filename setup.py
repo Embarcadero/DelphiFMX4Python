@@ -56,10 +56,11 @@ else:
     raise ValueError("Unsupported platform.")
   
 #Copy the doc files to the package folder into the doc subfolder
-pkg_doc_dir = os.path.join(pkg_dir, "doc")
-if not os.path.exists(pkg_doc_dir):
+if os.path.exists(os.path.join("docs", "xml", "docs.xml")):
+  pkg_doc_dir = os.path.join(pkg_dir, "doc")
+  if not os.path.exists(pkg_doc_dir):
     os.mkdir(pkg_doc_dir)
-distutils.file_util.copy_file(os.path.join("docs", "xml", "docs.xml"), os.path.join(pkg_doc_dir, "docs.xml"))
+  distutils.file_util.copy_file(os.path.join("docs", "xml", "docs.xml"), os.path.join(pkg_doc_dir, "docs.xml"))
 
 #Create the package data.   
 pkgdata = []
@@ -91,7 +92,7 @@ setuptools.setup(
   license="Other/Proprietary License",
   license_files=["LICENSE.md"],
   url = "https://github.com/Embarcadero/DelphiFMX4Python",
-  python_requires=">=3.3<=3.10",
+  python_requires=">=3.3<=3.11",
   packages=[pkgname],
   package_data={pkgname: pkgdata},
   classifiers=[            
@@ -105,6 +106,7 @@ setuptools.setup(
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
             'Programming Language :: Python :: 3.10',
+            'Programming Language :: Python :: 3.11',
             'Programming Language :: Python :: 3 :: Only',
             'Operating System :: Microsoft :: Windows',
             'Operating System :: POSIX',

@@ -50,7 +50,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         include:
           - os: [windows-latest]
             arch: ["x86"]
@@ -81,7 +81,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         include:
           - os: [windows-latest]
             arch: ["AMD64"]
@@ -112,7 +112,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         include:
           - os: [ubuntu-20.04] #ubuntu-latest doesn't supports cp36
             arch: ["x86_64"]
@@ -142,7 +142,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         include:
           - os: [macos-latest]
             arch: ["x86_64"]
@@ -172,7 +172,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.8', '3.9', '3.10']
+        python: ['3.8', '3.9', '3.10', '3.11']
         include:
           - os: [macos-latest]
             arch: ["arm64"]
