@@ -114,7 +114,7 @@ jobs:
       matrix:
         python: ['3.6', '3.7', '3.8', '3.9', '3.10']
         include:
-          - os: [ubuntu-latest]
+          - os: [ubuntu-20.04] #ubuntu-latest doesn't supports cp36
             arch: ["x86_64"]
     steps:
     - name: Check out repository
