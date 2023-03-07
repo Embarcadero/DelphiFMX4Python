@@ -14,7 +14,7 @@ class HelloForm(Form):
 
     def __init__(self, owner):
         self.SetProps(Caption = "Hello Python", 
-            Position = "poScreenCenter", OnShow = self.__form_show)
+            Position = "ScreenCenter", OnShow = self.__form_show)
 
         self.hello = Label(self)
         self.hello.SetProps(Parent = self, width = 200,
@@ -29,7 +29,6 @@ class HelloForm(Form):
 
     def __button_click(self, sender):
         self.hello.Text = "Thanks!"
-        self.Width = 300
 
 def main():
     Application.Initialize()
