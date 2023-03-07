@@ -57,15 +57,26 @@ else:
   else:
     raise ValueError("Unsupported platform.")
   
+#Copy the doc files to the package folder into the doc subfolder
+if os.path.exists(os.path.join("docs", "xml", "docs.xml")):
+  pkg_doc_dir = os.path.join(pkg_dir, "doc")
+  if not os.path.exists(pkg_doc_dir):
+    os.mkdir(pkg_doc_dir)
+  distutils.file_util.copy_file(os.path.join("docs", "xml", "docs.xml"), os.path.join(pkg_doc_dir, "docs.xml"))
+
 #Create the package data.   
 pkgdata = []
 for dir_, _, files in os.walk(pkg_dir):
   for file_name in files:
     rel_dir = os.path.relpath(dir_, pkg_dir)
     rel_file = os.path.join(rel_dir, file_name)    
+    #Add the shared library.
     if ''.join(Path(rel_file).suffixes) in ['.pyd', '.tds', '.so', '.dylib', '.dylib.dSYM']:
       pkgdata.append(rel_file)
-print(pkgdata)
+    #Add the doc xml file
+    elif (rel_file.endswith('.xml')):
+      pkgdata.append(rel_file)
+
 #Read the current version from __version.py__
 versnewstr = get_release_version()   
 
