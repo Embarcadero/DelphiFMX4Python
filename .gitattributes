@@ -1,3 +1,2 @@
 # Disable any line endings auto conversion.
 * -text
-*.*	text eol=crlf
