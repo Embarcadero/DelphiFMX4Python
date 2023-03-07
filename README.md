@@ -24,17 +24,17 @@ There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with
    
 ### Supports
 * Win32 x86, Win64 x86, Linux64 x86, Android64, macOS64 and macM1 architectures
-* Python cp3.6, cp3.7, cp3.8, cp3.9 and cp3.10
+* Python cp3.6, cp3.7, cp3.8, cp3.9, cp3.10 and cp3.11
 
 ### Conda support
-* Win x86 and x64 from Python cp3.6 to cp3.10 
-* Linux x86_64 from Python cp3.6 to cp3.10
-* macOS x86_64 from Python cp3.6 to cp3.10
+* Win x86 and x64 from Python cp3.6 to cp3.11 
+* Linux x86_64 from Python cp3.6 to cp3.11
+* macOS x86_64 from Python cp3.6 to cp3.11
 
 ### Venv support
-* Win x86 and x64 from Python cp3.6 to cp3.10 
-* Linux x86_64 from Python cp3.6 to cp3.10
-* macOS x86_64 from Python cp3.6 to cp3.10
+* Win x86 and x64 from Python cp3.6 to cp3.11 
+* Linux x86_64 from Python cp3.6 to cp3.11
+* macOS x86_64 from Python cp3.6 to cp3.11
 
 ## See Also
 

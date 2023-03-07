@@ -1,4 +1,4 @@
-import sys, os, sys, platform
+import sys, os, sys, platform, ctypes
 from os import environ
 import importlib, importlib.machinery, importlib.util
 
@@ -13,7 +13,7 @@ def findmodule():
   libdir = None
   libext = None
 
-  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10"]):
+  if not (pyver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]):
     raise PyVerNotSupported(f"DelphiFMX doesn't support Python{pyver}.")
 
   if ossys == "Windows":
@@ -60,8 +60,24 @@ def findmodule():
   else:
     raise ValueError("Unsupported platform.")  
 
+def findfixup(dir, libext):
+  for fname in os.listdir(dir):
+    if ('libFixup' in fname) and (fname.endswith(libext)):
+      return os.path.join(dir, os.path.basename(fname))
+
 def new_import():  
     modulefullpath = findmodule()   
+
+    #Look for a fixup lib
+    base_path = os.path.basename(modulefullpath)
+    if base_path:
+      _, ext = os.path.splitext(modulefullpath)
+      #Try to find the fixup lib based on the module path
+      fixup_lib = findfixup(base_path, ext)
+      if fixup_lib:
+        #Loads the fixup lib
+        ctypes.cdll.LoadLibrary(fixup_lib)
+
     loader = importlib.machinery.ExtensionFileLoader("DelphiFMX", modulefullpath)
     spec = importlib.util.spec_from_file_location("DelphiFMX", modulefullpath,
         loader=loader, submodule_search_locations=None)
