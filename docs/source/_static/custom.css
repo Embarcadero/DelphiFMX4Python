@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    span.nc {
+        text-decoration: none !important;
+    }
+}
+
+p.rubric{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.sig-param{
+    color: var(--color-content-foreground);
+}
+
+dl.c .field-list dt, dl.cpp .field-list dt, dl.js .field-list dt, dl.py .field-list dt {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: var(--font-size--normal);
+}
+
+h4, h5, h6{
+    text-transform: none;
+}
+
+/* yikes-ish attempt at bugfix for navbar on some browsers */
+.sidebar-tree a.internal.reference {
+    display: table-cell;
+}
