@@ -7,3 +7,4 @@
 *.rc
 \__pycache__
 \__history
+_build/

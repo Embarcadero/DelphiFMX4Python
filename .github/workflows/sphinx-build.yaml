@@ -1,0 +1,29 @@
+name: Docs
+on: 
+  # Manual run
+  workflow_dispatch:
+permissions:
+    contents: write
+jobs:
+  docs:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - name: Install dependencies
+        run: |
+          pip install sphinx sphinx_rtd_theme
+          pip install --exists-action=w --no-cache-dir -r docs/requirements.txt
+          pip install --exists-action=w --no-cache-dir -r docs/rtd-requirements.txt
+      - name: Sphinx build
+        run: |
+          sphinx-build docs/source _build
+          dir
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        with:
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _build/
+          force_orphan: true          
