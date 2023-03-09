@@ -1,6 +1,6 @@
 delphifmx
 furo
 myst-parser
-sphinx<5.1
+sphinx
 sphinx-copybutton
 sphinxext-opengraph
