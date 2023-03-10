@@ -3,7 +3,7 @@ Installation
 
 DelphiFMX package distribution is available via `PyPi <https://pypi.org/project/delphifmx/>`__ 
 or by downloading the source via GitHub. DelphiFMX is compiled and made available for Windows, 
-Linux, Mac OSX and Android platforms. All Python versions from 3.6 to 3.10 are supported.
+Linux, Mac OSX and Android platforms. All Python versions from 3.6 to 3.11 are supported.
 
 Installing DelphiFMX via PIP
 ****************************

@@ -1,8 +1,8 @@
 *******
-v1.0.0
+v1.0.4
 *******
 
-:Date: March 07, 2023
+:Date: March 10, 2023
 
 Contributors
 ============
@@ -17,13 +17,8 @@ the following contributors.
 * Lucas M Belo
 * Priyatham
 
-Enhancements
+Fixed Bugs
 ------------
 
-- Documentation Support
-- Delphi class hierarchy
-- Delphi members as Python builtins
-- Including Python 3.11
-- New wrappers
-and more...
+Exposing missing builtin members for complete docs.
 
