@@ -24,20 +24,176 @@ Qualified name: ``delphifmx.CustomListView``
 
    .. autosummary::
      
+     ~CustomListView.AbsoluteClipRect
+     ~CustomListView.AbsoluteEnabled
+     ~CustomListView.AbsoluteHeight
+     ~CustomListView.AbsoluteMatrix
+     ~CustomListView.AbsoluteOpacity
+     ~CustomListView.AbsoluteRect
+     ~CustomListView.AbsoluteScale
+     ~CustomListView.AbsoluteWidth
+     ~CustomListView.ActionClient
+     ~CustomListView.Adapter
      ~CustomListView.AdjustSizeValue
      ~CustomListView.AdjustType
+     ~CustomListView.Align
+     ~CustomListView.AllowSelection
+     ~CustomListView.AlternatingColors
+     ~CustomListView.Anchors
+     ~CustomListView.ApplyingEffect
+     ~CustomListView.AutoCapture
+     ~CustomListView.AutoTapScroll
+     ~CustomListView.AutoTapTreshold
      ~CustomListView.AutoTranslate
+     ~CustomListView.AxisAlignedRect
+     ~CustomListView.BoundsRect
+     ~CustomListView.CanParentFocus
+     ~CustomListView.CanSwipeDelete
+     ~CustomListView.Canvas
+     ~CustomListView.Children
+     ~CustomListView.ChildrenCount
+     ~CustomListView.ChildrenRect
      ~CustomListView.ClassName
+     ~CustomListView.ClipChildren
+     ~CustomListView.ClipParent
+     ~CustomListView.ClipRect
+     ~CustomListView.ComObject
      ~CustomListView.ComponentCount
+     ~CustomListView.ComponentIndex
+     ~CustomListView.ComponentState
+     ~CustomListView.ComponentStyle
      ~CustomListView.Components
+     ~CustomListView.ControlType
      ~CustomListView.Controls
      ~CustomListView.ControlsCount
+     ~CustomListView.Cursor
+     ~CustomListView.CustomSceneAddRect
+     ~CustomListView.Data
+     ~CustomListView.DefaultSize
      ~CustomListView.DefaultStyleLookupName
+     ~CustomListView.DeleteButtonText
+     ~CustomListView.DesignInfo
+     ~CustomListView.DisableDisappear
+     ~CustomListView.DisableFocusEffect
+     ~CustomListView.DisableMouseWheel
+     ~CustomListView.DragMode
+     ~CustomListView.EditMode
+     ~CustomListView.EnableDragHighlight
+     ~CustomListView.Enabled
+     ~CustomListView.FixedSize
+     ~CustomListView.HasAfterPaintEffect
+     ~CustomListView.HasClipParent
+     ~CustomListView.HasDisablePaintEffect
+     ~CustomListView.HasEffect
+     ~CustomListView.Height
+     ~CustomListView.HelpContext
+     ~CustomListView.HelpKeyword
+     ~CustomListView.HelpType
+     ~CustomListView.Hint
+     ~CustomListView.HitTest
+     ~CustomListView.Images
+     ~CustomListView.InPaintTo
+     ~CustomListView.Index
+     ~CustomListView.InheritedCursor
+     ~CustomListView.InvertAbsoluteMatrix
+     ~CustomListView.IsDragOver
      ~CustomListView.IsFocused
+     ~CustomListView.IsInflated
+     ~CustomListView.IsMouseOver
+     ~CustomListView.IsVisible
+     ~CustomListView.ItemCount
+     ~CustomListView.ItemIndex
+     ~CustomListView.ItemSpaces
+     ~CustomListView.Items
+     ~CustomListView.LocalRect
+     ~CustomListView.Locked
+     ~CustomListView.Margins
+     ~CustomListView.Name
+     ~CustomListView.NativeOptions
+     ~CustomListView.Observers
+     ~CustomListView.OnActivate
+     ~CustomListView.OnApplyStyleLookup
+     ~CustomListView.OnCanFocus
+     ~CustomListView.OnChange
+     ~CustomListView.OnChangeRepainted
+     ~CustomListView.OnClick
+     ~CustomListView.OnDblClick
+     ~CustomListView.OnDeactivate
+     ~CustomListView.OnDeleteChangeVisible
+     ~CustomListView.OnDeleteItem
+     ~CustomListView.OnDeletingItem
+     ~CustomListView.OnDragDrop
+     ~CustomListView.OnDragEnd
+     ~CustomListView.OnDragEnter
+     ~CustomListView.OnDragLeave
+     ~CustomListView.OnDragOver
+     ~CustomListView.OnEnter
+     ~CustomListView.OnExit
+     ~CustomListView.OnFilter
+     ~CustomListView.OnGesture
+     ~CustomListView.OnItemChange
+     ~CustomListView.OnItemClick
+     ~CustomListView.OnItemClickEx
+     ~CustomListView.OnItemsChange
+     ~CustomListView.OnKeyDown
+     ~CustomListView.OnKeyUp
+     ~CustomListView.OnListItemClick
+     ~CustomListView.OnMouseDown
+     ~CustomListView.OnMouseEnter
+     ~CustomListView.OnMouseLeave
+     ~CustomListView.OnMouseMove
+     ~CustomListView.OnMouseUp
+     ~CustomListView.OnMouseWheel
+     ~CustomListView.OnPaint
+     ~CustomListView.OnPainting
+     ~CustomListView.OnPullRefresh
+     ~CustomListView.OnResize
+     ~CustomListView.OnResized
+     ~CustomListView.OnScrollViewChange
+     ~CustomListView.OnSearchChange
+     ~CustomListView.OnTap
+     ~CustomListView.OnUpdateObjects
+     ~CustomListView.OnUpdatingObjects
+     ~CustomListView.Opacity
      ~CustomListView.Owner
+     ~CustomListView.Padding
      ~CustomListView.Parent
+     ~CustomListView.ParentClassStyleLookupName
+     ~CustomListView.ParentControl
+     ~CustomListView.ParentedRect
+     ~CustomListView.ParentedVisible
+     ~CustomListView.PopupMenu
      ~CustomListView.Position
+     ~CustomListView.Pressed
+     ~CustomListView.PressedPosition
+     ~CustomListView.PullRefreshWait
+     ~CustomListView.PullToRefresh
+     ~CustomListView.Root
+     ~CustomListView.Scene
+     ~CustomListView.ScrollViewPos
+     ~CustomListView.SearchAlwaysOnTop
+     ~CustomListView.SearchVisible
+     ~CustomListView.Selected
+     ~CustomListView.SelectionCrossfade
+     ~CustomListView.ShowHint
+     ~CustomListView.ShowSelection
+     ~CustomListView.SideSpace
+     ~CustomListView.Size
+     ~CustomListView.Stored
      ~CustomListView.StyleLookup
+     ~CustomListView.StyleName
      ~CustomListView.StyleState
+     ~CustomListView.TabOrder
+     ~CustomListView.TabStop
+     ~CustomListView.Tag
+     ~CustomListView.TagFloat
+     ~CustomListView.TagObject
+     ~CustomListView.TagString
+     ~CustomListView.Touch
+     ~CustomListView.TouchTargetExpansion
+     ~CustomListView.Transparent
+     ~CustomListView.UpdateRect
+     ~CustomListView.VCLComObject
      ~CustomListView.Visible
+     ~CustomListView.Width
    

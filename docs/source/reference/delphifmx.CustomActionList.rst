@@ -16,6 +16,8 @@ Qualified name: ``delphifmx.CustomActionList``
       :nosignatures:
       
       ~CustomActionList.BindMethodsToEvents
+      ~CustomActionList.Destroy
+      ~CustomActionList.DialogKey
       ~CustomActionList.GetParentComponent
       ~CustomActionList.HasParent
 
@@ -27,7 +29,19 @@ Qualified name: ``delphifmx.CustomActionList``
      ~CustomActionList.ActionCount
      ~CustomActionList.Actions
      ~CustomActionList.ClassName
+     ~CustomActionList.ComObject
      ~CustomActionList.ComponentCount
+     ~CustomActionList.ComponentIndex
+     ~CustomActionList.ComponentState
+     ~CustomActionList.ComponentStyle
      ~CustomActionList.Components
+     ~CustomActionList.DesignInfo
+     ~CustomActionList.Images
+     ~CustomActionList.Name
+     ~CustomActionList.Observers
+     ~CustomActionList.OnStateChange
      ~CustomActionList.Owner
+     ~CustomActionList.State
+     ~CustomActionList.Tag
+     ~CustomActionList.VCLComObject
    

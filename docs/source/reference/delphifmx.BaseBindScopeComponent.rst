@@ -16,6 +16,8 @@ Qualified name: ``delphifmx.BaseBindScopeComponent``
       :nosignatures:
       
       ~BaseBindScopeComponent.BindMethodsToEvents
+      ~BaseBindScopeComponent.Create
+      ~BaseBindScopeComponent.Destroy
       ~BaseBindScopeComponent.GetParentComponent
       ~BaseBindScopeComponent.HasParent
 
@@ -25,7 +27,16 @@ Qualified name: ``delphifmx.BaseBindScopeComponent``
    .. autosummary::
      
      ~BaseBindScopeComponent.ClassName
+     ~BaseBindScopeComponent.ComObject
      ~BaseBindScopeComponent.ComponentCount
+     ~BaseBindScopeComponent.ComponentIndex
+     ~BaseBindScopeComponent.ComponentState
+     ~BaseBindScopeComponent.ComponentStyle
      ~BaseBindScopeComponent.Components
+     ~BaseBindScopeComponent.DesignInfo
+     ~BaseBindScopeComponent.Name
+     ~BaseBindScopeComponent.Observers
      ~BaseBindScopeComponent.Owner
+     ~BaseBindScopeComponent.Tag
+     ~BaseBindScopeComponent.VCLComObject
    

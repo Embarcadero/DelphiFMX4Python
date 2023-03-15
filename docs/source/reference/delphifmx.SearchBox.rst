@@ -16,6 +16,7 @@ Qualified name: ``delphifmx.SearchBox``
       :nosignatures:
       
       ~SearchBox.ApplyStyleLookup
+      ~SearchBox.Create
       ~SearchBox.Inflate
       ~SearchBox.NeedStyleLookup
 
@@ -24,20 +25,178 @@ Qualified name: ``delphifmx.SearchBox``
 
    .. autosummary::
      
+     ~SearchBox.AbsoluteClipRect
+     ~SearchBox.AbsoluteEnabled
+     ~SearchBox.AbsoluteHeight
+     ~SearchBox.AbsoluteMatrix
+     ~SearchBox.AbsoluteOpacity
+     ~SearchBox.AbsoluteRect
+     ~SearchBox.AbsoluteScale
+     ~SearchBox.AbsoluteWidth
+     ~SearchBox.Action
+     ~SearchBox.ActionClient
      ~SearchBox.AdjustSizeValue
      ~SearchBox.AdjustType
+     ~SearchBox.Align
+     ~SearchBox.Anchors
+     ~SearchBox.ApplyingEffect
+     ~SearchBox.AutoCapture
      ~SearchBox.AutoTranslate
+     ~SearchBox.AxisAlignedRect
+     ~SearchBox.BoundsRect
+     ~SearchBox.ButtonsContent
+     ~SearchBox.CanFocus
+     ~SearchBox.CanParentFocus
+     ~SearchBox.Canvas
+     ~SearchBox.Caret
+     ~SearchBox.CaretPosition
+     ~SearchBox.CharCase
+     ~SearchBox.CheckSpelling
+     ~SearchBox.Children
+     ~SearchBox.ChildrenCount
+     ~SearchBox.ChildrenRect
      ~SearchBox.ClassName
+     ~SearchBox.ClipChildren
+     ~SearchBox.ClipParent
+     ~SearchBox.ClipRect
+     ~SearchBox.ComObject
      ~SearchBox.ComponentCount
+     ~SearchBox.ComponentIndex
+     ~SearchBox.ComponentState
+     ~SearchBox.ComponentStyle
      ~SearchBox.Components
+     ~SearchBox.ControlType
      ~SearchBox.Controls
      ~SearchBox.ControlsCount
+     ~SearchBox.Cursor
+     ~SearchBox.CustomSceneAddRect
+     ~SearchBox.Data
+     ~SearchBox.DefaultSize
      ~SearchBox.DefaultStyleLookupName
+     ~SearchBox.DefaultTextSettings
+     ~SearchBox.DesignInfo
+     ~SearchBox.DisableDisappear
+     ~SearchBox.DisableFocusEffect
+     ~SearchBox.DragMode
+     ~SearchBox.EnableDragHighlight
+     ~SearchBox.Enabled
+     ~SearchBox.FilterChar
+     ~SearchBox.FixedSize
+     ~SearchBox.Font
+     ~SearchBox.FontColor
+     ~SearchBox.HasAfterPaintEffect
+     ~SearchBox.HasClipParent
+     ~SearchBox.HasDisablePaintEffect
+     ~SearchBox.HasEffect
+     ~SearchBox.Height
+     ~SearchBox.HelpContext
+     ~SearchBox.HelpKeyword
+     ~SearchBox.HelpType
+     ~SearchBox.Hint
+     ~SearchBox.HitTest
+     ~SearchBox.ImeMode
+     ~SearchBox.InPaintTo
+     ~SearchBox.Index
+     ~SearchBox.InheritedCursor
+     ~SearchBox.InvertAbsoluteMatrix
+     ~SearchBox.IsDragOver
      ~SearchBox.IsFocused
+     ~SearchBox.IsInflated
+     ~SearchBox.IsMouseOver
+     ~SearchBox.IsVisible
+     ~SearchBox.KeyboardType
+     ~SearchBox.KillFocusByReturn
+     ~SearchBox.LocalRect
+     ~SearchBox.Locked
+     ~SearchBox.Margins
+     ~SearchBox.MaxLength
+     ~SearchBox.Model
+     ~SearchBox.Name
+     ~SearchBox.Observers
+     ~SearchBox.OnActivate
+     ~SearchBox.OnApplyStyleLookup
+     ~SearchBox.OnCanFocus
+     ~SearchBox.OnChange
+     ~SearchBox.OnChangeTracking
+     ~SearchBox.OnClick
+     ~SearchBox.OnDblClick
+     ~SearchBox.OnDeactivate
+     ~SearchBox.OnDragDrop
+     ~SearchBox.OnDragEnd
+     ~SearchBox.OnDragEnter
+     ~SearchBox.OnDragLeave
+     ~SearchBox.OnDragOver
+     ~SearchBox.OnEnter
+     ~SearchBox.OnExit
+     ~SearchBox.OnFilter
+     ~SearchBox.OnGesture
+     ~SearchBox.OnKeyDown
+     ~SearchBox.OnKeyUp
+     ~SearchBox.OnMouseDown
+     ~SearchBox.OnMouseEnter
+     ~SearchBox.OnMouseLeave
+     ~SearchBox.OnMouseMove
+     ~SearchBox.OnMouseUp
+     ~SearchBox.OnMouseWheel
+     ~SearchBox.OnPaint
+     ~SearchBox.OnPainting
+     ~SearchBox.OnPresentationNameChoosing
+     ~SearchBox.OnResize
+     ~SearchBox.OnResized
+     ~SearchBox.OnTap
+     ~SearchBox.OnTyping
+     ~SearchBox.OnValidate
+     ~SearchBox.OnValidating
+     ~SearchBox.Opacity
      ~SearchBox.Owner
+     ~SearchBox.Padding
      ~SearchBox.Parent
+     ~SearchBox.ParentClassStyleLookupName
+     ~SearchBox.ParentControl
+     ~SearchBox.ParentShowHint
+     ~SearchBox.ParentedRect
+     ~SearchBox.ParentedVisible
+     ~SearchBox.Password
+     ~SearchBox.PopupMenu
      ~SearchBox.Position
+     ~SearchBox.Pressed
+     ~SearchBox.PressedPosition
+     ~SearchBox.ReadOnly
+     ~SearchBox.ResultingTextSettings
+     ~SearchBox.ReturnKeyType
+     ~SearchBox.Root
+     ~SearchBox.RotationAngle
+     ~SearchBox.RotationCenter
+     ~SearchBox.Scale
+     ~SearchBox.Scene
+     ~SearchBox.SelLength
+     ~SearchBox.SelStart
+     ~SearchBox.SelText
+     ~SearchBox.SelectionFill
+     ~SearchBox.ShowHint
+     ~SearchBox.Size
+     ~SearchBox.Stored
      ~SearchBox.StyleLookup
+     ~SearchBox.StyleName
      ~SearchBox.StyleState
+     ~SearchBox.StyledSettings
+     ~SearchBox.TabOrder
+     ~SearchBox.TabStop
+     ~SearchBox.Tag
+     ~SearchBox.TagFloat
+     ~SearchBox.TagObject
+     ~SearchBox.TagString
+     ~SearchBox.Text
+     ~SearchBox.TextAlign
+     ~SearchBox.TextContentRect
+     ~SearchBox.TextPrompt
+     ~SearchBox.TextSettings
+     ~SearchBox.Touch
+     ~SearchBox.TouchTargetExpansion
+     ~SearchBox.Typing
+     ~SearchBox.UpdateRect
+     ~SearchBox.VCLComObject
+     ~SearchBox.VertTextAlign
      ~SearchBox.Visible
+     ~SearchBox.Width
    

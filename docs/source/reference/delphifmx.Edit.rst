@@ -24,20 +24,177 @@ Qualified name: ``delphifmx.Edit``
 
    .. autosummary::
      
+     ~Edit.AbsoluteClipRect
+     ~Edit.AbsoluteEnabled
+     ~Edit.AbsoluteHeight
+     ~Edit.AbsoluteMatrix
+     ~Edit.AbsoluteOpacity
+     ~Edit.AbsoluteRect
+     ~Edit.AbsoluteScale
+     ~Edit.AbsoluteWidth
+     ~Edit.Action
+     ~Edit.ActionClient
      ~Edit.AdjustSizeValue
      ~Edit.AdjustType
+     ~Edit.Align
+     ~Edit.Anchors
+     ~Edit.ApplyingEffect
+     ~Edit.AutoCapture
      ~Edit.AutoTranslate
+     ~Edit.AxisAlignedRect
+     ~Edit.BoundsRect
+     ~Edit.ButtonsContent
+     ~Edit.CanFocus
+     ~Edit.CanParentFocus
+     ~Edit.Canvas
+     ~Edit.Caret
+     ~Edit.CaretPosition
+     ~Edit.CharCase
+     ~Edit.CheckSpelling
+     ~Edit.Children
+     ~Edit.ChildrenCount
+     ~Edit.ChildrenRect
      ~Edit.ClassName
+     ~Edit.ClipChildren
+     ~Edit.ClipParent
+     ~Edit.ClipRect
+     ~Edit.ComObject
      ~Edit.ComponentCount
+     ~Edit.ComponentIndex
+     ~Edit.ComponentState
+     ~Edit.ComponentStyle
      ~Edit.Components
+     ~Edit.ControlType
      ~Edit.Controls
      ~Edit.ControlsCount
+     ~Edit.Cursor
+     ~Edit.CustomSceneAddRect
+     ~Edit.Data
+     ~Edit.DefaultSize
      ~Edit.DefaultStyleLookupName
+     ~Edit.DefaultTextSettings
+     ~Edit.DesignInfo
+     ~Edit.DisableDisappear
+     ~Edit.DisableFocusEffect
+     ~Edit.DragMode
+     ~Edit.EnableDragHighlight
+     ~Edit.Enabled
+     ~Edit.FilterChar
+     ~Edit.FixedSize
+     ~Edit.Font
+     ~Edit.FontColor
+     ~Edit.HasAfterPaintEffect
+     ~Edit.HasClipParent
+     ~Edit.HasDisablePaintEffect
+     ~Edit.HasEffect
+     ~Edit.Height
+     ~Edit.HelpContext
+     ~Edit.HelpKeyword
+     ~Edit.HelpType
+     ~Edit.Hint
+     ~Edit.HitTest
+     ~Edit.ImeMode
+     ~Edit.InPaintTo
+     ~Edit.Index
+     ~Edit.InheritedCursor
+     ~Edit.InvertAbsoluteMatrix
+     ~Edit.IsDragOver
      ~Edit.IsFocused
+     ~Edit.IsInflated
+     ~Edit.IsMouseOver
+     ~Edit.IsVisible
+     ~Edit.KeyboardType
+     ~Edit.KillFocusByReturn
+     ~Edit.LocalRect
+     ~Edit.Locked
+     ~Edit.Margins
+     ~Edit.MaxLength
+     ~Edit.Model
+     ~Edit.Name
+     ~Edit.Observers
+     ~Edit.OnActivate
+     ~Edit.OnApplyStyleLookup
+     ~Edit.OnCanFocus
+     ~Edit.OnChange
+     ~Edit.OnChangeTracking
+     ~Edit.OnClick
+     ~Edit.OnDblClick
+     ~Edit.OnDeactivate
+     ~Edit.OnDragDrop
+     ~Edit.OnDragEnd
+     ~Edit.OnDragEnter
+     ~Edit.OnDragLeave
+     ~Edit.OnDragOver
+     ~Edit.OnEnter
+     ~Edit.OnExit
+     ~Edit.OnGesture
+     ~Edit.OnKeyDown
+     ~Edit.OnKeyUp
+     ~Edit.OnMouseDown
+     ~Edit.OnMouseEnter
+     ~Edit.OnMouseLeave
+     ~Edit.OnMouseMove
+     ~Edit.OnMouseUp
+     ~Edit.OnMouseWheel
+     ~Edit.OnPaint
+     ~Edit.OnPainting
+     ~Edit.OnPresentationNameChoosing
+     ~Edit.OnResize
+     ~Edit.OnResized
+     ~Edit.OnTap
+     ~Edit.OnTyping
+     ~Edit.OnValidate
+     ~Edit.OnValidating
+     ~Edit.Opacity
      ~Edit.Owner
+     ~Edit.Padding
      ~Edit.Parent
+     ~Edit.ParentClassStyleLookupName
+     ~Edit.ParentControl
+     ~Edit.ParentShowHint
+     ~Edit.ParentedRect
+     ~Edit.ParentedVisible
+     ~Edit.Password
+     ~Edit.PopupMenu
      ~Edit.Position
+     ~Edit.Pressed
+     ~Edit.PressedPosition
+     ~Edit.ReadOnly
+     ~Edit.ResultingTextSettings
+     ~Edit.ReturnKeyType
+     ~Edit.Root
+     ~Edit.RotationAngle
+     ~Edit.RotationCenter
+     ~Edit.Scale
+     ~Edit.Scene
+     ~Edit.SelLength
+     ~Edit.SelStart
+     ~Edit.SelText
+     ~Edit.SelectionFill
+     ~Edit.ShowHint
+     ~Edit.Size
+     ~Edit.Stored
      ~Edit.StyleLookup
+     ~Edit.StyleName
      ~Edit.StyleState
+     ~Edit.StyledSettings
+     ~Edit.TabOrder
+     ~Edit.TabStop
+     ~Edit.Tag
+     ~Edit.TagFloat
+     ~Edit.TagObject
+     ~Edit.TagString
+     ~Edit.Text
+     ~Edit.TextAlign
+     ~Edit.TextContentRect
+     ~Edit.TextPrompt
+     ~Edit.TextSettings
+     ~Edit.Touch
+     ~Edit.TouchTargetExpansion
+     ~Edit.Typing
+     ~Edit.UpdateRect
+     ~Edit.VCLComObject
+     ~Edit.VertTextAlign
      ~Edit.Visible
+     ~Edit.Width
    

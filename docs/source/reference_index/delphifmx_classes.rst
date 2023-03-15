@@ -228,6 +228,7 @@ DelphiFMX
    SearchBox
    SpinBox
    StyleManager
+   Stream
    StyleStreaming
    TabControl
    TabItem
