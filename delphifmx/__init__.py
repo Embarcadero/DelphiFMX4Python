@@ -60,8 +60,16 @@ def findmodule():
   else:
     raise ValueError("Unsupported platform.")  
 
-def new_import():  
-    modulefullpath = findmodule()   
+def init_plat():
+  if (platform.system() == "Darwin") and (platform.machine() == "arm64"):
+    try:
+      from . import darwin_arm
+    except Exception as e:
+      print("Darwin util has failed with message \'%s\'." % (str(e),))
+
+def new_import():
+    init_plat()
+    modulefullpath = findmodule()
     loader = importlib.machinery.ExtensionFileLoader("DelphiFMX", modulefullpath)
     spec = importlib.util.spec_from_file_location("DelphiFMX", modulefullpath,
         loader=loader, submodule_search_locations=None)
