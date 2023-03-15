@@ -16,28 +16,191 @@ Qualified name: ``delphifmx.CustomEdit``
       :nosignatures:
       
       ~CustomEdit.ApplyStyleLookup
+      ~CustomEdit.CopyToClipboard
+      ~CustomEdit.Create
+      ~CustomEdit.CutToClipboard
+      ~CustomEdit.DeleteSelection
+      ~CustomEdit.Destroy
+      ~CustomEdit.GoToTextBegin
+      ~CustomEdit.GoToTextEnd
+      ~CustomEdit.HasSelection
       ~CustomEdit.Inflate
       ~CustomEdit.NeedStyleLookup
+      ~CustomEdit.PasteFromClipboard
+      ~CustomEdit.Replace
+      ~CustomEdit.ResetSelection
+      ~CustomEdit.SelectAll
+      ~CustomEdit.SelectWord
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~CustomEdit.AbsoluteClipRect
+     ~CustomEdit.AbsoluteEnabled
+     ~CustomEdit.AbsoluteHeight
+     ~CustomEdit.AbsoluteMatrix
+     ~CustomEdit.AbsoluteOpacity
+     ~CustomEdit.AbsoluteRect
+     ~CustomEdit.AbsoluteScale
+     ~CustomEdit.AbsoluteWidth
+     ~CustomEdit.ActionClient
      ~CustomEdit.AdjustSizeValue
      ~CustomEdit.AdjustType
+     ~CustomEdit.Align
+     ~CustomEdit.Anchors
+     ~CustomEdit.ApplyingEffect
+     ~CustomEdit.AutoCapture
      ~CustomEdit.AutoTranslate
+     ~CustomEdit.AxisAlignedRect
+     ~CustomEdit.BoundsRect
+     ~CustomEdit.ButtonsContent
+     ~CustomEdit.CanParentFocus
+     ~CustomEdit.Canvas
+     ~CustomEdit.Caret
+     ~CustomEdit.CaretPosition
+     ~CustomEdit.CharCase
+     ~CustomEdit.CheckSpelling
+     ~CustomEdit.Children
+     ~CustomEdit.ChildrenCount
+     ~CustomEdit.ChildrenRect
      ~CustomEdit.ClassName
+     ~CustomEdit.ClipChildren
+     ~CustomEdit.ClipParent
+     ~CustomEdit.ClipRect
+     ~CustomEdit.ComObject
      ~CustomEdit.ComponentCount
+     ~CustomEdit.ComponentIndex
+     ~CustomEdit.ComponentState
+     ~CustomEdit.ComponentStyle
      ~CustomEdit.Components
+     ~CustomEdit.ControlType
      ~CustomEdit.Controls
      ~CustomEdit.ControlsCount
+     ~CustomEdit.Cursor
+     ~CustomEdit.CustomSceneAddRect
+     ~CustomEdit.Data
+     ~CustomEdit.DefaultSize
      ~CustomEdit.DefaultStyleLookupName
+     ~CustomEdit.DefaultTextSettings
+     ~CustomEdit.DesignInfo
+     ~CustomEdit.DisableDisappear
+     ~CustomEdit.DisableFocusEffect
+     ~CustomEdit.DragMode
+     ~CustomEdit.EnableDragHighlight
+     ~CustomEdit.Enabled
+     ~CustomEdit.FilterChar
+     ~CustomEdit.FixedSize
+     ~CustomEdit.Font
+     ~CustomEdit.FontColor
+     ~CustomEdit.HasAfterPaintEffect
+     ~CustomEdit.HasClipParent
+     ~CustomEdit.HasDisablePaintEffect
+     ~CustomEdit.HasEffect
+     ~CustomEdit.Height
+     ~CustomEdit.HelpContext
+     ~CustomEdit.HelpKeyword
+     ~CustomEdit.HelpType
+     ~CustomEdit.Hint
+     ~CustomEdit.HitTest
+     ~CustomEdit.ImeMode
+     ~CustomEdit.InPaintTo
+     ~CustomEdit.Index
+     ~CustomEdit.InheritedCursor
+     ~CustomEdit.InvertAbsoluteMatrix
+     ~CustomEdit.IsDragOver
      ~CustomEdit.IsFocused
+     ~CustomEdit.IsInflated
+     ~CustomEdit.IsMouseOver
+     ~CustomEdit.IsVisible
+     ~CustomEdit.KeyboardType
+     ~CustomEdit.KillFocusByReturn
+     ~CustomEdit.LocalRect
+     ~CustomEdit.Locked
+     ~CustomEdit.Margins
+     ~CustomEdit.MaxLength
+     ~CustomEdit.Model
+     ~CustomEdit.Name
+     ~CustomEdit.Observers
+     ~CustomEdit.OnActivate
+     ~CustomEdit.OnApplyStyleLookup
+     ~CustomEdit.OnCanFocus
+     ~CustomEdit.OnChange
+     ~CustomEdit.OnChangeTracking
+     ~CustomEdit.OnClick
+     ~CustomEdit.OnDblClick
+     ~CustomEdit.OnDeactivate
+     ~CustomEdit.OnDragDrop
+     ~CustomEdit.OnDragEnd
+     ~CustomEdit.OnDragEnter
+     ~CustomEdit.OnDragLeave
+     ~CustomEdit.OnDragOver
+     ~CustomEdit.OnEnter
+     ~CustomEdit.OnExit
+     ~CustomEdit.OnGesture
+     ~CustomEdit.OnKeyDown
+     ~CustomEdit.OnKeyUp
+     ~CustomEdit.OnMouseDown
+     ~CustomEdit.OnMouseEnter
+     ~CustomEdit.OnMouseLeave
+     ~CustomEdit.OnMouseMove
+     ~CustomEdit.OnMouseUp
+     ~CustomEdit.OnMouseWheel
+     ~CustomEdit.OnPaint
+     ~CustomEdit.OnPainting
+     ~CustomEdit.OnResize
+     ~CustomEdit.OnResized
+     ~CustomEdit.OnTap
+     ~CustomEdit.OnTyping
+     ~CustomEdit.OnValidate
+     ~CustomEdit.OnValidating
+     ~CustomEdit.Opacity
      ~CustomEdit.Owner
+     ~CustomEdit.Padding
      ~CustomEdit.Parent
+     ~CustomEdit.ParentClassStyleLookupName
+     ~CustomEdit.ParentControl
+     ~CustomEdit.ParentedRect
+     ~CustomEdit.ParentedVisible
+     ~CustomEdit.Password
+     ~CustomEdit.PopupMenu
      ~CustomEdit.Position
+     ~CustomEdit.Pressed
+     ~CustomEdit.PressedPosition
+     ~CustomEdit.ReadOnly
+     ~CustomEdit.ResultingTextSettings
+     ~CustomEdit.ReturnKeyType
+     ~CustomEdit.Root
+     ~CustomEdit.Scene
+     ~CustomEdit.SelLength
+     ~CustomEdit.SelStart
+     ~CustomEdit.SelText
+     ~CustomEdit.SelectionFill
+     ~CustomEdit.ShowHint
+     ~CustomEdit.Size
+     ~CustomEdit.Stored
      ~CustomEdit.StyleLookup
+     ~CustomEdit.StyleName
      ~CustomEdit.StyleState
+     ~CustomEdit.StyledSettings
+     ~CustomEdit.TabOrder
+     ~CustomEdit.TabStop
+     ~CustomEdit.Tag
+     ~CustomEdit.TagFloat
+     ~CustomEdit.TagObject
+     ~CustomEdit.TagString
+     ~CustomEdit.Text
+     ~CustomEdit.TextAlign
+     ~CustomEdit.TextContentRect
+     ~CustomEdit.TextPrompt
+     ~CustomEdit.TextSettings
+     ~CustomEdit.Touch
+     ~CustomEdit.TouchTargetExpansion
+     ~CustomEdit.Typing
+     ~CustomEdit.UpdateRect
+     ~CustomEdit.VCLComObject
+     ~CustomEdit.VertTextAlign
      ~CustomEdit.Visible
+     ~CustomEdit.Width
    

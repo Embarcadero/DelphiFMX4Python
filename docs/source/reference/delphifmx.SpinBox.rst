@@ -24,20 +24,186 @@ Qualified name: ``delphifmx.SpinBox``
 
    .. autosummary::
      
+     ~SpinBox.AbsoluteClipRect
+     ~SpinBox.AbsoluteEnabled
+     ~SpinBox.AbsoluteHeight
+     ~SpinBox.AbsoluteMatrix
+     ~SpinBox.AbsoluteOpacity
+     ~SpinBox.AbsoluteRect
+     ~SpinBox.AbsoluteScale
+     ~SpinBox.AbsoluteWidth
+     ~SpinBox.Action
+     ~SpinBox.ActionClient
      ~SpinBox.AdjustSizeValue
      ~SpinBox.AdjustType
+     ~SpinBox.Align
+     ~SpinBox.Anchors
+     ~SpinBox.ApplyingEffect
+     ~SpinBox.AutoCapture
      ~SpinBox.AutoTranslate
+     ~SpinBox.AxisAlignedRect
+     ~SpinBox.BoundsRect
+     ~SpinBox.ButtonsContent
+     ~SpinBox.CanFocus
+     ~SpinBox.CanParentFocus
+     ~SpinBox.Canvas
+     ~SpinBox.Caret
+     ~SpinBox.CaretPosition
+     ~SpinBox.CharCase
+     ~SpinBox.CheckSpelling
+     ~SpinBox.Children
+     ~SpinBox.ChildrenCount
+     ~SpinBox.ChildrenRect
      ~SpinBox.ClassName
+     ~SpinBox.ClipChildren
+     ~SpinBox.ClipParent
+     ~SpinBox.ClipRect
+     ~SpinBox.ComObject
      ~SpinBox.ComponentCount
+     ~SpinBox.ComponentIndex
+     ~SpinBox.ComponentState
+     ~SpinBox.ComponentStyle
      ~SpinBox.Components
+     ~SpinBox.ControlType
      ~SpinBox.Controls
      ~SpinBox.ControlsCount
+     ~SpinBox.Cursor
+     ~SpinBox.CustomSceneAddRect
+     ~SpinBox.Data
+     ~SpinBox.DecimalDigits
+     ~SpinBox.DefaultSize
      ~SpinBox.DefaultStyleLookupName
+     ~SpinBox.DefaultTextSettings
+     ~SpinBox.DesignInfo
+     ~SpinBox.DisableDisappear
+     ~SpinBox.DisableFocusEffect
+     ~SpinBox.DragMode
+     ~SpinBox.EnableDragHighlight
+     ~SpinBox.Enabled
+     ~SpinBox.FilterChar
+     ~SpinBox.FixedSize
+     ~SpinBox.Font
+     ~SpinBox.FontColor
+     ~SpinBox.HasAfterPaintEffect
+     ~SpinBox.HasClipParent
+     ~SpinBox.HasDisablePaintEffect
+     ~SpinBox.HasEffect
+     ~SpinBox.Height
+     ~SpinBox.HelpContext
+     ~SpinBox.HelpKeyword
+     ~SpinBox.HelpType
+     ~SpinBox.Hint
+     ~SpinBox.HitTest
+     ~SpinBox.HorzIncrement
+     ~SpinBox.ImeMode
+     ~SpinBox.InPaintTo
+     ~SpinBox.Increment
+     ~SpinBox.Index
+     ~SpinBox.InheritedCursor
+     ~SpinBox.InvertAbsoluteMatrix
+     ~SpinBox.IsDragOver
      ~SpinBox.IsFocused
+     ~SpinBox.IsInflated
+     ~SpinBox.IsMouseOver
+     ~SpinBox.IsVisible
+     ~SpinBox.KeyboardType
+     ~SpinBox.KillFocusByReturn
+     ~SpinBox.LocalRect
+     ~SpinBox.Locked
+     ~SpinBox.Margins
+     ~SpinBox.Max
+     ~SpinBox.MaxLength
+     ~SpinBox.Min
+     ~SpinBox.Model
+     ~SpinBox.Name
+     ~SpinBox.Observers
+     ~SpinBox.OnActivate
+     ~SpinBox.OnApplyStyleLookup
+     ~SpinBox.OnCanFocus
+     ~SpinBox.OnChange
+     ~SpinBox.OnChangeTracking
+     ~SpinBox.OnClick
+     ~SpinBox.OnDblClick
+     ~SpinBox.OnDeactivate
+     ~SpinBox.OnDragDrop
+     ~SpinBox.OnDragEnd
+     ~SpinBox.OnDragEnter
+     ~SpinBox.OnDragLeave
+     ~SpinBox.OnDragOver
+     ~SpinBox.OnEnter
+     ~SpinBox.OnExit
+     ~SpinBox.OnGesture
+     ~SpinBox.OnKeyDown
+     ~SpinBox.OnKeyUp
+     ~SpinBox.OnMouseDown
+     ~SpinBox.OnMouseEnter
+     ~SpinBox.OnMouseLeave
+     ~SpinBox.OnMouseMove
+     ~SpinBox.OnMouseUp
+     ~SpinBox.OnMouseWheel
+     ~SpinBox.OnPaint
+     ~SpinBox.OnPainting
+     ~SpinBox.OnPresentationNameChoosing
+     ~SpinBox.OnResize
+     ~SpinBox.OnResized
+     ~SpinBox.OnTap
+     ~SpinBox.OnTyping
+     ~SpinBox.OnValidate
+     ~SpinBox.OnValidating
+     ~SpinBox.Opacity
      ~SpinBox.Owner
+     ~SpinBox.Padding
      ~SpinBox.Parent
+     ~SpinBox.ParentClassStyleLookupName
+     ~SpinBox.ParentControl
+     ~SpinBox.ParentShowHint
+     ~SpinBox.ParentedRect
+     ~SpinBox.ParentedVisible
+     ~SpinBox.Password
+     ~SpinBox.PopupMenu
      ~SpinBox.Position
+     ~SpinBox.Pressed
+     ~SpinBox.PressedPosition
+     ~SpinBox.ReadOnly
+     ~SpinBox.RepeatClick
+     ~SpinBox.ResultingTextSettings
+     ~SpinBox.ReturnKeyType
+     ~SpinBox.Root
+     ~SpinBox.RotationAngle
+     ~SpinBox.RotationCenter
+     ~SpinBox.Scale
+     ~SpinBox.Scene
+     ~SpinBox.SelLength
+     ~SpinBox.SelStart
+     ~SpinBox.SelText
+     ~SpinBox.SelectionFill
+     ~SpinBox.ShowHint
+     ~SpinBox.Size
+     ~SpinBox.Stored
      ~SpinBox.StyleLookup
+     ~SpinBox.StyleName
      ~SpinBox.StyleState
+     ~SpinBox.StyledSettings
+     ~SpinBox.TabOrder
+     ~SpinBox.TabStop
+     ~SpinBox.Tag
+     ~SpinBox.TagFloat
+     ~SpinBox.TagObject
+     ~SpinBox.TagString
+     ~SpinBox.Text
+     ~SpinBox.TextAlign
+     ~SpinBox.TextContentRect
+     ~SpinBox.TextPrompt
+     ~SpinBox.TextSettings
+     ~SpinBox.Touch
+     ~SpinBox.TouchTargetExpansion
+     ~SpinBox.Typing
+     ~SpinBox.UpdateRect
+     ~SpinBox.VCLComObject
+     ~SpinBox.Value
+     ~SpinBox.ValueRange
+     ~SpinBox.ValueType
+     ~SpinBox.VertTextAlign
      ~SpinBox.Visible
+     ~SpinBox.Width
    

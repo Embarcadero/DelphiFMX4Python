@@ -16,7 +16,16 @@ Qualified name: ``delphifmx.CustomValueRange``
       :nosignatures:
       
       ~CustomValueRange.Assign
+      ~CustomValueRange.BeginUpdate
+      ~CustomValueRange.Changed
+      ~CustomValueRange.Clear
+      ~CustomValueRange.Create
+      ~CustomValueRange.Dec
+      ~CustomValueRange.Destroy
+      ~CustomValueRange.EndUpdate
       ~CustomValueRange.GetNamePath
+      ~CustomValueRange.Inc
+      ~CustomValueRange.IsEmpty
 
    
    .. rubric:: Attributes

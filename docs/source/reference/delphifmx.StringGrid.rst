@@ -24,20 +24,196 @@ Qualified name: ``delphifmx.StringGrid``
 
    .. autosummary::
      
+     ~StringGrid.AbsoluteClipRect
+     ~StringGrid.AbsoluteEnabled
+     ~StringGrid.AbsoluteHeight
+     ~StringGrid.AbsoluteMatrix
+     ~StringGrid.AbsoluteOpacity
+     ~StringGrid.AbsoluteRect
+     ~StringGrid.AbsoluteScale
+     ~StringGrid.AbsoluteWidth
+     ~StringGrid.ActionClient
      ~StringGrid.AdjustSizeValue
      ~StringGrid.AdjustType
+     ~StringGrid.Align
+     ~StringGrid.Anchors
+     ~StringGrid.AniCalculations
+     ~StringGrid.ApplyingEffect
+     ~StringGrid.AutoCalculateContentSize
+     ~StringGrid.AutoCapture
+     ~StringGrid.AutoHide
      ~StringGrid.AutoTranslate
+     ~StringGrid.AxisAlignedRect
+     ~StringGrid.BottomRow
+     ~StringGrid.Bounces
+     ~StringGrid.BoundsRect
+     ~StringGrid.CanFocus
+     ~StringGrid.CanParentFocus
+     ~StringGrid.Canvas
+     ~StringGrid.Children
+     ~StringGrid.ChildrenCount
+     ~StringGrid.ChildrenRect
      ~StringGrid.ClassName
+     ~StringGrid.ClipChildren
+     ~StringGrid.ClipParent
+     ~StringGrid.ClipRect
+     ~StringGrid.Col
+     ~StringGrid.ColumnCount
+     ~StringGrid.ColumnIndex
+     ~StringGrid.ComObject
      ~StringGrid.ComponentCount
+     ~StringGrid.ComponentIndex
+     ~StringGrid.ComponentState
+     ~StringGrid.ComponentStyle
      ~StringGrid.Components
+     ~StringGrid.Content
+     ~StringGrid.ContentBounds
+     ~StringGrid.ContentLayout
+     ~StringGrid.ContentSize
+     ~StringGrid.ControlType
      ~StringGrid.Controls
      ~StringGrid.ControlsCount
+     ~StringGrid.Cursor
+     ~StringGrid.CustomSceneAddRect
+     ~StringGrid.Data
+     ~StringGrid.DefaultDrawing
+     ~StringGrid.DefaultSize
      ~StringGrid.DefaultStyleLookupName
+     ~StringGrid.DesignInfo
+     ~StringGrid.DisableDisappear
+     ~StringGrid.DisableFocusEffect
+     ~StringGrid.DisableMouseWheel
+     ~StringGrid.DragMode
+     ~StringGrid.EditorMode
+     ~StringGrid.EnableDragHighlight
+     ~StringGrid.Enabled
+     ~StringGrid.EnabledScroll
+     ~StringGrid.FixedSize
+     ~StringGrid.HScrollBar
+     ~StringGrid.HasAfterPaintEffect
+     ~StringGrid.HasClipParent
+     ~StringGrid.HasDisablePaintEffect
+     ~StringGrid.HasEffect
+     ~StringGrid.Height
+     ~StringGrid.HelpContext
+     ~StringGrid.HelpKeyword
+     ~StringGrid.HelpType
+     ~StringGrid.Hint
+     ~StringGrid.HitTest
+     ~StringGrid.Images
+     ~StringGrid.InPaintTo
+     ~StringGrid.Index
+     ~StringGrid.InheritedCursor
+     ~StringGrid.InvertAbsoluteMatrix
+     ~StringGrid.IsDragOver
      ~StringGrid.IsFocused
+     ~StringGrid.IsInflated
+     ~StringGrid.IsMouseOver
+     ~StringGrid.IsUsedInBinding
+     ~StringGrid.IsVisible
+     ~StringGrid.LeftColumn
+     ~StringGrid.LocalRect
+     ~StringGrid.Locked
+     ~StringGrid.Margins
+     ~StringGrid.Model
+     ~StringGrid.Name
+     ~StringGrid.Observers
+     ~StringGrid.OnActivate
+     ~StringGrid.OnApplyStyleLookup
+     ~StringGrid.OnCalcContentBounds
+     ~StringGrid.OnCallbackGetValue
+     ~StringGrid.OnCanFocus
+     ~StringGrid.OnCellClick
+     ~StringGrid.OnCellDblClick
+     ~StringGrid.OnClick
+     ~StringGrid.OnColumnMoved
+     ~StringGrid.OnCreateCustomEditor
+     ~StringGrid.OnDblClick
+     ~StringGrid.OnDeactivate
+     ~StringGrid.OnDragDrop
+     ~StringGrid.OnDragEnd
+     ~StringGrid.OnDragEnter
+     ~StringGrid.OnDragLeave
+     ~StringGrid.OnDragOver
+     ~StringGrid.OnDrawColumnBackground
+     ~StringGrid.OnDrawColumnCell
+     ~StringGrid.OnDrawColumnHeader
+     ~StringGrid.OnEditingDone
+     ~StringGrid.OnEnter
+     ~StringGrid.OnExit
+     ~StringGrid.OnGesture
+     ~StringGrid.OnGetValue
+     ~StringGrid.OnHeaderClick
+     ~StringGrid.OnKeyDown
+     ~StringGrid.OnKeyUp
+     ~StringGrid.OnMouseDown
+     ~StringGrid.OnMouseEnter
+     ~StringGrid.OnMouseLeave
+     ~StringGrid.OnMouseMove
+     ~StringGrid.OnMouseUp
+     ~StringGrid.OnMouseWheel
+     ~StringGrid.OnPaint
+     ~StringGrid.OnPainting
+     ~StringGrid.OnResize
+     ~StringGrid.OnResized
+     ~StringGrid.OnSelChanged
+     ~StringGrid.OnSelectCell
+     ~StringGrid.OnSetValue
+     ~StringGrid.OnTap
+     ~StringGrid.OnViewportPositionChange
+     ~StringGrid.Opacity
+     ~StringGrid.Options
      ~StringGrid.Owner
+     ~StringGrid.Padding
      ~StringGrid.Parent
+     ~StringGrid.ParentClassStyleLookupName
+     ~StringGrid.ParentControl
+     ~StringGrid.ParentedRect
+     ~StringGrid.ParentedVisible
+     ~StringGrid.PopupMenu
      ~StringGrid.Position
+     ~StringGrid.Pressed
+     ~StringGrid.PressedPosition
+     ~StringGrid.ReadOnly
+     ~StringGrid.RightColumn
+     ~StringGrid.Root
+     ~StringGrid.RotationAngle
+     ~StringGrid.RotationCenter
+     ~StringGrid.Row
+     ~StringGrid.RowCount
+     ~StringGrid.RowHeight
+     ~StringGrid.Scale
+     ~StringGrid.Scene
+     ~StringGrid.ScrollAnimation
+     ~StringGrid.ScrollDirections
+     ~StringGrid.Selected
+     ~StringGrid.ShowHint
+     ~StringGrid.ShowScrollBars
+     ~StringGrid.ShowSizeGrip
+     ~StringGrid.Size
+     ~StringGrid.Stored
      ~StringGrid.StyleLookup
+     ~StringGrid.StyleName
      ~StringGrid.StyleState
+     ~StringGrid.StyledSettings
+     ~StringGrid.TabOrder
+     ~StringGrid.TabStop
+     ~StringGrid.Tag
+     ~StringGrid.TagFloat
+     ~StringGrid.TagObject
+     ~StringGrid.TagString
+     ~StringGrid.TextSettings
+     ~StringGrid.TopRow
+     ~StringGrid.Touch
+     ~StringGrid.TouchTargetExpansion
+     ~StringGrid.TouchTracking
+     ~StringGrid.UpdateRect
+     ~StringGrid.VCLComObject
+     ~StringGrid.VScrollBar
+     ~StringGrid.ViewportPosition
+     ~StringGrid.ViewportSize
      ~StringGrid.Visible
+     ~StringGrid.VisibleColumnCount
+     ~StringGrid.VisibleRows
+     ~StringGrid.Width
    

@@ -15,6 +15,11 @@ Qualified name: ``delphifmx.Position``
    .. autosummary::
       :nosignatures:
       
+      ~Position.Assign
+      ~Position.Create
+      ~Position.Empty
+      ~Position.Reflect
+      ~Position.SetPointNoChange
 
    
    .. rubric:: Attributes
@@ -22,7 +27,10 @@ Qualified name: ``delphifmx.Position``
    .. autosummary::
      
      ~Position.ClassName
+     ~Position.DefaultValue
+     ~Position.OnChange
      ~Position.Point
+     ~Position.StoreAsInt
      ~Position.X
      ~Position.Y
    

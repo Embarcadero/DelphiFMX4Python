@@ -24,20 +24,196 @@ Qualified name: ``delphifmx.Grid``
 
    .. autosummary::
      
+     ~Grid.AbsoluteClipRect
+     ~Grid.AbsoluteEnabled
+     ~Grid.AbsoluteHeight
+     ~Grid.AbsoluteMatrix
+     ~Grid.AbsoluteOpacity
+     ~Grid.AbsoluteRect
+     ~Grid.AbsoluteScale
+     ~Grid.AbsoluteWidth
+     ~Grid.ActionClient
      ~Grid.AdjustSizeValue
      ~Grid.AdjustType
+     ~Grid.Align
+     ~Grid.Anchors
+     ~Grid.AniCalculations
+     ~Grid.ApplyingEffect
+     ~Grid.AutoCalculateContentSize
+     ~Grid.AutoCapture
+     ~Grid.AutoHide
      ~Grid.AutoTranslate
+     ~Grid.AxisAlignedRect
+     ~Grid.BottomRow
+     ~Grid.Bounces
+     ~Grid.BoundsRect
+     ~Grid.CanFocus
+     ~Grid.CanParentFocus
+     ~Grid.Canvas
+     ~Grid.Children
+     ~Grid.ChildrenCount
+     ~Grid.ChildrenRect
      ~Grid.ClassName
+     ~Grid.ClipChildren
+     ~Grid.ClipParent
+     ~Grid.ClipRect
+     ~Grid.Col
+     ~Grid.ColumnCount
+     ~Grid.ColumnIndex
+     ~Grid.ComObject
      ~Grid.ComponentCount
+     ~Grid.ComponentIndex
+     ~Grid.ComponentState
+     ~Grid.ComponentStyle
      ~Grid.Components
+     ~Grid.Content
+     ~Grid.ContentBounds
+     ~Grid.ContentLayout
+     ~Grid.ContentSize
+     ~Grid.ControlType
      ~Grid.Controls
      ~Grid.ControlsCount
+     ~Grid.Cursor
+     ~Grid.CustomSceneAddRect
+     ~Grid.Data
+     ~Grid.DefaultDrawing
+     ~Grid.DefaultSize
      ~Grid.DefaultStyleLookupName
+     ~Grid.DesignInfo
+     ~Grid.DisableDisappear
+     ~Grid.DisableFocusEffect
+     ~Grid.DisableMouseWheel
+     ~Grid.DragMode
+     ~Grid.EditorMode
+     ~Grid.EnableDragHighlight
+     ~Grid.Enabled
+     ~Grid.EnabledScroll
+     ~Grid.FixedSize
+     ~Grid.HScrollBar
+     ~Grid.HasAfterPaintEffect
+     ~Grid.HasClipParent
+     ~Grid.HasDisablePaintEffect
+     ~Grid.HasEffect
+     ~Grid.Height
+     ~Grid.HelpContext
+     ~Grid.HelpKeyword
+     ~Grid.HelpType
+     ~Grid.Hint
+     ~Grid.HitTest
+     ~Grid.Images
+     ~Grid.InPaintTo
+     ~Grid.Index
+     ~Grid.InheritedCursor
+     ~Grid.InvertAbsoluteMatrix
+     ~Grid.IsDragOver
      ~Grid.IsFocused
+     ~Grid.IsInflated
+     ~Grid.IsMouseOver
+     ~Grid.IsUsedInBinding
+     ~Grid.IsVisible
+     ~Grid.LeftColumn
+     ~Grid.LocalRect
+     ~Grid.Locked
+     ~Grid.Margins
+     ~Grid.Model
+     ~Grid.Name
+     ~Grid.Observers
+     ~Grid.OnActivate
+     ~Grid.OnApplyStyleLookup
+     ~Grid.OnCalcContentBounds
+     ~Grid.OnCallbackGetValue
+     ~Grid.OnCanFocus
+     ~Grid.OnCellClick
+     ~Grid.OnCellDblClick
+     ~Grid.OnClick
+     ~Grid.OnColumnMoved
+     ~Grid.OnCreateCustomEditor
+     ~Grid.OnDblClick
+     ~Grid.OnDeactivate
+     ~Grid.OnDragDrop
+     ~Grid.OnDragEnd
+     ~Grid.OnDragEnter
+     ~Grid.OnDragLeave
+     ~Grid.OnDragOver
+     ~Grid.OnDrawColumnBackground
+     ~Grid.OnDrawColumnCell
+     ~Grid.OnDrawColumnHeader
+     ~Grid.OnEditingDone
+     ~Grid.OnEnter
+     ~Grid.OnExit
+     ~Grid.OnGesture
+     ~Grid.OnGetValue
+     ~Grid.OnHeaderClick
+     ~Grid.OnKeyDown
+     ~Grid.OnKeyUp
+     ~Grid.OnMouseDown
+     ~Grid.OnMouseEnter
+     ~Grid.OnMouseLeave
+     ~Grid.OnMouseMove
+     ~Grid.OnMouseUp
+     ~Grid.OnMouseWheel
+     ~Grid.OnPaint
+     ~Grid.OnPainting
+     ~Grid.OnResize
+     ~Grid.OnResized
+     ~Grid.OnSelChanged
+     ~Grid.OnSelectCell
+     ~Grid.OnSetValue
+     ~Grid.OnTap
+     ~Grid.OnViewportPositionChange
+     ~Grid.Opacity
+     ~Grid.Options
      ~Grid.Owner
+     ~Grid.Padding
      ~Grid.Parent
+     ~Grid.ParentClassStyleLookupName
+     ~Grid.ParentControl
+     ~Grid.ParentedRect
+     ~Grid.ParentedVisible
+     ~Grid.PopupMenu
      ~Grid.Position
+     ~Grid.Pressed
+     ~Grid.PressedPosition
+     ~Grid.ReadOnly
+     ~Grid.RightColumn
+     ~Grid.Root
+     ~Grid.RotationAngle
+     ~Grid.RotationCenter
+     ~Grid.Row
+     ~Grid.RowCount
+     ~Grid.RowHeight
+     ~Grid.Scale
+     ~Grid.Scene
+     ~Grid.ScrollAnimation
+     ~Grid.ScrollDirections
+     ~Grid.Selected
+     ~Grid.ShowHint
+     ~Grid.ShowScrollBars
+     ~Grid.ShowSizeGrip
+     ~Grid.Size
+     ~Grid.Stored
      ~Grid.StyleLookup
+     ~Grid.StyleName
      ~Grid.StyleState
+     ~Grid.StyledSettings
+     ~Grid.TabOrder
+     ~Grid.TabStop
+     ~Grid.Tag
+     ~Grid.TagFloat
+     ~Grid.TagObject
+     ~Grid.TagString
+     ~Grid.TextSettings
+     ~Grid.TopRow
+     ~Grid.Touch
+     ~Grid.TouchTargetExpansion
+     ~Grid.TouchTracking
+     ~Grid.UpdateRect
+     ~Grid.VCLComObject
+     ~Grid.VScrollBar
+     ~Grid.ViewportPosition
+     ~Grid.ViewportSize
      ~Grid.Visible
+     ~Grid.VisibleColumnCount
+     ~Grid.VisibleRows
+     ~Grid.Width
    

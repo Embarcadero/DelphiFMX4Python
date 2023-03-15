@@ -16,7 +16,10 @@ Qualified name: ``delphifmx.ControlSize``
       :nosignatures:
       
       ~ControlSize.Assign
+      ~ControlSize.Create
       ~ControlSize.GetNamePath
+      ~ControlSize.SetPlatformDefaultWithoutNotification
+      ~ControlSize.SetSizeWithoutNotification
 
    
    .. rubric:: Attributes
@@ -24,5 +27,10 @@ Qualified name: ``delphifmx.ControlSize``
    .. autosummary::
      
      ~ControlSize.ClassName
+     ~ControlSize.DefaultValue
+     ~ControlSize.Height
+     ~ControlSize.OnChange
+     ~ControlSize.PlatformDefault
      ~ControlSize.Size
+     ~ControlSize.Width
    

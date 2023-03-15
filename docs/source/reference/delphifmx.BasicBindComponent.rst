@@ -25,7 +25,16 @@ Qualified name: ``delphifmx.BasicBindComponent``
    .. autosummary::
      
      ~BasicBindComponent.ClassName
+     ~BasicBindComponent.ComObject
      ~BasicBindComponent.ComponentCount
+     ~BasicBindComponent.ComponentIndex
+     ~BasicBindComponent.ComponentState
+     ~BasicBindComponent.ComponentStyle
      ~BasicBindComponent.Components
+     ~BasicBindComponent.DesignInfo
+     ~BasicBindComponent.Name
+     ~BasicBindComponent.Observers
      ~BasicBindComponent.Owner
+     ~BasicBindComponent.Tag
+     ~BasicBindComponent.VCLComObject
    

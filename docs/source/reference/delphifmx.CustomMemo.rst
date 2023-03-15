@@ -16,28 +16,209 @@ Qualified name: ``delphifmx.CustomMemo``
       :nosignatures:
       
       ~CustomMemo.ApplyStyleLookup
+      ~CustomMemo.ClearSelection
+      ~CustomMemo.CopyToClipboard
+      ~CustomMemo.Create
+      ~CustomMemo.CutToClipboard
+      ~CustomMemo.DeleteFrom
+      ~CustomMemo.DeleteSelection
+      ~CustomMemo.GoToLineBegin
+      ~CustomMemo.GoToLineEnd
+      ~CustomMemo.GoToTextBegin
+      ~CustomMemo.GoToTextEnd
       ~CustomMemo.Inflate
+      ~CustomMemo.InsertAfter
       ~CustomMemo.NeedStyleLookup
+      ~CustomMemo.PasteFromClipboard
+      ~CustomMemo.PosToTextPos
+      ~CustomMemo.Replace
+      ~CustomMemo.ResetSelection
+      ~CustomMemo.SelectAll
+      ~CustomMemo.SelectWord
+      ~CustomMemo.TextPosToPos
+      ~CustomMemo.UnDo
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~CustomMemo.AbsoluteClipRect
+     ~CustomMemo.AbsoluteEnabled
+     ~CustomMemo.AbsoluteHeight
+     ~CustomMemo.AbsoluteMatrix
+     ~CustomMemo.AbsoluteOpacity
+     ~CustomMemo.AbsoluteRect
+     ~CustomMemo.AbsoluteScale
+     ~CustomMemo.AbsoluteWidth
+     ~CustomMemo.ActionClient
      ~CustomMemo.AdjustSizeValue
      ~CustomMemo.AdjustType
+     ~CustomMemo.Align
+     ~CustomMemo.Anchors
+     ~CustomMemo.ApplyingEffect
+     ~CustomMemo.AutoCalculateContentSize
+     ~CustomMemo.AutoCapture
+     ~CustomMemo.AutoHide
+     ~CustomMemo.AutoSelect
      ~CustomMemo.AutoTranslate
+     ~CustomMemo.AxisAlignedRect
+     ~CustomMemo.Bounces
+     ~CustomMemo.BoundsRect
+     ~CustomMemo.CanParentFocus
+     ~CustomMemo.Canvas
+     ~CustomMemo.Caret
+     ~CustomMemo.CaretPosition
+     ~CustomMemo.CharCase
+     ~CustomMemo.CheckSpelling
+     ~CustomMemo.Children
+     ~CustomMemo.ChildrenCount
+     ~CustomMemo.ChildrenRect
      ~CustomMemo.ClassName
+     ~CustomMemo.ClipChildren
+     ~CustomMemo.ClipParent
+     ~CustomMemo.ClipRect
+     ~CustomMemo.ComObject
      ~CustomMemo.ComponentCount
+     ~CustomMemo.ComponentIndex
+     ~CustomMemo.ComponentState
+     ~CustomMemo.ComponentStyle
      ~CustomMemo.Components
+     ~CustomMemo.Content
+     ~CustomMemo.ContentBounds
+     ~CustomMemo.ContentLayout
+     ~CustomMemo.ContentSize
      ~CustomMemo.Controls
      ~CustomMemo.ControlsCount
+     ~CustomMemo.Cursor
+     ~CustomMemo.CustomSceneAddRect
+     ~CustomMemo.Data
+     ~CustomMemo.DataDetectorTypes
+     ~CustomMemo.DefaultSize
      ~CustomMemo.DefaultStyleLookupName
+     ~CustomMemo.DesignInfo
+     ~CustomMemo.DisableDisappear
+     ~CustomMemo.DisableFocusEffect
+     ~CustomMemo.DisableMouseWheel
+     ~CustomMemo.DragMode
+     ~CustomMemo.EnableDragHighlight
+     ~CustomMemo.Enabled
+     ~CustomMemo.EnabledScroll
+     ~CustomMemo.FixedSize
+     ~CustomMemo.Font
+     ~CustomMemo.FontColor
+     ~CustomMemo.HScrollBar
+     ~CustomMemo.HasAfterPaintEffect
+     ~CustomMemo.HasClipParent
+     ~CustomMemo.HasDisablePaintEffect
+     ~CustomMemo.HasEffect
+     ~CustomMemo.Height
+     ~CustomMemo.HelpContext
+     ~CustomMemo.HelpKeyword
+     ~CustomMemo.HelpType
+     ~CustomMemo.HideSelectionOnExit
+     ~CustomMemo.Hint
+     ~CustomMemo.HitTest
+     ~CustomMemo.ImeMode
+     ~CustomMemo.InPaintTo
+     ~CustomMemo.Index
+     ~CustomMemo.InheritedCursor
+     ~CustomMemo.InvertAbsoluteMatrix
+     ~CustomMemo.IsDragOver
      ~CustomMemo.IsFocused
+     ~CustomMemo.IsInflated
+     ~CustomMemo.IsMouseOver
+     ~CustomMemo.IsVisible
+     ~CustomMemo.KeyboardType
+     ~CustomMemo.Lines
+     ~CustomMemo.LocalRect
+     ~CustomMemo.Locked
+     ~CustomMemo.Margins
+     ~CustomMemo.MaxLength
+     ~CustomMemo.Model
+     ~CustomMemo.Name
+     ~CustomMemo.Observers
+     ~CustomMemo.OnActivate
+     ~CustomMemo.OnApplyStyleLookup
+     ~CustomMemo.OnCalcContentBounds
+     ~CustomMemo.OnCanFocus
+     ~CustomMemo.OnChange
+     ~CustomMemo.OnChangeTracking
+     ~CustomMemo.OnClick
+     ~CustomMemo.OnDblClick
+     ~CustomMemo.OnDeactivate
+     ~CustomMemo.OnDragDrop
+     ~CustomMemo.OnDragEnd
+     ~CustomMemo.OnDragEnter
+     ~CustomMemo.OnDragLeave
+     ~CustomMemo.OnDragOver
+     ~CustomMemo.OnEnter
+     ~CustomMemo.OnExit
+     ~CustomMemo.OnGesture
+     ~CustomMemo.OnKeyDown
+     ~CustomMemo.OnKeyUp
+     ~CustomMemo.OnMouseDown
+     ~CustomMemo.OnMouseEnter
+     ~CustomMemo.OnMouseLeave
+     ~CustomMemo.OnMouseMove
+     ~CustomMemo.OnMouseUp
+     ~CustomMemo.OnMouseWheel
+     ~CustomMemo.OnPaint
+     ~CustomMemo.OnPainting
+     ~CustomMemo.OnResize
+     ~CustomMemo.OnResized
+     ~CustomMemo.OnTap
+     ~CustomMemo.OnValidate
+     ~CustomMemo.OnValidating
+     ~CustomMemo.OnViewportPositionChange
+     ~CustomMemo.Opacity
      ~CustomMemo.Owner
+     ~CustomMemo.Padding
      ~CustomMemo.Parent
+     ~CustomMemo.ParentClassStyleLookupName
+     ~CustomMemo.ParentControl
+     ~CustomMemo.ParentedRect
+     ~CustomMemo.ParentedVisible
+     ~CustomMemo.PopupMenu
      ~CustomMemo.Position
+     ~CustomMemo.Pressed
+     ~CustomMemo.PressedPosition
+     ~CustomMemo.ReadOnly
+     ~CustomMemo.Root
+     ~CustomMemo.Scene
+     ~CustomMemo.ScrollAnimation
+     ~CustomMemo.ScrollDirections
+     ~CustomMemo.SelLength
+     ~CustomMemo.SelStart
+     ~CustomMemo.SelText
+     ~CustomMemo.SelectionFill
+     ~CustomMemo.ShowHint
+     ~CustomMemo.ShowScrollBars
+     ~CustomMemo.ShowSizeGrip
+     ~CustomMemo.Size
+     ~CustomMemo.Stored
      ~CustomMemo.StyleLookup
+     ~CustomMemo.StyleName
      ~CustomMemo.StyleState
+     ~CustomMemo.StyledSettings
+     ~CustomMemo.TabOrder
+     ~CustomMemo.TabStop
+     ~CustomMemo.Tag
+     ~CustomMemo.TagFloat
+     ~CustomMemo.TagObject
+     ~CustomMemo.TagString
+     ~CustomMemo.Text
+     ~CustomMemo.TextAlign
+     ~CustomMemo.TextSettings
+     ~CustomMemo.Touch
+     ~CustomMemo.TouchTargetExpansion
+     ~CustomMemo.TouchTracking
+     ~CustomMemo.UpdateRect
+     ~CustomMemo.VCLComObject
+     ~CustomMemo.VScrollBar
+     ~CustomMemo.ViewportPosition
+     ~CustomMemo.ViewportSize
      ~CustomMemo.Visible
+     ~CustomMemo.Width
+     ~CustomMemo.WordWrap
    

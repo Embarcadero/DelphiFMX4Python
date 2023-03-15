@@ -16,6 +16,7 @@ Qualified name: ``delphifmx.LinkControlDelegate``
       :nosignatures:
       
       ~LinkControlDelegate.BindMethodsToEvents
+      ~LinkControlDelegate.CanSetControlComponent
       ~LinkControlDelegate.GetParentComponent
       ~LinkControlDelegate.HasParent
 
@@ -24,8 +25,27 @@ Qualified name: ``delphifmx.LinkControlDelegate``
 
    .. autosummary::
      
+     ~LinkControlDelegate.BindingsList
+     ~LinkControlDelegate.Category
      ~LinkControlDelegate.ClassName
+     ~LinkControlDelegate.ComObject
      ~LinkControlDelegate.ComponentCount
+     ~LinkControlDelegate.ComponentIndex
+     ~LinkControlDelegate.ComponentState
+     ~LinkControlDelegate.ComponentStyle
      ~LinkControlDelegate.Components
+     ~LinkControlDelegate.ControlComponent
+     ~LinkControlDelegate.DesignInfo
+     ~LinkControlDelegate.DisplayName
+     ~LinkControlDelegate.Index
+     ~LinkControlDelegate.Name
+     ~LinkControlDelegate.Observers
+     ~LinkControlDelegate.OnActivated
+     ~LinkControlDelegate.OnActivating
+     ~LinkControlDelegate.OnAssignedValue
+     ~LinkControlDelegate.OnAssigningValue
+     ~LinkControlDelegate.OnEvalError
      ~LinkControlDelegate.Owner
+     ~LinkControlDelegate.Tag
+     ~LinkControlDelegate.VCLComObject
    

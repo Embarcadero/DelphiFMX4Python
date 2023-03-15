@@ -24,8 +24,32 @@ Qualified name: ``delphifmx.PrototypeBindSource``
 
    .. autosummary::
      
+     ~PrototypeBindSource.Active
+     ~PrototypeBindSource.AutoActivate
+     ~PrototypeBindSource.AutoEdit
+     ~PrototypeBindSource.AutoPost
+     ~PrototypeBindSource.BOF
+     ~PrototypeBindSource.CanModify
      ~PrototypeBindSource.ClassName
+     ~PrototypeBindSource.ComObject
      ~PrototypeBindSource.ComponentCount
+     ~PrototypeBindSource.ComponentIndex
+     ~PrototypeBindSource.ComponentState
+     ~PrototypeBindSource.ComponentStyle
      ~PrototypeBindSource.Components
+     ~PrototypeBindSource.DataGenerator
+     ~PrototypeBindSource.DesignInfo
+     ~PrototypeBindSource.Editing
+     ~PrototypeBindSource.Eof
+     ~PrototypeBindSource.FieldDefs
+     ~PrototypeBindSource.InternalAdapter
+     ~PrototypeBindSource.ItemIndex
+     ~PrototypeBindSource.Name
+     ~PrototypeBindSource.Observers
+     ~PrototypeBindSource.OnCreateAdapter
      ~PrototypeBindSource.Owner
+     ~PrototypeBindSource.RecordCount
+     ~PrototypeBindSource.ScopeMappings
+     ~PrototypeBindSource.Tag
+     ~PrototypeBindSource.VCLComObject
    

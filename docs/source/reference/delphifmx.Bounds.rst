@@ -16,13 +16,28 @@ Qualified name: ``delphifmx.Bounds``
       :nosignatures:
       
       ~Bounds.Assign
+      ~Bounds.Create
+      ~Bounds.Empty
+      ~Bounds.Equals
       ~Bounds.GetNamePath
+      ~Bounds.Height
+      ~Bounds.MarginEmpty
+      ~Bounds.MarginRect
+      ~Bounds.PaddingRect
+      ~Bounds.ToString
+      ~Bounds.Width
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~Bounds.Bottom
      ~Bounds.ClassName
+     ~Bounds.DefaultValue
+     ~Bounds.Left
+     ~Bounds.OnChange
      ~Bounds.Rect
+     ~Bounds.Right
+     ~Bounds.Top
    

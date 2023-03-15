@@ -16,28 +16,188 @@ Qualified name: ``delphifmx.ListViewBase``
       :nosignatures:
       
       ~ListViewBase.ApplyStyleLookup
+      ~ListViewBase.Create
+      ~ListViewBase.Destroy
+      ~ListViewBase.EndUpdate
+      ~ListViewBase.GetDefaultMargins
+      ~ListViewBase.GetItemRect
       ~ListViewBase.Inflate
       ~ListViewBase.NeedStyleLookup
+      ~ListViewBase.RebuildList
+      ~ListViewBase.ScrollTo
+      ~ListViewBase.StopPullRefresh
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~ListViewBase.AbsoluteClipRect
+     ~ListViewBase.AbsoluteEnabled
+     ~ListViewBase.AbsoluteHeight
+     ~ListViewBase.AbsoluteMatrix
+     ~ListViewBase.AbsoluteOpacity
+     ~ListViewBase.AbsoluteRect
+     ~ListViewBase.AbsoluteScale
+     ~ListViewBase.AbsoluteWidth
+     ~ListViewBase.ActionClient
+     ~ListViewBase.Adapter
      ~ListViewBase.AdjustSizeValue
      ~ListViewBase.AdjustType
+     ~ListViewBase.Align
+     ~ListViewBase.AllowSelection
+     ~ListViewBase.AlternatingColors
+     ~ListViewBase.Anchors
+     ~ListViewBase.ApplyingEffect
+     ~ListViewBase.AutoCapture
+     ~ListViewBase.AutoTapScroll
+     ~ListViewBase.AutoTapTreshold
      ~ListViewBase.AutoTranslate
+     ~ListViewBase.AxisAlignedRect
+     ~ListViewBase.BoundsRect
+     ~ListViewBase.CanParentFocus
+     ~ListViewBase.CanSwipeDelete
+     ~ListViewBase.Canvas
+     ~ListViewBase.Children
+     ~ListViewBase.ChildrenCount
+     ~ListViewBase.ChildrenRect
      ~ListViewBase.ClassName
+     ~ListViewBase.ClipChildren
+     ~ListViewBase.ClipParent
+     ~ListViewBase.ClipRect
+     ~ListViewBase.ComObject
      ~ListViewBase.ComponentCount
+     ~ListViewBase.ComponentIndex
+     ~ListViewBase.ComponentState
+     ~ListViewBase.ComponentStyle
      ~ListViewBase.Components
+     ~ListViewBase.ControlType
      ~ListViewBase.Controls
      ~ListViewBase.ControlsCount
+     ~ListViewBase.Cursor
+     ~ListViewBase.CustomSceneAddRect
+     ~ListViewBase.Data
+     ~ListViewBase.DefaultSize
      ~ListViewBase.DefaultStyleLookupName
+     ~ListViewBase.DeleteButtonText
+     ~ListViewBase.DesignInfo
+     ~ListViewBase.DisableDisappear
+     ~ListViewBase.DisableFocusEffect
+     ~ListViewBase.DisableMouseWheel
+     ~ListViewBase.DragMode
+     ~ListViewBase.EditMode
+     ~ListViewBase.EnableDragHighlight
+     ~ListViewBase.Enabled
+     ~ListViewBase.FixedSize
+     ~ListViewBase.HasAfterPaintEffect
+     ~ListViewBase.HasClipParent
+     ~ListViewBase.HasDisablePaintEffect
+     ~ListViewBase.HasEffect
+     ~ListViewBase.Height
+     ~ListViewBase.HelpContext
+     ~ListViewBase.HelpKeyword
+     ~ListViewBase.HelpType
+     ~ListViewBase.Hint
+     ~ListViewBase.HitTest
+     ~ListViewBase.Images
+     ~ListViewBase.InPaintTo
+     ~ListViewBase.Index
+     ~ListViewBase.InheritedCursor
+     ~ListViewBase.InvertAbsoluteMatrix
+     ~ListViewBase.IsDragOver
      ~ListViewBase.IsFocused
+     ~ListViewBase.IsInflated
+     ~ListViewBase.IsMouseOver
+     ~ListViewBase.IsVisible
+     ~ListViewBase.ItemCount
+     ~ListViewBase.ItemIndex
+     ~ListViewBase.ItemSpaces
+     ~ListViewBase.LocalRect
+     ~ListViewBase.Locked
+     ~ListViewBase.Margins
+     ~ListViewBase.Name
+     ~ListViewBase.NativeOptions
+     ~ListViewBase.Observers
+     ~ListViewBase.OnActivate
+     ~ListViewBase.OnApplyStyleLookup
+     ~ListViewBase.OnCanFocus
+     ~ListViewBase.OnChange
+     ~ListViewBase.OnChangeRepainted
+     ~ListViewBase.OnClick
+     ~ListViewBase.OnDblClick
+     ~ListViewBase.OnDeactivate
+     ~ListViewBase.OnDeleteChangeVisible
+     ~ListViewBase.OnDeleteItem
+     ~ListViewBase.OnDeletingItem
+     ~ListViewBase.OnDragDrop
+     ~ListViewBase.OnDragEnd
+     ~ListViewBase.OnDragEnter
+     ~ListViewBase.OnDragLeave
+     ~ListViewBase.OnDragOver
+     ~ListViewBase.OnEnter
+     ~ListViewBase.OnExit
+     ~ListViewBase.OnFilter
+     ~ListViewBase.OnGesture
+     ~ListViewBase.OnItemChange
+     ~ListViewBase.OnItemClickEx
+     ~ListViewBase.OnItemsChange
+     ~ListViewBase.OnKeyDown
+     ~ListViewBase.OnKeyUp
+     ~ListViewBase.OnListItemClick
+     ~ListViewBase.OnMouseDown
+     ~ListViewBase.OnMouseEnter
+     ~ListViewBase.OnMouseLeave
+     ~ListViewBase.OnMouseMove
+     ~ListViewBase.OnMouseUp
+     ~ListViewBase.OnMouseWheel
+     ~ListViewBase.OnPaint
+     ~ListViewBase.OnPainting
+     ~ListViewBase.OnPullRefresh
+     ~ListViewBase.OnResize
+     ~ListViewBase.OnResized
+     ~ListViewBase.OnScrollViewChange
+     ~ListViewBase.OnSearchChange
+     ~ListViewBase.OnTap
+     ~ListViewBase.Opacity
      ~ListViewBase.Owner
+     ~ListViewBase.Padding
      ~ListViewBase.Parent
+     ~ListViewBase.ParentClassStyleLookupName
+     ~ListViewBase.ParentControl
+     ~ListViewBase.ParentedRect
+     ~ListViewBase.ParentedVisible
+     ~ListViewBase.PopupMenu
      ~ListViewBase.Position
+     ~ListViewBase.Pressed
+     ~ListViewBase.PressedPosition
+     ~ListViewBase.PullRefreshWait
+     ~ListViewBase.PullToRefresh
+     ~ListViewBase.Root
+     ~ListViewBase.Scene
+     ~ListViewBase.ScrollViewPos
+     ~ListViewBase.SearchAlwaysOnTop
+     ~ListViewBase.SearchVisible
+     ~ListViewBase.Selected
+     ~ListViewBase.SelectionCrossfade
+     ~ListViewBase.ShowHint
+     ~ListViewBase.ShowSelection
+     ~ListViewBase.SideSpace
+     ~ListViewBase.Size
+     ~ListViewBase.Stored
      ~ListViewBase.StyleLookup
+     ~ListViewBase.StyleName
      ~ListViewBase.StyleState
+     ~ListViewBase.TabOrder
+     ~ListViewBase.TabStop
+     ~ListViewBase.Tag
+     ~ListViewBase.TagFloat
+     ~ListViewBase.TagObject
+     ~ListViewBase.TagString
+     ~ListViewBase.Touch
+     ~ListViewBase.TouchTargetExpansion
+     ~ListViewBase.Transparent
+     ~ListViewBase.UpdateRect
+     ~ListViewBase.VCLComObject
      ~ListViewBase.Visible
+     ~ListViewBase.Width
    
