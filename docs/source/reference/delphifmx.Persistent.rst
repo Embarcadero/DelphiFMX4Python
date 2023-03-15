@@ -16,6 +16,7 @@ Qualified name: ``delphifmx.Persistent``
       :nosignatures:
       
       ~Persistent.Assign
+      ~Persistent.Destroy
       ~Persistent.GetNamePath
 
    

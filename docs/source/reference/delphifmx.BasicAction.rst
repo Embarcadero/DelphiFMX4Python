@@ -15,8 +15,14 @@ Qualified name: ``delphifmx.BasicAction``
    .. autosummary::
       :nosignatures:
       
+      ~BasicAction.Create
+      ~BasicAction.Destroy
       ~BasicAction.Execute
+      ~BasicAction.ExecuteTarget
+      ~BasicAction.HandlesTarget
+      ~BasicAction.Suspended
       ~BasicAction.Update
+      ~BasicAction.UpdateTarget
 
    
    .. rubric:: Attributes
@@ -25,7 +31,18 @@ Qualified name: ``delphifmx.BasicAction``
      
      ~BasicAction.ActionComponent
      ~BasicAction.ClassName
+     ~BasicAction.ComObject
      ~BasicAction.ComponentCount
+     ~BasicAction.ComponentIndex
+     ~BasicAction.ComponentState
+     ~BasicAction.ComponentStyle
      ~BasicAction.Components
+     ~BasicAction.DesignInfo
+     ~BasicAction.Name
+     ~BasicAction.Observers
+     ~BasicAction.OnExecute
+     ~BasicAction.OnUpdate
      ~BasicAction.Owner
+     ~BasicAction.Tag
+     ~BasicAction.VCLComObject
    

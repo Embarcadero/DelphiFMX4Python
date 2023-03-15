@@ -16,28 +16,186 @@ Qualified name: ``delphifmx.CustomListBox``
       :nosignatures:
       
       ~CustomListBox.ApplyStyleLookup
+      ~CustomListBox.Assign
+      ~CustomListBox.Clear
+      ~CustomListBox.ClearSelection
+      ~CustomListBox.Create
+      ~CustomListBox.Destroy
+      ~CustomListBox.DragChange
+      ~CustomListBox.FirstSelectedItemFrom
       ~CustomListBox.Inflate
+      ~CustomListBox.ItemByIndex
+      ~CustomListBox.ItemByPoint
+      ~CustomListBox.ItemsExchange
+      ~CustomListBox.LastSelectedItemFrom
       ~CustomListBox.NeedStyleLookup
+      ~CustomListBox.NotifyInflated
+      ~CustomListBox.ScrollToItem
+      ~CustomListBox.SelectAll
+      ~CustomListBox.SelectRange
+      ~CustomListBox.Sort
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~CustomListBox.AbsoluteClipRect
+     ~CustomListBox.AbsoluteEnabled
+     ~CustomListBox.AbsoluteHeight
+     ~CustomListBox.AbsoluteMatrix
+     ~CustomListBox.AbsoluteOpacity
+     ~CustomListBox.AbsoluteRect
+     ~CustomListBox.AbsoluteScale
+     ~CustomListBox.AbsoluteWidth
+     ~CustomListBox.ActionClient
      ~CustomListBox.AdjustSizeValue
      ~CustomListBox.AdjustType
+     ~CustomListBox.Align
+     ~CustomListBox.Anchors
+     ~CustomListBox.AniCalculations
+     ~CustomListBox.ApplyingEffect
+     ~CustomListBox.AutoCapture
+     ~CustomListBox.AutoHide
      ~CustomListBox.AutoTranslate
+     ~CustomListBox.AxisAlignedRect
+     ~CustomListBox.BorderHeight
+     ~CustomListBox.BoundsRect
+     ~CustomListBox.CanParentFocus
+     ~CustomListBox.Canvas
+     ~CustomListBox.Children
+     ~CustomListBox.ChildrenCount
+     ~CustomListBox.ChildrenRect
      ~CustomListBox.ClassName
+     ~CustomListBox.ClipChildren
+     ~CustomListBox.ClipParent
+     ~CustomListBox.ClipRect
+     ~CustomListBox.ComObject
      ~CustomListBox.ComponentCount
+     ~CustomListBox.ComponentIndex
+     ~CustomListBox.ComponentState
+     ~CustomListBox.ComponentStyle
      ~CustomListBox.Components
+     ~CustomListBox.Content
+     ~CustomListBox.ContentBounds
      ~CustomListBox.Controls
      ~CustomListBox.ControlsCount
+     ~CustomListBox.Count
+     ~CustomListBox.Cursor
+     ~CustomListBox.CustomSceneAddRect
+     ~CustomListBox.Data
+     ~CustomListBox.DefaultItemStyles
+     ~CustomListBox.DefaultSize
      ~CustomListBox.DefaultStyleLookupName
+     ~CustomListBox.DesignInfo
+     ~CustomListBox.DisableDisappear
+     ~CustomListBox.DisableFocusEffect
+     ~CustomListBox.DisableMouseWheel
+     ~CustomListBox.DragMode
+     ~CustomListBox.EnableDragHighlight
+     ~CustomListBox.Enabled
+     ~CustomListBox.FilterPredicate
+     ~CustomListBox.FixedSize
+     ~CustomListBox.GroupingKind
+     ~CustomListBox.HasAfterPaintEffect
+     ~CustomListBox.HasClipParent
+     ~CustomListBox.HasDisablePaintEffect
+     ~CustomListBox.HasEffect
+     ~CustomListBox.Height
+     ~CustomListBox.HelpContext
+     ~CustomListBox.HelpKeyword
+     ~CustomListBox.HelpType
+     ~CustomListBox.Hint
+     ~CustomListBox.HitTest
+     ~CustomListBox.Images
+     ~CustomListBox.InPaintTo
+     ~CustomListBox.Index
+     ~CustomListBox.InheritedCursor
+     ~CustomListBox.InvertAbsoluteMatrix
+     ~CustomListBox.IsDragOver
      ~CustomListBox.IsFocused
+     ~CustomListBox.IsInflated
+     ~CustomListBox.IsMouseOver
+     ~CustomListBox.IsVisible
+     ~CustomListBox.ItemDown
+     ~CustomListBox.ItemIndex
+     ~CustomListBox.Items
+     ~CustomListBox.LocalRect
+     ~CustomListBox.Locked
+     ~CustomListBox.Margins
+     ~CustomListBox.MultiSelect
+     ~CustomListBox.Name
+     ~CustomListBox.Observers
+     ~CustomListBox.OnActivate
+     ~CustomListBox.OnApplyStyleLookup
+     ~CustomListBox.OnCalcContentBounds
+     ~CustomListBox.OnCanFocus
+     ~CustomListBox.OnClick
+     ~CustomListBox.OnDblClick
+     ~CustomListBox.OnDeactivate
+     ~CustomListBox.OnDragDrop
+     ~CustomListBox.OnDragEnd
+     ~CustomListBox.OnDragEnter
+     ~CustomListBox.OnDragLeave
+     ~CustomListBox.OnDragOver
+     ~CustomListBox.OnEnter
+     ~CustomListBox.OnExit
+     ~CustomListBox.OnGesture
+     ~CustomListBox.OnHScrollChange
+     ~CustomListBox.OnItemClick
+     ~CustomListBox.OnKeyDown
+     ~CustomListBox.OnKeyUp
+     ~CustomListBox.OnMouseDown
+     ~CustomListBox.OnMouseEnter
+     ~CustomListBox.OnMouseLeave
+     ~CustomListBox.OnMouseMove
+     ~CustomListBox.OnMouseUp
+     ~CustomListBox.OnMouseWheel
+     ~CustomListBox.OnPaint
+     ~CustomListBox.OnPainting
+     ~CustomListBox.OnResize
+     ~CustomListBox.OnResized
+     ~CustomListBox.OnTap
+     ~CustomListBox.OnVScrollChange
+     ~CustomListBox.OnViewportPositionChange
+     ~CustomListBox.Opacity
      ~CustomListBox.Owner
+     ~CustomListBox.Padding
      ~CustomListBox.Parent
+     ~CustomListBox.ParentClassStyleLookupName
+     ~CustomListBox.ParentControl
+     ~CustomListBox.ParentShowHint
+     ~CustomListBox.ParentedRect
+     ~CustomListBox.ParentedVisible
+     ~CustomListBox.PopupMenu
      ~CustomListBox.Position
+     ~CustomListBox.Pressed
+     ~CustomListBox.PressedPosition
+     ~CustomListBox.Root
+     ~CustomListBox.RotationAngle
+     ~CustomListBox.RotationCenter
+     ~CustomListBox.Scale
+     ~CustomListBox.Scene
+     ~CustomListBox.Selected
+     ~CustomListBox.ShowHint
+     ~CustomListBox.ShowScrollBars
+     ~CustomListBox.ShowSizeGrip
+     ~CustomListBox.Size
+     ~CustomListBox.Stored
      ~CustomListBox.StyleLookup
+     ~CustomListBox.StyleName
      ~CustomListBox.StyleState
+     ~CustomListBox.TabOrder
+     ~CustomListBox.TabStop
+     ~CustomListBox.Tag
+     ~CustomListBox.TagFloat
+     ~CustomListBox.TagObject
+     ~CustomListBox.TagString
+     ~CustomListBox.Touch
+     ~CustomListBox.TouchTargetExpansion
+     ~CustomListBox.UpdateRect
+     ~CustomListBox.VCLComObject
+     ~CustomListBox.ViewportPosition
      ~CustomListBox.Visible
+     ~CustomListBox.Width
    

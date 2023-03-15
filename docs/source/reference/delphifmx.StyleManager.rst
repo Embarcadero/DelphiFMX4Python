@@ -15,6 +15,20 @@ Qualified name: ``delphifmx.StyleManager``
    .. autosummary::
       :nosignatures:
       
+      ~StyleManager.ActiveStyle
+      ~StyleManager.ActiveStyleForScene
+      ~StyleManager.EnumStyleResources
+      ~StyleManager.FindStyleDescriptor
+      ~StyleManager.GetStyleDescriptionForControl
+      ~StyleManager.GetStyleResource
+      ~StyleManager.RegisterPlatformStyleResource
+      ~StyleManager.RegisterPlatformStyleSelection
+      ~StyleManager.RemoveStyleFromGlobalPool
+      ~StyleManager.SetStyle
+      ~StyleManager.SetStyleFromFile
+      ~StyleManager.TrySetStyleFromResource
+      ~StyleManager.UnInitialize
+      ~StyleManager.UpdateScenes
 
    
    

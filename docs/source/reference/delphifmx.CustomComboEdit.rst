@@ -16,6 +16,8 @@ Qualified name: ``delphifmx.CustomComboEdit``
       :nosignatures:
       
       ~CustomComboEdit.ApplyStyleLookup
+      ~CustomComboEdit.Clear
+      ~CustomComboEdit.Create
       ~CustomComboEdit.Inflate
       ~CustomComboEdit.NeedStyleLookup
 
@@ -24,20 +26,182 @@ Qualified name: ``delphifmx.CustomComboEdit``
 
    .. autosummary::
      
+     ~CustomComboEdit.AbsoluteClipRect
+     ~CustomComboEdit.AbsoluteEnabled
+     ~CustomComboEdit.AbsoluteHeight
+     ~CustomComboEdit.AbsoluteMatrix
+     ~CustomComboEdit.AbsoluteOpacity
+     ~CustomComboEdit.AbsoluteRect
+     ~CustomComboEdit.AbsoluteScale
+     ~CustomComboEdit.AbsoluteWidth
+     ~CustomComboEdit.Action
+     ~CustomComboEdit.ActionClient
      ~CustomComboEdit.AdjustSizeValue
      ~CustomComboEdit.AdjustType
+     ~CustomComboEdit.Align
+     ~CustomComboEdit.Anchors
+     ~CustomComboEdit.ApplyingEffect
+     ~CustomComboEdit.AutoCapture
      ~CustomComboEdit.AutoTranslate
+     ~CustomComboEdit.AxisAlignedRect
+     ~CustomComboEdit.BoundsRect
+     ~CustomComboEdit.ButtonsContent
+     ~CustomComboEdit.CanParentFocus
+     ~CustomComboEdit.Canvas
+     ~CustomComboEdit.Caret
+     ~CustomComboEdit.CaretPosition
+     ~CustomComboEdit.CharCase
+     ~CustomComboEdit.CheckSpelling
+     ~CustomComboEdit.Children
+     ~CustomComboEdit.ChildrenCount
+     ~CustomComboEdit.ChildrenRect
      ~CustomComboEdit.ClassName
+     ~CustomComboEdit.ClipChildren
+     ~CustomComboEdit.ClipParent
+     ~CustomComboEdit.ClipRect
+     ~CustomComboEdit.ComObject
      ~CustomComboEdit.ComponentCount
+     ~CustomComboEdit.ComponentIndex
+     ~CustomComboEdit.ComponentState
+     ~CustomComboEdit.ComponentStyle
      ~CustomComboEdit.Components
+     ~CustomComboEdit.ControlType
      ~CustomComboEdit.Controls
      ~CustomComboEdit.ControlsCount
+     ~CustomComboEdit.Count
+     ~CustomComboEdit.Cursor
+     ~CustomComboEdit.CustomSceneAddRect
+     ~CustomComboEdit.Data
+     ~CustomComboEdit.DefaultSize
      ~CustomComboEdit.DefaultStyleLookupName
+     ~CustomComboEdit.DefaultTextSettings
+     ~CustomComboEdit.DesignInfo
+     ~CustomComboEdit.DisableDisappear
+     ~CustomComboEdit.DisableFocusEffect
+     ~CustomComboEdit.DragMode
+     ~CustomComboEdit.DropDownCount
+     ~CustomComboEdit.DropDownKind
+     ~CustomComboEdit.DroppedDown
+     ~CustomComboEdit.EnableDragHighlight
+     ~CustomComboEdit.Enabled
+     ~CustomComboEdit.FilterChar
+     ~CustomComboEdit.FixedSize
+     ~CustomComboEdit.Font
+     ~CustomComboEdit.FontColor
+     ~CustomComboEdit.HasAfterPaintEffect
+     ~CustomComboEdit.HasClipParent
+     ~CustomComboEdit.HasDisablePaintEffect
+     ~CustomComboEdit.HasEffect
+     ~CustomComboEdit.Height
+     ~CustomComboEdit.HelpContext
+     ~CustomComboEdit.HelpKeyword
+     ~CustomComboEdit.HelpType
+     ~CustomComboEdit.Hint
+     ~CustomComboEdit.HitTest
+     ~CustomComboEdit.ImeMode
+     ~CustomComboEdit.InPaintTo
+     ~CustomComboEdit.Index
+     ~CustomComboEdit.InheritedCursor
+     ~CustomComboEdit.InvertAbsoluteMatrix
+     ~CustomComboEdit.IsDragOver
      ~CustomComboEdit.IsFocused
+     ~CustomComboEdit.IsInflated
+     ~CustomComboEdit.IsMouseOver
+     ~CustomComboEdit.IsVisible
+     ~CustomComboEdit.ItemHeight
+     ~CustomComboEdit.ItemIndex
+     ~CustomComboEdit.ItemWidth
+     ~CustomComboEdit.Items
+     ~CustomComboEdit.KeyboardType
+     ~CustomComboEdit.KillFocusByReturn
+     ~CustomComboEdit.ListBoxResource
+     ~CustomComboEdit.LocalRect
+     ~CustomComboEdit.Locked
+     ~CustomComboEdit.Margins
+     ~CustomComboEdit.MaxLength
+     ~CustomComboEdit.Model
+     ~CustomComboEdit.Name
+     ~CustomComboEdit.Observers
+     ~CustomComboEdit.OnActivate
+     ~CustomComboEdit.OnApplyStyleLookup
+     ~CustomComboEdit.OnCanFocus
+     ~CustomComboEdit.OnChange
+     ~CustomComboEdit.OnChangeTracking
+     ~CustomComboEdit.OnClick
+     ~CustomComboEdit.OnClosePopup
+     ~CustomComboEdit.OnDblClick
+     ~CustomComboEdit.OnDeactivate
+     ~CustomComboEdit.OnDragDrop
+     ~CustomComboEdit.OnDragEnd
+     ~CustomComboEdit.OnDragEnter
+     ~CustomComboEdit.OnDragLeave
+     ~CustomComboEdit.OnDragOver
+     ~CustomComboEdit.OnEnter
+     ~CustomComboEdit.OnExit
+     ~CustomComboEdit.OnGesture
+     ~CustomComboEdit.OnKeyDown
+     ~CustomComboEdit.OnKeyUp
+     ~CustomComboEdit.OnMouseDown
+     ~CustomComboEdit.OnMouseEnter
+     ~CustomComboEdit.OnMouseLeave
+     ~CustomComboEdit.OnMouseMove
+     ~CustomComboEdit.OnMouseUp
+     ~CustomComboEdit.OnMouseWheel
+     ~CustomComboEdit.OnPaint
+     ~CustomComboEdit.OnPainting
+     ~CustomComboEdit.OnPopup
+     ~CustomComboEdit.OnResize
+     ~CustomComboEdit.OnResized
+     ~CustomComboEdit.OnTap
+     ~CustomComboEdit.OnTyping
+     ~CustomComboEdit.OnValidate
+     ~CustomComboEdit.OnValidating
+     ~CustomComboEdit.Opacity
      ~CustomComboEdit.Owner
+     ~CustomComboEdit.Padding
      ~CustomComboEdit.Parent
+     ~CustomComboEdit.ParentClassStyleLookupName
+     ~CustomComboEdit.ParentControl
+     ~CustomComboEdit.ParentedRect
+     ~CustomComboEdit.ParentedVisible
+     ~CustomComboEdit.Password
+     ~CustomComboEdit.PopupMenu
      ~CustomComboEdit.Position
+     ~CustomComboEdit.Pressed
+     ~CustomComboEdit.PressedPosition
+     ~CustomComboEdit.ReadOnly
+     ~CustomComboEdit.ResultingTextSettings
+     ~CustomComboEdit.ReturnKeyType
+     ~CustomComboEdit.Root
+     ~CustomComboEdit.Scene
+     ~CustomComboEdit.SelLength
+     ~CustomComboEdit.SelStart
+     ~CustomComboEdit.SelText
+     ~CustomComboEdit.SelectionFill
+     ~CustomComboEdit.ShowHint
+     ~CustomComboEdit.Size
+     ~CustomComboEdit.Stored
      ~CustomComboEdit.StyleLookup
+     ~CustomComboEdit.StyleName
      ~CustomComboEdit.StyleState
+     ~CustomComboEdit.StyledSettings
+     ~CustomComboEdit.TabOrder
+     ~CustomComboEdit.TabStop
+     ~CustomComboEdit.Tag
+     ~CustomComboEdit.TagFloat
+     ~CustomComboEdit.TagObject
+     ~CustomComboEdit.TagString
+     ~CustomComboEdit.Text
+     ~CustomComboEdit.TextAlign
+     ~CustomComboEdit.TextContentRect
+     ~CustomComboEdit.TextPrompt
+     ~CustomComboEdit.TextSettings
+     ~CustomComboEdit.Touch
+     ~CustomComboEdit.TouchTargetExpansion
+     ~CustomComboEdit.Typing
+     ~CustomComboEdit.UpdateRect
+     ~CustomComboEdit.VCLComObject
+     ~CustomComboEdit.VertTextAlign
      ~CustomComboEdit.Visible
+     ~CustomComboEdit.Width
    

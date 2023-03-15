@@ -16,28 +16,190 @@ Qualified name: ``delphifmx.PresentedListView``
       :nosignatures:
       
       ~PresentedListView.ApplyStyleLookup
+      ~PresentedListView.BeforeDestruction
+      ~PresentedListView.Destroy
+      ~PresentedListView.Hide
       ~PresentedListView.Inflate
       ~PresentedListView.NeedStyleLookup
+      ~PresentedListView.Paint
+      ~PresentedListView.RebuildList
+      ~PresentedListView.RecalcEnabled
+      ~PresentedListView.RecalcOpacity
+      ~PresentedListView.Resize
+      ~PresentedListView.Show
+      ~PresentedListView.StopPullRefresh
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~PresentedListView.AbsoluteClipRect
+     ~PresentedListView.AbsoluteEnabled
+     ~PresentedListView.AbsoluteHeight
+     ~PresentedListView.AbsoluteMatrix
+     ~PresentedListView.AbsoluteOpacity
+     ~PresentedListView.AbsoluteRect
+     ~PresentedListView.AbsoluteScale
+     ~PresentedListView.AbsoluteWidth
+     ~PresentedListView.ActionClient
+     ~PresentedListView.Adapter
      ~PresentedListView.AdjustSizeValue
      ~PresentedListView.AdjustType
+     ~PresentedListView.Align
+     ~PresentedListView.AllowSelection
+     ~PresentedListView.AlternatingColors
+     ~PresentedListView.Anchors
+     ~PresentedListView.ApplyingEffect
+     ~PresentedListView.AutoCapture
+     ~PresentedListView.AutoTapScroll
+     ~PresentedListView.AutoTapTreshold
      ~PresentedListView.AutoTranslate
+     ~PresentedListView.AxisAlignedRect
+     ~PresentedListView.BoundsRect
+     ~PresentedListView.CanParentFocus
+     ~PresentedListView.CanSwipeDelete
+     ~PresentedListView.Canvas
+     ~PresentedListView.Children
+     ~PresentedListView.ChildrenCount
+     ~PresentedListView.ChildrenRect
      ~PresentedListView.ClassName
+     ~PresentedListView.ClipChildren
+     ~PresentedListView.ClipParent
+     ~PresentedListView.ClipRect
+     ~PresentedListView.ComObject
      ~PresentedListView.ComponentCount
+     ~PresentedListView.ComponentIndex
+     ~PresentedListView.ComponentState
+     ~PresentedListView.ComponentStyle
      ~PresentedListView.Components
+     ~PresentedListView.ControlType
      ~PresentedListView.Controls
      ~PresentedListView.ControlsCount
+     ~PresentedListView.Cursor
+     ~PresentedListView.CustomSceneAddRect
+     ~PresentedListView.Data
+     ~PresentedListView.DefaultSize
      ~PresentedListView.DefaultStyleLookupName
+     ~PresentedListView.DeleteButtonText
+     ~PresentedListView.DesignInfo
+     ~PresentedListView.DisableDisappear
+     ~PresentedListView.DisableFocusEffect
+     ~PresentedListView.DisableMouseWheel
+     ~PresentedListView.DragMode
+     ~PresentedListView.EditMode
+     ~PresentedListView.EnableDragHighlight
+     ~PresentedListView.Enabled
+     ~PresentedListView.FixedSize
+     ~PresentedListView.HasAfterPaintEffect
+     ~PresentedListView.HasClipParent
+     ~PresentedListView.HasDisablePaintEffect
+     ~PresentedListView.HasEffect
+     ~PresentedListView.Height
+     ~PresentedListView.HelpContext
+     ~PresentedListView.HelpKeyword
+     ~PresentedListView.HelpType
+     ~PresentedListView.Hint
+     ~PresentedListView.HitTest
+     ~PresentedListView.Images
+     ~PresentedListView.InPaintTo
+     ~PresentedListView.Index
+     ~PresentedListView.InheritedCursor
+     ~PresentedListView.InvertAbsoluteMatrix
+     ~PresentedListView.IsDragOver
      ~PresentedListView.IsFocused
+     ~PresentedListView.IsInflated
+     ~PresentedListView.IsMouseOver
+     ~PresentedListView.IsVisible
+     ~PresentedListView.ItemCount
+     ~PresentedListView.ItemIndex
+     ~PresentedListView.ItemSpaces
+     ~PresentedListView.LocalRect
+     ~PresentedListView.Locked
+     ~PresentedListView.Margins
+     ~PresentedListView.Name
+     ~PresentedListView.NativeOptions
+     ~PresentedListView.Observers
+     ~PresentedListView.OnActivate
+     ~PresentedListView.OnApplyStyleLookup
+     ~PresentedListView.OnCanFocus
+     ~PresentedListView.OnChange
+     ~PresentedListView.OnChangeRepainted
+     ~PresentedListView.OnClick
+     ~PresentedListView.OnDblClick
+     ~PresentedListView.OnDeactivate
+     ~PresentedListView.OnDeleteChangeVisible
+     ~PresentedListView.OnDeleteItem
+     ~PresentedListView.OnDeletingItem
+     ~PresentedListView.OnDragDrop
+     ~PresentedListView.OnDragEnd
+     ~PresentedListView.OnDragEnter
+     ~PresentedListView.OnDragLeave
+     ~PresentedListView.OnDragOver
+     ~PresentedListView.OnEnter
+     ~PresentedListView.OnExit
+     ~PresentedListView.OnFilter
+     ~PresentedListView.OnGesture
+     ~PresentedListView.OnItemChange
+     ~PresentedListView.OnItemClickEx
+     ~PresentedListView.OnItemsChange
+     ~PresentedListView.OnKeyDown
+     ~PresentedListView.OnKeyUp
+     ~PresentedListView.OnListItemClick
+     ~PresentedListView.OnMouseDown
+     ~PresentedListView.OnMouseEnter
+     ~PresentedListView.OnMouseLeave
+     ~PresentedListView.OnMouseMove
+     ~PresentedListView.OnMouseUp
+     ~PresentedListView.OnMouseWheel
+     ~PresentedListView.OnPaint
+     ~PresentedListView.OnPainting
+     ~PresentedListView.OnPullRefresh
+     ~PresentedListView.OnResize
+     ~PresentedListView.OnResized
+     ~PresentedListView.OnScrollViewChange
+     ~PresentedListView.OnSearchChange
+     ~PresentedListView.OnTap
+     ~PresentedListView.Opacity
      ~PresentedListView.Owner
+     ~PresentedListView.Padding
      ~PresentedListView.Parent
+     ~PresentedListView.ParentClassStyleLookupName
+     ~PresentedListView.ParentControl
+     ~PresentedListView.ParentedRect
+     ~PresentedListView.ParentedVisible
+     ~PresentedListView.PopupMenu
      ~PresentedListView.Position
+     ~PresentedListView.Pressed
+     ~PresentedListView.PressedPosition
+     ~PresentedListView.PullRefreshWait
+     ~PresentedListView.PullToRefresh
+     ~PresentedListView.Root
+     ~PresentedListView.Scene
+     ~PresentedListView.ScrollViewPos
+     ~PresentedListView.SearchAlwaysOnTop
+     ~PresentedListView.SearchVisible
+     ~PresentedListView.Selected
+     ~PresentedListView.SelectionCrossfade
+     ~PresentedListView.ShowHint
+     ~PresentedListView.ShowSelection
+     ~PresentedListView.SideSpace
+     ~PresentedListView.Size
+     ~PresentedListView.Stored
      ~PresentedListView.StyleLookup
+     ~PresentedListView.StyleName
      ~PresentedListView.StyleState
+     ~PresentedListView.TabOrder
+     ~PresentedListView.TabStop
+     ~PresentedListView.Tag
+     ~PresentedListView.TagFloat
+     ~PresentedListView.TagObject
+     ~PresentedListView.TagString
+     ~PresentedListView.Touch
+     ~PresentedListView.TouchTargetExpansion
+     ~PresentedListView.Transparent
+     ~PresentedListView.UpdateRect
+     ~PresentedListView.VCLComObject
      ~PresentedListView.Visible
+     ~PresentedListView.Width
    

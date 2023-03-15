@@ -15,6 +15,18 @@ Qualified name: ``delphifmx.StyleStreaming``
    .. autosummary::
       :nosignatures:
       
+      ~StyleStreaming.CanLoadFromFile
+      ~StyleStreaming.CanLoadFromResource
+      ~StyleStreaming.CanLoadFromStream
+      ~StyleStreaming.DefaultIsSupportedPlatformTarget
+      ~StyleStreaming.LoadFromFile
+      ~StyleStreaming.LoadFromResource
+      ~StyleStreaming.LoadFromStream
+      ~StyleStreaming.SameStyle
+      ~StyleStreaming.SaveToStream
+      ~StyleStreaming.SetDefaultContainerClass
+      ~StyleStreaming.SetSupportedPlatformHook
+      ~StyleStreaming.TryLoadStyleDescription
 
    
    

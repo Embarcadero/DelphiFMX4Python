@@ -16,28 +16,219 @@ Qualified name: ``delphifmx.CustomGrid``
       :nosignatures:
       
       ~CustomGrid.ApplyStyleLookup
+      ~CustomGrid.BeforeDestruction
+      ~CustomGrid.CanEdit
+      ~CustomGrid.CellByPoint
+      ~CustomGrid.CellRect
+      ~CustomGrid.ClearColumns
+      ~CustomGrid.ColumnByIndex
+      ~CustomGrid.ColumnByPoint
+      ~CustomGrid.Create
+      ~CustomGrid.Destroy
+      ~CustomGrid.DisplayCells
+      ~CustomGrid.GetUnusedViewportWidth
       ~CustomGrid.Inflate
       ~CustomGrid.NeedStyleLookup
+      ~CustomGrid.RowByPoint
+      ~CustomGrid.ScrollToSelectedCell
+      ~CustomGrid.SelectCell
+      ~CustomGrid.SelectColumn
+      ~CustomGrid.SelectRow
+      ~CustomGrid.SetTopLeft
+      ~CustomGrid.TextWidthToColWidth
+      ~CustomGrid.UnloadPresentation
 
    
    .. rubric:: Attributes
 
    .. autosummary::
      
+     ~CustomGrid.AbsoluteClipRect
+     ~CustomGrid.AbsoluteEnabled
+     ~CustomGrid.AbsoluteHeight
+     ~CustomGrid.AbsoluteMatrix
+     ~CustomGrid.AbsoluteOpacity
+     ~CustomGrid.AbsoluteRect
+     ~CustomGrid.AbsoluteScale
+     ~CustomGrid.AbsoluteWidth
+     ~CustomGrid.ActionClient
      ~CustomGrid.AdjustSizeValue
      ~CustomGrid.AdjustType
+     ~CustomGrid.Align
+     ~CustomGrid.Anchors
+     ~CustomGrid.AniCalculations
+     ~CustomGrid.ApplyingEffect
+     ~CustomGrid.AutoCalculateContentSize
+     ~CustomGrid.AutoCapture
+     ~CustomGrid.AutoHide
      ~CustomGrid.AutoTranslate
+     ~CustomGrid.AxisAlignedRect
+     ~CustomGrid.BottomRow
+     ~CustomGrid.Bounces
+     ~CustomGrid.BoundsRect
+     ~CustomGrid.CanFocus
+     ~CustomGrid.CanParentFocus
+     ~CustomGrid.Canvas
+     ~CustomGrid.Children
+     ~CustomGrid.ChildrenCount
+     ~CustomGrid.ChildrenRect
      ~CustomGrid.ClassName
+     ~CustomGrid.ClipChildren
+     ~CustomGrid.ClipParent
+     ~CustomGrid.ClipRect
+     ~CustomGrid.Col
+     ~CustomGrid.ColumnCount
+     ~CustomGrid.ColumnIndex
+     ~CustomGrid.ComObject
      ~CustomGrid.ComponentCount
+     ~CustomGrid.ComponentIndex
+     ~CustomGrid.ComponentState
+     ~CustomGrid.ComponentStyle
      ~CustomGrid.Components
+     ~CustomGrid.Content
+     ~CustomGrid.ContentBounds
+     ~CustomGrid.ContentLayout
+     ~CustomGrid.ContentSize
      ~CustomGrid.Controls
      ~CustomGrid.ControlsCount
+     ~CustomGrid.Cursor
+     ~CustomGrid.CustomSceneAddRect
+     ~CustomGrid.Data
+     ~CustomGrid.DefaultDrawing
+     ~CustomGrid.DefaultSize
      ~CustomGrid.DefaultStyleLookupName
+     ~CustomGrid.DesignInfo
+     ~CustomGrid.DisableDisappear
+     ~CustomGrid.DisableFocusEffect
+     ~CustomGrid.DisableMouseWheel
+     ~CustomGrid.DragMode
+     ~CustomGrid.EditorMode
+     ~CustomGrid.EnableDragHighlight
+     ~CustomGrid.Enabled
+     ~CustomGrid.EnabledScroll
+     ~CustomGrid.FixedSize
+     ~CustomGrid.HScrollBar
+     ~CustomGrid.HasAfterPaintEffect
+     ~CustomGrid.HasClipParent
+     ~CustomGrid.HasDisablePaintEffect
+     ~CustomGrid.HasEffect
+     ~CustomGrid.Height
+     ~CustomGrid.HelpContext
+     ~CustomGrid.HelpKeyword
+     ~CustomGrid.HelpType
+     ~CustomGrid.Hint
+     ~CustomGrid.HitTest
+     ~CustomGrid.Images
+     ~CustomGrid.InPaintTo
+     ~CustomGrid.Index
+     ~CustomGrid.InheritedCursor
+     ~CustomGrid.InvertAbsoluteMatrix
+     ~CustomGrid.IsDragOver
      ~CustomGrid.IsFocused
+     ~CustomGrid.IsInflated
+     ~CustomGrid.IsMouseOver
+     ~CustomGrid.IsUsedInBinding
+     ~CustomGrid.IsVisible
+     ~CustomGrid.LeftColumn
+     ~CustomGrid.LocalRect
+     ~CustomGrid.Locked
+     ~CustomGrid.Margins
+     ~CustomGrid.Model
+     ~CustomGrid.Name
+     ~CustomGrid.Observers
+     ~CustomGrid.OnActivate
+     ~CustomGrid.OnApplyStyleLookup
+     ~CustomGrid.OnCalcContentBounds
+     ~CustomGrid.OnCallbackGetValue
+     ~CustomGrid.OnCanFocus
+     ~CustomGrid.OnCellClick
+     ~CustomGrid.OnCellDblClick
+     ~CustomGrid.OnClick
+     ~CustomGrid.OnColumnMoved
+     ~CustomGrid.OnCreateCustomEditor
+     ~CustomGrid.OnDblClick
+     ~CustomGrid.OnDeactivate
+     ~CustomGrid.OnDragDrop
+     ~CustomGrid.OnDragEnd
+     ~CustomGrid.OnDragEnter
+     ~CustomGrid.OnDragLeave
+     ~CustomGrid.OnDragOver
+     ~CustomGrid.OnDrawColumnBackground
+     ~CustomGrid.OnDrawColumnCell
+     ~CustomGrid.OnDrawColumnHeader
+     ~CustomGrid.OnEditingDone
+     ~CustomGrid.OnEnter
+     ~CustomGrid.OnExit
+     ~CustomGrid.OnGesture
+     ~CustomGrid.OnGetValue
+     ~CustomGrid.OnHeaderClick
+     ~CustomGrid.OnKeyDown
+     ~CustomGrid.OnKeyUp
+     ~CustomGrid.OnMouseDown
+     ~CustomGrid.OnMouseEnter
+     ~CustomGrid.OnMouseLeave
+     ~CustomGrid.OnMouseMove
+     ~CustomGrid.OnMouseUp
+     ~CustomGrid.OnMouseWheel
+     ~CustomGrid.OnPaint
+     ~CustomGrid.OnPainting
+     ~CustomGrid.OnResize
+     ~CustomGrid.OnResized
+     ~CustomGrid.OnSelChanged
+     ~CustomGrid.OnSelectCell
+     ~CustomGrid.OnSetValue
+     ~CustomGrid.OnTap
+     ~CustomGrid.OnViewportPositionChange
+     ~CustomGrid.Opacity
+     ~CustomGrid.Options
      ~CustomGrid.Owner
+     ~CustomGrid.Padding
      ~CustomGrid.Parent
+     ~CustomGrid.ParentClassStyleLookupName
+     ~CustomGrid.ParentControl
+     ~CustomGrid.ParentedRect
+     ~CustomGrid.ParentedVisible
+     ~CustomGrid.PopupMenu
      ~CustomGrid.Position
+     ~CustomGrid.Pressed
+     ~CustomGrid.PressedPosition
+     ~CustomGrid.ReadOnly
+     ~CustomGrid.RightColumn
+     ~CustomGrid.Root
+     ~CustomGrid.Row
+     ~CustomGrid.RowCount
+     ~CustomGrid.RowHeight
+     ~CustomGrid.Scene
+     ~CustomGrid.ScrollAnimation
+     ~CustomGrid.ScrollDirections
+     ~CustomGrid.Selected
+     ~CustomGrid.ShowHint
+     ~CustomGrid.ShowScrollBars
+     ~CustomGrid.ShowSizeGrip
+     ~CustomGrid.Size
+     ~CustomGrid.Stored
      ~CustomGrid.StyleLookup
+     ~CustomGrid.StyleName
      ~CustomGrid.StyleState
+     ~CustomGrid.StyledSettings
+     ~CustomGrid.TabOrder
+     ~CustomGrid.TabStop
+     ~CustomGrid.Tag
+     ~CustomGrid.TagFloat
+     ~CustomGrid.TagObject
+     ~CustomGrid.TagString
+     ~CustomGrid.TextSettings
+     ~CustomGrid.TopRow
+     ~CustomGrid.Touch
+     ~CustomGrid.TouchTargetExpansion
+     ~CustomGrid.TouchTracking
+     ~CustomGrid.UpdateRect
+     ~CustomGrid.VCLComObject
+     ~CustomGrid.VScrollBar
+     ~CustomGrid.ViewportPosition
+     ~CustomGrid.ViewportSize
      ~CustomGrid.Visible
+     ~CustomGrid.VisibleColumnCount
+     ~CustomGrid.VisibleRows
+     ~CustomGrid.Width
    

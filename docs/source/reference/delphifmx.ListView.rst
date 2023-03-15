@@ -24,20 +24,195 @@ Qualified name: ``delphifmx.ListView``
 
    .. autosummary::
      
+     ~ListView.AbsoluteClipRect
+     ~ListView.AbsoluteEnabled
+     ~ListView.AbsoluteHeight
+     ~ListView.AbsoluteMatrix
+     ~ListView.AbsoluteOpacity
+     ~ListView.AbsoluteRect
+     ~ListView.AbsoluteScale
+     ~ListView.AbsoluteWidth
+     ~ListView.ActionClient
+     ~ListView.Adapter
      ~ListView.AdjustSizeValue
      ~ListView.AdjustType
+     ~ListView.Align
+     ~ListView.AllowSelection
+     ~ListView.AlternatingColors
+     ~ListView.Anchors
+     ~ListView.ApplyingEffect
+     ~ListView.AutoCapture
+     ~ListView.AutoTapScroll
+     ~ListView.AutoTapTreshold
      ~ListView.AutoTranslate
+     ~ListView.AxisAlignedRect
+     ~ListView.BoundsRect
+     ~ListView.CanFocus
+     ~ListView.CanParentFocus
+     ~ListView.CanSwipeDelete
+     ~ListView.Canvas
+     ~ListView.Children
+     ~ListView.ChildrenCount
+     ~ListView.ChildrenRect
      ~ListView.ClassName
+     ~ListView.ClipChildren
+     ~ListView.ClipParent
+     ~ListView.ClipRect
+     ~ListView.ComObject
      ~ListView.ComponentCount
+     ~ListView.ComponentIndex
+     ~ListView.ComponentState
+     ~ListView.ComponentStyle
      ~ListView.Components
+     ~ListView.ControlType
      ~ListView.Controls
      ~ListView.ControlsCount
+     ~ListView.Cursor
+     ~ListView.CustomSceneAddRect
+     ~ListView.Data
+     ~ListView.DefaultSize
      ~ListView.DefaultStyleLookupName
+     ~ListView.DeleteButtonText
+     ~ListView.DesignInfo
+     ~ListView.DisableDisappear
+     ~ListView.DisableFocusEffect
+     ~ListView.DisableMouseWheel
+     ~ListView.DragMode
+     ~ListView.EditMode
+     ~ListView.EnableDragHighlight
+     ~ListView.Enabled
+     ~ListView.FixedSize
+     ~ListView.FooterAppearanceClassName
+     ~ListView.FooterAppearanceName
+     ~ListView.HasAfterPaintEffect
+     ~ListView.HasClipParent
+     ~ListView.HasDisablePaintEffect
+     ~ListView.HasEffect
+     ~ListView.HeaderAppearanceClassName
+     ~ListView.HeaderAppearanceName
+     ~ListView.Height
+     ~ListView.HelpContext
+     ~ListView.HelpKeyword
+     ~ListView.HelpType
+     ~ListView.Hint
+     ~ListView.HitTest
+     ~ListView.Images
+     ~ListView.InPaintTo
+     ~ListView.Index
+     ~ListView.InheritedCursor
+     ~ListView.InvertAbsoluteMatrix
+     ~ListView.IsDragOver
      ~ListView.IsFocused
+     ~ListView.IsInflated
+     ~ListView.IsMouseOver
+     ~ListView.IsVisible
+     ~ListView.ItemAppearance
+     ~ListView.ItemAppearanceClassName
+     ~ListView.ItemAppearanceName
+     ~ListView.ItemAppearanceObjects
+     ~ListView.ItemCount
+     ~ListView.ItemEditAppearanceClassName
+     ~ListView.ItemEditAppearanceName
+     ~ListView.ItemIndex
+     ~ListView.ItemSpaces
+     ~ListView.Items
+     ~ListView.LocalRect
+     ~ListView.Locked
+     ~ListView.Margins
+     ~ListView.Name
+     ~ListView.NativeOptions
+     ~ListView.Observers
+     ~ListView.OnActivate
+     ~ListView.OnApplyStyleLookup
+     ~ListView.OnButtonChange
+     ~ListView.OnButtonClick
+     ~ListView.OnCanFocus
+     ~ListView.OnChange
+     ~ListView.OnChangeRepainted
+     ~ListView.OnClick
+     ~ListView.OnDblClick
+     ~ListView.OnDeactivate
+     ~ListView.OnDeleteChangeVisible
+     ~ListView.OnDeleteItem
+     ~ListView.OnDeletingItem
+     ~ListView.OnDragDrop
+     ~ListView.OnDragEnd
+     ~ListView.OnDragEnter
+     ~ListView.OnDragLeave
+     ~ListView.OnDragOver
+     ~ListView.OnEditModeChange
+     ~ListView.OnEditModeChanging
+     ~ListView.OnEnter
+     ~ListView.OnExit
+     ~ListView.OnFilter
+     ~ListView.OnGesture
+     ~ListView.OnItemChange
+     ~ListView.OnItemClick
+     ~ListView.OnItemClickEx
+     ~ListView.OnItemsChange
+     ~ListView.OnKeyDown
+     ~ListView.OnKeyUp
+     ~ListView.OnListItemClick
+     ~ListView.OnMouseDown
+     ~ListView.OnMouseEnter
+     ~ListView.OnMouseLeave
+     ~ListView.OnMouseMove
+     ~ListView.OnMouseUp
+     ~ListView.OnMouseWheel
+     ~ListView.OnPaint
+     ~ListView.OnPainting
+     ~ListView.OnPullRefresh
+     ~ListView.OnResize
+     ~ListView.OnResized
+     ~ListView.OnScrollViewChange
+     ~ListView.OnSearchChange
+     ~ListView.OnTap
+     ~ListView.OnUpdateObjects
+     ~ListView.OnUpdatingObjects
+     ~ListView.Opacity
      ~ListView.Owner
+     ~ListView.Padding
      ~ListView.Parent
+     ~ListView.ParentClassStyleLookupName
+     ~ListView.ParentControl
+     ~ListView.ParentShowHint
+     ~ListView.ParentedRect
+     ~ListView.ParentedVisible
+     ~ListView.PopupMenu
      ~ListView.Position
+     ~ListView.Pressed
+     ~ListView.PressedPosition
+     ~ListView.PullRefreshWait
+     ~ListView.PullToRefresh
+     ~ListView.Root
+     ~ListView.RotationAngle
+     ~ListView.RotationCenter
+     ~ListView.Scale
+     ~ListView.Scene
+     ~ListView.ScrollViewPos
+     ~ListView.SearchAlwaysOnTop
+     ~ListView.SearchVisible
+     ~ListView.Selected
+     ~ListView.SelectionCrossfade
+     ~ListView.ShowHint
+     ~ListView.ShowSelection
+     ~ListView.SideSpace
+     ~ListView.Size
+     ~ListView.Stored
      ~ListView.StyleLookup
+     ~ListView.StyleName
      ~ListView.StyleState
+     ~ListView.TabOrder
+     ~ListView.TabStop
+     ~ListView.Tag
+     ~ListView.TagFloat
+     ~ListView.TagObject
+     ~ListView.TagString
+     ~ListView.Touch
+     ~ListView.TouchTargetExpansion
+     ~ListView.Transparent
+     ~ListView.UpdateRect
+     ~ListView.VCLComObject
      ~ListView.Visible
+     ~ListView.Width
    

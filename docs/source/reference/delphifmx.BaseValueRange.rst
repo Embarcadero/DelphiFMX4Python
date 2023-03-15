@@ -16,7 +16,9 @@ Qualified name: ``delphifmx.BaseValueRange``
       :nosignatures:
       
       ~BaseValueRange.Assign
+      ~BaseValueRange.Equals
       ~BaseValueRange.GetNamePath
+      ~BaseValueRange.Same
 
    
    .. rubric:: Attributes
