@@ -13,8 +13,8 @@ on:
 
 jobs: 
   test_package:
-    name: Build Windows x86 wheels for Python ${{ matrix.python }}
-    runs-on: ${{ matrix.os }}
+    name: Testing package on ${{ matrix.config.name }} for Python ${{ matrix.python }}
+    runs-on: ${{ matrix.config.os }}
     strategy:
       matrix:
         config:
