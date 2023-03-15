@@ -1,6 +1,10 @@
 name: Docs
 
 on: 
+  push:
+    tags:
+      - '*'
+
   # Manual run
   workflow_dispatch:
 
