@@ -1,4 +1,4 @@
-name: Test
+name: Tests
 
 on: 
   push:
@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs: 
-  test_package:
+  test_import_package:
     name: Testing package on ${{ matrix.config.name }} for Python ${{ matrix.python }}
     runs-on: ${{ matrix.config.os }}
     strategy:
@@ -36,7 +36,7 @@ jobs:
         python -m pip install setuptools --upgrade
         python -m pip install wheel --upgrade                
         python setup.py install
-
+    
     - name: Import package
       run: |
         python -c "import delphifmx"
