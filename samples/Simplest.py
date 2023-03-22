@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #-----------------------------------------------
 # Name:        Simplest.py
 # Purpose:     The simplest demo of Delphi FMX

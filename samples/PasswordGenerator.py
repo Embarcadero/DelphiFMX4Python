@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #----------------------------------------------------------------
 # Name:        PasswordGenerator.py
 # Purpose:     Password Generator built with DelphiFMX GUI Framework

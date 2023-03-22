@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #----------------------------------------------------------------------------------
 # Name:        CtrlsDemoFrm
 # Purpose:     More demonstration showing more controls, with more properties and 
