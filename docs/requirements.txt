@@ -1,4 +1,6 @@
-delphifmx
+-i https://test.pypi.org/simple/
+delphifmx==1.0.6
+
 furo
 myst-parser
 sphinx
