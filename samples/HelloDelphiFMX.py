@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #----------------------------------------------------------------
 # Name:        HelloDelphiFMX.py
 # Purpose:     Simple DelphiFMX for Python demonstration with OOP
