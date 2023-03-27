@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #----------------------------------------------------------------
 # Name:        hello_highdpi.py
 # Purpose:     Test of High DPI Awareness
