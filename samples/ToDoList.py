@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #----------------------------------------------------------------
 # Name:        ToDoList.py
 # Purpose:     Simple ToDo List built with Delphi FMX
