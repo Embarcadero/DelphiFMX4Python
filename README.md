@@ -1,7 +1,7 @@
 # <a href="https://github.com/Embarcadero/DelphiFMX4Python/">DelphiFMX for Python<img align="right" alt="DelphiFMX for Python" src="https://raw.githubusercontent.com/Embarcadero/DelphiFMX4Python/main/images/DelphiFMX4Python(256px).png"></a> 
 
 Quick Links: &nbsp;
-[[Installation](https://github.com/Embarcadero/DelphiFMX4Python#installation)] &nbsp; [[eBook & Styles](https://embt.co/PythonGUIBundle)] &nbsp; [[Android Builder](https://github.com/Embarcadero/PythonFMXBuilder)] &nbsp; [[Docs](https://github.com/Embarcadero/DelphiFMX4Python/wiki)] &nbsp; [[Samples](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/samples)]
+[[Installation](https://github.com/Embarcadero/DelphiFMX4Python#installation)] &nbsp; [[eBook & Styles](https://embt.co/PythonGUIBundle)] &nbsp; [[Android Builder](https://github.com/Embarcadero/PythonFMXBuilder)] &nbsp; [[Docs](https://github.com/Embarcadero/DelphiFMX4Python/wiki)] &nbsp; [[Samples](https://github.com/Embarcadero/DelphiFMX4Python/tree/main/samples)] &nbsp; [[Stack Overflow Q&A](https://stackoverflow.com/questions/tagged/python+firemonkey)]
 
 ---
 
@@ -13,7 +13,7 @@ Be sure to check out the [PythonFMXBuilder](https://github.com/Embarcadero/Pytho
 
 ## eBook and Styles Bundle
 
-There is an free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
+There is a free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
  <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://raw.githubusercontent.com/Embarcadero/PythonFMXBuilder/main/images/30_Banner_Ebook_GGetting%20Started%20with%20Python%20GUI_830x256.jpg"></a>
  
  You can see the June 2022 live stream replay covering [PythonFMX and related projects](https://youtu.be/Ccfe0rbwgcM).
