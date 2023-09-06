@@ -38,7 +38,7 @@ This application demonstrates the use of multiple FMX controls and shows how to 
 * `Label`: A [Label](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TLabel) represents a graphical control used to display text in FireMonkey forms.
 * `TrackBar`: Represents a general-purpose [track bar](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TTrackBar) for use in applications where tracking is required.
 * `AniIndicator`: Represents an animated [spinning indicator](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TAniIndicator) used for illustrating an indefinite waiting time for application processes.
-* `Button`: A [Button](https://docwiki.embarcadero.com/Libraries/Alexandria/en/Vcl.StdCtrls.TButton) is a push button control.
+* `Button`: A [Button](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TButton) is a push button control.
 * `CalloutPanel`: A [callout panel](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TCalloutPanel) is container for extra information relevant to another item, with a visual indicator pointing to that item.
 * `RadioButton`: Represents a [radio (option) button](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TRadioButton).
 * `CheckBox`: Represents a FireMonkey styled [check box](https://docwiki.embarcadero.com/Libraries/Alexandria/en/FMX.StdCtrls.TCheckBox) that can be either on (selected) or off (cleared).

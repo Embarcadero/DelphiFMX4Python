@@ -1,34 +1,14 @@
 [build-system]
-requires = ["setuptools>=40.9.0", "wheel"]
+requires = [
+    "setuptools >= 54",
+    "setuptools_scm[toml] >= 4, <6",
+    "setuptools_scm_git_archive",
+    "wheel >= 0.29.0",
+]
+build-backend = 'setuptools.build_meta'
 
-[tool.cibuildwheel]
-build = ["cp36-*", "cp37-*", "cp38-*", "cp39-*", "cp310-*"]
-archs = ["auto"]
-#repair-wheel-command = ""
-
-[tool.cibuildwheel.windows]
-build = ["cp39-*"]
-#archs = ["x86", "AMD64"]
-archs = ["AMD64"]
-repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel}"
-
-#[tool.cibuildwheel.linux]
-#manylinux-x86_64-image = "manylinux_2_24"
-#manylinux-i686-image = "manylinux2010"
-#manylinux-aarch64-image = "manylinux2014"
-#manylinux-ppc64le-image = "manylinux2014"
-#manylinux-s390x-image = "manylinux2014"
-#manylinux-pypy_x86_64-image = "manylinux2010"
-#manylinux-pypy_i686-image = "manylinux2010"
-#manylinux-pypy_aarch64-image = "manylinux2014"
-#skip = ["pp*", "cp36-manylinux_aarch64", "cp37-manylinux_aarch64", "cp38-manylinux_aarch64"]
-#archs = ["x86_64"]
-
-[tool.cibuildwheel.macos]
-#archs = ["x86_64", "arm64"]
-archs = ["x86_64"]
-build = ["cp39-*"]
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+write_to = "delphifmx/__version__.py"
+git_describe_command = "git describe --dirty --tags --long --match v* --first-parent"

@@ -14,7 +14,7 @@ Be sure to check out the [PythonFMXBuilder](https://github.com/Embarcadero/Pytho
 ## eBook and Styles Bundle
 
 There is a free [eBook and styles bundle](https://embt.co/PythonGUIBundle) with 29 custom styles and 50 pages of content.
- <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://raw.githubusercontent.com/Embarcadero/PythonFMXBuilder/main/images/30_Banner_Ebook_GGetting%20Started%20with%20Python%20GUI_830x256.jpg"></a>
+ <a href="https://embt.co/PythonGUIBundle"><img alt="Download the free eBook and Python styles bundle." width="750" src="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/30_Banner_Ebook_Getting_Started_with_Python_GUI_830x256.jpg?raw=true"></a>
  
  You can see the June 2022 live stream replay covering [PythonFMX and related projects](https://youtu.be/Ccfe0rbwgcM).
 
