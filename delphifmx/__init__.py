@@ -2,6 +2,8 @@ import sys
 import os
 import platform
 import importlib
+import importlib.machinery
+import importlib.util
 
 
 def find_extension_module():
