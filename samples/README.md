@@ -1,5 +1,10 @@
+## StringGrid > stringgrid.py
+![Python GUI App - StringGrid > stringgrid.py](https://github.com/shaunroselt/DelphiFMX4Python/assets/5418178/ceecb0ef-5cb9-4134-b751-650b708cd32f)
+
+
 ## PasswordGenerator.py
 ![Python GUI App - PasswordGenerator.py](https://github.com/shaunroselt/DelphiFMX4Python/assets/5418178/8ac2aa72-44f2-4cf3-9f1f-60929cf41c60)
+
 
 ## ControlsDesktop > controlsdemo.py
 ![Python GUI App - ControlsDesktop > controlsdemo.py](https://github.com/shaunroselt/DelphiFMX4Python/assets/5418178/70348e6c-e9d0-4314-8204-d0a7fef2eb58)

@@ -4,6 +4,8 @@ from delphifmx import *
 class StringGridSample(Form):
 
     def __init__(self, owner):
+        self.caption = "String Grid Sample"
+
         self.string_grid = StringGrid(self)
         self.currency_column1 = CurrencyColumn(self.string_grid)
         self.glyph_column1 = GlyphColumn(self.string_grid)
