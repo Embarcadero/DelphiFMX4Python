@@ -1,4 +1,5 @@
 recursive-include delphifmx *.pyd
 recursive-include delphifmx *.so
 recursive-include delphifmx *.dylib
+recursive-include delphifmx *.pyi
 recursive-include delphifmx docs.xml
