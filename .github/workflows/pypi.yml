@@ -19,7 +19,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Build and Install FMX
       run: |
@@ -38,10 +38,10 @@ jobs:
 
     - name: Cache Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphifmx\__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-cache-${{ hashFiles('.\delphifmx\*') }}
 
   build_stubs_linux:
     name: Build FMX Stubs for Linux
@@ -55,7 +55,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -79,10 +79,10 @@ jobs:
 
     - name: Cache Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ./delphifmx/__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-cache-${{ hashFiles('./delphifmx/*') }}
 
   build_stubs_macos:
     name: Build FMX Stubs MacOS
@@ -96,7 +96,7 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -120,10 +120,10 @@ jobs:
 
     - name: Cache Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ./delphifmx/__init__.pyi
-        key: Macos-stubs
+        key: MacOS-cache-${{ hashFiles('./delphifmx/*') }}
         enableCrossOsArchive: true
 
   #This build makes delphifmx available for Android
@@ -138,7 +138,7 @@ jobs:
             arch: "x86_64"
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
       
@@ -154,8 +154,9 @@ jobs:
         python setup.py bdist_wheel --universal
 
     - name: Save sdist
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-universal-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error 
 
@@ -165,22 +166,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
         include:
           - os: [windows-latest]
             arch: ["x86"]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphifmx\__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-cache-${{ hashFiles('.\delphifmx\*') }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
 
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -189,14 +192,15 @@ jobs:
         architecture: "x86"
             
     - name: Build bdist wheel
-      run: |        
+      run: |
         python -m pip install setuptools --upgrade
         python -m pip install wheel --upgrade                
         python setup.py bdist_wheel --plat-name=win32
       
     - name: Save wheel
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-win32-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error      
 
@@ -206,22 +210,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
         include:
           - os: [windows-latest]
             arch: ["AMD64"]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: .\delphifmx\__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-cache-${{ hashFiles('.\delphifmx\*') }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -236,8 +242,9 @@ jobs:
         python setup.py bdist_wheel --plat-name=win_amd64
       
     - name: Save wheel
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-win64-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error 
 
@@ -247,22 +254,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
         include:
           - os: [ubuntu-20.04] #ubuntu-latest doesn't support cp36
             arch: ["x86_64"]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ./delphifmx/__init__.pyi
-        key: ${{ runner.os }}-stubs
+        key: ${{ runner.os }}-cache-${{ hashFiles('./delphifmx/*') }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
       
     - name: Set up Python ${{ matrix.python }}
       uses: actions/setup-python@v3
@@ -276,8 +285,9 @@ jobs:
         python setup.py bdist_wheel --plat-name=manylinux1_x86_64
       
     - name: Save wheel
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-linux-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error      
 
@@ -287,22 +297,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
+        python: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
         include:
-          - os: [macos-latest]
+          - os: [macos-13] #macos-latest is arm only
             arch: ["x86_64"]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ./delphifmx/__init__.pyi
-        key: Macos-stubs
+        key: MacOS-cache-${{ hashFiles('./delphifmx/*') }}
+        restore-keys: |
+          MacOS-cache-
         enableCrossOsArchive: true
       
     - name: Set up Python ${{ matrix.python }}
@@ -317,8 +329,9 @@ jobs:
         python setup.py bdist_wheel --plat-name=macosx_10_9_x86_64
       
     - name: Save wheel
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-macintel-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error
 
@@ -328,22 +341,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python: ['3.8', '3.9', '3.10', '3.11']
+        python: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
         include:
           - os: [macos-latest]
             arch: ["arm64"]
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Restore Cached Stubs
       id: cache-stubs
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: ./delphifmx/__init__.pyi
-        key: Macos-stubs
+        key: MacOS-cache-${{ hashFiles('./delphifmx/*') }}
+        restore-keys: |
+          MacOS-cache-
         enableCrossOsArchive: true
 
     - name: Set up Python ${{ matrix.python }}
@@ -358,8 +373,9 @@ jobs:
         python setup.py bdist_wheel --plat-name=macosx_11_0_arm64
 
     - name: Save wheel
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
+        name: artifacts-marcarm-${{ matrix.python }}
         path: dist/*.whl
         if-no-files-found: error
 
@@ -376,8 +392,9 @@ jobs:
     steps:                       
       - uses: actions/download-artifact@v2
         with:
-          name: artifact
+          pattern: artifacts-*
           path: dist
+          merge-multiple: true
           
       - name: Publish package to TestPyPI      
         uses: pypa/gh-action-pypi-publish@release/v1
@@ -397,8 +414,9 @@ jobs:
     steps:                       
       - uses: actions/download-artifact@v2
         with:
-          name: artifact
+          pattern: artifacts-*
           path: dist
+          merge-multiple: true
           
       - name: Publish package to PyPI      
         uses: pypa/gh-action-pypi-publish@release/v1            
