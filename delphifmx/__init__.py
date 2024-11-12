@@ -13,7 +13,7 @@ def find_extension_module():
     lib_dir = None
     lib_ext = None
 
-    if not (py_ver in ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]):
+    if not (py_ver in ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]):
         raise ValueError(f"DelphiFMX doesn't support Python{py_ver}.")
 
     if plat_sys == "Windows":
