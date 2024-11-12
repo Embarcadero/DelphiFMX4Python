@@ -1,0 +1,32 @@
+*******
+v1.0.4
+*******
+
+:Date: March 10, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+* Priyatham
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+Fixed Bugs
+------------
+
+Exposing missing builtin members for complete docs.
+
+Enhancements
+------------
+
+* Added the reStructured Text source files for Docs generation using Sphinx Documentation generator.
+* Utilizing the Docstrings of any object/symbol that are embedded by xml files.
+* Created a GitHub Actions workflow to build the Sphinx Docs and generated all the html files for the static website.
+* Deploying and hosting the Sphinx built static site on GitHub Pages using the "gh-pages" branch

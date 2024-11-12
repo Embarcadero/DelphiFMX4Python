@@ -1,0 +1,169 @@
+﻿CustomMultiView
+===============
+
+Qualified name: ``delphifmx.CustomMultiView``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: CustomMultiView
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomMultiView.AfterConstruction
+      ~CustomMultiView.ApplyStyleLookup
+      ~CustomMultiView.ApplyTriggerEffect
+      ~CustomMultiView.BeforeDestruction
+      ~CustomMultiView.ClearContent
+      ~CustomMultiView.FindStyleResource
+      ~CustomMultiView.HasMasterButton
+      ~CustomMultiView.HasPresentationProxy
+      ~CustomMultiView.HasPresenter
+      ~CustomMultiView.HasTargetControl
+      ~CustomMultiView.HideMaster
+      ~CustomMultiView.Inflate
+      ~CustomMultiView.IsShowed
+      ~CustomMultiView.LoadPresentation
+      ~CustomMultiView.NeedStyleLookup
+      ~CustomMultiView.PointInObjectLocal
+      ~CustomMultiView.RecalcEnabled
+      ~CustomMultiView.RecalcOpacity
+      ~CustomMultiView.ReloadPresentation
+      ~CustomMultiView.ShowMaster
+      ~CustomMultiView.StartTriggerAnimation
+      ~CustomMultiView.StartTriggerAnimationWait
+      ~CustomMultiView.UnloadPresentation
+      ~CustomMultiView.UpdateAlignment
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomMultiView.AbsoluteClipRect
+     ~CustomMultiView.AbsoluteEnabled
+     ~CustomMultiView.AbsoluteHeight
+     ~CustomMultiView.AbsoluteMatrix
+     ~CustomMultiView.AbsoluteOpacity
+     ~CustomMultiView.AbsoluteRect
+     ~CustomMultiView.AbsoluteScale
+     ~CustomMultiView.AbsoluteWidth
+     ~CustomMultiView.ActionClient
+     ~CustomMultiView.AdjustSizeValue
+     ~CustomMultiView.AdjustType
+     ~CustomMultiView.Align
+     ~CustomMultiView.Anchors
+     ~CustomMultiView.ApplyingEffect
+     ~CustomMultiView.AutoCapture
+     ~CustomMultiView.AutoTranslate
+     ~CustomMultiView.AxisAlignedRect
+     ~CustomMultiView.BorderOptions
+     ~CustomMultiView.BoundsRect
+     ~CustomMultiView.CanParentFocus
+     ~CustomMultiView.Canvas
+     ~CustomMultiView.Children
+     ~CustomMultiView.ChildrenCount
+     ~CustomMultiView.ChildrenRect
+     ~CustomMultiView.ClassName
+     ~CustomMultiView.ClipChildren
+     ~CustomMultiView.ClipParent
+     ~CustomMultiView.ClipRect
+     ~CustomMultiView.ComObject
+     ~CustomMultiView.ComponentCount
+     ~CustomMultiView.ComponentIndex
+     ~CustomMultiView.ComponentState
+     ~CustomMultiView.ComponentStyle
+     ~CustomMultiView.Components
+     ~CustomMultiView.ControlType
+     ~CustomMultiView.Controls
+     ~CustomMultiView.ControlsCount
+     ~CustomMultiView.Cursor
+     ~CustomMultiView.CustomPresentationClass
+     ~CustomMultiView.Data
+     ~CustomMultiView.DefaultSize
+     ~CustomMultiView.DefaultStyleLookupName
+     ~CustomMultiView.DesignInfo
+     ~CustomMultiView.DisableDisappear
+     ~CustomMultiView.DisableFocusEffect
+     ~CustomMultiView.DragMode
+     ~CustomMultiView.DrawerOptions
+     ~CustomMultiView.EnableDragHighlight
+     ~CustomMultiView.Enabled
+     ~CustomMultiView.FixedSize
+     ~CustomMultiView.HasAfterPaintEffect
+     ~CustomMultiView.HasClipParent
+     ~CustomMultiView.HasDisablePaintEffect
+     ~CustomMultiView.HasEffect
+     ~CustomMultiView.Height
+     ~CustomMultiView.HelpContext
+     ~CustomMultiView.HelpKeyword
+     ~CustomMultiView.HelpType
+     ~CustomMultiView.Hint
+     ~CustomMultiView.HitTest
+     ~CustomMultiView.InPaintTo
+     ~CustomMultiView.Index
+     ~CustomMultiView.InheritedCursor
+     ~CustomMultiView.InvertAbsoluteMatrix
+     ~CustomMultiView.IsDragOver
+     ~CustomMultiView.IsFocused
+     ~CustomMultiView.IsInflated
+     ~CustomMultiView.IsMouseOver
+     ~CustomMultiView.IsVisible
+     ~CustomMultiView.LocalRect
+     ~CustomMultiView.Locked
+     ~CustomMultiView.Margins
+     ~CustomMultiView.MasterButton
+     ~CustomMultiView.MasterContent
+     ~CustomMultiView.Mode
+     ~CustomMultiView.Model
+     ~CustomMultiView.Name
+     ~CustomMultiView.NavigationPaneOptions
+     ~CustomMultiView.Observers
+     ~CustomMultiView.OnGesture
+     ~CustomMultiView.Opacity
+     ~CustomMultiView.Owner
+     ~CustomMultiView.Padding
+     ~CustomMultiView.Parent
+     ~CustomMultiView.ParentClassStyleLookupName
+     ~CustomMultiView.ParentControl
+     ~CustomMultiView.ParentedRect
+     ~CustomMultiView.ParentedVisible
+     ~CustomMultiView.PopoverOptions
+     ~CustomMultiView.PopupMenu
+     ~CustomMultiView.Position
+     ~CustomMultiView.Presentation
+     ~CustomMultiView.PresentationProxy
+     ~CustomMultiView.PresentationState
+     ~CustomMultiView.Presenter
+     ~CustomMultiView.Pressed
+     ~CustomMultiView.PressedPosition
+     ~CustomMultiView.Root
+     ~CustomMultiView.Scene
+     ~CustomMultiView.ShadowOptions
+     ~CustomMultiView.ShowHint
+     ~CustomMultiView.Size
+     ~CustomMultiView.SplitViewOptions
+     ~CustomMultiView.Stored
+     ~CustomMultiView.StyleLookup
+     ~CustomMultiView.StyleName
+     ~CustomMultiView.StyleState
+     ~CustomMultiView.StylesData
+     ~CustomMultiView.TabOrder
+     ~CustomMultiView.TabStop
+     ~CustomMultiView.Tag
+     ~CustomMultiView.TagFloat
+     ~CustomMultiView.TagObject
+     ~CustomMultiView.TagString
+     ~CustomMultiView.TargetControl
+     ~CustomMultiView.Touch
+     ~CustomMultiView.TouchTargetExpansion
+     ~CustomMultiView.UpdateRect
+     ~CustomMultiView.VCLComObject
+     ~CustomMultiView.Visible
+     ~CustomMultiView.Width
+   

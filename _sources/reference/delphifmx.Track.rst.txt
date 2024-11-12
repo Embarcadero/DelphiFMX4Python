@@ -1,0 +1,158 @@
+﻿Track
+=====
+
+Qualified name: ``delphifmx.Track``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: Track
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Track.ApplyStyleLookup
+      ~Track.Inflate
+      ~Track.NeedStyleLookup
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Track.AbsoluteClipRect
+     ~Track.AbsoluteEnabled
+     ~Track.AbsoluteHeight
+     ~Track.AbsoluteMatrix
+     ~Track.AbsoluteOpacity
+     ~Track.AbsoluteRect
+     ~Track.AbsoluteScale
+     ~Track.AbsoluteWidth
+     ~Track.Action
+     ~Track.ActionClient
+     ~Track.AdjustSizeValue
+     ~Track.AdjustType
+     ~Track.Align
+     ~Track.Anchors
+     ~Track.ApplyingEffect
+     ~Track.AutoCapture
+     ~Track.AutoTranslate
+     ~Track.AxisAlignedRect
+     ~Track.BoundsRect
+     ~Track.CanParentFocus
+     ~Track.Canvas
+     ~Track.Children
+     ~Track.ChildrenCount
+     ~Track.ChildrenRect
+     ~Track.ClassName
+     ~Track.ClipChildren
+     ~Track.ClipParent
+     ~Track.ClipRect
+     ~Track.ComObject
+     ~Track.ComponentCount
+     ~Track.ComponentIndex
+     ~Track.ComponentState
+     ~Track.ComponentStyle
+     ~Track.Components
+     ~Track.ControlType
+     ~Track.Controls
+     ~Track.ControlsCount
+     ~Track.Cursor
+     ~Track.Data
+     ~Track.DefaultSize
+     ~Track.DefaultStyleLookupName
+     ~Track.DesignInfo
+     ~Track.DisableDisappear
+     ~Track.DisableFocusEffect
+     ~Track.DragMode
+     ~Track.EnableDragHighlight
+     ~Track.Enabled
+     ~Track.FixedSize
+     ~Track.Frequency
+     ~Track.HasAfterPaintEffect
+     ~Track.HasClipParent
+     ~Track.HasDisablePaintEffect
+     ~Track.HasEffect
+     ~Track.Height
+     ~Track.HelpContext
+     ~Track.HelpKeyword
+     ~Track.HelpType
+     ~Track.Hint
+     ~Track.HitTest
+     ~Track.InPaintTo
+     ~Track.Index
+     ~Track.InheritedCursor
+     ~Track.InvertAbsoluteMatrix
+     ~Track.IsDragOver
+     ~Track.IsFocused
+     ~Track.IsInflated
+     ~Track.IsMouseOver
+     ~Track.IsTracking
+     ~Track.IsVisible
+     ~Track.LocalRect
+     ~Track.Locked
+     ~Track.Margins
+     ~Track.Max
+     ~Track.Min
+     ~Track.Model
+     ~Track.Name
+     ~Track.Observers
+     ~Track.OnCanFocus
+     ~Track.OnDragDrop
+     ~Track.OnDragEnter
+     ~Track.OnDragOver
+     ~Track.OnGesture
+     ~Track.OnPaint
+     ~Track.OnPainting
+     ~Track.Opacity
+     ~Track.Orientation
+     ~Track.Owner
+     ~Track.Padding
+     ~Track.Parent
+     ~Track.ParentClassStyleLookupName
+     ~Track.ParentControl
+     ~Track.ParentShowHint
+     ~Track.ParentedRect
+     ~Track.ParentedVisible
+     ~Track.PopupMenu
+     ~Track.Position
+     ~Track.Presentation
+     ~Track.PresentationProxy
+     ~Track.PresentationState
+     ~Track.Pressed
+     ~Track.PressedPosition
+     ~Track.Root
+     ~Track.RotationAngle
+     ~Track.RotationCenter
+     ~Track.Scale
+     ~Track.Scene
+     ~Track.ShowHint
+     ~Track.Size
+     ~Track.SmallChange
+     ~Track.Stored
+     ~Track.StyleLookup
+     ~Track.StyleName
+     ~Track.StyleState
+     ~Track.StylesData
+     ~Track.TabOrder
+     ~Track.TabStop
+     ~Track.Tag
+     ~Track.TagFloat
+     ~Track.TagObject
+     ~Track.TagString
+     ~Track.Thumb
+     ~Track.Touch
+     ~Track.TouchTargetExpansion
+     ~Track.Tracking
+     ~Track.UpdateRect
+     ~Track.VCLComObject
+     ~Track.Value
+     ~Track.ValueRange
+     ~Track.ViewportSize
+     ~Track.Visible
+     ~Track.Width
+   

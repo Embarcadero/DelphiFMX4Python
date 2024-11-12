@@ -1,0 +1,29 @@
+*******
+v1.0.5
+*******
+
+:Date: March 15, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+* Priyatham
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+Fixed Bugs
+------------
+
+* Fixing the Mac M1 dead-lock when loading the delphifmx package (`#38 <https://github.com/Embarcadero/DelphiFMX4Python/issues/38>`_ and `#7 <https://github.com/Embarcadero/DelphiFMX4Python/issues/7>`_).
+
+Enhancements
+------------
+
+* Bytes manipulation with streams (`#68 <https://github.com/Embarcadero/DelphiFMX4Python/issues/68>`_).

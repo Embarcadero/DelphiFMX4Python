@@ -1,0 +1,24 @@
+*******
+v1.0.6
+*******
+
+:Date: March 29, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+* Priyatham
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+Enhancements
+------------
+
+* Method arguments and return type docstr for Sphinx.

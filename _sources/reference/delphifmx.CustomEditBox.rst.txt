@@ -1,0 +1,177 @@
+﻿CustomEditBox
+=============
+
+Qualified name: ``delphifmx.CustomEditBox``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: CustomEditBox
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomEditBox.AfterConstruction
+      ~CustomEditBox.ApplyStyleLookup
+      ~CustomEditBox.Inflate
+      ~CustomEditBox.NeedStyleLookup
+      ~CustomEditBox.ValueDec
+      ~CustomEditBox.ValueInc
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomEditBox.AbsoluteClipRect
+     ~CustomEditBox.AbsoluteEnabled
+     ~CustomEditBox.AbsoluteHeight
+     ~CustomEditBox.AbsoluteMatrix
+     ~CustomEditBox.AbsoluteOpacity
+     ~CustomEditBox.AbsoluteRect
+     ~CustomEditBox.AbsoluteScale
+     ~CustomEditBox.AbsoluteWidth
+     ~CustomEditBox.ActionClient
+     ~CustomEditBox.AdjustSizeValue
+     ~CustomEditBox.AdjustType
+     ~CustomEditBox.Align
+     ~CustomEditBox.Anchors
+     ~CustomEditBox.ApplyingEffect
+     ~CustomEditBox.AutoCapture
+     ~CustomEditBox.AutoSelect
+     ~CustomEditBox.AutoTranslate
+     ~CustomEditBox.AxisAlignedRect
+     ~CustomEditBox.BoundsRect
+     ~CustomEditBox.ButtonsContent
+     ~CustomEditBox.CanParentFocus
+     ~CustomEditBox.Canvas
+     ~CustomEditBox.Caret
+     ~CustomEditBox.CaretPosition
+     ~CustomEditBox.CharCase
+     ~CustomEditBox.CheckSpelling
+     ~CustomEditBox.Children
+     ~CustomEditBox.ChildrenCount
+     ~CustomEditBox.ChildrenRect
+     ~CustomEditBox.ClassName
+     ~CustomEditBox.ClipChildren
+     ~CustomEditBox.ClipParent
+     ~CustomEditBox.ClipRect
+     ~CustomEditBox.ComObject
+     ~CustomEditBox.ComponentCount
+     ~CustomEditBox.ComponentIndex
+     ~CustomEditBox.ComponentState
+     ~CustomEditBox.ComponentStyle
+     ~CustomEditBox.Components
+     ~CustomEditBox.ControlType
+     ~CustomEditBox.Controls
+     ~CustomEditBox.ControlsCount
+     ~CustomEditBox.Cursor
+     ~CustomEditBox.Data
+     ~CustomEditBox.DecimalDigits
+     ~CustomEditBox.DefaultSize
+     ~CustomEditBox.DefaultStyleLookupName
+     ~CustomEditBox.DefaultTextSettings
+     ~CustomEditBox.DesignInfo
+     ~CustomEditBox.DisableDisappear
+     ~CustomEditBox.DisableFocusEffect
+     ~CustomEditBox.DragMode
+     ~CustomEditBox.EnableDragHighlight
+     ~CustomEditBox.Enabled
+     ~CustomEditBox.FilterChar
+     ~CustomEditBox.FixedSize
+     ~CustomEditBox.Font
+     ~CustomEditBox.FontColor
+     ~CustomEditBox.HasAfterPaintEffect
+     ~CustomEditBox.HasClipParent
+     ~CustomEditBox.HasDisablePaintEffect
+     ~CustomEditBox.HasEffect
+     ~CustomEditBox.Height
+     ~CustomEditBox.HelpContext
+     ~CustomEditBox.HelpKeyword
+     ~CustomEditBox.HelpType
+     ~CustomEditBox.HideSelectionOnExit
+     ~CustomEditBox.Hint
+     ~CustomEditBox.HitTest
+     ~CustomEditBox.HorzIncrement
+     ~CustomEditBox.ImeMode
+     ~CustomEditBox.InPaintTo
+     ~CustomEditBox.Index
+     ~CustomEditBox.InheritedCursor
+     ~CustomEditBox.InvertAbsoluteMatrix
+     ~CustomEditBox.IsDragOver
+     ~CustomEditBox.IsFocused
+     ~CustomEditBox.IsInflated
+     ~CustomEditBox.IsMouseOver
+     ~CustomEditBox.IsVisible
+     ~CustomEditBox.KeyboardType
+     ~CustomEditBox.KillFocusByReturn
+     ~CustomEditBox.LocalRect
+     ~CustomEditBox.Locked
+     ~CustomEditBox.Margins
+     ~CustomEditBox.Max
+     ~CustomEditBox.MaxLength
+     ~CustomEditBox.Min
+     ~CustomEditBox.Model
+     ~CustomEditBox.Name
+     ~CustomEditBox.Observers
+     ~CustomEditBox.OnGesture
+     ~CustomEditBox.Opacity
+     ~CustomEditBox.Owner
+     ~CustomEditBox.Padding
+     ~CustomEditBox.Parent
+     ~CustomEditBox.ParentClassStyleLookupName
+     ~CustomEditBox.ParentControl
+     ~CustomEditBox.ParentedRect
+     ~CustomEditBox.ParentedVisible
+     ~CustomEditBox.Password
+     ~CustomEditBox.PopupMenu
+     ~CustomEditBox.Position
+     ~CustomEditBox.Presentation
+     ~CustomEditBox.PresentationProxy
+     ~CustomEditBox.PresentationState
+     ~CustomEditBox.Pressed
+     ~CustomEditBox.PressedPosition
+     ~CustomEditBox.ReadOnly
+     ~CustomEditBox.ResultingTextSettings
+     ~CustomEditBox.ReturnKeyType
+     ~CustomEditBox.Root
+     ~CustomEditBox.Scene
+     ~CustomEditBox.SelLength
+     ~CustomEditBox.SelStart
+     ~CustomEditBox.SelText
+     ~CustomEditBox.SelectionFill
+     ~CustomEditBox.ShowHint
+     ~CustomEditBox.Size
+     ~CustomEditBox.Stored
+     ~CustomEditBox.StyleLookup
+     ~CustomEditBox.StyleName
+     ~CustomEditBox.StyleState
+     ~CustomEditBox.StyledSettings
+     ~CustomEditBox.StylesData
+     ~CustomEditBox.TabOrder
+     ~CustomEditBox.TabStop
+     ~CustomEditBox.Tag
+     ~CustomEditBox.TagFloat
+     ~CustomEditBox.TagObject
+     ~CustomEditBox.TagString
+     ~CustomEditBox.Text
+     ~CustomEditBox.TextAlign
+     ~CustomEditBox.TextContentRect
+     ~CustomEditBox.TextPrompt
+     ~CustomEditBox.TextSettings
+     ~CustomEditBox.Touch
+     ~CustomEditBox.TouchTargetExpansion
+     ~CustomEditBox.Typing
+     ~CustomEditBox.UpdateRect
+     ~CustomEditBox.VCLComObject
+     ~CustomEditBox.Value
+     ~CustomEditBox.ValueRange
+     ~CustomEditBox.ValueType
+     ~CustomEditBox.VertTextAlign
+     ~CustomEditBox.Visible
+     ~CustomEditBox.Width
+   

@@ -1,0 +1,136 @@
+﻿CustomBufferedLayout
+====================
+
+Qualified name: ``delphifmx.CustomBufferedLayout``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: CustomBufferedLayout
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CustomBufferedLayout.AbsoluteToLocal
+      ~CustomBufferedLayout.BringToFront
+      ~CustomBufferedLayout.CanFocus
+      ~CustomBufferedLayout.LocalToAbsolute
+      ~CustomBufferedLayout.PrepareForPaint
+      ~CustomBufferedLayout.Repaint
+      ~CustomBufferedLayout.ResetFocus
+      ~CustomBufferedLayout.SendToBack
+      ~CustomBufferedLayout.SetBounds
+      ~CustomBufferedLayout.SetFocus
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CustomBufferedLayout.AbsoluteClipRect
+     ~CustomBufferedLayout.AbsoluteEnabled
+     ~CustomBufferedLayout.AbsoluteHeight
+     ~CustomBufferedLayout.AbsoluteMatrix
+     ~CustomBufferedLayout.AbsoluteOpacity
+     ~CustomBufferedLayout.AbsoluteRect
+     ~CustomBufferedLayout.AbsoluteScale
+     ~CustomBufferedLayout.AbsoluteWidth
+     ~CustomBufferedLayout.ActionClient
+     ~CustomBufferedLayout.Align
+     ~CustomBufferedLayout.Anchors
+     ~CustomBufferedLayout.ApplyingEffect
+     ~CustomBufferedLayout.AutoCapture
+     ~CustomBufferedLayout.AxisAlignedRect
+     ~CustomBufferedLayout.BoundsRect
+     ~CustomBufferedLayout.CanParentFocus
+     ~CustomBufferedLayout.Canvas
+     ~CustomBufferedLayout.Children
+     ~CustomBufferedLayout.ChildrenCount
+     ~CustomBufferedLayout.ChildrenRect
+     ~CustomBufferedLayout.ClassName
+     ~CustomBufferedLayout.ClipChildren
+     ~CustomBufferedLayout.ClipParent
+     ~CustomBufferedLayout.ClipRect
+     ~CustomBufferedLayout.ComObject
+     ~CustomBufferedLayout.ComponentCount
+     ~CustomBufferedLayout.ComponentIndex
+     ~CustomBufferedLayout.ComponentState
+     ~CustomBufferedLayout.ComponentStyle
+     ~CustomBufferedLayout.Components
+     ~CustomBufferedLayout.Controls
+     ~CustomBufferedLayout.ControlsCount
+     ~CustomBufferedLayout.Cursor
+     ~CustomBufferedLayout.Data
+     ~CustomBufferedLayout.DefaultSize
+     ~CustomBufferedLayout.DesignInfo
+     ~CustomBufferedLayout.DisableDisappear
+     ~CustomBufferedLayout.DisableFocusEffect
+     ~CustomBufferedLayout.DragMode
+     ~CustomBufferedLayout.EnableDragHighlight
+     ~CustomBufferedLayout.Enabled
+     ~CustomBufferedLayout.FixedSize
+     ~CustomBufferedLayout.HasAfterPaintEffect
+     ~CustomBufferedLayout.HasClipParent
+     ~CustomBufferedLayout.HasDisablePaintEffect
+     ~CustomBufferedLayout.HasEffect
+     ~CustomBufferedLayout.Height
+     ~CustomBufferedLayout.Hint
+     ~CustomBufferedLayout.HitTest
+     ~CustomBufferedLayout.InPaintTo
+     ~CustomBufferedLayout.Index
+     ~CustomBufferedLayout.InheritedCursor
+     ~CustomBufferedLayout.InvertAbsoluteMatrix
+     ~CustomBufferedLayout.IsDragOver
+     ~CustomBufferedLayout.IsFocused
+     ~CustomBufferedLayout.IsInflated
+     ~CustomBufferedLayout.IsMouseOver
+     ~CustomBufferedLayout.IsVisible
+     ~CustomBufferedLayout.LocalRect
+     ~CustomBufferedLayout.Locked
+     ~CustomBufferedLayout.Margins
+     ~CustomBufferedLayout.Name
+     ~CustomBufferedLayout.Observers
+     ~CustomBufferedLayout.OnDragDrop
+     ~CustomBufferedLayout.OnDragEnter
+     ~CustomBufferedLayout.OnDragOver
+     ~CustomBufferedLayout.OnGesture
+     ~CustomBufferedLayout.OnPaint
+     ~CustomBufferedLayout.OnPainting
+     ~CustomBufferedLayout.Opacity
+     ~CustomBufferedLayout.Owner
+     ~CustomBufferedLayout.Padding
+     ~CustomBufferedLayout.Parent
+     ~CustomBufferedLayout.ParentControl
+     ~CustomBufferedLayout.ParentShowHint
+     ~CustomBufferedLayout.ParentedRect
+     ~CustomBufferedLayout.ParentedVisible
+     ~CustomBufferedLayout.PopupMenu
+     ~CustomBufferedLayout.Position
+     ~CustomBufferedLayout.Pressed
+     ~CustomBufferedLayout.PressedPosition
+     ~CustomBufferedLayout.Root
+     ~CustomBufferedLayout.RotationAngle
+     ~CustomBufferedLayout.RotationCenter
+     ~CustomBufferedLayout.Scale
+     ~CustomBufferedLayout.Scene
+     ~CustomBufferedLayout.ShowHint
+     ~CustomBufferedLayout.Size
+     ~CustomBufferedLayout.Stored
+     ~CustomBufferedLayout.StyleName
+     ~CustomBufferedLayout.TabOrder
+     ~CustomBufferedLayout.TabStop
+     ~CustomBufferedLayout.Tag
+     ~CustomBufferedLayout.TagFloat
+     ~CustomBufferedLayout.TagObject
+     ~CustomBufferedLayout.TagString
+     ~CustomBufferedLayout.Touch
+     ~CustomBufferedLayout.TouchTargetExpansion
+     ~CustomBufferedLayout.UpdateRect
+     ~CustomBufferedLayout.VCLComObject
+     ~CustomBufferedLayout.Visible
+     ~CustomBufferedLayout.Width
+   

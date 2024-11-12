@@ -1,0 +1,29 @@
+*******
+v1.0.3
+*******
+
+:Date: March 07, 2023
+
+Contributors
+============
+
+
+* Lucas M Belo
+
+
+The patches included in this release have been reviewed by
+the following contributors.
+
+* Lucas M Belo
+* Priyatham
+
+Enhancements
+------------
+
+- Documentation Support
+- Delphi class hierarchy
+- Delphi members as Python builtins
+- Including Python 3.11
+- New wrappers
+and more...
+
