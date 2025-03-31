@@ -1,0 +1,1271 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="DelphiFMX" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference_index/delphifmx_classes.html" />
+<meta property="og:site_name" content="DelphiFMX | Documentation" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/DelphiFMX4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiFMX | Documentation" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Action" href="../reference/delphifmx.Action.html" /><link rel="prev" title="Reference Manual" href="../reference.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+        <title>DelphiFMX - DelphiFMX Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94117f49" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiFMX Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiFMX4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiFMX4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiFMX Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children current-page"><a class="current reference internal" href="#">DelphiFMX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiFMX</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomViewAction.html">CustomViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.AdapterListView.html">AdapterListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.AppearanceListView.html">AppearanceListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomListView.html">CustomListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ListView.html">ListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ListViewBase.html">ListViewBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedListView.html">PresentedListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.AniIndicator.html">AniIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ArcDial.html">ArcDial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BitmapTrackBar.html">BitmapTrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CalloutPanel.html">CalloutPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CornerButton.html">CornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomButton.html">CustomButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomCornerButton.html">CustomCornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomSwitch.html">CustomSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomTrack.html">CustomTrack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Expander.html">Expander</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ExpanderButton.html">ExpanderButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ImageControl.html">ImageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PathLabel.html">PathLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedTextControl.html">PresentedTextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ProgressBar.html">ProgressBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SizeGrip.html">SizeGrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SmallScrollBar.html">SmallScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SpeedButton.html">SpeedButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Splitter.html">Splitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Switch.html">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Thumb.html">Thumb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Track.html">Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Arc.html">Arc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CalloutRectangle.html">CalloutRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CaretRectangle.html">CaretRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Circle.html">Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPath.html">CustomPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Ellipse.html">Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Image.html">Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Line.html">Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PaintBox.html">PaintBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Pie.html">Pie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Rectangle.html">Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.RoundRect.html">RoundRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Selection.html">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SelectionPoint.html">SelectionPoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Text.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BaseValueRange.html">BaseValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomValueRange.html">CustomValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomValueRangeAction.html">CustomValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FileExit.html">FileExit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FileHideApp.html">FileHideApp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FileHideAppOthers.html">FileHideAppOthers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.HintAction.html">HintAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ObjectViewAction.html">ObjectViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SysCommonAction.html">SysCommonAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ValueRange.html">ValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ValueRangeAction.html">ValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ViewAction.html">ViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.VirtualKeyboard.html">VirtualKeyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.WindowClose.html">WindowClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Bounds.html">Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ControlSize.html">ControlSize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPopupMenu.html">CustomPopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FmxObject.html">FmxObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Position.html">Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.BufferedLayout.html">BufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomBufferedLayout.html">CustomBufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CameraComponent.html">CameraComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomMediaCodec.html">CustomMediaCodec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomMediaPlayerAction.html">CustomMediaPlayerAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Media.html">Media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerControl.html">MediaPlayerControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerCurrentTime.html">MediaPlayerCurrentTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerPlayPause.html">MediaPlayerPlayPause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerStart.html">MediaPlayerStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerStop.html">MediaPlayerStop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerValue.html">MediaPlayerValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MediaPlayerVolume.html">MediaPlayerVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CheckColumn.html">CheckColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Column.html">Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CurrencyColumn.html">CurrencyColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomNumberColumn.html">CustomNumberColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.DateColumn.html">DateColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.DateTimeColumn.html">DateTimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.DateTimeColumnBase.html">DateTimeColumnBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FloatColumn.html">FloatColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.GlyphColumn.html">GlyphColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Grid.html">Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ImageColumn.html">ImageColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.IntegerColumn.html">IntegerColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PopupColumn.html">PopupColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ProgressColumn.html">ProgressColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StringColumn.html">StringColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.TimeColumn.html">TimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorButton.html">ColorButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorComboBox.html">ColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorListBox.html">ColorListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorPanel.html">ColorPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorPicker.html">ColorPicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ColorQuad.html">ColorQuad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ComboColorBox.html">ComboColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomColorComboBox.html">CustomColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.GradientEdit.html">GradientEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomComboBox.html">CustomComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomListBox.html">CustomListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ListBoxItem.html">ListBoxItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ComboEdit.html">ComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ComboEditBase.html">ComboEditBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomComboEdit.html">CustomComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CommonCustomForm.html">CommonCustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPopupForm.html">CustomPopupForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Frame.html">Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomControlAction.html">CustomControlAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Popup.html">Popup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StyledControl.html">StyledControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StyleBook.html">StyleBook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.TextControl.html">TextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomEditBox.html">CustomEditBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomMultiView.html">CustomMultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MultiView.html">MultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPresentedFramedScrollBox.html">CustomPresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPresentedFramedVertScrollBox.html">CustomPresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPresentedHorzScrollBox.html">CustomPresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPresentedScrollBox.html">CustomPresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomPresentedVertScrollBox.html">CustomPresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedFramedScrollBox.html">PresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedFramedVertScrollBox.html">PresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedHorzScrollBox.html">PresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedScrollBox.html">PresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PresentedVertScrollBox.html">PresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomScrollBox.html">CustomScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FlowLayout.html">FlowLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FramedScrollBox.html">FramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FramedVertScrollBox.html">FramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.GridLayout.html">GridLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.GridPanelLayout.html">GridPanelLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.HorzScrollBox.html">HorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Layout.html">Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ScaledLayout.html">ScaledLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.ScrollBox.html">ScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.VertScrollBox.html">VertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateAction.html">FMXBindNavigateAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateApplyUpdates.html">FMXBindNavigateApplyUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateDelete.html">FMXBindNavigateDelete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateEdit.html">FMXBindNavigateEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateFirst.html">FMXBindNavigateFirst</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateInsert.html">FMXBindNavigateInsert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateLast.html">FMXBindNavigateLast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateNext.html">FMXBindNavigateNext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigatePost.html">FMXBindNavigatePost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigatePrior.html">FMXBindNavigatePrior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateRefresh.html">FMXBindNavigateRefresh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateCancel.html">FMXBindNavigateCancel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateCancelUpdates.html">FMXBindNavigateCancelUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MenuBar.html">MenuBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Point.html">Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.PointF.html">PointF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Rect.html">Rect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.RectF.html">RectF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Size.html">Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SizeF.html">SizeF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SearchBox.html">SearchBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.SpinBox.html">SpinBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.StyleStreaming.html">StyleStreaming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reference/delphifmx.TabItem.html">TabItem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.4-changelog.html">v1.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.5-changelog.html">v1.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.6-changelog.html">v1.0.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="delphifmx">
+<h1>DelphiFMX<a class="headerlink" href="#delphifmx" title="Link to this heading">¶</a></h1>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Action.html#delphifmx.Action" title="delphifmx.Action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Action</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ActionList.html#delphifmx.ActionList" title="delphifmx.ActionList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActionList</span></code></a></p></td>
+<td><p>Maintains a list of actions that can be used by components such as controls, menu items, and tool buttons.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomAction.html#delphifmx.CustomAction" title="delphifmx.CustomAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomAction</span></code></a></p></td>
+<td><p>TCustomAction is a base class for FireMonkey actions intended to be used with menu items and controls.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomActionList.html#delphifmx.CustomActionList" title="delphifmx.CustomActionList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomActionList</span></code></a></p></td>
+<td><p>The base class for list of actions, without the published properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomViewAction.html#delphifmx.CustomViewAction" title="delphifmx.CustomViewAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomViewAction</span></code></a></p></td>
+<td><p>A base class for actions that show a specified component when executed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.AdapterListView.html#delphifmx.AdapterListView" title="delphifmx.AdapterListView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdapterListView</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.AppearanceListView.html#delphifmx.AppearanceListView" title="delphifmx.AppearanceListView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AppearanceListView</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomListView.html#delphifmx.CustomListView" title="delphifmx.CustomListView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomListView</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TCustomListView</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ListView.html#delphifmx.ListView" title="delphifmx.ListView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListView</span></code></a></p></td>
+<td><p>Represents a FireMonkey list view component that you can use to hold and present various types of items.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ListViewBase.html#delphifmx.ListViewBase" title="delphifmx.ListViewBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListViewBase</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedListView.html#delphifmx.PresentedListView" title="delphifmx.PresentedListView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedListView</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.AniIndicator.html#delphifmx.AniIndicator" title="delphifmx.AniIndicator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AniIndicator</span></code></a></p></td>
+<td><p>Represents an animated spinning indicator used for illustrating an indefinite waiting time for application processes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ArcDial.html#delphifmx.ArcDial" title="delphifmx.ArcDial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArcDial</span></code></a></p></td>
+<td><p>Represents a general-purpose knob-style rotating button.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BitmapTrackBar.html#delphifmx.BitmapTrackBar" title="delphifmx.BitmapTrackBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BitmapTrackBar</span></code></a></p></td>
+<td><p>Represents a track bar similar to that implemented by TTrackBar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Button.html#delphifmx.Button" title="delphifmx.Button"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Button</span></code></a></p></td>
+<td><p>Represents a push button that contains a text caption.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CalloutPanel.html#delphifmx.CalloutPanel" title="delphifmx.CalloutPanel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CalloutPanel</span></code></a></p></td>
+<td><p>A container for extra information relevant to another item, with a visual indicator pointing to that item.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CheckBox.html#delphifmx.CheckBox" title="delphifmx.CheckBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CheckBox</span></code></a></p></td>
+<td><p>Represents a FireMonkey styled check box that can be either on (selected) or off (cleared).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CornerButton.html#delphifmx.CornerButton" title="delphifmx.CornerButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CornerButton</span></code></a></p></td>
+<td><p>Represents a button with customizable corners.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomButton.html#delphifmx.CustomButton" title="delphifmx.CustomButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomButton</span></code></a></p></td>
+<td><p>Represents the base class for all buttons.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomCornerButton.html#delphifmx.CustomCornerButton" title="delphifmx.CustomCornerButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomCornerButton</span></code></a></p></td>
+<td><p>Represents a TCustomButton control and, additionally, provides the tools to customize shapes of TCustomCornerButton control's corners.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomSwitch.html#delphifmx.CustomSwitch" title="delphifmx.CustomSwitch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomSwitch</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomTrack.html#delphifmx.CustomTrack" title="delphifmx.CustomTrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomTrack</span></code></a></p></td>
+<td><p>Base class for all track bar components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Expander.html#delphifmx.Expander" title="delphifmx.Expander"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Expander</span></code></a></p></td>
+<td><p>Represents a graphical control used to hold multiple graphical controls with the possibility to expand or contract its display area.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ExpanderButton.html#delphifmx.ExpanderButton" title="delphifmx.ExpanderButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExpanderButton</span></code></a></p></td>
+<td><p>Represents a collapse/expand button used exclusively by the TExpander component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.GroupBox.html#delphifmx.GroupBox" title="delphifmx.GroupBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GroupBox</span></code></a></p></td>
+<td><p>Represents a graphical control used to arrange multiple related graphical controls on the surface of a form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ImageControl.html#delphifmx.ImageControl" title="delphifmx.ImageControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageControl</span></code></a></p></td>
+<td><p>Represents a graphical control used to display images on a FireMonkey form.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Label.html#delphifmx.Label" title="delphifmx.Label"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Label</span></code></a></p></td>
+<td><p>Represents a graphical control used to display text in FireMonkey forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Panel.html#delphifmx.Panel" title="delphifmx.Panel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Panel</span></code></a></p></td>
+<td><p>Represents a generic general-purpose panel used to hold multiple controls for organizing purposes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PathLabel.html#delphifmx.PathLabel" title="delphifmx.PathLabel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PathLabel</span></code></a></p></td>
+<td><p>Represents a graphical control used to display information contained in TPathData within FireMonkey forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedTextControl.html#delphifmx.PresentedTextControl" title="delphifmx.PresentedTextControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedTextControl</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ProgressBar.html#delphifmx.ProgressBar" title="delphifmx.ProgressBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProgressBar</span></code></a></p></td>
+<td><p>Represents an animated progress bar indicator for general progress indication.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.RadioButton.html#delphifmx.RadioButton" title="delphifmx.RadioButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadioButton</span></code></a></p></td>
+<td><p>Represents a radio (option) button.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ScrollBar.html#delphifmx.ScrollBar" title="delphifmx.ScrollBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollBar</span></code></a></p></td>
+<td><p>Represents a standard scroll bar that is used to scroll the contents of a window, form, or a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.SizeGrip.html#delphifmx.SizeGrip" title="delphifmx.SizeGrip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizeGrip</span></code></a></p></td>
+<td><p>Represents a graphical control used to dynamically resize FireMonkey forms.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.SmallScrollBar.html#delphifmx.SmallScrollBar" title="delphifmx.SmallScrollBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SmallScrollBar</span></code></a></p></td>
+<td><p>Represents a variation of a standard scroll bar.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.SpeedButton.html#delphifmx.SpeedButton" title="delphifmx.SpeedButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpeedButton</span></code></a></p></td>
+<td><p>Represents a push button that contains a text caption, for usage in various toolbars that you might employ into your applications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Splitter.html#delphifmx.Splitter" title="delphifmx.Splitter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Splitter</span></code></a></p></td>
+<td><p>TSplitter divides the client area of a FireMonkey form into resizable panes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.StatusBar.html#delphifmx.StatusBar" title="delphifmx.StatusBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StatusBar</span></code></a></p></td>
+<td><p>Represents a status bar component for use in FireMonkey forms.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Switch.html#delphifmx.Switch" title="delphifmx.Switch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Switch</span></code></a></p></td>
+<td><p>Represents a two-way on-off switch for use in applications.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Thumb.html#delphifmx.Thumb" title="delphifmx.Thumb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Thumb</span></code></a></p></td>
+<td><p>Represents a thumb control for use with track bars.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ToolBar.html#delphifmx.ToolBar" title="delphifmx.ToolBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToolBar</span></code></a></p></td>
+<td><p>Represents a toolbar component for use in FireMonkey forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Track.html#delphifmx.Track" title="delphifmx.Track"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Track</span></code></a></p></td>
+<td><p>Is a TCustomTrack with a set of published properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.TrackBar.html#delphifmx.TrackBar" title="delphifmx.TrackBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrackBar</span></code></a></p></td>
+<td><p>Represents a general-purpose track bar for use in applications where tracking is required.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Arc.html#delphifmx.Arc" title="delphifmx.Arc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Arc</span></code></a></p></td>
+<td><p>TArc defines 2D arcs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CalloutRectangle.html#delphifmx.CalloutRectangle" title="delphifmx.CalloutRectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CalloutRectangle</span></code></a></p></td>
+<td><p>A rectangle with a triangular &quot;peak&quot; on one of four sides, used primarily to render a TCalloutPanel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CaretRectangle.html#delphifmx.CaretRectangle" title="delphifmx.CaretRectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CaretRectangle</span></code></a></p></td>
+<td><p>TCaretRectangle is a TRectangle descendant that can additionally hold caret (cursor) information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Circle.html#delphifmx.Circle" title="delphifmx.Circle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Circle</span></code></a></p></td>
+<td><p>TCircle defines 2D circles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPath.html#delphifmx.CustomPath" title="delphifmx.CustomPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPath</span></code></a></p></td>
+<td><p>TCustomPath is the base class for all 2D path-type shapes representing groups of connected curves and lines.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Ellipse.html#delphifmx.Ellipse" title="delphifmx.Ellipse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Ellipse</span></code></a></p></td>
+<td><p>TEllipse defines 2D ellipses.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Image.html#delphifmx.Image" title="delphifmx.Image"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Image</span></code></a></p></td>
+<td><p>TImage defines 2D image components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Line.html#delphifmx.Line" title="delphifmx.Line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Line</span></code></a></p></td>
+<td><p>TLine defines 2D lines.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.PaintBox.html#delphifmx.PaintBox" title="delphifmx.PaintBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PaintBox</span></code></a></p></td>
+<td><p>TPaintBox defines a 2D image component providing a canvas that an application can use for rendering an image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Path.html#delphifmx.Path" title="delphifmx.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a></p></td>
+<td><p>TPath defines 2D path-type shapes representing groups of connected curves and lines.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Pie.html#delphifmx.Pie" title="delphifmx.Pie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pie</span></code></a></p></td>
+<td><p>TPie defines 2D pies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Rectangle.html#delphifmx.Rectangle" title="delphifmx.Rectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Rectangle</span></code></a></p></td>
+<td><p>TRectangle defines 2D rectangles with customized corners.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.RoundRect.html#delphifmx.RoundRect" title="delphifmx.RoundRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RoundRect</span></code></a></p></td>
+<td><p>TRoundRect defines 2D rectangles with rounded corners.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Selection.html#delphifmx.Selection" title="delphifmx.Selection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Selection</span></code></a></p></td>
+<td><p>TSelection defines 2D rectangle object that can be moved and resized.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.SelectionPoint.html#delphifmx.SelectionPoint" title="delphifmx.SelectionPoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectionPoint</span></code></a></p></td>
+<td><p>TSelectionPoint defines a 2D point object that can be moved.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Shape.html#delphifmx.Shape" title="delphifmx.Shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Shape</span></code></a></p></td>
+<td><p>The base class for 2D graphic primitives--TLines, TRectangles, TPaths, and others.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Text.html#delphifmx.Text" title="delphifmx.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Text</span></code></a></p></td>
+<td><p>TText defines 2D text objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.BaseBindScopeComponent.html#delphifmx.BaseBindScopeComponent" title="delphifmx.BaseBindScopeComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseBindScopeComponent</span></code></a></p></td>
+<td><p>Base class for the binding scope component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BaseLinkingBindSource.html#delphifmx.BaseLinkingBindSource" title="delphifmx.BaseLinkingBindSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseLinkingBindSource</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TBaseLinkingBindSource</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.BasicBindComponent.html#delphifmx.BasicBindComponent" title="delphifmx.BasicBindComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BasicBindComponent</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TBasicBindComponent</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BindComponentDelegate.html#delphifmx.BindComponentDelegate" title="delphifmx.BindComponentDelegate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BindComponentDelegate</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.BindingsList.html#delphifmx.BindingsList" title="delphifmx.BindingsList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BindingsList</span></code></a></p></td>
+<td><p>Implements the bindings list component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ContainedBindComponent.html#delphifmx.ContainedBindComponent" title="delphifmx.ContainedBindComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContainedBindComponent</span></code></a></p></td>
+<td><p>Base class for all common binding components descending from it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomBindingsList.html#delphifmx.CustomBindingsList" title="delphifmx.CustomBindingsList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomBindingsList</span></code></a></p></td>
+<td><p>Represents the base class for the binding list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomLinkControlToField.html#delphifmx.CustomLinkControlToField" title="delphifmx.CustomLinkControlToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomLinkControlToField</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomLinkListControlToField.html#delphifmx.CustomLinkListControlToField" title="delphifmx.CustomLinkListControlToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomLinkListControlToField</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomLinkPropertyToField.html#delphifmx.CustomLinkPropertyToField" title="delphifmx.CustomLinkPropertyToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomLinkPropertyToField</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TCustomLinkPropertyToField</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.LinkControlDelegate.html#delphifmx.LinkControlDelegate" title="delphifmx.LinkControlDelegate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkControlDelegate</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.LinkControlToField.html#delphifmx.LinkControlToField" title="delphifmx.LinkControlToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkControlToField</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TLinkControlToField</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.LinkControlToFieldDelegate.html#delphifmx.LinkControlToFieldDelegate" title="delphifmx.LinkControlToFieldDelegate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkControlToFieldDelegate</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.LinkListControlToField.html#delphifmx.LinkListControlToField" title="delphifmx.LinkListControlToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkListControlToField</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TLinkListControlToField</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.LinkPropertyToField.html#delphifmx.LinkPropertyToField" title="delphifmx.LinkPropertyToField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkPropertyToField</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TLinkPropertyToField</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.LinkPropertyToFieldDelegate.html#delphifmx.LinkPropertyToFieldDelegate" title="delphifmx.LinkPropertyToFieldDelegate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinkPropertyToFieldDelegate</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.BaseObjectBindSource.html#delphifmx.BaseObjectBindSource" title="delphifmx.BaseObjectBindSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseObjectBindSource</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPrototypeBindSource.html#delphifmx.CustomPrototypeBindSource" title="delphifmx.CustomPrototypeBindSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPrototypeBindSource</span></code></a></p></td>
+<td><p>Is a base class that implements a bind source for creating sample data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PrototypeBindSource.html#delphifmx.PrototypeBindSource" title="delphifmx.PrototypeBindSource"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PrototypeBindSource</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPrototypeBindSource</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BaseValueRange.html#delphifmx.BaseValueRange" title="delphifmx.BaseValueRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseValueRange</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomValueRange.html#delphifmx.CustomValueRange" title="delphifmx.CustomValueRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomValueRange</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomValueRangeAction.html#delphifmx.CustomValueRangeAction" title="delphifmx.CustomValueRangeAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomValueRangeAction</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FileExit.html#delphifmx.FileExit" title="delphifmx.FileExit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileExit</span></code></a></p></td>
+<td><p>The standard action for shutting down the current application.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FileHideApp.html#delphifmx.FileHideApp" title="delphifmx.FileHideApp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileHideApp</span></code></a></p></td>
+<td><p>The standard action for hiding and showing (if hidden) a running macOS application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FileHideAppOthers.html#delphifmx.FileHideAppOthers" title="delphifmx.FileHideAppOthers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FileHideAppOthers</span></code></a></p></td>
+<td><p>The standard action for hiding all macOS applications, except the receiver.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.HintAction.html#delphifmx.HintAction" title="delphifmx.HintAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HintAction</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ObjectViewAction.html#delphifmx.ObjectViewAction" title="delphifmx.ObjectViewAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectViewAction</span></code></a></p></td>
+<td><p>A base class for actions that show a specified component when executed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.SysCommonAction.html#delphifmx.SysCommonAction" title="delphifmx.SysCommonAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SysCommonAction</span></code></a></p></td>
+<td><p>A base class for standard actions that provides system functionality.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ValueRange.html#delphifmx.ValueRange" title="delphifmx.ValueRange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueRange</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TValueRange</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ValueRangeAction.html#delphifmx.ValueRangeAction" title="delphifmx.ValueRangeAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueRangeAction</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ViewAction.html#delphifmx.ViewAction" title="delphifmx.ViewAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ViewAction</span></code></a></p></td>
+<td><p>Shows a component stored in the FmxObject property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.VirtualKeyboard.html#delphifmx.VirtualKeyboard" title="delphifmx.VirtualKeyboard"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VirtualKeyboard</span></code></a></p></td>
+<td><p>Shows a component stored in the FmxObject property and shows the on-screen virtual keyboard over the surface of this component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.WindowClose.html#delphifmx.WindowClose" title="delphifmx.WindowClose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WindowClose</span></code></a></p></td>
+<td><p>The standard action for closing an active modeless form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BasicAction.html#delphifmx.BasicAction" title="delphifmx.BasicAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BasicAction</span></code></a></p></td>
+<td><p>TBasicAction is the ancestor class for all action objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Collection.html#delphifmx.Collection" title="delphifmx.Collection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Collection</span></code></a></p></td>
+<td><p>TCollection is a container for TCollectionItem objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Component.html#delphifmx.Component" title="delphifmx.Component"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Component</span></code></a></p></td>
+<td><p>TComponent is the common ancestor of all component classes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Persistent.html#delphifmx.Persistent" title="delphifmx.Persistent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Persistent</span></code></a></p></td>
+<td><p>TPersistent is the ancestor for all objects that have assignment and streaming capabilities.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Strings.html#delphifmx.Strings" title="delphifmx.Strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Strings</span></code></a></p></td>
+<td><p>TStrings is the base class for objects that represent a list of strings.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Bounds.html#delphifmx.Bounds" title="delphifmx.Bounds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Bounds</span></code></a></p></td>
+<td><p>Specifies the bounds for a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ControlSize.html#delphifmx.ControlSize" title="delphifmx.ControlSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlSize</span></code></a></p></td>
+<td><p>Used for storing the size of FireMonkey components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPopupMenu.html#delphifmx.CustomPopupMenu" title="delphifmx.CustomPopupMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPopupMenu</span></code></a></p></td>
+<td><p>Represents a pop-up menu attachable to graphical controls that support pop-up menus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FmxObject.html#delphifmx.FmxObject" title="delphifmx.FmxObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FmxObject</span></code></a></p></td>
+<td><p>The base class for FireMonkey components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Position.html#delphifmx.Position" title="delphifmx.Position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></a></p></td>
+<td><p>Used for specifying a control's position inside a form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.BufferedLayout.html#delphifmx.BufferedLayout" title="delphifmx.BufferedLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BufferedLayout</span></code></a></p></td>
+<td><p>A layout is a container for other graphical objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomBufferedLayout.html#delphifmx.CustomBufferedLayout" title="delphifmx.CustomBufferedLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomBufferedLayout</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TCustomBufferedLayout</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CameraComponent.html#delphifmx.CameraComponent" title="delphifmx.CameraComponent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CameraComponent</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomMediaCodec.html#delphifmx.CustomMediaCodec" title="delphifmx.CustomMediaCodec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomMediaCodec</span></code></a></p></td>
+<td><p>Base class for media codecs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomMediaPlayerAction.html#delphifmx.CustomMediaPlayerAction" title="delphifmx.CustomMediaPlayerAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomMediaPlayerAction</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Media.html#delphifmx.Media" title="delphifmx.Media"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Media</span></code></a></p></td>
+<td><p>Base class to access media files.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayer.html#delphifmx.MediaPlayer" title="delphifmx.MediaPlayer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayer</span></code></a></p></td>
+<td><p>Nonvisual component for media file playback.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerControl.html#delphifmx.MediaPlayerControl" title="delphifmx.MediaPlayerControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerControl</span></code></a></p></td>
+<td><p>Visual component to display video media files.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerCurrentTime.html#delphifmx.MediaPlayerCurrentTime" title="delphifmx.MediaPlayerCurrentTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerCurrentTime</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerPlayPause.html#delphifmx.MediaPlayerPlayPause" title="delphifmx.MediaPlayerPlayPause"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerPlayPause</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerStart.html#delphifmx.MediaPlayerStart" title="delphifmx.MediaPlayerStart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerStart</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerStop.html#delphifmx.MediaPlayerStop" title="delphifmx.MediaPlayerStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerStop</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerValue.html#delphifmx.MediaPlayerValue" title="delphifmx.MediaPlayerValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerValue</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MediaPlayerVolume.html#delphifmx.MediaPlayerVolume" title="delphifmx.MediaPlayerVolume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaPlayerVolume</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CheckColumn.html#delphifmx.CheckColumn" title="delphifmx.CheckColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CheckColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells show check boxes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Column.html#delphifmx.Column" title="delphifmx.Column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Column</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CurrencyColumn.html#delphifmx.CurrencyColumn" title="delphifmx.CurrencyColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CurrencyColumn</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomGrid.html#delphifmx.CustomGrid" title="delphifmx.CustomGrid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomGrid</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomNumberColumn.html#delphifmx.CustomNumberColumn" title="delphifmx.CustomNumberColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomNumberColumn</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.DateColumn.html#delphifmx.DateColumn" title="delphifmx.DateColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DateColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells use an editor similar to TDateEdit to edit cells in this column.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.DateTimeColumn.html#delphifmx.DateTimeColumn" title="delphifmx.DateTimeColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DateTimeColumn</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TDateTimeColumn</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.DateTimeColumnBase.html#delphifmx.DateTimeColumnBase" title="delphifmx.DateTimeColumnBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DateTimeColumnBase</span></code></a></p></td>
+<td><p>Represents a column in a TGrid grid.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FloatColumn.html#delphifmx.FloatColumn" title="delphifmx.FloatColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FloatColumn</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.GlyphColumn.html#delphifmx.GlyphColumn" title="delphifmx.GlyphColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GlyphColumn</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Grid.html#delphifmx.Grid" title="delphifmx.Grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Grid</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ImageColumn.html#delphifmx.ImageColumn" title="delphifmx.ImageColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ImageColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells show images.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.IntegerColumn.html#delphifmx.IntegerColumn" title="delphifmx.IntegerColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IntegerColumn</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PopupColumn.html#delphifmx.PopupColumn" title="delphifmx.PopupColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells shows pop-up menus.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ProgressColumn.html#delphifmx.ProgressColumn" title="delphifmx.ProgressColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProgressColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells show progress bars.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.StringColumn.html#delphifmx.StringColumn" title="delphifmx.StringColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringColumn</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TStringColumn</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.StringGrid.html#delphifmx.StringGrid" title="delphifmx.StringGrid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringGrid</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.TimeColumn.html#delphifmx.TimeColumn" title="delphifmx.TimeColumn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimeColumn</span></code></a></p></td>
+<td><p>Represents a column in a grid, whose cells use an editor similar to TTimeEdit  to edit cells in this column.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ColorBox.html#delphifmx.ColorBox" title="delphifmx.ColorBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorBox</span></code></a></p></td>
+<td><p>Represents a rectangular-shaped color indicator.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ColorButton.html#delphifmx.ColorButton" title="delphifmx.ColorButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorButton</span></code></a></p></td>
+<td><p>Represents a standard button that displays a color instead of a standard caption.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ColorComboBox.html#delphifmx.ColorComboBox" title="delphifmx.ColorComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorComboBox</span></code></a></p></td>
+<td><p>Represents a combo box that allows you to select a color from a color palette.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ColorListBox.html#delphifmx.ColorListBox" title="delphifmx.ColorListBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorListBox</span></code></a></p></td>
+<td><p>Represents a combo box that allows you to select an alpha color from a color spectrum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ColorPanel.html#delphifmx.ColorPanel" title="delphifmx.ColorPanel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorPanel</span></code></a></p></td>
+<td><p>Represents a color selector component complete with alpha channel selection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ColorPicker.html#delphifmx.ColorPicker" title="delphifmx.ColorPicker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorPicker</span></code></a></p></td>
+<td><p>Represents a color selector that displays the entire color spectrum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ColorQuad.html#delphifmx.ColorQuad" title="delphifmx.ColorQuad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ColorQuad</span></code></a></p></td>
+<td><p>Represents a three-color gradient color selector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ComboColorBox.html#delphifmx.ComboColorBox" title="delphifmx.ComboColorBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComboColorBox</span></code></a></p></td>
+<td><p>Represents a combo box that allows you to select an alpha color from a color spectrum.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomColorComboBox.html#delphifmx.CustomColorComboBox" title="delphifmx.CustomColorComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomColorComboBox</span></code></a></p></td>
+<td><p>A TCustomComboBox is the base class for combo box components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.GradientEdit.html#delphifmx.GradientEdit" title="delphifmx.GradientEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GradientEdit</span></code></a></p></td>
+<td><p>Represents a gradient editor component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ComboBox.html#delphifmx.ComboBox" title="delphifmx.ComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComboBox</span></code></a></p></td>
+<td><p>A TComboBox is a button with a list box attached to it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomComboBox.html#delphifmx.CustomComboBox" title="delphifmx.CustomComboBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomComboBox</span></code></a></p></td>
+<td><p>A TCustomComboBox is the base class for combo box components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomListBox.html#delphifmx.CustomListBox" title="delphifmx.CustomListBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomListBox</span></code></a></p></td>
+<td><p>A TCustomListBox is the base class for list box components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ListBox.html#delphifmx.ListBox" title="delphifmx.ListBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TListBox</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ListBoxItem.html#delphifmx.ListBoxItem" title="delphifmx.ListBoxItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ListBoxItem</span></code></a></p></td>
+<td><p>A TListBoxItem is an item that is used in list box components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ComboEdit.html#delphifmx.ComboEdit" title="delphifmx.ComboEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComboEdit</span></code></a></p></td>
+<td><p>An edit box with a list of predefined choices.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ComboEditBase.html#delphifmx.ComboEditBase" title="delphifmx.ComboEditBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComboEditBase</span></code></a></p></td>
+<td><p>The base class for edit boxes having a list of predefined choices.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomComboEdit.html#delphifmx.CustomComboEdit" title="delphifmx.CustomComboEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomComboEdit</span></code></a></p></td>
+<td><p>The base class, implementing the basic functionality, for edit boxes having a list of predefined choices.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CommonCustomForm.html#delphifmx.CommonCustomForm" title="delphifmx.CommonCustomForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CommonCustomForm</span></code></a></p></td>
+<td><p>TCommonCustomForm represents the base class for all forms, whether they are 2D or 3D.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomForm.html#delphifmx.CustomForm" title="delphifmx.CustomForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomForm</span></code></a></p></td>
+<td><p>TCustomForm represents the base class from which you derive other windows such as dialog boxes and forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPopupForm.html#delphifmx.CustomPopupForm" title="delphifmx.CustomPopupForm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPopupForm</span></code></a></p></td>
+<td><p>TCustomPopupForm represents the base class for FMX pop-up forms.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Form.html#delphifmx.Form" title="delphifmx.Form"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Form</span></code></a></p></td>
+<td><p>TForm represents a standard FireMonkey application window (form).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Frame.html#delphifmx.Frame" title="delphifmx.Frame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Frame</span></code></a></p></td>
+<td><p>TFrame is a container for components; it can be nested within forms or other frames.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ContainedAction.html#delphifmx.ContainedAction" title="delphifmx.ContainedAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContainedAction</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ContainedActionList.html#delphifmx.ContainedActionList" title="delphifmx.ContainedActionList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContainedActionList</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Control.html#delphifmx.Control" title="delphifmx.Control"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Control</span></code></a></p></td>
+<td><p>TControl is the base class for FMX on-screen components.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomControlAction.html#delphifmx.CustomControlAction" title="delphifmx.CustomControlAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomControlAction</span></code></a></p></td>
+<td><p>TCustomControlAction is the base class for the actions that can be associated with some of the controls.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Popup.html#delphifmx.Popup" title="delphifmx.Popup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Popup</span></code></a></p></td>
+<td><p>TPopup provides a pop-up window.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.StyledControl.html#delphifmx.StyledControl" title="delphifmx.StyledControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyledControl</span></code></a></p></td>
+<td><p>TStyledControl is the base class for customizable and user-interaction controls.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.StyleBook.html#delphifmx.StyleBook" title="delphifmx.StyleBook"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleBook</span></code></a></p></td>
+<td><p>TStyleBook stores a collection of styles for a form.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.TextControl.html#delphifmx.TextControl" title="delphifmx.TextControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextControl</span></code></a></p></td>
+<td><p>Base class for all text controls such as TDateEdit.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomEditBox.html#delphifmx.CustomEditBox" title="delphifmx.CustomEditBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomEditBox</span></code></a></p></td>
+<td><p>Base class for all edit boxes that manipulate only numerical values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomMemo.html#delphifmx.CustomMemo" title="delphifmx.CustomMemo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomMemo</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Memo.html#delphifmx.Memo" title="delphifmx.Memo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Memo</span></code></a></p></td>
+<td><p>TMemo is a multiline text editing control, providing text scrolling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomMultiView.html#delphifmx.CustomMultiView" title="delphifmx.CustomMultiView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomMultiView</span></code></a></p></td>
+<td><p>The base class for MultiView components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MultiView.html#delphifmx.MultiView" title="delphifmx.MultiView"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MultiView</span></code></a></p></td>
+<td><p>The class for MultiView components that allows providing the master-detail interface.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPresentedFramedScrollBox.html#delphifmx.CustomPresentedFramedScrollBox" title="delphifmx.CustomPresentedFramedScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPresentedFramedScrollBox</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPresentedFramedVertScrollBox.html#delphifmx.CustomPresentedFramedVertScrollBox" title="delphifmx.CustomPresentedFramedVertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPresentedFramedVertScrollBox</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPresentedHorzScrollBox.html#delphifmx.CustomPresentedHorzScrollBox" title="delphifmx.CustomPresentedHorzScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPresentedHorzScrollBox</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPresentedScrollBox.html#delphifmx.CustomPresentedScrollBox" title="delphifmx.CustomPresentedScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPresentedScrollBox</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomPresentedVertScrollBox.html#delphifmx.CustomPresentedVertScrollBox" title="delphifmx.CustomPresentedVertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomPresentedVertScrollBox</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedFramedScrollBox.html#delphifmx.PresentedFramedScrollBox" title="delphifmx.PresentedFramedScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedFramedScrollBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPresentedFramedScrollBox</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedFramedVertScrollBox.html#delphifmx.PresentedFramedVertScrollBox" title="delphifmx.PresentedFramedVertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedFramedVertScrollBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPresentedFramedVertScrollBox</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedHorzScrollBox.html#delphifmx.PresentedHorzScrollBox" title="delphifmx.PresentedHorzScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedHorzScrollBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPresentedHorzScrollBox</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedScrollBox.html#delphifmx.PresentedScrollBox" title="delphifmx.PresentedScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedScrollBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPresentedScrollBox</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PresentedVertScrollBox.html#delphifmx.PresentedVertScrollBox" title="delphifmx.PresentedVertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PresentedVertScrollBox</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TPresentedVertScrollBox</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomScrollBox.html#delphifmx.CustomScrollBox" title="delphifmx.CustomScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomScrollBox</span></code></a></p></td>
+<td><p>The base class for controls representing a scrolling area (scroll box).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FlowLayout.html#delphifmx.FlowLayout" title="delphifmx.FlowLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FlowLayout</span></code></a></p></td>
+<td><p>A control that arranges its child controls as if they were words in a paragraph.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FramedScrollBox.html#delphifmx.FramedScrollBox" title="delphifmx.FramedScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FramedScrollBox</span></code></a></p></td>
+<td><p>Extends TCustomScrollBox declaring published properties.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FramedVertScrollBox.html#delphifmx.FramedVertScrollBox" title="delphifmx.FramedVertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FramedVertScrollBox</span></code></a></p></td>
+<td><p>Represents a TFramedScrollBox with an applied framedscrollboxstyle style lookup.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.GridLayout.html#delphifmx.GridLayout" title="delphifmx.GridLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GridLayout</span></code></a></p></td>
+<td><p>A control that arranges child controls in a grid of equally sized cells.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.GridPanelLayout.html#delphifmx.GridPanelLayout" title="delphifmx.GridPanelLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GridPanelLayout</span></code></a></p></td>
+<td><p>Implements a grid panel layout control in which each component is placed within a cell on a grid panel.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.HorzScrollBox.html#delphifmx.HorzScrollBox" title="delphifmx.HorzScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HorzScrollBox</span></code></a></p></td>
+<td><p>Represents a TScrollBox  restricted to horizontal scrolling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Layout.html#delphifmx.Layout" title="delphifmx.Layout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Layout</span></code></a></p></td>
+<td><p>A layout is a container for other graphical objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.ScaledLayout.html#delphifmx.ScaledLayout" title="delphifmx.ScaledLayout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScaledLayout</span></code></a></p></td>
+<td><p>A FireMonkey scaled layout is a wrapper over TControl and acts like a layer for other objects with the possibility of scaling its content according to the physical dimensions of the layout.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.ScrollBox.html#delphifmx.ScrollBox" title="delphifmx.ScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollBox</span></code></a></p></td>
+<td><p>Extends TCustomScrollBox declaring published properties.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.VertScrollBox.html#delphifmx.VertScrollBox" title="delphifmx.VertScrollBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VertScrollBox</span></code></a></p></td>
+<td><p>Represents a TScrollBox restricted to vertical scrolling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Edit.html#delphifmx.Edit" title="delphifmx.Edit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Edit</span></code></a></p></td>
+<td><p>General-purpose FireMonkey edit box.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.CustomEdit.html#delphifmx.CustomEdit" title="delphifmx.CustomEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomEdit</span></code></a></p></td>
+<td><p>TCustomEdit is the base class from which all FireMonkey edit boxes and memo controls are derived.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateAction.html#delphifmx.FMXBindNavigateAction" title="delphifmx.FMXBindNavigateAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateAction</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateAction</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateApplyUpdates.html#delphifmx.FMXBindNavigateApplyUpdates" title="delphifmx.FMXBindNavigateApplyUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateApplyUpdates</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateApplyUpdates</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateDelete.html#delphifmx.FMXBindNavigateDelete" title="delphifmx.FMXBindNavigateDelete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateDelete</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateDelete</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateEdit.html#delphifmx.FMXBindNavigateEdit" title="delphifmx.FMXBindNavigateEdit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateEdit</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateEdit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateFirst.html#delphifmx.FMXBindNavigateFirst" title="delphifmx.FMXBindNavigateFirst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateFirst</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateFirst</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateInsert.html#delphifmx.FMXBindNavigateInsert" title="delphifmx.FMXBindNavigateInsert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateInsert</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateInsert</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateLast.html#delphifmx.FMXBindNavigateLast" title="delphifmx.FMXBindNavigateLast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateLast</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateLast</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateNext.html#delphifmx.FMXBindNavigateNext" title="delphifmx.FMXBindNavigateNext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateNext</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateNext</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigatePost.html#delphifmx.FMXBindNavigatePost" title="delphifmx.FMXBindNavigatePost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigatePost</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigatePost</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigatePrior.html#delphifmx.FMXBindNavigatePrior" title="delphifmx.FMXBindNavigatePrior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigatePrior</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigatePrior</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateRefresh.html#delphifmx.FMXBindNavigateRefresh" title="delphifmx.FMXBindNavigateRefresh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateRefresh</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateRefresh</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateCancel.html#delphifmx.FMXBindNavigateCancel" title="delphifmx.FMXBindNavigateCancel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateCancel</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateCancel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.FMXBindNavigateCancelUpdates.html#delphifmx.FMXBindNavigateCancelUpdates" title="delphifmx.FMXBindNavigateCancelUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FMXBindNavigateCancelUpdates</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TFMXBindNavigateCancelUpdates</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MainMenu.html#delphifmx.MainMenu" title="delphifmx.MainMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MainMenu</span></code></a></p></td>
+<td><p>Describes the structure of the form's main menu.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.MenuBar.html#delphifmx.MenuBar" title="delphifmx.MenuBar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuBar</span></code></a></p></td>
+<td><p>Represents an editable menu bar.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.MenuItem.html#delphifmx.MenuItem" title="delphifmx.MenuItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MenuItem</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PopupMenu.html#delphifmx.PopupMenu" title="delphifmx.PopupMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMenu</span></code></a></p></td>
+<td><p>Represents a pop-up menu.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Object.html#delphifmx.Object" title="delphifmx.Object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Object</span></code></a></p></td>
+<td><p>TObject is the ultimate ancestor of all objects and components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.OpenDialog.html#delphifmx.OpenDialog" title="delphifmx.OpenDialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OpenDialog</span></code></a></p></td>
+<td><p>TOpenDialog is a class used to display a file-selection dialog.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Point.html#delphifmx.Point" title="delphifmx.Point"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Point</span></code></a></p></td>
+<td><p>wrapper for Delphi TPoint type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.PointF.html#delphifmx.PointF" title="delphifmx.PointF"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointF</span></code></a></p></td>
+<td><p>wrapper for Delphi FMX TPointF type</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Rect.html#delphifmx.Rect" title="delphifmx.Rect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Rect</span></code></a></p></td>
+<td><p>wrapper for Delphi TRect type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.RectF.html#delphifmx.RectF" title="delphifmx.RectF"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectF</span></code></a></p></td>
+<td><p>wrapper for Delphi FMX TRectF type</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.Size.html#delphifmx.Size" title="delphifmx.Size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Size</span></code></a></p></td>
+<td><p>wrapper for Delphi TSize type</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.SizeF.html#delphifmx.SizeF" title="delphifmx.SizeF"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizeF</span></code></a></p></td>
+<td><p>wrapper for Delphi FMX TSizeF type</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.SearchBox.html#delphifmx.SearchBox" title="delphifmx.SearchBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SearchBox</span></code></a></p></td>
+<td><p>A search edit control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.SpinBox.html#delphifmx.SpinBox" title="delphifmx.SpinBox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpinBox</span></code></a></p></td>
+<td><p>A special presented edit box equipped with buttons to increment or decrement the displayed numeric value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.StyleManager.html#delphifmx.StyleManager" title="delphifmx.StyleManager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleManager</span></code></a></p></td>
+<td><p>TStyleManager handles styles-related operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.Stream.html#delphifmx.Stream" title="delphifmx.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a></p></td>
+<td><p>Wrapper for Pascal class TStream</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.StyleStreaming.html#delphifmx.StyleStreaming" title="delphifmx.StyleStreaming"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleStreaming</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/delphifmx.TabControl.html#delphifmx.TabControl" title="delphifmx.TabControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabControl</span></code></a></p></td>
+<td><p>TTabControl is a tab set that has the appearance of notebook dividers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabItem</span></code></a></p></td>
+<td><p>TTabItem is a tab item in a TTabControl component.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../reference/delphifmx.Action.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Action</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../reference.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Reference Manual</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

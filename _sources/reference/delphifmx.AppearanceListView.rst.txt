@@ -1,0 +1,160 @@
+﻿AppearanceListView
+==================
+
+Qualified name: ``delphifmx.AppearanceListView``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: AppearanceListView
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~AppearanceListView.ApplyStyleLookup
+      ~AppearanceListView.BeginUpdate
+      ~AppearanceListView.EndUpdate
+      ~AppearanceListView.Inflate
+      ~AppearanceListView.NeedStyleLookup
+      ~AppearanceListView.Resize
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~AppearanceListView.AbsoluteClipRect
+     ~AppearanceListView.AbsoluteEnabled
+     ~AppearanceListView.AbsoluteHeight
+     ~AppearanceListView.AbsoluteMatrix
+     ~AppearanceListView.AbsoluteOpacity
+     ~AppearanceListView.AbsoluteRect
+     ~AppearanceListView.AbsoluteScale
+     ~AppearanceListView.AbsoluteWidth
+     ~AppearanceListView.ActionClient
+     ~AppearanceListView.Adapter
+     ~AppearanceListView.AdjustSizeValue
+     ~AppearanceListView.AdjustType
+     ~AppearanceListView.Align
+     ~AppearanceListView.AllowSelection
+     ~AppearanceListView.AlternatingColors
+     ~AppearanceListView.Anchors
+     ~AppearanceListView.ApplyingEffect
+     ~AppearanceListView.AutoCapture
+     ~AppearanceListView.AutoTapScroll
+     ~AppearanceListView.AutoTapTreshold
+     ~AppearanceListView.AutoTranslate
+     ~AppearanceListView.AxisAlignedRect
+     ~AppearanceListView.BoundsRect
+     ~AppearanceListView.CanParentFocus
+     ~AppearanceListView.CanSwipeDelete
+     ~AppearanceListView.Canvas
+     ~AppearanceListView.Children
+     ~AppearanceListView.ChildrenCount
+     ~AppearanceListView.ChildrenRect
+     ~AppearanceListView.ClassName
+     ~AppearanceListView.ClipChildren
+     ~AppearanceListView.ClipParent
+     ~AppearanceListView.ClipRect
+     ~AppearanceListView.ComObject
+     ~AppearanceListView.ComponentCount
+     ~AppearanceListView.ComponentIndex
+     ~AppearanceListView.ComponentState
+     ~AppearanceListView.ComponentStyle
+     ~AppearanceListView.Components
+     ~AppearanceListView.ControlType
+     ~AppearanceListView.Controls
+     ~AppearanceListView.ControlsCount
+     ~AppearanceListView.Cursor
+     ~AppearanceListView.Data
+     ~AppearanceListView.DefaultSize
+     ~AppearanceListView.DefaultStyleLookupName
+     ~AppearanceListView.DeleteButtonText
+     ~AppearanceListView.DesignInfo
+     ~AppearanceListView.DisableDisappear
+     ~AppearanceListView.DisableFocusEffect
+     ~AppearanceListView.DisableMouseWheel
+     ~AppearanceListView.DragMode
+     ~AppearanceListView.EditMode
+     ~AppearanceListView.EnableDragHighlight
+     ~AppearanceListView.Enabled
+     ~AppearanceListView.FixedSize
+     ~AppearanceListView.HasAfterPaintEffect
+     ~AppearanceListView.HasClipParent
+     ~AppearanceListView.HasDisablePaintEffect
+     ~AppearanceListView.HasEffect
+     ~AppearanceListView.Height
+     ~AppearanceListView.HelpContext
+     ~AppearanceListView.HelpKeyword
+     ~AppearanceListView.HelpType
+     ~AppearanceListView.Hint
+     ~AppearanceListView.HitTest
+     ~AppearanceListView.Images
+     ~AppearanceListView.InPaintTo
+     ~AppearanceListView.Index
+     ~AppearanceListView.InheritedCursor
+     ~AppearanceListView.InvertAbsoluteMatrix
+     ~AppearanceListView.IsDragOver
+     ~AppearanceListView.IsFocused
+     ~AppearanceListView.IsInflated
+     ~AppearanceListView.IsMouseOver
+     ~AppearanceListView.IsVisible
+     ~AppearanceListView.ItemCount
+     ~AppearanceListView.ItemIndex
+     ~AppearanceListView.ItemSpaces
+     ~AppearanceListView.Items
+     ~AppearanceListView.LocalRect
+     ~AppearanceListView.Locked
+     ~AppearanceListView.Margins
+     ~AppearanceListView.Name
+     ~AppearanceListView.NativeOptions
+     ~AppearanceListView.Observers
+     ~AppearanceListView.OnGesture
+     ~AppearanceListView.Opacity
+     ~AppearanceListView.Owner
+     ~AppearanceListView.Padding
+     ~AppearanceListView.Parent
+     ~AppearanceListView.ParentClassStyleLookupName
+     ~AppearanceListView.ParentControl
+     ~AppearanceListView.ParentedRect
+     ~AppearanceListView.ParentedVisible
+     ~AppearanceListView.PopupMenu
+     ~AppearanceListView.Position
+     ~AppearanceListView.Pressed
+     ~AppearanceListView.PressedPosition
+     ~AppearanceListView.PullRefreshWait
+     ~AppearanceListView.PullToRefresh
+     ~AppearanceListView.Root
+     ~AppearanceListView.Scene
+     ~AppearanceListView.ScrollViewPos
+     ~AppearanceListView.SearchAlwaysOnTop
+     ~AppearanceListView.SearchVisible
+     ~AppearanceListView.Selected
+     ~AppearanceListView.SelectionCrossfade
+     ~AppearanceListView.ShowHint
+     ~AppearanceListView.ShowSelection
+     ~AppearanceListView.SideSpace
+     ~AppearanceListView.Size
+     ~AppearanceListView.Stored
+     ~AppearanceListView.StyleLookup
+     ~AppearanceListView.StyleName
+     ~AppearanceListView.StyleState
+     ~AppearanceListView.StylesData
+     ~AppearanceListView.TabOrder
+     ~AppearanceListView.TabStop
+     ~AppearanceListView.Tag
+     ~AppearanceListView.TagFloat
+     ~AppearanceListView.TagObject
+     ~AppearanceListView.TagString
+     ~AppearanceListView.Touch
+     ~AppearanceListView.TouchTargetExpansion
+     ~AppearanceListView.Transparent
+     ~AppearanceListView.UpdateRect
+     ~AppearanceListView.VCLComObject
+     ~AppearanceListView.Visible
+     ~AppearanceListView.Width
+   

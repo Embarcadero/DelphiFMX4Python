@@ -1,0 +1,146 @@
+﻿CaretRectangle
+==============
+
+Qualified name: ``delphifmx.CaretRectangle``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: CaretRectangle
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~CaretRectangle.AbsoluteToLocal
+      ~CaretRectangle.BringToFront
+      ~CaretRectangle.CanFocus
+      ~CaretRectangle.LocalToAbsolute
+      ~CaretRectangle.PrepareForPaint
+      ~CaretRectangle.Repaint
+      ~CaretRectangle.ResetFocus
+      ~CaretRectangle.SendToBack
+      ~CaretRectangle.SetBounds
+      ~CaretRectangle.SetFocus
+      ~CaretRectangle.UpdateState
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~CaretRectangle.AbsoluteClipRect
+     ~CaretRectangle.AbsoluteEnabled
+     ~CaretRectangle.AbsoluteHeight
+     ~CaretRectangle.AbsoluteMatrix
+     ~CaretRectangle.AbsoluteOpacity
+     ~CaretRectangle.AbsoluteRect
+     ~CaretRectangle.AbsoluteScale
+     ~CaretRectangle.AbsoluteWidth
+     ~CaretRectangle.ActionClient
+     ~CaretRectangle.Align
+     ~CaretRectangle.Anchors
+     ~CaretRectangle.ApplyingEffect
+     ~CaretRectangle.AutoCapture
+     ~CaretRectangle.AxisAlignedRect
+     ~CaretRectangle.BoundsRect
+     ~CaretRectangle.CanParentFocus
+     ~CaretRectangle.Canvas
+     ~CaretRectangle.Caret
+     ~CaretRectangle.Children
+     ~CaretRectangle.ChildrenCount
+     ~CaretRectangle.ChildrenRect
+     ~CaretRectangle.ClassName
+     ~CaretRectangle.ClipChildren
+     ~CaretRectangle.ClipParent
+     ~CaretRectangle.ClipRect
+     ~CaretRectangle.ComObject
+     ~CaretRectangle.ComponentCount
+     ~CaretRectangle.ComponentIndex
+     ~CaretRectangle.ComponentState
+     ~CaretRectangle.ComponentStyle
+     ~CaretRectangle.Components
+     ~CaretRectangle.Controls
+     ~CaretRectangle.ControlsCount
+     ~CaretRectangle.CornerType
+     ~CaretRectangle.Corners
+     ~CaretRectangle.Cursor
+     ~CaretRectangle.Data
+     ~CaretRectangle.DefaultSize
+     ~CaretRectangle.DesignInfo
+     ~CaretRectangle.DisableDisappear
+     ~CaretRectangle.DisableFocusEffect
+     ~CaretRectangle.DragMode
+     ~CaretRectangle.EnableDragHighlight
+     ~CaretRectangle.Enabled
+     ~CaretRectangle.Fill
+     ~CaretRectangle.FixedSize
+     ~CaretRectangle.HasAfterPaintEffect
+     ~CaretRectangle.HasClipParent
+     ~CaretRectangle.HasDisablePaintEffect
+     ~CaretRectangle.HasEffect
+     ~CaretRectangle.Height
+     ~CaretRectangle.Hint
+     ~CaretRectangle.HitTest
+     ~CaretRectangle.InPaintTo
+     ~CaretRectangle.Index
+     ~CaretRectangle.InheritedCursor
+     ~CaretRectangle.InvertAbsoluteMatrix
+     ~CaretRectangle.IsDragOver
+     ~CaretRectangle.IsFocused
+     ~CaretRectangle.IsInflated
+     ~CaretRectangle.IsMouseOver
+     ~CaretRectangle.IsVisible
+     ~CaretRectangle.LocalRect
+     ~CaretRectangle.Locked
+     ~CaretRectangle.Margins
+     ~CaretRectangle.Name
+     ~CaretRectangle.Observers
+     ~CaretRectangle.OnDragDrop
+     ~CaretRectangle.OnDragEnter
+     ~CaretRectangle.OnDragOver
+     ~CaretRectangle.OnGesture
+     ~CaretRectangle.OnPaint
+     ~CaretRectangle.OnPainting
+     ~CaretRectangle.Opacity
+     ~CaretRectangle.Owner
+     ~CaretRectangle.Padding
+     ~CaretRectangle.Parent
+     ~CaretRectangle.ParentControl
+     ~CaretRectangle.ParentShowHint
+     ~CaretRectangle.ParentedRect
+     ~CaretRectangle.ParentedVisible
+     ~CaretRectangle.PopupMenu
+     ~CaretRectangle.Position
+     ~CaretRectangle.Pressed
+     ~CaretRectangle.PressedPosition
+     ~CaretRectangle.Root
+     ~CaretRectangle.RotationAngle
+     ~CaretRectangle.RotationCenter
+     ~CaretRectangle.Scale
+     ~CaretRectangle.Scene
+     ~CaretRectangle.ShapeRect
+     ~CaretRectangle.ShowHint
+     ~CaretRectangle.Sides
+     ~CaretRectangle.Size
+     ~CaretRectangle.Stored
+     ~CaretRectangle.Stroke
+     ~CaretRectangle.StyleName
+     ~CaretRectangle.TabOrder
+     ~CaretRectangle.TabStop
+     ~CaretRectangle.Tag
+     ~CaretRectangle.TagFloat
+     ~CaretRectangle.TagObject
+     ~CaretRectangle.TagString
+     ~CaretRectangle.Touch
+     ~CaretRectangle.TouchTargetExpansion
+     ~CaretRectangle.UpdateRect
+     ~CaretRectangle.VCLComObject
+     ~CaretRectangle.Visible
+     ~CaretRectangle.Width
+     ~CaretRectangle.XRadius
+     ~CaretRectangle.YRadius
+   

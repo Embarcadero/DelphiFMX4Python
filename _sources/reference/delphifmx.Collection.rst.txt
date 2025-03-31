@@ -1,0 +1,43 @@
+﻿Collection
+==========
+
+Qualified name: ``delphifmx.Collection``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: Collection
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Collection.Add
+      ~Collection.Assign
+      ~Collection.BeginUpdate
+      ~Collection.Clear
+      ~Collection.ClearAndResetID
+      ~Collection.Delete
+      ~Collection.EndUpdate
+      ~Collection.FindItemID
+      ~Collection.GetEnumerator
+      ~Collection.GetNamePath
+      ~Collection.Insert
+      ~Collection.Sort
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Collection.Capacity
+     ~Collection.ClassName
+     ~Collection.Count
+     ~Collection.IsEmpty
+     ~Collection.ItemClass
+     ~Collection.Items
+     ~Collection.Owner
+   

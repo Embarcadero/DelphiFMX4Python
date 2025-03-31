@@ -1,0 +1,164 @@
+﻿ProgressBar
+===========
+
+Qualified name: ``delphifmx.ProgressBar``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: ProgressBar
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~ProgressBar.AfterConstruction
+      ~ProgressBar.ApplyStyleLookup
+      ~ProgressBar.ApplyTriggerEffect
+      ~ProgressBar.BeforeDestruction
+      ~ProgressBar.FindStyleResource
+      ~ProgressBar.HasPresentationProxy
+      ~ProgressBar.Inflate
+      ~ProgressBar.LoadPresentation
+      ~ProgressBar.NeedStyleLookup
+      ~ProgressBar.PointInObjectLocal
+      ~ProgressBar.RecalcEnabled
+      ~ProgressBar.RecalcOpacity
+      ~ProgressBar.ReloadPresentation
+      ~ProgressBar.StartTriggerAnimation
+      ~ProgressBar.StartTriggerAnimationWait
+      ~ProgressBar.UnloadPresentation
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~ProgressBar.AbsoluteClipRect
+     ~ProgressBar.AbsoluteEnabled
+     ~ProgressBar.AbsoluteHeight
+     ~ProgressBar.AbsoluteMatrix
+     ~ProgressBar.AbsoluteOpacity
+     ~ProgressBar.AbsoluteRect
+     ~ProgressBar.AbsoluteScale
+     ~ProgressBar.AbsoluteWidth
+     ~ProgressBar.Action
+     ~ProgressBar.ActionClient
+     ~ProgressBar.AdjustSizeValue
+     ~ProgressBar.AdjustType
+     ~ProgressBar.Align
+     ~ProgressBar.Anchors
+     ~ProgressBar.ApplyingEffect
+     ~ProgressBar.AutoCapture
+     ~ProgressBar.AutoTranslate
+     ~ProgressBar.AxisAlignedRect
+     ~ProgressBar.BoundsRect
+     ~ProgressBar.CanParentFocus
+     ~ProgressBar.Canvas
+     ~ProgressBar.Children
+     ~ProgressBar.ChildrenCount
+     ~ProgressBar.ChildrenRect
+     ~ProgressBar.ClassName
+     ~ProgressBar.ClipChildren
+     ~ProgressBar.ClipParent
+     ~ProgressBar.ClipRect
+     ~ProgressBar.ComObject
+     ~ProgressBar.ComponentCount
+     ~ProgressBar.ComponentIndex
+     ~ProgressBar.ComponentState
+     ~ProgressBar.ComponentStyle
+     ~ProgressBar.Components
+     ~ProgressBar.ControlType
+     ~ProgressBar.Controls
+     ~ProgressBar.ControlsCount
+     ~ProgressBar.Cursor
+     ~ProgressBar.Data
+     ~ProgressBar.DefaultSize
+     ~ProgressBar.DefaultStyleLookupName
+     ~ProgressBar.DesignInfo
+     ~ProgressBar.DisableDisappear
+     ~ProgressBar.DisableFocusEffect
+     ~ProgressBar.DragMode
+     ~ProgressBar.EnableDragHighlight
+     ~ProgressBar.Enabled
+     ~ProgressBar.FixedSize
+     ~ProgressBar.HasAfterPaintEffect
+     ~ProgressBar.HasClipParent
+     ~ProgressBar.HasDisablePaintEffect
+     ~ProgressBar.HasEffect
+     ~ProgressBar.Height
+     ~ProgressBar.HelpContext
+     ~ProgressBar.HelpKeyword
+     ~ProgressBar.HelpType
+     ~ProgressBar.Hint
+     ~ProgressBar.HitTest
+     ~ProgressBar.InPaintTo
+     ~ProgressBar.Index
+     ~ProgressBar.InheritedCursor
+     ~ProgressBar.InvertAbsoluteMatrix
+     ~ProgressBar.IsDragOver
+     ~ProgressBar.IsFocused
+     ~ProgressBar.IsInflated
+     ~ProgressBar.IsMouseOver
+     ~ProgressBar.IsVisible
+     ~ProgressBar.LocalRect
+     ~ProgressBar.Locked
+     ~ProgressBar.Margins
+     ~ProgressBar.Max
+     ~ProgressBar.Min
+     ~ProgressBar.Model
+     ~ProgressBar.Name
+     ~ProgressBar.Observers
+     ~ProgressBar.OnCanFocus
+     ~ProgressBar.OnDragDrop
+     ~ProgressBar.OnDragEnter
+     ~ProgressBar.OnDragOver
+     ~ProgressBar.OnGesture
+     ~ProgressBar.OnPaint
+     ~ProgressBar.OnPainting
+     ~ProgressBar.Opacity
+     ~ProgressBar.Orientation
+     ~ProgressBar.Owner
+     ~ProgressBar.Padding
+     ~ProgressBar.Parent
+     ~ProgressBar.ParentClassStyleLookupName
+     ~ProgressBar.ParentControl
+     ~ProgressBar.ParentShowHint
+     ~ProgressBar.ParentedRect
+     ~ProgressBar.ParentedVisible
+     ~ProgressBar.PopupMenu
+     ~ProgressBar.Position
+     ~ProgressBar.Presentation
+     ~ProgressBar.PresentationProxy
+     ~ProgressBar.PresentationState
+     ~ProgressBar.Pressed
+     ~ProgressBar.PressedPosition
+     ~ProgressBar.Root
+     ~ProgressBar.RotationAngle
+     ~ProgressBar.RotationCenter
+     ~ProgressBar.Scale
+     ~ProgressBar.Scene
+     ~ProgressBar.ShowHint
+     ~ProgressBar.Size
+     ~ProgressBar.Stored
+     ~ProgressBar.StyleLookup
+     ~ProgressBar.StyleName
+     ~ProgressBar.StyleState
+     ~ProgressBar.StylesData
+     ~ProgressBar.TabOrder
+     ~ProgressBar.TabStop
+     ~ProgressBar.Tag
+     ~ProgressBar.TagFloat
+     ~ProgressBar.TagObject
+     ~ProgressBar.TagString
+     ~ProgressBar.Touch
+     ~ProgressBar.TouchTargetExpansion
+     ~ProgressBar.UpdateRect
+     ~ProgressBar.VCLComObject
+     ~ProgressBar.Value
+     ~ProgressBar.Visible
+     ~ProgressBar.Width
+   

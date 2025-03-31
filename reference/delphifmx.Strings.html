@@ -1,0 +1,1417 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Strings" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphifmx.Strings.html" />
+<meta property="og:site_name" content="DelphiFMX | Documentation" />
+<meta property="og:description" content="Qualified name: delphifmx.Strings" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/DelphiFMX4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiFMX | Documentation" />
+<meta name="description" content="Qualified name: delphifmx.Strings" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Bounds" href="delphifmx.Bounds.html" /><link rel="prev" title="Persistent" href="delphifmx.Persistent.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+        <title>Strings - DelphiFMX Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94117f49" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiFMX Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiFMX4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiFMX4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiFMX Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphifmx_classes.html">DelphiFMX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiFMX</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomViewAction.html">CustomViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AdapterListView.html">AdapterListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AppearanceListView.html">AppearanceListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListView.html">CustomListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListView.html">ListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListViewBase.html">ListViewBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedListView.html">PresentedListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AniIndicator.html">AniIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ArcDial.html">ArcDial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BitmapTrackBar.html">BitmapTrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutPanel.html">CalloutPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CornerButton.html">CornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomButton.html">CustomButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomCornerButton.html">CustomCornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomSwitch.html">CustomSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomTrack.html">CustomTrack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Expander.html">Expander</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ExpanderButton.html">ExpanderButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageControl.html">ImageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PathLabel.html">PathLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedTextControl.html">PresentedTextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressBar.html">ProgressBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeGrip.html">SizeGrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SmallScrollBar.html">SmallScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpeedButton.html">SpeedButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Splitter.html">Splitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Switch.html">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Thumb.html">Thumb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Track.html">Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Arc.html">Arc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutRectangle.html">CalloutRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CaretRectangle.html">CaretRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Circle.html">Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPath.html">CustomPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Ellipse.html">Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Image.html">Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Line.html">Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PaintBox.html">PaintBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Pie.html">Pie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rectangle.html">Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RoundRect.html">RoundRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Selection.html">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SelectionPoint.html">SelectionPoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Text.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseValueRange.html">BaseValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRange.html">CustomValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRangeAction.html">CustomValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileExit.html">FileExit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideApp.html">FileHideApp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideAppOthers.html">FileHideAppOthers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HintAction.html">HintAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ObjectViewAction.html">ObjectViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SysCommonAction.html">SysCommonAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRange.html">ValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRangeAction.html">ValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ViewAction.html">ViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VirtualKeyboard.html">VirtualKeyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.WindowClose.html">WindowClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Persistent.html">Persistent</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Bounds.html">Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ControlSize.html">ControlSize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupMenu.html">CustomPopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FmxObject.html">FmxObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Position.html">Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BufferedLayout.html">BufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBufferedLayout.html">CustomBufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CameraComponent.html">CameraComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaCodec.html">CustomMediaCodec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaPlayerAction.html">CustomMediaPlayerAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Media.html">Media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerControl.html">MediaPlayerControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerCurrentTime.html">MediaPlayerCurrentTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerPlayPause.html">MediaPlayerPlayPause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStart.html">MediaPlayerStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStop.html">MediaPlayerStop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerValue.html">MediaPlayerValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerVolume.html">MediaPlayerVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckColumn.html">CheckColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Column.html">Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CurrencyColumn.html">CurrencyColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomNumberColumn.html">CustomNumberColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateColumn.html">DateColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumn.html">DateTimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumnBase.html">DateTimeColumnBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FloatColumn.html">FloatColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GlyphColumn.html">GlyphColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Grid.html">Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageColumn.html">ImageColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.IntegerColumn.html">IntegerColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupColumn.html">PopupColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressColumn.html">ProgressColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringColumn.html">StringColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TimeColumn.html">TimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorButton.html">ColorButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorComboBox.html">ColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorListBox.html">ColorListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPanel.html">ColorPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPicker.html">ColorPicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorQuad.html">ColorQuad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboColorBox.html">ComboColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomColorComboBox.html">CustomColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GradientEdit.html">GradientEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboBox.html">CustomComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListBox.html">CustomListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBoxItem.html">ListBoxItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEdit.html">ComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEditBase.html">ComboEditBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboEdit.html">CustomComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CommonCustomForm.html">CommonCustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupForm.html">CustomPopupForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Frame.html">Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomControlAction.html">CustomControlAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Popup.html">Popup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyledControl.html">StyledControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleBook.html">StyleBook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TextControl.html">TextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEditBox.html">CustomEditBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMultiView.html">CustomMultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MultiView.html">MultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedScrollBox.html">CustomPresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedVertScrollBox.html">CustomPresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedHorzScrollBox.html">CustomPresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedScrollBox.html">CustomPresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedVertScrollBox.html">CustomPresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedScrollBox.html">PresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedVertScrollBox.html">PresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedHorzScrollBox.html">PresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedScrollBox.html">PresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedVertScrollBox.html">PresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomScrollBox.html">CustomScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FlowLayout.html">FlowLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedScrollBox.html">FramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedVertScrollBox.html">FramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridLayout.html">GridLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridPanelLayout.html">GridPanelLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HorzScrollBox.html">HorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Layout.html">Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScaledLayout.html">ScaledLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBox.html">ScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VertScrollBox.html">VertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateAction.html">FMXBindNavigateAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateApplyUpdates.html">FMXBindNavigateApplyUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateDelete.html">FMXBindNavigateDelete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateEdit.html">FMXBindNavigateEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateFirst.html">FMXBindNavigateFirst</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateInsert.html">FMXBindNavigateInsert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateLast.html">FMXBindNavigateLast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateNext.html">FMXBindNavigateNext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePost.html">FMXBindNavigatePost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePrior.html">FMXBindNavigatePrior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateRefresh.html">FMXBindNavigateRefresh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancel.html">FMXBindNavigateCancel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancelUpdates.html">FMXBindNavigateCancelUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuBar.html">MenuBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Point.html">Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PointF.html">PointF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rect.html">Rect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RectF.html">RectF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Size.html">Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeF.html">SizeF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SearchBox.html">SearchBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpinBox.html">SpinBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleStreaming.html">StyleStreaming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TabItem.html">TabItem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.4-changelog.html">v1.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.5-changelog.html">v1.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.6-changelog.html">v1.0.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="strings">
+<h1>Strings<a class="headerlink" href="#strings" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphifmx.Strings</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphifmx.Strings">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Strings</span></span><a class="headerlink" href="#delphifmx.Strings" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphifmx.Persistent.html#delphifmx.Persistent" title="delphifmx.Persistent"><code class="xref py py-class docutils literal notranslate"><span class="pre">Persistent</span></code></a></p>
+<p>TStrings is the base class for objects that represent a list of strings.
+Derive a class from TStrings to store and manipulate a list of strings. TStrings contains abstract or, in C++ terminology, pure virtual methods and should not be directly instantiated.
+Descendants of TStrings can represent several individual strings, such as the individual lines that appear in a list box. Some objects use descendants of TStrings to represent one long body of text so that it can be manipulated in smaller chunks.
+TStrings introduces many properties and methods to:</p>
+<p>Add or delete strings at specified positions in the list.
+Rearrange the strings in the list.
+Access the string at a particular location.
+Read the strings from or write the strings to a file or stream.
+Associate an object with each string in the list.
+Store and retrieve strings as name-value pairs.
+For an explanation of name-value pairs, refer to the NameValueSeparator property.</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Add" title="delphifmx.Strings.Add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Add</span></code></a></p></td>
+<td><p>TStrings.Add(s) Adds a string to the TStrings object and returns the index position</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.AddObject" title="delphifmx.Strings.AddObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AddObject</span></code></a></p></td>
+<td><p>TStrings.AddObject(s, delphiobject) Adds a string and an associated Delphi object to the Strings and returns the index position</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.AddPair" title="delphifmx.Strings.AddPair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AddPair</span></code></a></p></td>
+<td><p>TStrings.AddPair(Name: str, Value: str) -&gt; Strings Adds name-value pairs to the list of strings using fluent-style coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.AddStrings" title="delphifmx.Strings.AddStrings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AddStrings</span></code></a></p></td>
+<td><p>TStrings.AddStrings(Strings: Strings) -&gt; None Adds the specified strings (and objects) to the current TStrings object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Append" title="delphifmx.Strings.Append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Append</span></code></a></p></td>
+<td><p>TStrings.Append(S: str) -&gt; None Adds a string to the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.BeginUpdate" title="delphifmx.Strings.BeginUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeginUpdate</span></code></a></p></td>
+<td><p>TStrings.BeginUpdate() Enables the TStrings object to track when the list of strings is changing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Clear" title="delphifmx.Strings.Clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Clear</span></code></a></p></td>
+<td><p>TStrings.Clear() Clears all strings from a TStrings (and the associated objects</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Contains" title="delphifmx.Strings.Contains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Contains</span></code></a></p></td>
+<td><p>TStrings.Contains(S: str) -&gt; bool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.ContainsName" title="delphifmx.Strings.ContainsName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContainsName</span></code></a></p></td>
+<td><p>TStrings.ContainsName(Name: str) -&gt; bool</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.ContainsObject" title="delphifmx.Strings.ContainsObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContainsObject</span></code></a></p></td>
+<td><p>TStrings.ContainsObject(AObject: Object) -&gt; bool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Delete" title="delphifmx.Strings.Delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Delete</span></code></a></p></td>
+<td><p>TStrings.Delete(i) Deletes the string at Index i (and the associated object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.EndUpdate" title="delphifmx.Strings.EndUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EndUpdate</span></code></a></p></td>
+<td><p>TStrings.EndUpdate() Enables the TStrings object to keep track of when the list of strings has finished changing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Equals" title="delphifmx.Strings.Equals"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Equals</span></code></a></p></td>
+<td><p>TStrings.Equals(Strings: Strings) -&gt; bool Compares the list of strings to the list from another TStrings object and returns true if the two lists match.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Exchange" title="delphifmx.Strings.Exchange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Exchange</span></code></a></p></td>
+<td><p>TStrings.Exchange(Index1: int, Index2: int) -&gt; None Swaps the position of two strings in the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.GetEnumerator" title="delphifmx.Strings.GetEnumerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetEnumerator</span></code></a></p></td>
+<td><p>Returns a TStrings enumerator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.GetText" title="delphifmx.Strings.GetText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetText</span></code></a></p></td>
+<td><p>Allocates a text buffer and fills it with the value of the Text property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.IndexOf" title="delphifmx.Strings.IndexOf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IndexOf</span></code></a></p></td>
+<td><p>TStrings.IndexOf(s) Returns the Index of a string s or -1 if not found</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.IndexOfName" title="delphifmx.Strings.IndexOfName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IndexOfName</span></code></a></p></td>
+<td><p>TStrings.IndexOfName(Name: str) -&gt; int Returns the position of the first name-value pair with the specified name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.IndexOfObject" title="delphifmx.Strings.IndexOfObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IndexOfObject</span></code></a></p></td>
+<td><p>TStrings.IndexOfObject(AObject: Object) -&gt; int Returns the index of the first string in the list associated with a given object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Insert" title="delphifmx.Strings.Insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Insert</span></code></a></p></td>
+<td><p>TStrings.Insert(Index: int, S: str) -&gt; None Introduces abstract (Delphi) or pure virtual (C++) method to insert a string at a specified position.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.InsertObject" title="delphifmx.Strings.InsertObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InsertObject</span></code></a></p></td>
+<td><p>TStrings.InsertObject(Index: int, S: str, AObject: Object) -&gt; None Inserts a string into the list at the specified position, and associates it with an object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.LoadFromFile" title="delphifmx.Strings.LoadFromFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadFromFile</span></code></a></p></td>
+<td><p>TStrings.LoadFromFile(filename) Fills the list with the lines of text in a specified file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.LoadFromStream" title="delphifmx.Strings.LoadFromStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LoadFromStream</span></code></a></p></td>
+<td><p>TStrings.LoadFromStream(Stream: Stream) -&gt; None Fills the list with lines of text read from a stream.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Move" title="delphifmx.Strings.Move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Move</span></code></a></p></td>
+<td><p>TStrings.Move(CurIndex: int, NewIndex: int) -&gt; None Changes the position of a string in the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.SaveToFile" title="delphifmx.Strings.SaveToFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SaveToFile</span></code></a></p></td>
+<td><p>TStrings.SaveToFile(filename) Saves the strings in the list to the specified file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.SaveToStream" title="delphifmx.Strings.SaveToStream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SaveToStream</span></code></a></p></td>
+<td><p>TStrings.SaveToStream(Stream: Stream) -&gt; None Writes the  value of the Text property to the Stream stream.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.SetStrings" title="delphifmx.Strings.SetStrings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetStrings</span></code></a></p></td>
+<td><p>TStrings.SetStrings(Source: Strings) -&gt; None Sets the strings from another TStrings object to the list of strings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.SetText" title="delphifmx.Strings.SetText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetText</span></code></a></p></td>
+<td><p>TStrings.SetText(Text: PWideChar) -&gt; None Sets the Text property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.ToObjectArray" title="delphifmx.Strings.ToObjectArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToObjectArray</span></code></a></p></td>
+<td><p>Returns the TObject array associated with Strings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.ToStringArray" title="delphifmx.Strings.ToStringArray"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ToStringArray</span></code></a></p></td>
+<td><p>Converts a TStrings descendant to a string array.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Capacity" title="delphifmx.Strings.Capacity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Capacity</span></code></a></p></td>
+<td><p>Indicates the number of strings the TStrings object can hold.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.CommaText" title="delphifmx.Strings.CommaText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CommaText</span></code></a></p></td>
+<td><p>Lists the strings in the TStrings object in a single comma-delimited string.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Count" title="delphifmx.Strings.Count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Count</span></code></a></p></td>
+<td><p>Introduces an abstract property to represent the number of strings in the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.DefaultEncoding" title="delphifmx.Strings.DefaultEncoding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultEncoding</span></code></a></p></td>
+<td><p>The default encoding for the current object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.DelimitedText" title="delphifmx.Strings.DelimitedText"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DelimitedText</span></code></a></p></td>
+<td><p>Represents all the strings in the TStrings object as a single delimited string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Delimiter" title="delphifmx.Strings.Delimiter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Delimiter</span></code></a></p></td>
+<td><p>Specifies the delimiter used by the DelimitedText property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Encoding" title="delphifmx.Strings.Encoding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Encoding</span></code></a></p></td>
+<td><p>Character encoding determined during reading from a stream or file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.IsEmpty" title="delphifmx.Strings.IsEmpty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsEmpty</span></code></a></p></td>
+<td><p>bool:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.KeyNames" title="delphifmx.Strings.KeyNames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyNames</span></code></a></p></td>
+<td><p>str:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.LineBreak" title="delphifmx.Strings.LineBreak"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineBreak</span></code></a></p></td>
+<td><p>Defines line-break characters.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.NameValueSeparator" title="delphifmx.Strings.NameValueSeparator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NameValueSeparator</span></code></a></p></td>
+<td><p>Indicates the character used to separate names from values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Names" title="delphifmx.Strings.Names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Names</span></code></a></p></td>
+<td><p>str:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Objects" title="delphifmx.Strings.Objects"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Objects</span></code></a></p></td>
+<td><p>Represents a set of objects that are associated one with each of the strings in the Strings property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Options" title="delphifmx.Strings.Options"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Options</span></code></a></p></td>
+<td><p>Controls a set of boolean properties of TStrings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.QuoteChar" title="delphifmx.Strings.QuoteChar"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuoteChar</span></code></a></p></td>
+<td><p>Specifies the quote character used by the DelimitedText property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.StrictDelimiter" title="delphifmx.Strings.StrictDelimiter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StrictDelimiter</span></code></a></p></td>
+<td><p>Determines how the Delimiter property is used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Strings" title="delphifmx.Strings.Strings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Strings</span></code></a></p></td>
+<td><p>str:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.StringsAdapter" title="delphifmx.Strings.StringsAdapter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StringsAdapter</span></code></a></p></td>
+<td><p>Implements an IStringsAdapter interface for the TStrings object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Text" title="delphifmx.Strings.Text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Text</span></code></a></p></td>
+<td><p>Lists the strings in the TStrings object as a single string with the individual strings delimited by carriage returns and line feeds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.TrailingLineBreak" title="delphifmx.Strings.TrailingLineBreak"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrailingLineBreak</span></code></a></p></td>
+<td><p>Determines whether to add a line Break after the last line of the Text property or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.Updating" title="delphifmx.Strings.Updating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updating</span></code></a></p></td>
+<td><p>Indicates whether or not the list of strings is in the middle of an update.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.UseLocale" title="delphifmx.Strings.UseLocale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UseLocale</span></code></a></p></td>
+<td><p>Determines the implementation that the list of strings must use for string comparison.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.ValueFromIndex" title="delphifmx.Strings.ValueFromIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ValueFromIndex</span></code></a></p></td>
+<td><p>str:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.Strings.Values" title="delphifmx.Strings.Values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Values</span></code></a></p></td>
+<td><p>str:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.Strings.WriteBOM" title="delphifmx.Strings.WriteBOM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WriteBOM</span></code></a></p></td>
+<td><p>Will cause SaveToStream and SaveToFile to write a BOM.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Add">
+<span class="sig-name descname"><span class="pre">Add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.Add" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a string to the TStrings object and returns the index position</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.AddObject">
+<span class="sig-name descname"><span class="pre">AddObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delphiobject</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.AddObject" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a string and an associated Delphi object to the Strings and returns the index position</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.AddPair">
+<span class="sig-name descname"><span class="pre">AddPair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#delphifmx.Strings" title="delphifmx.Strings"><span class="pre">Strings</span></a></span></span><a class="headerlink" href="#delphifmx.Strings.AddPair" title="Link to this definition">¶</a></dt>
+<dd><p>Adds name-value pairs to the list of strings using fluent-style coding.
+AddPair adds name-value pairs using the current NameValueSeparator. You can also use AddPair to add name-value pairs and the corresponding AObject.
+TStrings returns a reference to the string list, allowing to populate the list using the fluent-style coding.
+Adds name-value pairs to the list of strings using fluent-style coding.
+AddPair adds name-value pairs using the current NameValueSeparator. You can also use AddPair to add name-value pairs and the corresponding AObject.
+TStrings returns a reference to the string list, allowing to populate the list using the fluent-style coding.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.AddStrings">
+<span class="sig-name descname"><span class="pre">AddStrings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Strings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphifmx.Strings" title="delphifmx.Strings"><span class="pre">Strings</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.AddStrings" title="Link to this definition">¶</a></dt>
+<dd><p>Adds the specified strings (and objects) to the current TStrings object.
+AddStrings, with the Strings parameter of the TStrings type, appends strings and associated objects from the Strings object at the end of the string list in the current TStrings object.
+AddStrings with the Strings parameter representing the array of strings, appends strings from Strings array at the end of the string list in the current TStrings object.
+AddStrings, with two parameters, appends strings from Strings array at the end of the string list in the current TStrings object and associates references to objects from Objects with their strings (having the same numbers in Strings and Objects arrays).
+If the number of strings in Strings is not equal to the number of objects in Objects, then an exception is raised.
+Adds the specified strings (and objects) to the current TStrings object.
+AddStrings, with the Strings parameter of the TStrings type, appends strings and associated objects from the Strings object at the end of the string list in the current TStrings object.
+AddStrings with the Strings parameter representing the array of strings, appends strings from Strings array at the end of the string list in the current TStrings object.
+AddStrings, with two parameters, appends strings from Strings array at the end of the string list in the current TStrings object and associates references to objects from Objects with their strings (having the same numbers in Strings and Objects arrays).
+If the number of strings in Strings is not equal to the number of objects in Objects, then an exception is raised.
+Adds the specified strings (and objects) to the current TStrings object.
+AddStrings, with the Strings parameter of the TStrings type, appends strings and associated objects from the Strings object at the end of the string list in the current TStrings object.
+AddStrings with the Strings parameter representing the array of strings, appends strings from Strings array at the end of the string list in the current TStrings object.
+AddStrings, with two parameters, appends strings from Strings array at the end of the string list in the current TStrings object and associates references to objects from Objects with their strings (having the same numbers in Strings and Objects arrays).
+If the number of strings in Strings is not equal to the number of objects in Objects, then an exception is raised.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Append">
+<span class="sig-name descname"><span class="pre">Append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.Append" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a string to the list.
+Append is the same as the Add method, except that it does not return a value. Use Append when there is no need to know the index of the string after it has been added, or with descendants of TStrings for which the index returned is not meaningful.
+For example, the TStrings descendant used by memo objects uses an index to determine where to insert a string, but the inserted string does not necessarily end up as a single string in the list. Part of the inserted text may become part of the previous string, and part may be broken off into a subsequent string. The index returned by Add is not meaningful in this case.
+Use Append rather than Add as a parameter for a function requiring a TGetStrProc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.BeginUpdate">
+<span class="sig-name descname"><span class="pre">BeginUpdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.BeginUpdate" title="Link to this definition">¶</a></dt>
+<dd><p>Enables the TStrings object to track when the list of strings is changing.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Capacity">
+<span class="sig-name descname"><span class="pre">Capacity</span></span><a class="headerlink" href="#delphifmx.Strings.Capacity" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the number of strings the TStrings object can hold.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Clear">
+<span class="sig-name descname"><span class="pre">Clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.Clear" title="Link to this definition">¶</a></dt>
+<dd><p>Clears all strings from a TStrings (and the associated objects</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.CommaText">
+<span class="sig-name descname"><span class="pre">CommaText</span></span><a class="headerlink" href="#delphifmx.Strings.CommaText" title="Link to this definition">¶</a></dt>
+<dd><p>Lists the strings in the TStrings object in a single comma-delimited string.
+Use CommaText to get or set all the strings in the TStrings object in a single comma-delimited string. The single comma-delimited string format is also known as the system data format (SDF).
+When retrieving CommaText, any string in the list that include spaces, commas or double quotes will be contained in double quotes, and any double quotes in a string will be repeated. For example, if the list contains the following strings:</p>
+<p>Stri,ng1
+Stri”ng2
+String 3
+String4</p>
+<p>CommaText will return:</p>
+<p>“Stri,ng1”,”Stri””ng2”,”String 3”,String4</p>
+<p>When assigning CommaText, the value is parsed as SDF formatted text. For SDF format, strings are separated by commas or spaces, and optionally enclosed in double quotes. Double quote marks that are part of the string are repeated to distinguish them from the quotes that surround the string. Spaces and commas that are not contained within double quote marks are delimiters. Two commas next to each other will indicate an empty string, but spaces that appear next to another delimiter are ignored. For example, suppose CommaText is set to:</p>
+<p>“Stri,ng 1”,”Stri””ng 2”,String 3,String4</p>
+<p>The list will then contain:</p>
+<p>Stri,ng 1
+Stri”ng 2
+String
+3
+String4</p>
+<p>Note: CommaText is the same as the DelimitedText property with a delimiter of ‘,’ and a quote character of ‘”’.
+Including a trailing comma in the source string causes a blank item to be included in the string list. For example, if CommaText is set to</p>
+<p>“String1,String2,String3, “</p>
+<p>the string list will contain</p>
+<p>String1
+String2
+String3
+&lt;Blank&gt;</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Contains">
+<span class="sig-name descname"><span class="pre">Contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.Strings.Contains" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.ContainsName">
+<span class="sig-name descname"><span class="pre">ContainsName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.Strings.ContainsName" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.ContainsObject">
+<span class="sig-name descname"><span class="pre">ContainsObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AObject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.Object.html#delphifmx.Object" title="delphifmx.Object"><span class="pre">Object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.Strings.ContainsObject" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Count">
+<span class="sig-name descname"><span class="pre">Count</span></span><a class="headerlink" href="#delphifmx.Strings.Count" title="Link to this definition">¶</a></dt>
+<dd><p>Introduces an abstract property to represent the number of strings in the list.
+Descendants of TStrings implement a Count property to indicate the number of strings in the list.
+Use the Count property when iterating over all the strings in the list, or when trying to locate the position of a string relative to the last string in the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.DefaultEncoding">
+<span class="sig-name descname"><span class="pre">DefaultEncoding</span></span><a class="headerlink" href="#delphifmx.Strings.DefaultEncoding" title="Link to this definition">¶</a></dt>
+<dd><p>The default encoding for the current object.
+DefaultEncoding is used when the nil encoding is specified in a call to LoadFromStream or SaveToStream.
+By default, DefaultEncoding is set to Default. The user can change DefaultEncoding if another default encoding is desired for LoadFromStream or SaveToStream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Encoding</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Delete">
+<span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes the string at Index i (and the associated object</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.DelimitedText">
+<span class="sig-name descname"><span class="pre">DelimitedText</span></span><a class="headerlink" href="#delphifmx.Strings.DelimitedText" title="Link to this definition">¶</a></dt>
+<dd><p>Represents all the strings in the TStrings object as a single delimited string.
+Use DelimitedText to get or set all the strings in the TStrings object in a single string, separated by the character specified by the Delimiter property.
+When retrieving DelimitedText, any string in the list that includes spaces or the delimiter and quotation marks characters specified in the Delimiter and QuoteChar properties will be surrounded (before and after) by the quotation mark character (QuoteChar). In addition, any QuoteChar character contained in an individual string will be repeated.
+When retrieving DelimitedText, the resulting value delimits individual strings in two ways: each string is surrounded (before and after) by the quotation marks character specified by the QuoteChar property. In addition, individual strings are separated by the character specified by the Delimiter property.
+When assigning DelimitedText, individual strings must be separated using Delimiter marks, and optionally enclosed in QuoteChar characters.
+When assigning DelimitedText, the value is parsed as SDF formatted text. For SDF format, strings are separated by Delimiter characters or spaces, and optionally enclosed in QuoteChar characters. QuoteChar marks that are part of the string are repeated to distinguish them from the QuoteChar characters that surround the string. Spaces and Delimiter characters that are not contained within QuoteChar marks are delimiters. Two Delimiter characters next to each other will indicate an empty string, but spaces that appear next to another Delimiter character are ignored.
+If StrictDelimiter is set to False, the space character is also interpreted as a delimiter, regardless of the value of Delimiter. This is not true when the space character occurs between quotation marks.</p>
+<p>Note: CommaText is the same as the DelimitedText property when Delimiter is ‘,’ and QuoteChar is ‘”’. Including a trailing Delimiter in the source string causes a blank item to be included in the string list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Delimiter">
+<span class="sig-name descname"><span class="pre">Delimiter</span></span><a class="headerlink" href="#delphifmx.Strings.Delimiter" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the delimiter used by the DelimitedText property.
+Use Delimiter to get or set the delimiter used by the DelimitedText property. DelimitedText represents all of the strings in the TStrings object as a single string, with individual strings separated by the character that is the value of Delimiter.
+The default delimiter is represented by comma (,).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>unicodechr(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Encoding">
+<span class="sig-name descname"><span class="pre">Encoding</span></span><a class="headerlink" href="#delphifmx.Strings.Encoding" title="Link to this definition">¶</a></dt>
+<dd><p>Character encoding determined during reading from a stream or file.
+Encoding is a read-only property that contains the value of the character encoding detected when the LoadFromStream or LoadFromFile methods are called. If a file or stream does not contain a BOM (the encoding value cannot be detected) then Encoding is set to the value specified in the DefaultEncoding property.
+Encoding is used in the SaveToStream and SaveToFile methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Encoding</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.EndUpdate">
+<span class="sig-name descname"><span class="pre">EndUpdate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.EndUpdate" title="Link to this definition">¶</a></dt>
+<dd><p>Enables the TStrings object to keep track of when the list of strings has finished changing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Equals">
+<span class="sig-name descname"><span class="pre">Equals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Strings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphifmx.Strings" title="delphifmx.Strings"><span class="pre">Strings</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.Strings.Equals" title="Link to this definition">¶</a></dt>
+<dd><p>Compares the list of strings to the list from another TStrings object and returns true if the two lists match.
+Call Equals to compare the lists in two TStrings objects. Equals compares only the strings, not any references to associated objects. Equals returns true if the lists for both TStrings objects have the same number of strings and the strings in each list match. Equals returns false if the lists are different in length, if they contain different strings, or if the order of the strings in the two lists differ.</p>
+<p>Note:  The Equals method uses an overridden Get method to perform the compare, thus it does not provide a context-insensitive option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Exchange">
+<span class="sig-name descname"><span class="pre">Exchange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Index2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.Exchange" title="Link to this definition">¶</a></dt>
+<dd><p>Swaps the position of two strings in the list.
+Call Exchange to rearrange the strings in the list. The strings are specified by their index values in the Index1 and Index2 parameters. Indexes are zero-based, so the first string in the list has an index value of 0, the second has an index value of 1, and so on.
+If either string has an associated object, Exchange changes the position of the object as well.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.GetEnumerator">
+<span class="sig-name descname"><span class="pre">GetEnumerator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.GetEnumerator" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a TStrings enumerator.
+GetEnumerator returns a TStringsEnumerator reference, which enumerates the strings in a TStrings object.
+To process all these strings, call the TStringsEnumerator GetCurrent method within a While MoveNext do loop.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.GetText">
+<span class="sig-name descname"><span class="pre">GetText</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.GetText" title="Link to this definition">¶</a></dt>
+<dd><p>Allocates a text buffer and fills it with the value of the Text property.
+Call GetText to obtain a dynamically allocated character buffer containing all of the strings in the list. Individual strings are separated by a carriage return (#13) on the OS X operating system, or by a carriage return and a line feed (#13#10) on Windows operating systems. The caller is responsible for freeing the returned value using the StrDispose procedure.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.IndexOf">
+<span class="sig-name descname"><span class="pre">IndexOf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.IndexOf" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Index of a string s or -1 if not found</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.IndexOfName">
+<span class="sig-name descname"><span class="pre">IndexOfName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphifmx.Strings.IndexOfName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the position of the first name-value pair with the specified name.
+Call IndexOfName to locate the first occurrence of a name-value pair where the name part is equal to the Name parameter or differs only in case. IndexOfName returns the 0-based index of the string. If no string in the list has the indicated name, IndexOfName returns -1.</p>
+<p>Note:  If there is more than one name-value pair with a name portion matching the Name parameter, IndexOfName returns the position of the first such string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.IndexOfObject">
+<span class="sig-name descname"><span class="pre">IndexOfObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">AObject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.Object.html#delphifmx.Object" title="delphifmx.Object"><span class="pre">Object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#delphifmx.Strings.IndexOfObject" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the index of the first string in the list associated with a given object.
+Call IndexOfObject to locate the first string in the list associated with the object AObject. Specify the object you want to locate as the value of the AObject parameter. IndexOfObject returns the 0-based index of the string and object. If the object is not associated with any of the strings, IndexOfObject returns -1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Insert">
+<span class="sig-name descname"><span class="pre">Insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.Insert" title="Link to this definition">¶</a></dt>
+<dd><p>Introduces abstract (Delphi) or pure virtual (C++) method to insert a string at a specified position.
+Descendants of TStrings implement an Insert method to add the string S to the list at the position specified by Index. If Index is 0, the string is inserted at the beginning of the list. If Index is 1, the string is put in the second position of the list, and so on.
+All methods that add strings to the list use the Insert method to add the string.
+If the string has an associated object, use the InsertObject method instead.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.InsertObject">
+<span class="sig-name descname"><span class="pre">InsertObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AObject</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.Object.html#delphifmx.Object" title="delphifmx.Object"><span class="pre">Object</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.InsertObject" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a string into the list at the specified position, and associates it with an object.
+Call InsertObject to insert the string S into the list at the position identified by Index, and associate it with the object AObject. If Index is 0, the string is inserted at the beginning of the list. If Index is 1, the string is put in the second position of the list, and so on.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.IsEmpty">
+<span class="sig-name descname"><span class="pre">IsEmpty</span></span><a class="headerlink" href="#delphifmx.Strings.IsEmpty" title="Link to this definition">¶</a></dt>
+<dd><p>bool:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.KeyNames">
+<span class="sig-name descname"><span class="pre">KeyNames</span></span><a class="headerlink" href="#delphifmx.Strings.KeyNames" title="Link to this definition">¶</a></dt>
+<dd><p>str:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.LineBreak">
+<span class="sig-name descname"><span class="pre">LineBreak</span></span><a class="headerlink" href="#delphifmx.Strings.LineBreak" title="Link to this definition">¶</a></dt>
+<dd><p>Defines line-break characters.
+The LineBreak property is used internally in TStrings to set the string terminator characters. Set or read the LineBreak property to determine the string terminator characters in multistring output operations.
+For example, the GetText method returns a long string containing all TStrings strings, each of which is terminated by the LineBreak value.</p>
+<p>Note:  On Windows, the default LineBreak value is a carriage return and line feed combination (#13#10), whereas on Android, Linux, macOS and iOS it is just a line feed (#10).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.LoadFromFile">
+<span class="sig-name descname"><span class="pre">LoadFromFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.LoadFromFile" title="Link to this definition">¶</a></dt>
+<dd><p>Fills the list with the lines of text in a specified file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.LoadFromStream">
+<span class="sig-name descname"><span class="pre">LoadFromStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.Stream.html#delphifmx.Stream" title="delphifmx.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.LoadFromStream" title="Link to this definition">¶</a></dt>
+<dd><p>Fills the list with lines of text read from a stream.
+LoadFromStream fills the string list of the TStrings object from the stream specified by Stream. The text read from the stream is parsed into strings separated by a carriage return and a line feed (#13#10) characters on Windows operating systems and a carriage return (#13) character on the macOS operating system. Thus, LoadFromStream reads the value of the Text property.
+If the Encoding parameter is not given, then the strings are loaded using the appropriate encoding. The value of the encoding is obtained by calling the GetBufferEncoding routine of the TEncoding class. LoadFromStream then saves the value of the encoding in the Encoding property, to be used if the stream is saved.
+If the stream is a file stream, LoadFromStream does the same thing as LoadFromFile, except that LoadFromFile creates and destroys the file stream.
+Fills the list with lines of text read from a stream.
+LoadFromStream fills the string list of the TStrings object from the stream specified by Stream. The text read from the stream is parsed into strings separated by a carriage return and a line feed (#13#10) characters on Windows operating systems and a carriage return (#13) character on the macOS operating system. Thus, LoadFromStream reads the value of the Text property.
+If the Encoding parameter is not given, then the strings are loaded using the appropriate encoding. The value of the encoding is obtained by calling the GetBufferEncoding routine of the TEncoding class. LoadFromStream then saves the value of the encoding in the Encoding property, to be used if the stream is saved.
+If the stream is a file stream, LoadFromStream does the same thing as LoadFromFile, except that LoadFromFile creates and destroys the file stream.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.Move">
+<span class="sig-name descname"><span class="pre">Move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">CurIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NewIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.Move" title="Link to this definition">¶</a></dt>
+<dd><p>Changes the position of a string in the list.
+Use Move to move the string at position CurIndex so that it occupies the position NewIndex. The positions are specified as 0-based indexes. For example, the following lines of code move the string in the first position to the last position:
+For Delphi:</p>
+<p>MyStringsObject.Move(0, MyStringsObject.Count - 1);</p>
+<p>For C++:</p>
+<p>MyStringsObject-&gt;Move(0, MyStringsObject-&gt;Count - 1);</p>
+<p>If the string has an associated object, the object remains associated with the string in its new position.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.NameValueSeparator">
+<span class="sig-name descname"><span class="pre">NameValueSeparator</span></span><a class="headerlink" href="#delphifmx.Strings.NameValueSeparator" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the character used to separate names from values.
+Strings that contain the NameValueSeparator character are considered name-value pairs. NameValueSeparator defaults to the equal sign (=). TStrings defines various methods for accessing names and values and for searching for specific names.
+Strings that are name-value pairs consist of a name part, the separator character, and a value part. Any spaces around the separator character are part of the name or value. This convention corresponds to the format used in many initialization files. For example:</p>
+<p>DisplayGrid=1
+SnapToGrid=1
+GridSizeX=8
+GridSizeY=8</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>unicodechr(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Names">
+<span class="sig-name descname"><span class="pre">Names</span></span><a class="headerlink" href="#delphifmx.Strings.Names" title="Link to this definition">¶</a></dt>
+<dd><p>str:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Objects">
+<span class="sig-name descname"><span class="pre">Objects</span></span><a class="headerlink" href="#delphifmx.Strings.Objects" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a set of objects that are associated one with each of the strings in the Strings property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Options">
+<span class="sig-name descname"><span class="pre">Options</span></span><a class="headerlink" href="#delphifmx.Strings.Options" title="Link to this definition">¶</a></dt>
+<dd><p>Controls a set of boolean properties of TStrings.
+Use Options to specify the value of the following boolean properties of the list of strings:</p>
+<p>Option</p>
+<p>Property</p>
+<p>soStrictDelimiter</p>
+<p>StrictDelimiter</p>
+<p>soWriteBOM</p>
+<p>WriteBOM</p>
+<p>soTrailingLineBreak</p>
+<p>TrailingLineBreak</p>
+<p>soUseLocale</p>
+<p>UseLocale</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>StringsOptions</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.QuoteChar">
+<span class="sig-name descname"><span class="pre">QuoteChar</span></span><a class="headerlink" href="#delphifmx.Strings.QuoteChar" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the quote character used by the DelimitedText property.
+Use QuoteChar to get or set the quote character that is used to enclose individual strings in the DelimitedText property.
+When QuoteChar is set to the null character, then DelimitedText does the following:</p>
+<p>At reading, does not return quoted list items.
+At assigning, does not check an assigning value for quote char.
+That is, you can set QuoteChar to the null character to disable quoting in DelimitedText. To set the QuoteChar to the null character, do the following:</p>
+<p>Delphi:</p>
+<p>MyStringList.QuoteChar := #0;</p>
+<p>C++:</p>
+<p>MyStringList-&gt;QuoteChar = ‘0’;</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>unicodechr(str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.SaveToFile">
+<span class="sig-name descname"><span class="pre">SaveToFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.SaveToFile" title="Link to this definition">¶</a></dt>
+<dd><p>Saves the strings in the list to the specified file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.SaveToStream">
+<span class="sig-name descname"><span class="pre">SaveToStream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Stream</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.Stream.html#delphifmx.Stream" title="delphifmx.Stream"><span class="pre">Stream</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.SaveToStream" title="Link to this definition">¶</a></dt>
+<dd><p>Writes the  value of the Text property to the Stream stream.
+SaveToStream gets all strings from the current TStrings object and combines them into the single string containing these strings delimited by LineBreak sequence. Then SaveToStream encodes this string using the specified Encoding. Then SaveToStream writes the encoded string into the specified Stream stream.
+If WriteBOM is True then SaveToStream first gets the preamble of the specified Encoding or of the DefaultEncoding (if Encoding = nil)  and writes the preamble bytes into the stream before the main string.
+If the Encoding parameter is not given, then the strings are saved with the encoding specified in the Encoding property.</p>
+<p>Note:  On Windows, the default LineBreak value is a carriage return and line feed combination (#13#10), whereas on macOS, it is just a line feed (#10).
+Note:  If TrailingLineBreak is True, then SaveToStream writes a finishing line break LineBreak after the last string.
+If the stream is a file stream, SaveToStream does the same thing as SaveToFile, except that SaveToFile creates and destroys the file stream.
+Writes the  value of the Text property to the Stream stream.
+SaveToStream gets all strings from the current TStrings object and combines them into the single string containing these strings delimited by LineBreak sequence. Then SaveToStream encodes this string using the specified Encoding. Then SaveToStream writes the encoded string into the specified Stream stream.
+If WriteBOM is True then SaveToStream first gets the preamble of the specified Encoding or of the DefaultEncoding (if Encoding = nil)  and writes the preamble bytes into the stream before the main string.
+If the Encoding parameter is not given, then the strings are saved with the encoding specified in the Encoding property.</p>
+<p>Note:  On Windows, the default LineBreak value is a carriage return and line feed combination (#13#10), whereas on macOS, it is just a line feed (#10).
+Note:  If TrailingLineBreak is True, then SaveToStream writes a finishing line break LineBreak after the last string.
+If the stream is a file stream, SaveToStream does the same thing as SaveToFile, except that SaveToFile creates and destroys the file stream.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.SetStrings">
+<span class="sig-name descname"><span class="pre">SetStrings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Source</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#delphifmx.Strings" title="delphifmx.Strings"><span class="pre">Strings</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.SetStrings" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the strings from another TStrings object to the list of strings.
+Use SetStrings to assign the value of the TStrings object from another TStrings object (Source).</p>
+<p>Note: SetStrings is similar to Assign, but Assign also copies multiple additional properties.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.SetText">
+<span class="sig-name descname"><span class="pre">SetText</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">PWideChar</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.Strings.SetText" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the Text property.
+Call SetText to replace the list with the strings specified by the Text parameter. SetText adds strings one at a time to the list, using the carriage returns or linefeed characters in Text as delimiters indicating when to add a new string.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.StrictDelimiter">
+<span class="sig-name descname"><span class="pre">StrictDelimiter</span></span><a class="headerlink" href="#delphifmx.Strings.StrictDelimiter" title="Link to this definition">¶</a></dt>
+<dd><p>Determines how the Delimiter property is used.
+If StrictDelimiter is True, individual strings in DelimitedText are only separated by Delimiter or quoted between  QuoteChar. If StrictDelimiter is False, spaces and non-printable character are also used as delimiters.</p>
+<p>Tip: You can set QuoteChar to the null character (#0 in Delphi, ‘0’ in C++) if you do not want quoted strings to be extracted as if they where surrounded by Delimiter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Strings">
+<span class="sig-name descname"><span class="pre">Strings</span></span><a class="headerlink" href="#delphifmx.Strings.Strings" title="Link to this definition">¶</a></dt>
+<dd><p>str:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.StringsAdapter">
+<span class="sig-name descname"><span class="pre">StringsAdapter</span></span><a class="headerlink" href="#delphifmx.Strings.StringsAdapter" title="Link to this definition">¶</a></dt>
+<dd><p>Implements an IStringsAdapter interface for the TStrings object.</p>
+<p>StringsAdapter specifies the attached TStringsAdapter when it is used in OLE applications.</p>
+<p>Note: To create a StringsAdapter you can use GetOleStrings and SetOleStrings instead of creating an instance of TStringsAdapter. StringsAdapter is used internally with OLE applications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>IStringsAdapter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Text">
+<span class="sig-name descname"><span class="pre">Text</span></span><a class="headerlink" href="#delphifmx.Strings.Text" title="Link to this definition">¶</a></dt>
+<dd><p>Lists the strings in the TStrings object as a single string with the individual strings delimited by carriage returns and line feeds.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.ToObjectArray">
+<span class="sig-name descname"><span class="pre">ToObjectArray</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.ToObjectArray" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the TObject array associated with Strings.</p>
+<p>Use ToObjectArray to obtain the array of TObject associated with Strings.</p>
+<p>Note: TStrings is an abstract class and this method has no effect. Descendent classes can associate objects with strings.
+Note:  The TStrings object does not own the objects in the Objects array. Objects added to the Objects array still exist even if the TStrings object is destroyed. They must be explicitly destroyed by the application.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.Strings.ToStringArray">
+<span class="sig-name descname"><span class="pre">ToStringArray</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.Strings.ToStringArray" title="Link to this definition">¶</a></dt>
+<dd><p>Converts a TStrings descendant to a string array.</p>
+<p>Use ToStringArray to obtain an array of strings for each string in the list.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.TrailingLineBreak">
+<span class="sig-name descname"><span class="pre">TrailingLineBreak</span></span><a class="headerlink" href="#delphifmx.Strings.TrailingLineBreak" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether to add a line Break after the last line of the Text property or not.
+Use TrailingLineBreak to add a finishing line break to Text. Set TrailingLineBreak to True to add a  line Break after the last line of Text. Set TrailingLineBreak to False to finish Text without a  line Break. Default is True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Updating">
+<span class="sig-name descname"><span class="pre">Updating</span></span><a class="headerlink" href="#delphifmx.Strings.Updating" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether or not the list of strings is in the middle of an update.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.UseLocale">
+<span class="sig-name descname"><span class="pre">UseLocale</span></span><a class="headerlink" href="#delphifmx.Strings.UseLocale" title="Link to this definition">¶</a></dt>
+<dd><p>Determines the implementation that the list of strings must use for string comparison.
+Set UseLocale to True to use AnsiCompareStr and AnsiCompareText to compare strings.
+Set UseLocale to False to use CompareStr and CompareText. Default is True.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.ValueFromIndex">
+<span class="sig-name descname"><span class="pre">ValueFromIndex</span></span><a class="headerlink" href="#delphifmx.Strings.ValueFromIndex" title="Link to this definition">¶</a></dt>
+<dd><p>str:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.Values">
+<span class="sig-name descname"><span class="pre">Values</span></span><a class="headerlink" href="#delphifmx.Strings.Values" title="Link to this definition">¶</a></dt>
+<dd><p>str:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.Strings.WriteBOM">
+<span class="sig-name descname"><span class="pre">WriteBOM</span></span><a class="headerlink" href="#delphifmx.Strings.WriteBOM" title="Link to this definition">¶</a></dt>
+<dd><p>Will cause SaveToStream and SaveToFile to write a BOM.
+Set WriteBOM to True to cause SaveToStream to write a BOM (byte-order mark) to the stream and to cause SaveToFile to write a BOM to the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphifmx.Bounds.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Bounds</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphifmx.Persistent.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Persistent</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Strings</a><ul>
+<li><a class="reference internal" href="#delphifmx.Strings"><code class="docutils literal notranslate"><span class="pre">Strings</span></code></a><ul>
+<li><a class="reference internal" href="#delphifmx.Strings.Add"><code class="docutils literal notranslate"><span class="pre">Strings.Add()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.AddObject"><code class="docutils literal notranslate"><span class="pre">Strings.AddObject()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.AddPair"><code class="docutils literal notranslate"><span class="pre">Strings.AddPair()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.AddStrings"><code class="docutils literal notranslate"><span class="pre">Strings.AddStrings()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Append"><code class="docutils literal notranslate"><span class="pre">Strings.Append()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.BeginUpdate"><code class="docutils literal notranslate"><span class="pre">Strings.BeginUpdate()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Capacity"><code class="docutils literal notranslate"><span class="pre">Strings.Capacity</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Clear"><code class="docutils literal notranslate"><span class="pre">Strings.Clear()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.CommaText"><code class="docutils literal notranslate"><span class="pre">Strings.CommaText</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Contains"><code class="docutils literal notranslate"><span class="pre">Strings.Contains()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.ContainsName"><code class="docutils literal notranslate"><span class="pre">Strings.ContainsName()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.ContainsObject"><code class="docutils literal notranslate"><span class="pre">Strings.ContainsObject()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Count"><code class="docutils literal notranslate"><span class="pre">Strings.Count</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.DefaultEncoding"><code class="docutils literal notranslate"><span class="pre">Strings.DefaultEncoding</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Delete"><code class="docutils literal notranslate"><span class="pre">Strings.Delete()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.DelimitedText"><code class="docutils literal notranslate"><span class="pre">Strings.DelimitedText</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Delimiter"><code class="docutils literal notranslate"><span class="pre">Strings.Delimiter</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Encoding"><code class="docutils literal notranslate"><span class="pre">Strings.Encoding</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.EndUpdate"><code class="docutils literal notranslate"><span class="pre">Strings.EndUpdate()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Equals"><code class="docutils literal notranslate"><span class="pre">Strings.Equals()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Exchange"><code class="docutils literal notranslate"><span class="pre">Strings.Exchange()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.GetEnumerator"><code class="docutils literal notranslate"><span class="pre">Strings.GetEnumerator()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.GetText"><code class="docutils literal notranslate"><span class="pre">Strings.GetText()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.IndexOf"><code class="docutils literal notranslate"><span class="pre">Strings.IndexOf()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.IndexOfName"><code class="docutils literal notranslate"><span class="pre">Strings.IndexOfName()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.IndexOfObject"><code class="docutils literal notranslate"><span class="pre">Strings.IndexOfObject()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Insert"><code class="docutils literal notranslate"><span class="pre">Strings.Insert()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.InsertObject"><code class="docutils literal notranslate"><span class="pre">Strings.InsertObject()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.IsEmpty"><code class="docutils literal notranslate"><span class="pre">Strings.IsEmpty</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.KeyNames"><code class="docutils literal notranslate"><span class="pre">Strings.KeyNames</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.LineBreak"><code class="docutils literal notranslate"><span class="pre">Strings.LineBreak</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.LoadFromFile"><code class="docutils literal notranslate"><span class="pre">Strings.LoadFromFile()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.LoadFromStream"><code class="docutils literal notranslate"><span class="pre">Strings.LoadFromStream()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Move"><code class="docutils literal notranslate"><span class="pre">Strings.Move()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.NameValueSeparator"><code class="docutils literal notranslate"><span class="pre">Strings.NameValueSeparator</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Names"><code class="docutils literal notranslate"><span class="pre">Strings.Names</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Objects"><code class="docutils literal notranslate"><span class="pre">Strings.Objects</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Options"><code class="docutils literal notranslate"><span class="pre">Strings.Options</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.QuoteChar"><code class="docutils literal notranslate"><span class="pre">Strings.QuoteChar</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.SaveToFile"><code class="docutils literal notranslate"><span class="pre">Strings.SaveToFile()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.SaveToStream"><code class="docutils literal notranslate"><span class="pre">Strings.SaveToStream()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.SetStrings"><code class="docutils literal notranslate"><span class="pre">Strings.SetStrings()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.SetText"><code class="docutils literal notranslate"><span class="pre">Strings.SetText()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.StrictDelimiter"><code class="docutils literal notranslate"><span class="pre">Strings.StrictDelimiter</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Strings"><code class="docutils literal notranslate"><span class="pre">Strings.Strings</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.StringsAdapter"><code class="docutils literal notranslate"><span class="pre">Strings.StringsAdapter</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Text"><code class="docutils literal notranslate"><span class="pre">Strings.Text</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.ToObjectArray"><code class="docutils literal notranslate"><span class="pre">Strings.ToObjectArray()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.ToStringArray"><code class="docutils literal notranslate"><span class="pre">Strings.ToStringArray()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.TrailingLineBreak"><code class="docutils literal notranslate"><span class="pre">Strings.TrailingLineBreak</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Updating"><code class="docutils literal notranslate"><span class="pre">Strings.Updating</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.UseLocale"><code class="docutils literal notranslate"><span class="pre">Strings.UseLocale</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.ValueFromIndex"><code class="docutils literal notranslate"><span class="pre">Strings.ValueFromIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.Values"><code class="docutils literal notranslate"><span class="pre">Strings.Values</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.Strings.WriteBOM"><code class="docutils literal notranslate"><span class="pre">Strings.WriteBOM</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

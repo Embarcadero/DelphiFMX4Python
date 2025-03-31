@@ -1,0 +1,1996 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="TabControl" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphifmx.TabControl.html" />
+<meta property="og:site_name" content="DelphiFMX | Documentation" />
+<meta property="og:description" content="Qualified name: delphifmx.TabControl" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/DelphiFMX4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiFMX | Documentation" />
+<meta name="description" content="Qualified name: delphifmx.TabControl" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="TabItem" href="delphifmx.TabItem.html" /><link rel="prev" title="StyleStreaming" href="delphifmx.StyleStreaming.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+        <title>TabControl - DelphiFMX Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94117f49" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiFMX Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiFMX4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiFMX4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiFMX Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphifmx_classes.html">DelphiFMX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiFMX</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomViewAction.html">CustomViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AdapterListView.html">AdapterListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AppearanceListView.html">AppearanceListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListView.html">CustomListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListView.html">ListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListViewBase.html">ListViewBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedListView.html">PresentedListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AniIndicator.html">AniIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ArcDial.html">ArcDial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BitmapTrackBar.html">BitmapTrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutPanel.html">CalloutPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CornerButton.html">CornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomButton.html">CustomButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomCornerButton.html">CustomCornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomSwitch.html">CustomSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomTrack.html">CustomTrack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Expander.html">Expander</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ExpanderButton.html">ExpanderButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageControl.html">ImageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PathLabel.html">PathLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedTextControl.html">PresentedTextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressBar.html">ProgressBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeGrip.html">SizeGrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SmallScrollBar.html">SmallScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpeedButton.html">SpeedButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Splitter.html">Splitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Switch.html">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Thumb.html">Thumb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Track.html">Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Arc.html">Arc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutRectangle.html">CalloutRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CaretRectangle.html">CaretRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Circle.html">Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPath.html">CustomPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Ellipse.html">Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Image.html">Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Line.html">Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PaintBox.html">PaintBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Pie.html">Pie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rectangle.html">Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RoundRect.html">RoundRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Selection.html">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SelectionPoint.html">SelectionPoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Text.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseValueRange.html">BaseValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRange.html">CustomValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRangeAction.html">CustomValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileExit.html">FileExit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideApp.html">FileHideApp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideAppOthers.html">FileHideAppOthers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HintAction.html">HintAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ObjectViewAction.html">ObjectViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SysCommonAction.html">SysCommonAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRange.html">ValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRangeAction.html">ValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ViewAction.html">ViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VirtualKeyboard.html">VirtualKeyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.WindowClose.html">WindowClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Bounds.html">Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ControlSize.html">ControlSize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupMenu.html">CustomPopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FmxObject.html">FmxObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Position.html">Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BufferedLayout.html">BufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBufferedLayout.html">CustomBufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CameraComponent.html">CameraComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaCodec.html">CustomMediaCodec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaPlayerAction.html">CustomMediaPlayerAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Media.html">Media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerControl.html">MediaPlayerControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerCurrentTime.html">MediaPlayerCurrentTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerPlayPause.html">MediaPlayerPlayPause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStart.html">MediaPlayerStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStop.html">MediaPlayerStop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerValue.html">MediaPlayerValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerVolume.html">MediaPlayerVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckColumn.html">CheckColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Column.html">Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CurrencyColumn.html">CurrencyColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomNumberColumn.html">CustomNumberColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateColumn.html">DateColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumn.html">DateTimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumnBase.html">DateTimeColumnBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FloatColumn.html">FloatColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GlyphColumn.html">GlyphColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Grid.html">Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageColumn.html">ImageColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.IntegerColumn.html">IntegerColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupColumn.html">PopupColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressColumn.html">ProgressColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringColumn.html">StringColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TimeColumn.html">TimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorButton.html">ColorButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorComboBox.html">ColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorListBox.html">ColorListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPanel.html">ColorPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPicker.html">ColorPicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorQuad.html">ColorQuad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboColorBox.html">ComboColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomColorComboBox.html">CustomColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GradientEdit.html">GradientEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboBox.html">CustomComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListBox.html">CustomListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBoxItem.html">ListBoxItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEdit.html">ComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEditBase.html">ComboEditBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboEdit.html">CustomComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CommonCustomForm.html">CommonCustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupForm.html">CustomPopupForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Frame.html">Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomControlAction.html">CustomControlAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Popup.html">Popup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyledControl.html">StyledControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleBook.html">StyleBook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TextControl.html">TextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEditBox.html">CustomEditBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMultiView.html">CustomMultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MultiView.html">MultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedScrollBox.html">CustomPresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedVertScrollBox.html">CustomPresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedHorzScrollBox.html">CustomPresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedScrollBox.html">CustomPresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedVertScrollBox.html">CustomPresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedScrollBox.html">PresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedVertScrollBox.html">PresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedHorzScrollBox.html">PresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedScrollBox.html">PresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedVertScrollBox.html">PresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomScrollBox.html">CustomScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FlowLayout.html">FlowLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedScrollBox.html">FramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedVertScrollBox.html">FramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridLayout.html">GridLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridPanelLayout.html">GridPanelLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HorzScrollBox.html">HorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Layout.html">Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScaledLayout.html">ScaledLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBox.html">ScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VertScrollBox.html">VertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateAction.html">FMXBindNavigateAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateApplyUpdates.html">FMXBindNavigateApplyUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateDelete.html">FMXBindNavigateDelete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateEdit.html">FMXBindNavigateEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateFirst.html">FMXBindNavigateFirst</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateInsert.html">FMXBindNavigateInsert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateLast.html">FMXBindNavigateLast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateNext.html">FMXBindNavigateNext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePost.html">FMXBindNavigatePost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePrior.html">FMXBindNavigatePrior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateRefresh.html">FMXBindNavigateRefresh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancel.html">FMXBindNavigateCancel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancelUpdates.html">FMXBindNavigateCancelUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuBar.html">MenuBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Point.html">Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PointF.html">PointF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rect.html">Rect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RectF.html">RectF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Size.html">Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeF.html">SizeF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SearchBox.html">SearchBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpinBox.html">SpinBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleStreaming.html">StyleStreaming</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TabItem.html">TabItem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.4-changelog.html">v1.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.5-changelog.html">v1.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.6-changelog.html">v1.0.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="tabcontrol">
+<h1>TabControl<a class="headerlink" href="#tabcontrol" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphifmx.TabControl</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphifmx.TabControl">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TabControl</span></span><a class="headerlink" href="#delphifmx.TabControl" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphifmx.StyledControl.html#delphifmx.StyledControl" title="delphifmx.StyledControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">StyledControl</span></code></a></p>
+<p>TTabControl is a tab set that has the appearance of notebook dividers.
+Use TTabControl to add a control with multiple tab settings to a FireMonkey form. When the current tab changes, the tab control must directly update its contents to reflect the change, in an OnChange event handler.
+Disabling a TTabControl object disables all tabs at once. To enable or disable specific tabs, you can programmatically use the Tabs property as in the following code snippet where the tab with the index of 1 is rendered as disabled:</p>
+<blockquote>
+<div><p>TabControl1.Tabs[1].Enabled := False;</p>
+</div></blockquote>
+<p>Use TTabControl to create rich graphical interfaces with great functionality, such as options and configurations for a specific application.</p>
+<p>Code Examples
+FMX.ControlsDemo Sample
+FMX.MusicPlayer Sample
+FMX.TabSlideTransition Sample</p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Add" title="delphifmx.TabControl.Add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Add</span></code></a></p></td>
+<td><p>TTabControl.Add(TabClass: TabItemClass) -&gt; TabItem Adds a new tab to the tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.ApplyStyleLookup" title="delphifmx.TabControl.ApplyStyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyStyleLookup</span></code></a></p></td>
+<td><p>TStyledControl.ApplyStyleLookup() Gets and applies the style of a TStyledControl.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Delete" title="delphifmx.TabControl.Delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Delete</span></code></a></p></td>
+<td><p>TTabControl.Delete(Index: int) -&gt; bool Deletes a tab from the tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.FindVisibleTab" title="delphifmx.TabControl.FindVisibleTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FindVisibleTab</span></code></a></p></td>
+<td><p>TTabControl.FindVisibleTab(Index: int, FindKind: TabControl.TFindKind) -&gt; bool Returns the first visible tab from the current tab.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.FinishCurrentTabTransition" title="delphifmx.TabControl.FinishCurrentTabTransition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FinishCurrentTabTransition</span></code></a></p></td>
+<td><p>Finishes current tabs transition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.First" title="delphifmx.TabControl.First"><code class="xref py py-obj docutils literal notranslate"><span class="pre">First</span></code></a></p></td>
+<td><p>TTabControl.First(ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; bool Moves to the first visible tab in the tab control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.GetTabList" title="delphifmx.TabControl.GetTabList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GetTabList</span></code></a></p></td>
+<td><p>Returns the list of tabs contained in this tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.GoToActiveTab" title="delphifmx.TabControl.GoToActiveTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GoToActiveTab</span></code></a></p></td>
+<td><p>Moves the title area of the tabs so that the active tab is visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.GotoVisibleTab" title="delphifmx.TabControl.GotoVisibleTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GotoVisibleTab</span></code></a></p></td>
+<td><p>TTabControl.GotoVisibleTab(Index: int, ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; bool Sets the focused tab using the specified transition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.HasActiveTab" title="delphifmx.TabControl.HasActiveTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasActiveTab</span></code></a></p></td>
+<td><p>Determines whether there is an active tab in the tab control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Inflate" title="delphifmx.TabControl.Inflate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Inflate</span></code></a></p></td>
+<td><p>TStyledControl.Inflate() Call this procedure to get and apply its style lookup.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Insert" title="delphifmx.TabControl.Insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Insert</span></code></a></p></td>
+<td><p>TTabControl.Insert(Index: int, TabClass: TabItemClass) -&gt; TabItem Inserts a new tab on the specified position.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Last" title="delphifmx.TabControl.Last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Last</span></code></a></p></td>
+<td><p>TTabControl.Last(ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; bool Moves to the last visible tab in the tab control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.NeedStyleLookup" title="delphifmx.TabControl.NeedStyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NeedStyleLookup</span></code></a></p></td>
+<td><p>TStyledControl.NeedStyleLookup() Call this procedure to indicate that this control requires to get and apply its style lookup.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Next" title="delphifmx.TabControl.Next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Next</span></code></a></p></td>
+<td><p>TTabControl.Next(ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; bool Moves the active tab to the next tab.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Previous" title="delphifmx.TabControl.Previous"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Previous</span></code></a></p></td>
+<td><p>TTabControl.Previous(ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; bool Moves the active tab to the previous tab.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.SetActiveTabWithTransition" title="delphifmx.TabControl.SetActiveTabWithTransition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetActiveTabWithTransition</span></code></a></p></td>
+<td><p>TTabControl.SetActiveTabWithTransition(ATab: TabItem, ATransition: TabTransition, ADirection: TabTransitionDirection) -&gt; None Sets the focused tab using the specified transition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.SetActiveTabWithTransitionAsync" title="delphifmx.TabControl.SetActiveTabWithTransitionAsync"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SetActiveTabWithTransitionAsync</span></code></a></p></td>
+<td><p>TTabControl.SetActiveTabWithTransitionAsync(ATab: TabItem, ATransition: TabTransition, ADirection: TabTransitionDirection, AOnFinish: Proc) -&gt; None Changes the currently active tab to a new ATab asynchronously.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.UpdateTabBarButtons" title="delphifmx.TabControl.UpdateTabBarButtons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateTabBarButtons</span></code></a></p></td>
+<td><p>Updates the state of the buttons in the area of the tab titles.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteClipRect</span></code></p></td>
+<td><p>Specifies the absolute rectangle of the control after all its parent controls clip it.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteEnabled</span></code></p></td>
+<td><p>Specifies whether the control is absolutely enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteHeight</span></code></p></td>
+<td><p>Specifies the absolute height of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteMatrix</span></code></p></td>
+<td><p>Specifies the absolute transformation matrix of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteOpacity</span></code></p></td>
+<td><p>Specifies the absolute opacity of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteRect</span></code></p></td>
+<td><p>Specifies the absolute rectangle that bounds the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteScale</span></code></p></td>
+<td><p>Specifies the absolute scale of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteWidth</span></code></p></td>
+<td><p>Specifies the absolute width of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActionClient</span></code></p></td>
+<td><p>Specifies whether the component object has an associated action.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.ActiveTab" title="delphifmx.TabControl.ActiveTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActiveTab</span></code></a></p></td>
+<td><p>Specifies the currently active tab.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.AdjustSizeValue" title="delphifmx.TabControl.AdjustSizeValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustSizeValue</span></code></a></p></td>
+<td><p>Updates the width and height of this control according to its current style</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.AdjustType" title="delphifmx.TabControl.AdjustType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustType</span></code></a></p></td>
+<td><p>Determines if and how the width and height of this control should be modified to take the fixed space dictated by the style of this control</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Align" title="delphifmx.TabControl.Align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></a></p></td>
+<td><p>Specifies the alignment options (top, left, client, and so on) of this control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Anchors" title="delphifmx.TabControl.Anchors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></a></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.AniCalculations" title="delphifmx.TabControl.AniCalculations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AniCalculations</span></code></a></p></td>
+<td><p>Represents the settings for the inertial scrolling that controls the movement in the title area of the tabs.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyingEffect</span></code></p></td>
+<td><p>A flag that signals when a control is in the process of applying an effect.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoCapture</span></code></p></td>
+<td><p>Specifies whether the control captures mouse events.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.AutoTranslate" title="delphifmx.TabControl.AutoTranslate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoTranslate</span></code></a></p></td>
+<td><p>Specifies whether the control's text should be translated</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AxisAlignedRect</span></code></p></td>
+<td><p>A TRectF defined by the width and height of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CanParentFocus</span></code></p></td>
+<td><p>Specifies whether the parent of this control should be evaluated to receive focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Canvas</span></code></p></td>
+<td><p>Provides the drawing surface of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Children</span></code></p></td>
+<td><p>Stores an array of children attached to this parent component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChildrenCount</span></code></p></td>
+<td><p>Read-only property that specifies the number of children in the children list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChildrenRect</span></code></p></td>
+<td><p>Specifies the bigger rectangle area occupied by parent and children controls.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.ClipChildren" title="delphifmx.TabControl.ClipChildren"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipChildren</span></code></a></p></td>
+<td><p>Specifies if children of the control should be clipped to the control's on-screen region.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.ClipParent" title="delphifmx.TabControl.ClipParent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipParent</span></code></a></p></td>
+<td><p>Specifies whether the current control has clipped its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipRect</span></code></p></td>
+<td><p>Specifies the bound rectangle to be clipped.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controls</span></code></p></td>
+<td><p>Returns an iterator over contained controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlsCount</span></code></p></td>
+<td><p>Returns the count of contained controls</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Cursor" title="delphifmx.TabControl.Cursor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></a></p></td>
+<td><p>Image to use to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Data</span></code></p></td>
+<td><p>Stores a Tvalue, which is a data structure that can store different kinds of data types.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultSize</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.DefaultStyleLookupName" title="delphifmx.TabControl.DefaultStyleLookupName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultStyleLookupName</span></code></a></p></td>
+<td><p>Returns a string with the name of the default style of this control</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableDisappear</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableFocusEffect</span></code></p></td>
+<td><p>Specifies whether the control has the focus effect disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.DragMode" title="delphifmx.TabControl.DragMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragMode</span></code></a></p></td>
+<td><p>Specifies how the control initiates drag-and-drop operations.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.EffectiveFullSize" title="delphifmx.TabControl.EffectiveFullSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EffectiveFullSize</span></code></a></p></td>
+<td><p>Indicates whether the tab buttons take up all the space in the tabs band.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.EffectiveTabPosition" title="delphifmx.TabControl.EffectiveTabPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EffectiveTabPosition</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.EnableDragHighlight" title="delphifmx.TabControl.EnableDragHighlight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EnableDragHighlight</span></code></a></p></td>
+<td><p>Specifies whether the control is highlighted when the dragged object is over it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Enabled" title="delphifmx.TabControl.Enabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></a></p></td>
+<td><p>Specifies whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedSize</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.FullSize" title="delphifmx.TabControl.FullSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FullSize</span></code></a></p></td>
+<td><p>Specifies whether the tab buttons occupy all the space in the tabs band.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasAfterPaintEffect</span></code></p></td>
+<td><p>Specifies whether the control has an effect that is applied after the control is painted.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasClipParent</span></code></p></td>
+<td><p>Control that is a direct child of this control and has clipped this control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasDisablePaintEffect</span></code></p></td>
+<td><p>Specifies whether the control's effect is painted.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasEffect</span></code></p></td>
+<td><p>Specifies whether the control has an applied effect.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.HasTouchScreen" title="delphifmx.TabControl.HasTouchScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasTouchScreen</span></code></a></p></td>
+<td><p>Indicates whether the device the application runs on has a touch screen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Height" title="delphifmx.TabControl.Height"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></a></p></td>
+<td><p>Height specifies the vertical size of the control (in dp).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.HelpContext" title="delphifmx.TabControl.HelpContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></a></p></td>
+<td><p>Contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.HelpKeyword" title="delphifmx.TabControl.HelpKeyword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></a></p></td>
+<td><p>Contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.HelpType" title="delphifmx.TabControl.HelpType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></a></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></p></td>
+<td><p>Specifies the text string that appears when the user moves the mouse over a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.HitTest" title="delphifmx.TabControl.HitTest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HitTest</span></code></a></p></td>
+<td><p>Enables the control to capture mouse events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Images" title="delphifmx.TabControl.Images"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Images</span></code></a></p></td>
+<td><p>Defines the reference to a TCustomImageList list of images to be used to draw images on the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InPaintTo</span></code></p></td>
+<td><p>Specifies whether the control is currently being painted.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Index</span></code></p></td>
+<td><p>Specifies the index of the child object in the children array attached to this object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InheritedCursor</span></code></p></td>
+<td><p>Image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvertAbsoluteMatrix</span></code></p></td>
+<td><p>Specifies the inverse matrix of AbsoluteMatrix.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsDragOver</span></code></p></td>
+<td><p>Specifies whether a dragged object is over the area of the current control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsFocused</span></code></p></td>
+<td><p>Determines whether the control has input focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsInflated</span></code></p></td>
+<td><p>Whether the current style of this control has been actually applied to the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsMouseOver</span></code></p></td>
+<td><p>Specifies whether the mouse cursor is over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsVisible</span></code></p></td>
+<td><p>Specifies whether the control is visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LocalRect</span></code></p></td>
+<td><p>Specifies the local rectangle for painting the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Locked" title="delphifmx.TabControl.Locked"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Locked</span></code></a></p></td>
+<td><p>Specifies whether the control is locked at design time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Margins" title="delphifmx.TabControl.Margins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></a></p></td>
+<td><p>Aligns the component to the margins points of other components.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnChanging" title="delphifmx.TabControl.OnChanging"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnChanging</span></code></a></p></td>
+<td><p>Callable[[Object, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnDragDrop" title="delphifmx.TabControl.OnDragDrop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDragDrop</span></code></a></p></td>
+<td><p>Callable[[Object, DragObject, PointF], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnDragEnter" title="delphifmx.TabControl.OnDragEnter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDragEnter</span></code></a></p></td>
+<td><p>Callable[[Object, DragObject, PointF], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnDragOver" title="delphifmx.TabControl.OnDragOver"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnDragOver</span></code></a></p></td>
+<td><p>Callable[[Object, DragObject, PointF, DragOperation], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnGesture</span></code></p></td>
+<td><p>Callable[[Object, GestureEventInfo, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnPaint" title="delphifmx.TabControl.OnPaint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnPaint</span></code></a></p></td>
+<td><p>Callable[[Object, Canvas, RectF], None]:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.OnPainting" title="delphifmx.TabControl.OnPainting"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnPainting</span></code></a></p></td>
+<td><p>Callable[[Object, Canvas, RectF], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Opacity" title="delphifmx.TabControl.Opacity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Opacity</span></code></a></p></td>
+<td><p>Specifies the control opacity.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Padding" title="delphifmx.TabControl.Padding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Padding</span></code></a></p></td>
+<td><p>Aligns the component to the padding points of other components.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></p></td>
+<td><p>Returns/Sets the Control Visibility</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentClassStyleLookupName</span></code></p></td>
+<td><p>The name of the default style of the parent class of this control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentControl</span></code></p></td>
+<td><p>Specifies the parent control of this control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentedRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control within its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentedVisible</span></code></p></td>
+<td><p>Specifies whether all the control's parents are visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.PopupMenu" title="delphifmx.TabControl.PopupMenu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMenu</span></code></a></p></td>
+<td><p>Specifies the context (pop-up) menu object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Position" title="delphifmx.TabControl.Position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></a></p></td>
+<td><p>Aligns the component to the position points of other components (Bounds points).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pressed</span></code></p></td>
+<td><p>Indicates whether the control is currently pressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PressedPosition</span></code></p></td>
+<td><p>A point that indicates where exactly on the control the click occured.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Root</span></code></p></td>
+<td><p>Specifies the root parent of this object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.RotationAngle" title="delphifmx.TabControl.RotationAngle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RotationAngle</span></code></a></p></td>
+<td><p>Specifies the amount (in degrees) by which the control is rotated from the x-axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.RotationCenter" title="delphifmx.TabControl.RotationCenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RotationCenter</span></code></a></p></td>
+<td><p>Specifies the position of the pivot point of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Scale" title="delphifmx.TabControl.Scale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Scale</span></code></a></p></td>
+<td><p>Specifies the scale of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Scene</span></code></p></td>
+<td><p>Specifies the current scene in which the control is drawn.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></p></td>
+<td><p>Specifies whether the Hint can be shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Size" title="delphifmx.TabControl.Size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Size</span></code></a></p></td>
+<td><p>Specifies the vertical and horizontal size (Size.Height and Size.Width) of the control (in pixels).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stored</span></code></p></td>
+<td><p>Specifies whether this object is stored in the .XFM file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.StyleLookup" title="delphifmx.TabControl.StyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleLookup</span></code></a></p></td>
+<td><p>Specifies the name of the resource object to which the current TStyledControl is linked</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></p></td>
+<td><p>Specifies the style name for this FMX component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.StyleState" title="delphifmx.TabControl.StyleState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleState</span></code></a></p></td>
+<td><p>This property allows you to define the current state of style</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StylesData</span></code></p></td>
+<td><p>Value:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabBarButtons" title="delphifmx.TabControl.TabBarButtons"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabBarButtons</span></code></a></p></td>
+<td><p>Specifies the buttons to be displayed in the field names of the tabs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabBarRect" title="delphifmx.TabControl.TabBarRect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabBarRect</span></code></a></p></td>
+<td><p>The coordinates of the rectangle where all the tab titles are placed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabContentPosition" title="delphifmx.TabControl.TabContentPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabContentPosition</span></code></a></p></td>
+<td><p>Offset of the area of the tab headers.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabContentSize" title="delphifmx.TabControl.TabContentSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabContentSize</span></code></a></p></td>
+<td><p>The size of the area that contains all the tab titles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabCount" title="delphifmx.TabControl.TabCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabCount</span></code></a></p></td>
+<td><p>Specifies the number of tabs that are present on this tab control component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabHeight" title="delphifmx.TabControl.TabHeight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabHeight</span></code></a></p></td>
+<td><p>Specifies the height, in pixels, of the clickable tabs' captions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabIndex" title="delphifmx.TabControl.TabIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabIndex</span></code></a></p></td>
+<td><p>Specifies the index of the active tab.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabOrder" title="delphifmx.TabControl.TabOrder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabOrder</span></code></a></p></td>
+<td><p>Indicates the position of the control in its parent's tab order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabPosition" title="delphifmx.TabControl.TabPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabPosition</span></code></a></p></td>
+<td><p>Specifies the position of the tabs on this TTabControl component.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TabStop" title="delphifmx.TabControl.TabStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabStop</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Tabs" title="delphifmx.TabControl.Tabs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tabs</span></code></a></p></td>
+<td><p>TabItem:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagFloat</span></code></p></td>
+<td><p>Custom property that stores any floating-point value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagObject</span></code></p></td>
+<td><p>Custom property that stores any object value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagString</span></code></p></td>
+<td><p>Custom property that stores any string value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.TouchTargetExpansion" title="delphifmx.TabControl.TouchTargetExpansion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TouchTargetExpansion</span></code></a></p></td>
+<td><p>Set of optional pixel values you can specify to expand the touch target of a FireMonkey styled control.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.TransitionRunning" title="delphifmx.TabControl.TransitionRunning"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TransitionRunning</span></code></a></p></td>
+<td><p>Determines whether the transition between tabs is currently running.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateRect</span></code></p></td>
+<td><p>Specifies the rectangle area of the control that needs to be updated.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.TabControl.Visible" title="delphifmx.TabControl.Visible"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></a></p></td>
+<td><p>Specifies whether the component appears onscreen.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.TabControl.Width" title="delphifmx.TabControl.Width"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></a></p></td>
+<td><p>Specifies the horizontal size of the control (in pixels).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.ActiveTab">
+<span class="sig-name descname"><span class="pre">ActiveTab</span></span><a class="headerlink" href="#delphifmx.TabControl.ActiveTab" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the currently active tab.
+ActiveTab sets or gets the currently active (focused) tab item on the current tab control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem">TabItem</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Add">
+<span class="sig-name descname"><span class="pre">Add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TabClass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabItemClass</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem"><span class="pre">TabItem</span></a></span></span><a class="headerlink" href="#delphifmx.TabControl.Add" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a new tab to the tab control.
+Use the Add method to create a new tab object and add it to the tab control. The type of the tab object is specified by the TabClass parameter.
+If TabClass is nil, the created tab object will have the default type TTabItem.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.AdjustSizeValue">
+<span class="sig-name descname"><span class="pre">AdjustSizeValue</span></span><a class="headerlink" href="#delphifmx.TabControl.AdjustSizeValue" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the width and height of this control according to its current style</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.AdjustType">
+<span class="sig-name descname"><span class="pre">AdjustType</span></span><a class="headerlink" href="#delphifmx.TabControl.AdjustType" title="Link to this definition">¶</a></dt>
+<dd><p>Determines if and how the width and height of this control should be modified to take the fixed space dictated by the style of this control</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Align">
+<span class="sig-name descname"><span class="pre">Align</span></span><a class="headerlink" href="#delphifmx.TabControl.Align" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the alignment options (top, left, client, and so on) of this control.
+Use Align to automatically set the alignment of the current control. Setting Align to a value different than None can affect the  position, size (height and width), and anchors of the control. By default, Align is set to None.
+Descendants of TControl typically set the visibility and value for the Align property. For example, for TToolBar, Align defaults to TAlignLayout.Top.
+To see the possible values for Align and their visible effects over the control, see FMX.Types.TAlignLayout.
+Controls that have the Align or Anchors properties set can use a Scale that is different from the default (1,1), so that controls align together even when they have a custom scale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>AlignLayout</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Anchors">
+<span class="sig-name descname"><span class="pre">Anchors</span></span><a class="headerlink" href="#delphifmx.TabControl.Anchors" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control is anchored to its parent.
+Use Anchors to ensure that a control maintains its current position relative to the edges of its parent, even if the parent is resized. When its parent is resized, the control holds its position relative to the edges to which it is anchored. Anchors is enforced only when the parent control is resized.
+If a control is anchored to opposite edges at the same time, the control stretches horizontally or vertically to maintain constant the distance between the control edges and parent edges. If a control is anchored to all four edges of its parent, the control stretches in all directions. By default, a control is anchored to the top and left edges of its container (Anchors=[akTop,akLeft]).
+The automatic alignment may affect the anchors of a control. When Align is set to None, all the anchors are available. If Align is not None, the anchors affected by the automatic alignment are excluded. Changing the state of the anchors affected by the automatic alignment has no effect over the control.
+Controls that have the Align or Anchors properties set can use a Scale that is different from the default (1,1), so that controls align together even when they have a custom scale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Anchors</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.AniCalculations">
+<span class="sig-name descname"><span class="pre">AniCalculations</span></span><a class="headerlink" href="#delphifmx.TabControl.AniCalculations" title="Link to this definition">¶</a></dt>
+<dd><p>Represents the settings for the inertial scrolling that controls the movement in the title area of the tabs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>AniCalculations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.ApplyStyleLookup">
+<span class="sig-name descname"><span class="pre">ApplyStyleLookup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.ApplyStyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Gets and applies the style of a TStyledControl.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.AutoTranslate">
+<span class="sig-name descname"><span class="pre">AutoTranslate</span></span><a class="headerlink" href="#delphifmx.TabControl.AutoTranslate" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control’s text should be translated</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.ClipChildren">
+<span class="sig-name descname"><span class="pre">ClipChildren</span></span><a class="headerlink" href="#delphifmx.TabControl.ClipChildren" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies if children of the control should be clipped to the control’s on-screen region.
+Set ClipChildren to</p>
+<p>True if you want child controls to be clipped to the control’s on-screen region.
+False if you want child controls to be able to extend beyond the region of the parent control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.ClipParent">
+<span class="sig-name descname"><span class="pre">ClipParent</span></span><a class="headerlink" href="#delphifmx.TabControl.ClipParent" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the current control has clipped its parent.
+When ClipParent is True, TControl cuts off the portion of the parent that lies under the control when the control is painted by the Paint and Painting methods.
+Parts of the control that do not contain visible objects cut off holes in the parent’s image.
+ClipParent is ignored in PaintChildren and other painting methods.
+If one parent has more that one child control having ClipParent equals True, then only one of these child controls is painted with ClipParent equals True. Others child controls are painted as if ClipParent equals False.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Cursor">
+<span class="sig-name descname"><span class="pre">Cursor</span></span><a class="headerlink" href="#delphifmx.TabControl.Cursor" title="Link to this definition">¶</a></dt>
+<dd><p>Image to use to represent the mouse pointer when it passes into the region covered by the control.
+Change the value of Cursor to provide feedback to the user when the mouse pointer enters the control. For a list of cursor constants, see System.UITypes Constants. The image representations of the cursor depend on the theme active on the current platform.
+If Cursor is set to the default cursor, this control might display a different cursor when the mouse pointer is over it. The actual cursor that this control displays is the cursor defined in InheritedCursor, a read-only property that is calculated based not only in the value of Cursor in this control, but also the value of Cursor in any ancestor of this control (parent, grand-parent, and so on until the parent form).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.DefaultStyleLookupName">
+<span class="sig-name descname"><span class="pre">DefaultStyleLookupName</span></span><a class="headerlink" href="#delphifmx.TabControl.DefaultStyleLookupName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a string with the name of the default style of this control</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Delete">
+<span class="sig-name descname"><span class="pre">Delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.Delete" title="Link to this definition">¶</a></dt>
+<dd><p>Deletes a tab from the tab control.
+Use the Delete method to delete the tab specified by AIndex from the tab control.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.DragMode">
+<span class="sig-name descname"><span class="pre">DragMode</span></span><a class="headerlink" href="#delphifmx.TabControl.DragMode" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies how the control initiates drag-and-drop operations.
+Use DragMode to control when the user can drag the control. Disable the drag-and-drop capability at run time by setting the DragMode property value to dmManual. Enable automatic dragging by setting DragMode to dmAutomatic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DragMode</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.EffectiveFullSize">
+<span class="sig-name descname"><span class="pre">EffectiveFullSize</span></span><a class="headerlink" href="#delphifmx.TabControl.EffectiveFullSize" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the tab buttons take up all the space in the tabs band.
+See its getter method GetEffectiveFullSize for further details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.EffectiveTabPosition">
+<span class="sig-name descname"><span class="pre">EffectiveTabPosition</span></span><a class="headerlink" href="#delphifmx.TabControl.EffectiveTabPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TabPosition</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.EnableDragHighlight">
+<span class="sig-name descname"><span class="pre">EnableDragHighlight</span></span><a class="headerlink" href="#delphifmx.TabControl.EnableDragHighlight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control is highlighted when the dragged object is over it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Enabled">
+<span class="sig-name descname"><span class="pre">Enabled</span></span><a class="headerlink" href="#delphifmx.TabControl.Enabled" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control responds to mouse, keyboard, and timer events.
+Use Enabled to change the availability of the control to the user. To disable a control, set Enabled to False. Some disabled controls appear dimmed (for example: buttons, check boxes, labels), while others (container controls) simply lose their functionality without changing their appearance. If Enabled is set to False, the control ignores mouse, keyboard, and timer events.
+To re-enable a control, set Enabled to True.
+This property applies to all TControl descendants.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.FindVisibleTab">
+<span class="sig-name descname"><span class="pre">FindVisibleTab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">FindKind</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabControl.TFindKind</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.FindVisibleTab" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the first visible tab from the current tab.
+Use the FindVisibleTab method to get the first visible tab of type FindKind.
+The first overloaded method calculates the index of the found tab in the Index parameter. Index represents:</p>
+<p>At input, the index of the tab where the search begins.
+At output, if the returned value is True, the index of the found tab; otherwise, the old value.
+The second overloaded method returns the index of the found tab. Searching starts with the current tab. If the tab is found, it return its index, otherwise it returns -1.
+Returns the first visible tab from the current tab.
+Use the FindVisibleTab method to get the first visible tab of type FindKind.
+The first overloaded method calculates the index of the found tab in the Index parameter. Index represents:</p>
+<p>At input, the index of the tab where the search begins.
+At output, if the returned value is True, the index of the found tab; otherwise, the old value.
+The second overloaded method returns the index of the found tab. Searching starts with the current tab. If the tab is found, it return its index, otherwise it returns -1.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.FinishCurrentTabTransition">
+<span class="sig-name descname"><span class="pre">FinishCurrentTabTransition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.FinishCurrentTabTransition" title="Link to this definition">¶</a></dt>
+<dd><p>Finishes current tabs transition.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.First">
+<span class="sig-name descname"><span class="pre">First</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.First" title="Link to this definition">¶</a></dt>
+<dd><p>Moves to the first visible tab in the tab control.
+Use the First method to set the active tab to the first visible tab in the tab control.
+ATransition specifies the type of transition used to switch the tab.
+ADirection specifies the direction in which the content of the tab is replaced with the content of the first tab.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.FullSize">
+<span class="sig-name descname"><span class="pre">FullSize</span></span><a class="headerlink" href="#delphifmx.TabControl.FullSize" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the tab buttons occupy all the space in the tabs band.
+Set the FullSize property to True in order for the clickable tab buttons to take up all the space in the tabs band. For instance, if you have a tab control component of a fairly large width and only two tabs, then setting FullSize to True will make the two tab buttons span over the entire width of the tab control.
+Set FullSize to False to let Delphi automatically adjust the way the tab buttons occupy the space.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BehaviorBoolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.GetTabList">
+<span class="sig-name descname"><span class="pre">GetTabList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.GetTabList" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the list of tabs contained in this tab control.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.GoToActiveTab">
+<span class="sig-name descname"><span class="pre">GoToActiveTab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.GoToActiveTab" title="Link to this definition">¶</a></dt>
+<dd><p>Moves the title area of the tabs so that the active tab is visible.
+The movement of the tabs is asynchronous.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.GotoVisibleTab">
+<span class="sig-name descname"><span class="pre">GotoVisibleTab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.GotoVisibleTab" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the focused tab using the specified transition. Animation of the switch transition depends on mutual positions of the current focused tab and the specified tab.
+GotoVisibleTab switches the active tab to the tab specified by the Index parameter if possible (the tab with the specified Index exists and it is visible). GotoVisibleTab switches the active tab using the switch transition specified by the ATransition and ADirection parameters and taking into account mutual positions of the current active tab and the tab specified by Index.
+ATransition specifies the type of transition used to switch the tab. When ATransition = Slide, then the tab control uses visual animation for the switching action. That is, moving of contents in the switched tabs is animated. The default ATransition is Slide.
+ADirection specifies the direction in which the content of the current active tab is replaced with the content of the specified Index tab. ADirection is taken into account only when ATransition = Slide. GotoVisibleTab animates switching transitions of tabs taking into account mutual positions of the current active tab and the tab specified by Index:</p>
+<p>When ADirection = Normal. If the destination tab is left of the current active tab (lower Index), then the forward left-to-right switching transition animation of tab items is used. If the tab to display is to the right of the active tab (upper Index), then the backward right-to-left switching transition animation of tab items is used.
+When ADirection = Reversed, then the switching transitions uses the opposite animation directions to the described above.
+The default ADirection is Normal.
+In difference to SetActiveTabWithTransition, the
+GotoVisibleTab method animates the switch transition depending on mutual positions of the current focused tab and the specified Index tab.
+GotoVisibleTab returns True in case of success and False otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HasActiveTab">
+<span class="sig-name descname"><span class="pre">HasActiveTab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.HasActiveTab" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether there is an active tab in the tab control.
+HasActiveTab returns True if one of the tabs in the tab control is selected and False otherwise.
+The tab control has an active tab if TabIndex is between 0 and TabCount-1.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HasTouchScreen">
+<span class="sig-name descname"><span class="pre">HasTouchScreen</span></span><a class="headerlink" href="#delphifmx.TabControl.HasTouchScreen" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates whether the device the application runs on has a touch screen.
+When HasTouchScreen is True the device where the application runs on has a touch screen.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Height">
+<span class="sig-name descname"><span class="pre">Height</span></span><a class="headerlink" href="#delphifmx.TabControl.Height" title="Link to this definition">¶</a></dt>
+<dd><p>Height specifies the vertical size of the control (in dp).
+Use the Height property to read or change the height of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HelpContext">
+<span class="sig-name descname"><span class="pre">HelpContext</span></span><a class="headerlink" href="#delphifmx.TabControl.HelpContext" title="Link to this definition">¶</a></dt>
+<dd><p>Contains the numeric context ID that identifies the Help topic for the control.
+In case of a .chm Help file, you must symbolically map Context IDs of Help topics to numeric topic ID values in the [MAP] section of your project (.hhp) file.
+To enable Context ID-based context-sensitive Help for a control, set HelpType to htContext and set HelpContext to a numeric topic ID.
+A topic ID of 0 (default) means that no Help topic is provided for the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HelpKeyword">
+<span class="sig-name descname"><span class="pre">HelpKeyword</span></span><a class="headerlink" href="#delphifmx.TabControl.HelpKeyword" title="Link to this definition">¶</a></dt>
+<dd><p>Contains the keyword string that identifies the Help topic for the control.
+To enable the keyword-based context-sensitive Help for a control, set the HelpType property to htKeyword and set HelpKeyword to a keyword string.
+No keyword (zero-length string, the default) means that no Help topic is provided for the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HelpType">
+<span class="sig-name descname"><span class="pre">HelpType</span></span><a class="headerlink" href="#delphifmx.TabControl.HelpType" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control’s context-sensitive Help topic is identified by a context ID or by keyword.
+If HelpType is htContext, the HelpContext property value identifies the control’s Help topic.
+If HelpType is htKeyword, the HelpKeyword property value identifies the control’s Help topic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HelpType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.HitTest">
+<span class="sig-name descname"><span class="pre">HitTest</span></span><a class="headerlink" href="#delphifmx.TabControl.HitTest" title="Link to this definition">¶</a></dt>
+<dd><p>Enables the control to capture mouse events.</p>
+<p>If you set HitTest to True, this control captures all mouse events. The example below shows the use of HitTest for an OnClick event.
+If you set HitTest to False, the mouse events will pass through this control, so that a control laid out behind this one receives the mouse events instead of this control.
+Note:  The HitTest enables all mouse-related events, which also include the display of Hints and Hint-related events.
+For most controls, HitTest is True by default. However, this is not true for all the controls. For example, for TLabel and TPathLabel, HitTest is False by default; these two controls do not capture the mouse-related events unless you set HitTest to True.</p>
+<p>Example of HitTest
+1. On a form, place a TPanel component.
+2. Inside the panel, place a TPathLabel component.
+3. Implement the OnClick event for both the TPanel and the TPathLabel:</p>
+<p>procedure TForm1.Panel1Click(Sender: TObject);
+begin</p>
+<blockquote>
+<div><p>ShowMessage(‘OnClick event fired for TPanel’);</p>
+</div></blockquote>
+<p>end;</p>
+<p>procedure TForm1.PathLabel1Click(Sender: TObject);
+begin</p>
+<blockquote>
+<div><p>ShowMessage(‘OnClick event fired for TPathLabel’);</p>
+</div></blockquote>
+<p>end;</p>
+<ol class="arabic simple" start="4">
+<li><p>Set the TPathLabel HitTest property to False (this is the default setting). Run the application and click the label. The OnClick event is fired for the panel (not the label).</p></li>
+<li><p>Set the TPathLabel HitTest property to True. Run the application and click the label. The OnClick event is fired for the TPathLabel.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Images">
+<span class="sig-name descname"><span class="pre">Images</span></span><a class="headerlink" href="#delphifmx.TabControl.Images" title="Link to this definition">¶</a></dt>
+<dd><p>Defines the reference to a TCustomImageList list of images to be used to draw images on the component.
+If the TCustomImageList list is empty, then Images is nil/null.
+Call ImagesChanged when Images is changed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>CustomImageList</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Inflate">
+<span class="sig-name descname"><span class="pre">Inflate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.Inflate" title="Link to this definition">¶</a></dt>
+<dd><p>Call this procedure to get and apply its style lookup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Insert">
+<span class="sig-name descname"><span class="pre">Insert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TabClass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabItemClass</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem"><span class="pre">TabItem</span></a></span></span><a class="headerlink" href="#delphifmx.TabControl.Insert" title="Link to this definition">¶</a></dt>
+<dd><p>Inserts a new tab on the specified position.
+Use the Insert method to create a new tab object and insert it on the position specified by Index.
+The type of the tab object is specified by the TabClass parameter. If TabClass is nil, the created tab object will have the default type TTabItem.
+The Index parameter is 0-based.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Last">
+<span class="sig-name descname"><span class="pre">Last</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.Last" title="Link to this definition">¶</a></dt>
+<dd><p>Moves to the last visible tab in the tab control.
+Use the Last method to set the active tab to the last visible tab in the tab control.
+ATransition specifies the type of transition used to switch the tab.
+ADirection specifies the direction in which the content of the tab is replaced with the content of the last tab.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Locked">
+<span class="sig-name descname"><span class="pre">Locked</span></span><a class="headerlink" href="#delphifmx.TabControl.Locked" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control is locked at design time.
+A locked control prohibits to move the control at design time, all the other properties can be modified at design time.
+To lock the control, set Locked to True.
+By default, Locked is False, and the control can be modified at design time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Margins">
+<span class="sig-name descname"><span class="pre">Margins</span></span><a class="headerlink" href="#delphifmx.TabControl.Margins" title="Link to this definition">¶</a></dt>
+<dd><p>Aligns the component to the margins points of other components.
+The Margins of a control are the distances (in pixels) from each edge (top, left, bottom, right) to another control within the same Parent or to the edge of its Parent.  The Margins add space to the outer side of the control. It only applies for controls that do not use TAlignLayout None and the components are located to each other.
+If a margin is not 0, no other control will come closer to the control than the specified distance. If the distance from a Parent edge to the corresponding control edge is smaller than the specified Margins for that edge, the control is repositioned and resized, if necessary, to maintain the specified distance.
+If the Margins control has zero values, RAD Studio uses the default values (Left=4, Top=4, Right=4, Bottom=4). You can also set your own Margins values. It only applies to the IDE control’s guidelines, when you are dragging control. But if you use Align=Client (for example), it will use the specified values in Margins.
+The following image shows how Padding and Margins properties affect alignment, position, and size of controls.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Bounds.html#delphifmx.Bounds" title="delphifmx.Bounds">Bounds</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.NeedStyleLookup">
+<span class="sig-name descname"><span class="pre">NeedStyleLookup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.NeedStyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Call this procedure to indicate that this control requires to get and apply its style lookup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Next">
+<span class="sig-name descname"><span class="pre">Next</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.Next" title="Link to this definition">¶</a></dt>
+<dd><p>Moves the active tab to the next tab.
+Use the Next method to move over to the following tab, if it exists.
+ATransition specifies the type of transition used to switch the tab.
+ADirection specifies the direction in which the content of the tab is replaced with the content of the next tab.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnChanging">
+<span class="sig-name descname"><span class="pre">OnChanging</span></span><a class="headerlink" href="#delphifmx.TabControl.OnChanging" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, bool], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnDragDrop">
+<span class="sig-name descname"><span class="pre">OnDragDrop</span></span><a class="headerlink" href="#delphifmx.TabControl.OnDragDrop" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragObject, PointF], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnDragEnter">
+<span class="sig-name descname"><span class="pre">OnDragEnter</span></span><a class="headerlink" href="#delphifmx.TabControl.OnDragEnter" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragObject, PointF], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnDragOver">
+<span class="sig-name descname"><span class="pre">OnDragOver</span></span><a class="headerlink" href="#delphifmx.TabControl.OnDragOver" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, DragObject, PointF, DragOperation], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnPaint">
+<span class="sig-name descname"><span class="pre">OnPaint</span></span><a class="headerlink" href="#delphifmx.TabControl.OnPaint" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Canvas, RectF], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.OnPainting">
+<span class="sig-name descname"><span class="pre">OnPainting</span></span><a class="headerlink" href="#delphifmx.TabControl.OnPainting" title="Link to this definition">¶</a></dt>
+<dd><p>Callable[[Object, Canvas, RectF], None]:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Opacity">
+<span class="sig-name descname"><span class="pre">Opacity</span></span><a class="headerlink" href="#delphifmx.TabControl.Opacity" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the control opacity.
+Set Opacity to customize the transparency of the current control.
+Opacity takes values between 0 and 1. If Opacity is 1, the control is completely opaque; if it is 0, the control is completely transparent. The values over 1 are treated as 1, and the ones under 0 are treated as 0.
+Opacity applies to the control’s children.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Padding">
+<span class="sig-name descname"><span class="pre">Padding</span></span><a class="headerlink" href="#delphifmx.TabControl.Padding" title="Link to this definition">¶</a></dt>
+<dd><p>Aligns the component to the padding points of other components.
+The Padding of a control specifies how close, in pixels, the control’s children can come to each of its edges (top, left, bottom, right). Padding adds space to the inner side of the control.
+The control’s children are repositioned and resized, if necessary, to maintain the Padding.
+If the Padding control has zero values, RAD Studio uses the default values (Left=4, Top=4, Right=4, Bottom=4). You can also set your own Padding values.
+The following image shows how Padding and Margins properties affect alignment, position, and size of controls.</p>
+<p>Note: Padding constraints do not work for TScrollBox, TListBox, TTreeView, and TGrid based controls.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Bounds.html#delphifmx.Bounds" title="delphifmx.Bounds">Bounds</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.PopupMenu">
+<span class="sig-name descname"><span class="pre">PopupMenu</span></span><a class="headerlink" href="#delphifmx.TabControl.PopupMenu" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the context (pop-up) menu object.
+Use PopupMenu to set the context menu of the current control. The pop-up window is displayed when ShowContextMenu is called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.CustomPopupMenu.html#delphifmx.CustomPopupMenu" title="delphifmx.CustomPopupMenu">CustomPopupMenu</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Position">
+<span class="sig-name descname"><span class="pre">Position</span></span><a class="headerlink" href="#delphifmx.TabControl.Position" title="Link to this definition">¶</a></dt>
+<dd><p>Aligns the component to the position points of other components (Bounds points).
+Specifies the upper-left corner of the current control, relative to its parent.
+The Position can be affected by the Padding of its parent and the Margins of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Position.html#delphifmx.Position" title="delphifmx.Position">Position</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Previous">
+<span class="sig-name descname"><span class="pre">Previous</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#delphifmx.TabControl.Previous" title="Link to this definition">¶</a></dt>
+<dd><p>Moves the active tab to the previous tab.
+Use the Previous method to move over to the previous tab, if it exists.
+ATransition specifies the type of transition used to switch the tab.
+ADirection specifies the direction in which the content of the tab is replaced with the content of the previous tab.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.RotationAngle">
+<span class="sig-name descname"><span class="pre">RotationAngle</span></span><a class="headerlink" href="#delphifmx.TabControl.RotationAngle" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the amount (in degrees) by which the control is rotated from the x-axis.
+Positive angles correspond to clockwise rotation. For counterclockwise rotation, use negative values.
+To set the rotation center, use RotationCenter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.RotationCenter">
+<span class="sig-name descname"><span class="pre">RotationCenter</span></span><a class="headerlink" href="#delphifmx.TabControl.RotationCenter" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the position of the pivot point of the control.
+The coordinates of the rotation center take values in the range from 0 through 1. The point with the coordinates (0,0) corresponds to the upper-left corner of the control, the point with the coordinates (1,1) corresponds to the lower-right corner of the control. The default center of rotation is (0.5, 0.5).
+Values outside of [0,0] and [1,1] can be clipped in some descendant classes.
+To set the rotation angle, use RotationAngle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Position.html#delphifmx.Position" title="delphifmx.Position">Position</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Scale">
+<span class="sig-name descname"><span class="pre">Scale</span></span><a class="headerlink" href="#delphifmx.TabControl.Scale" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the scale of the control.
+Set the Scale coordinates to specify the scale on each axis.
+The initial scale rate is 1 on each axis.</p>
+<p>Note:  Controls that have the Align or Anchors properties set can use a scale that is different from the default (1,1), so that controls align together even when they have a custom scale.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Position.html#delphifmx.Position" title="delphifmx.Position">Position</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.SetActiveTabWithTransition">
+<span class="sig-name descname"><span class="pre">SetActiveTabWithTransition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATab</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem"><span class="pre">TabItem</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.TabControl.SetActiveTabWithTransition" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the focused tab using the specified transition.
+SetActiveTabWithTransition sets the currently active tab to ATab using the specified ATransition and ADirection transition parameters.
+ATransition specifies the type of transition used to switch the tab. When ATransition = Slide, then the tab control uses visual animation for the switching action. It means that moving of contents in the switched tabs is animated.
+ADirection specifies the direction in which the content of the current active tab is replaced with the content of the specified ATab tab. ADirection is considered only when ATransition = Slide. If ADirection = Normal, then the forward left-to-right tab items switching transition animation is used. If ADirection = Reversed, then the backward right-to-left tab items switching transition animation is used. The default is Normal.
+Compare with GotoVisibleTab.</p>
+<p>Note: SetActiveTabWithTransition Does not work on Android.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.SetActiveTabWithTransitionAsync">
+<span class="sig-name descname"><span class="pre">SetActiveTabWithTransitionAsync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ATab</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="delphifmx.TabItem.html#delphifmx.TabItem" title="delphifmx.TabItem"><span class="pre">TabItem</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ATransition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ADirection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">TabTransitionDirection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AOnFinish</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Proc</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#delphifmx.TabControl.SetActiveTabWithTransitionAsync" title="Link to this definition">¶</a></dt>
+<dd><p>Changes the currently active tab to a new ATab asynchronously.
+When the animation ends, callback AOnFinish is called.</p>
+<p>Note: SetActiveTabWithTransitionAsync is required when working on Android.
+Changes the currently active tab to a new ATab asynchronously.
+When the animation ends, callback AOnFinish is called.</p>
+<p>Note: SetActiveTabWithTransitionAsync is required when working on Android.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Size">
+<span class="sig-name descname"><span class="pre">Size</span></span><a class="headerlink" href="#delphifmx.TabControl.Size" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the vertical and horizontal size (Size.Height and Size.Width) of the control (in pixels).
+Use the Size property to read or change the size of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.ControlSize.html#delphifmx.ControlSize" title="delphifmx.ControlSize">ControlSize</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.StyleLookup">
+<span class="sig-name descname"><span class="pre">StyleLookup</span></span><a class="headerlink" href="#delphifmx.TabControl.StyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the name of the resource object to which the current TStyledControl is linked</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.StyleState">
+<span class="sig-name descname"><span class="pre">StyleState</span></span><a class="headerlink" href="#delphifmx.TabControl.StyleState" title="Link to this definition">¶</a></dt>
+<dd><p>This property allows you to define the current state of style</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabBarButtons">
+<span class="sig-name descname"><span class="pre">TabBarButtons</span></span><a class="headerlink" href="#delphifmx.TabControl.TabBarButtons" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the buttons to be displayed in the field names of the tabs.
+The set of buttons displayed depends on various factors: the availability of the touch screen, the location of the headers, and the number of tabs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TabControl.TTabBarButtons</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabBarRect">
+<span class="sig-name descname"><span class="pre">TabBarRect</span></span><a class="headerlink" href="#delphifmx.TabControl.TabBarRect" title="Link to this definition">¶</a></dt>
+<dd><p>The coordinates of the rectangle where all the tab titles are placed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.RectF.html#delphifmx.RectF" title="delphifmx.RectF">RectF</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabContentPosition">
+<span class="sig-name descname"><span class="pre">TabContentPosition</span></span><a class="headerlink" href="#delphifmx.TabControl.TabContentPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Offset of the area of the tab headers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabContentSize">
+<span class="sig-name descname"><span class="pre">TabContentSize</span></span><a class="headerlink" href="#delphifmx.TabControl.TabContentSize" title="Link to this definition">¶</a></dt>
+<dd><p>The size of the area that contains all the tab titles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.SizeF.html#delphifmx.SizeF" title="delphifmx.SizeF">SizeF</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabCount">
+<span class="sig-name descname"><span class="pre">TabCount</span></span><a class="headerlink" href="#delphifmx.TabControl.TabCount" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the number of tabs that are present on this tab control component.
+Read the TabCount property to obtain the number of tab items that this tab control component has. If there are no tabs present, reading the TabCount property obtains 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabHeight">
+<span class="sig-name descname"><span class="pre">TabHeight</span></span><a class="headerlink" href="#delphifmx.TabControl.TabHeight" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the height, in pixels, of the clickable tabs’ captions.
+Use the TabHeight property to specify the height, in pixels, of the band that holds all the clickable tab buttons that correspond to individual tabs of this tab control component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabIndex">
+<span class="sig-name descname"><span class="pre">TabIndex</span></span><a class="headerlink" href="#delphifmx.TabControl.TabIndex" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the index of the active tab.
+Use the TabIndex property to set or get the index of the tab that is active (focused) on this tab control component. A value of 0 indicates that the first tab is active, while a value of -1 indicates that none of the tabs is active, or there are none present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabOrder">
+<span class="sig-name descname"><span class="pre">TabOrder</span></span><a class="headerlink" href="#delphifmx.TabControl.TabOrder" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates the position of the control in its parent’s tab order.
+TabOrder is the order in which child controls are visited when the user presses the TAB key. The control with the TabOrder value of 0 is the control that has the focus when the form first appears.
+Initially, the tab order is always the order in which the controls were added to the form. The first control added to the form has a TabOrder value of 0, the second is 1, the third is 2, and so on. Change this by changing the TabOrder property.
+Each control has a unique tab-order value within its parent.
+Assigning TabOrder a value greater than the number of controls contained in the parent control moves the control to the end of the tab order. The control does not take on the assigned value of TabOrder, but instead is given the number that ensures that the control is the last in the tab order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabPosition">
+<span class="sig-name descname"><span class="pre">TabPosition</span></span><a class="headerlink" href="#delphifmx.TabControl.TabPosition" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the position of the tabs on this TTabControl component.
+The default value of the TTabPosition property is PlatformDefault.
+Refer to the TTabPosition help topic for the description of the possible tab positions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TabPosition</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TabStop">
+<span class="sig-name descname"><span class="pre">TabStop</span></span><a class="headerlink" href="#delphifmx.TabControl.TabStop" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Tabs">
+<span class="sig-name descname"><span class="pre">Tabs</span></span><a class="headerlink" href="#delphifmx.TabControl.Tabs" title="Link to this definition">¶</a></dt>
+<dd><p>TabItem:</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TouchTargetExpansion">
+<span class="sig-name descname"><span class="pre">TouchTargetExpansion</span></span><a class="headerlink" href="#delphifmx.TabControl.TouchTargetExpansion" title="Link to this definition">¶</a></dt>
+<dd><p>Set of optional pixel values you can specify to expand the touch target of a FireMonkey styled control.
+FMX.Controls.TControl.TouchTargetExpansion is a published property of all FireMonkey styled controls that support Touch.
+Defined as an  FMX.Types.TBounds, TouchTargetExpansion takes four optional parameters representing the expansion of the four sides of the control in pixels (Bottom, Left, Right, Top). Each parameter specifies the size of an additional screen area that is to be treated as part of the touch target of the control.
+The following figure illustrates how TouchTargetExpansion expands the touch target for a FireMonkey control:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="delphifmx.Bounds.html#delphifmx.Bounds" title="delphifmx.Bounds">Bounds</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.TransitionRunning">
+<span class="sig-name descname"><span class="pre">TransitionRunning</span></span><a class="headerlink" href="#delphifmx.TabControl.TransitionRunning" title="Link to this definition">¶</a></dt>
+<dd><p>Determines whether the transition between tabs is currently running.
+TransitionRunning returns True if the transition between tabs is currently running and False otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.TabControl.UpdateTabBarButtons">
+<span class="sig-name descname"><span class="pre">UpdateTabBarButtons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.TabControl.UpdateTabBarButtons" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the state of the buttons in the area of the tab titles.
+UpdateTabBarButtons calls the DoUpdateTabBarButtons method.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Visible">
+<span class="sig-name descname"><span class="pre">Visible</span></span><a class="headerlink" href="#delphifmx.TabControl.Visible" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the component appears onscreen.
+Use the Visible property to control the visibility of the control at run time. If Visible is True, the control appears. If Visible is False, the control is not visible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.TabControl.Width">
+<span class="sig-name descname"><span class="pre">Width</span></span><a class="headerlink" href="#delphifmx.TabControl.Width" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the horizontal size of the control (in pixels).
+Use the Width property to read or change the width of the control.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphifmx.TabItem.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">TabItem</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphifmx.StyleStreaming.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">StyleStreaming</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">TabControl</a><ul>
+<li><a class="reference internal" href="#delphifmx.TabControl"><code class="docutils literal notranslate"><span class="pre">TabControl</span></code></a><ul>
+<li><a class="reference internal" href="#delphifmx.TabControl.ActiveTab"><code class="docutils literal notranslate"><span class="pre">TabControl.ActiveTab</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Add"><code class="docutils literal notranslate"><span class="pre">TabControl.Add()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.AdjustSizeValue"><code class="docutils literal notranslate"><span class="pre">TabControl.AdjustSizeValue</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.AdjustType"><code class="docutils literal notranslate"><span class="pre">TabControl.AdjustType</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Align"><code class="docutils literal notranslate"><span class="pre">TabControl.Align</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Anchors"><code class="docutils literal notranslate"><span class="pre">TabControl.Anchors</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.AniCalculations"><code class="docutils literal notranslate"><span class="pre">TabControl.AniCalculations</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.ApplyStyleLookup"><code class="docutils literal notranslate"><span class="pre">TabControl.ApplyStyleLookup()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.AutoTranslate"><code class="docutils literal notranslate"><span class="pre">TabControl.AutoTranslate</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.ClipChildren"><code class="docutils literal notranslate"><span class="pre">TabControl.ClipChildren</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.ClipParent"><code class="docutils literal notranslate"><span class="pre">TabControl.ClipParent</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Cursor"><code class="docutils literal notranslate"><span class="pre">TabControl.Cursor</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.DefaultStyleLookupName"><code class="docutils literal notranslate"><span class="pre">TabControl.DefaultStyleLookupName</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Delete"><code class="docutils literal notranslate"><span class="pre">TabControl.Delete()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.DragMode"><code class="docutils literal notranslate"><span class="pre">TabControl.DragMode</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.EffectiveFullSize"><code class="docutils literal notranslate"><span class="pre">TabControl.EffectiveFullSize</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.EffectiveTabPosition"><code class="docutils literal notranslate"><span class="pre">TabControl.EffectiveTabPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.EnableDragHighlight"><code class="docutils literal notranslate"><span class="pre">TabControl.EnableDragHighlight</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Enabled"><code class="docutils literal notranslate"><span class="pre">TabControl.Enabled</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.FindVisibleTab"><code class="docutils literal notranslate"><span class="pre">TabControl.FindVisibleTab()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.FinishCurrentTabTransition"><code class="docutils literal notranslate"><span class="pre">TabControl.FinishCurrentTabTransition()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.First"><code class="docutils literal notranslate"><span class="pre">TabControl.First()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.FullSize"><code class="docutils literal notranslate"><span class="pre">TabControl.FullSize</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.GetTabList"><code class="docutils literal notranslate"><span class="pre">TabControl.GetTabList()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.GoToActiveTab"><code class="docutils literal notranslate"><span class="pre">TabControl.GoToActiveTab()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.GotoVisibleTab"><code class="docutils literal notranslate"><span class="pre">TabControl.GotoVisibleTab()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HasActiveTab"><code class="docutils literal notranslate"><span class="pre">TabControl.HasActiveTab()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HasTouchScreen"><code class="docutils literal notranslate"><span class="pre">TabControl.HasTouchScreen</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Height"><code class="docutils literal notranslate"><span class="pre">TabControl.Height</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HelpContext"><code class="docutils literal notranslate"><span class="pre">TabControl.HelpContext</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HelpKeyword"><code class="docutils literal notranslate"><span class="pre">TabControl.HelpKeyword</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HelpType"><code class="docutils literal notranslate"><span class="pre">TabControl.HelpType</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.HitTest"><code class="docutils literal notranslate"><span class="pre">TabControl.HitTest</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Images"><code class="docutils literal notranslate"><span class="pre">TabControl.Images</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Inflate"><code class="docutils literal notranslate"><span class="pre">TabControl.Inflate()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Insert"><code class="docutils literal notranslate"><span class="pre">TabControl.Insert()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Last"><code class="docutils literal notranslate"><span class="pre">TabControl.Last()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Locked"><code class="docutils literal notranslate"><span class="pre">TabControl.Locked</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Margins"><code class="docutils literal notranslate"><span class="pre">TabControl.Margins</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.NeedStyleLookup"><code class="docutils literal notranslate"><span class="pre">TabControl.NeedStyleLookup()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Next"><code class="docutils literal notranslate"><span class="pre">TabControl.Next()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnChanging"><code class="docutils literal notranslate"><span class="pre">TabControl.OnChanging</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnDragDrop"><code class="docutils literal notranslate"><span class="pre">TabControl.OnDragDrop</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnDragEnter"><code class="docutils literal notranslate"><span class="pre">TabControl.OnDragEnter</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnDragOver"><code class="docutils literal notranslate"><span class="pre">TabControl.OnDragOver</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnPaint"><code class="docutils literal notranslate"><span class="pre">TabControl.OnPaint</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.OnPainting"><code class="docutils literal notranslate"><span class="pre">TabControl.OnPainting</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Opacity"><code class="docutils literal notranslate"><span class="pre">TabControl.Opacity</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Padding"><code class="docutils literal notranslate"><span class="pre">TabControl.Padding</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.PopupMenu"><code class="docutils literal notranslate"><span class="pre">TabControl.PopupMenu</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Position"><code class="docutils literal notranslate"><span class="pre">TabControl.Position</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Previous"><code class="docutils literal notranslate"><span class="pre">TabControl.Previous()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.RotationAngle"><code class="docutils literal notranslate"><span class="pre">TabControl.RotationAngle</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.RotationCenter"><code class="docutils literal notranslate"><span class="pre">TabControl.RotationCenter</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Scale"><code class="docutils literal notranslate"><span class="pre">TabControl.Scale</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.SetActiveTabWithTransition"><code class="docutils literal notranslate"><span class="pre">TabControl.SetActiveTabWithTransition()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.SetActiveTabWithTransitionAsync"><code class="docutils literal notranslate"><span class="pre">TabControl.SetActiveTabWithTransitionAsync()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Size"><code class="docutils literal notranslate"><span class="pre">TabControl.Size</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.StyleLookup"><code class="docutils literal notranslate"><span class="pre">TabControl.StyleLookup</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.StyleState"><code class="docutils literal notranslate"><span class="pre">TabControl.StyleState</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabBarButtons"><code class="docutils literal notranslate"><span class="pre">TabControl.TabBarButtons</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabBarRect"><code class="docutils literal notranslate"><span class="pre">TabControl.TabBarRect</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabContentPosition"><code class="docutils literal notranslate"><span class="pre">TabControl.TabContentPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabContentSize"><code class="docutils literal notranslate"><span class="pre">TabControl.TabContentSize</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabCount"><code class="docutils literal notranslate"><span class="pre">TabControl.TabCount</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabHeight"><code class="docutils literal notranslate"><span class="pre">TabControl.TabHeight</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabIndex"><code class="docutils literal notranslate"><span class="pre">TabControl.TabIndex</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabOrder"><code class="docutils literal notranslate"><span class="pre">TabControl.TabOrder</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabPosition"><code class="docutils literal notranslate"><span class="pre">TabControl.TabPosition</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TabStop"><code class="docutils literal notranslate"><span class="pre">TabControl.TabStop</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Tabs"><code class="docutils literal notranslate"><span class="pre">TabControl.Tabs</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TouchTargetExpansion"><code class="docutils literal notranslate"><span class="pre">TabControl.TouchTargetExpansion</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.TransitionRunning"><code class="docutils literal notranslate"><span class="pre">TabControl.TransitionRunning</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.UpdateTabBarButtons"><code class="docutils literal notranslate"><span class="pre">TabControl.UpdateTabBarButtons()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Visible"><code class="docutils literal notranslate"><span class="pre">TabControl.Visible</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.TabControl.Width"><code class="docutils literal notranslate"><span class="pre">TabControl.Width</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

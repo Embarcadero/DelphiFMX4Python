@@ -1,0 +1,1196 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="PresentedListView" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://github.com/Embarcadero/reference/delphifmx.PresentedListView.html" />
+<meta property="og:site_name" content="DelphiFMX | Documentation" />
+<meta property="og:description" content="Qualified name: delphifmx.PresentedListView" />
+<meta property="og:image" content="https://github.com/Embarcadero/DelphiFMX4Python/blob/main/images/DelphiFMX4Python(256px).png" />
+<meta property="og:image:alt" content="DelphiFMX | Documentation" />
+<meta name="description" content="Qualified name: delphifmx.PresentedListView" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="AniIndicator" href="delphifmx.AniIndicator.html" /><link rel="prev" title="ListViewBase" href="delphifmx.ListViewBase.html" />
+
+    <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 8.2.3 and Furo 2024.08.06 -->
+        <title>PresentedListView - DelphiFMX Documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=94117f49" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  --color-content-foreground: #000000;
+  --color-background-primary: #ffffff;
+  --color-background-border: #ffffff;
+  --color-sidebar-background: #f8f9fb;
+  --color-brand-content: #1c00e3;
+  --color-brand-primary: #192bd0;
+  --color-link: #c93434;
+  --color-link--hover: #5b0000;
+  --color-inline-code-background: #f6f6f6;;
+  --color-foreground-secondary: #000;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  --color-content-foreground: #ffffffd9;
+  --color-background-primary: #131416;
+  --color-background-border: #303335;
+  --color-sidebar-background: #1a1c1e;
+  --color-brand-content: #2196f3;
+  --color-brand-primary: #007fff;
+  --color-link: #51ba86;
+  --color-link--hover: #9cefc6;
+  --color-inline-code-background: #262626;
+  --color-foreground-secondary: #ffffffd9;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">DelphiFMX Documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="../_static/DelphiFMX4Python-sidebar.svg" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="../_static/DelphiFMX4Python-sidebar-dark.svg" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">DelphiFMX Documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tutorials_guides.html">Tutorials &amp; Guides</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials &amp; Guides</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples.html">Example Gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../reference.html">Reference Manual</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Reference Manual</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current has-children"><a class="reference internal" href="../reference_index/delphifmx_classes.html">DelphiFMX</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of DelphiFMX</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Action.html">Action</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ActionList.html">ActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomAction.html">CustomAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomActionList.html">CustomActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomViewAction.html">CustomViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AdapterListView.html">AdapterListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AppearanceListView.html">AppearanceListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListView.html">CustomListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListView.html">ListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListViewBase.html">ListViewBase</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">PresentedListView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.AniIndicator.html">AniIndicator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ArcDial.html">ArcDial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BitmapTrackBar.html">BitmapTrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Button.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutPanel.html">CalloutPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckBox.html">CheckBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CornerButton.html">CornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomButton.html">CustomButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomCornerButton.html">CustomCornerButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomSwitch.html">CustomSwitch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomTrack.html">CustomTrack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Expander.html">Expander</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ExpanderButton.html">ExpanderButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GroupBox.html">GroupBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageControl.html">ImageControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Label.html">Label</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Panel.html">Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PathLabel.html">PathLabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedTextControl.html">PresentedTextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressBar.html">ProgressBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RadioButton.html">RadioButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBar.html">ScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeGrip.html">SizeGrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SmallScrollBar.html">SmallScrollBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpeedButton.html">SpeedButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Splitter.html">Splitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StatusBar.html">StatusBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Switch.html">Switch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Thumb.html">Thumb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ToolBar.html">ToolBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Track.html">Track</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TrackBar.html">TrackBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Arc.html">Arc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CalloutRectangle.html">CalloutRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CaretRectangle.html">CaretRectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Circle.html">Circle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPath.html">CustomPath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Ellipse.html">Ellipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Image.html">Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Line.html">Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PaintBox.html">PaintBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Path.html">Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Pie.html">Pie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rectangle.html">Rectangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RoundRect.html">RoundRect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Selection.html">Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SelectionPoint.html">SelectionPoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Shape.html">Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Text.html">Text</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseBindScopeComponent.html">BaseBindScopeComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseLinkingBindSource.html">BaseLinkingBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicBindComponent.html">BasicBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindComponentDelegate.html">BindComponentDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BindingsList.html">BindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedBindComponent.html">ContainedBindComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBindingsList.html">CustomBindingsList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkControlToField.html">CustomLinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkListControlToField.html">CustomLinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomLinkPropertyToField.html">CustomLinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlDelegate.html">LinkControlDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToField.html">LinkControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkControlToFieldDelegate.html">LinkControlToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkListControlToField.html">LinkListControlToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToField.html">LinkPropertyToField</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.LinkPropertyToFieldDelegate.html">LinkPropertyToFieldDelegate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseObjectBindSource.html">BaseObjectBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPrototypeBindSource.html">CustomPrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PrototypeBindSource.html">PrototypeBindSource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BaseValueRange.html">BaseValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRange.html">CustomValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomValueRangeAction.html">CustomValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileExit.html">FileExit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideApp.html">FileHideApp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FileHideAppOthers.html">FileHideAppOthers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HintAction.html">HintAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ObjectViewAction.html">ObjectViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SysCommonAction.html">SysCommonAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRange.html">ValueRange</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ValueRangeAction.html">ValueRangeAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ViewAction.html">ViewAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VirtualKeyboard.html">VirtualKeyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.WindowClose.html">WindowClose</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BasicAction.html">BasicAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Collection.html">Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Component.html">Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Persistent.html">Persistent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Strings.html">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Bounds.html">Bounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ControlSize.html">ControlSize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupMenu.html">CustomPopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FmxObject.html">FmxObject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Position.html">Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.BufferedLayout.html">BufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomBufferedLayout.html">CustomBufferedLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CameraComponent.html">CameraComponent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaCodec.html">CustomMediaCodec</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMediaPlayerAction.html">CustomMediaPlayerAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Media.html">Media</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayer.html">MediaPlayer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerControl.html">MediaPlayerControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerCurrentTime.html">MediaPlayerCurrentTime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerPlayPause.html">MediaPlayerPlayPause</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStart.html">MediaPlayerStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerStop.html">MediaPlayerStop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerValue.html">MediaPlayerValue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MediaPlayerVolume.html">MediaPlayerVolume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CheckColumn.html">CheckColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Column.html">Column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CurrencyColumn.html">CurrencyColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomGrid.html">CustomGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomNumberColumn.html">CustomNumberColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateColumn.html">DateColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumn.html">DateTimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.DateTimeColumnBase.html">DateTimeColumnBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FloatColumn.html">FloatColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GlyphColumn.html">GlyphColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Grid.html">Grid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ImageColumn.html">ImageColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.IntegerColumn.html">IntegerColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupColumn.html">PopupColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ProgressColumn.html">ProgressColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringColumn.html">StringColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StringGrid.html">StringGrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TimeColumn.html">TimeColumn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorBox.html">ColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorButton.html">ColorButton</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorComboBox.html">ColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorListBox.html">ColorListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPanel.html">ColorPanel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorPicker.html">ColorPicker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ColorQuad.html">ColorQuad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboColorBox.html">ComboColorBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomColorComboBox.html">CustomColorComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GradientEdit.html">GradientEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboBox.html">ComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboBox.html">CustomComboBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomListBox.html">CustomListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBox.html">ListBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ListBoxItem.html">ListBoxItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEdit.html">ComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ComboEditBase.html">ComboEditBase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomComboEdit.html">CustomComboEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CommonCustomForm.html">CommonCustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomForm.html">CustomForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPopupForm.html">CustomPopupForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Form.html">Form</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Frame.html">Frame</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedAction.html">ContainedAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ContainedActionList.html">ContainedActionList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Control.html">Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomControlAction.html">CustomControlAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Popup.html">Popup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyledControl.html">StyledControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleBook.html">StyleBook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TextControl.html">TextControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEditBox.html">CustomEditBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMemo.html">CustomMemo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Memo.html">Memo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomMultiView.html">CustomMultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MultiView.html">MultiView</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedScrollBox.html">CustomPresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedFramedVertScrollBox.html">CustomPresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedHorzScrollBox.html">CustomPresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedScrollBox.html">CustomPresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomPresentedVertScrollBox.html">CustomPresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedScrollBox.html">PresentedFramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedFramedVertScrollBox.html">PresentedFramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedHorzScrollBox.html">PresentedHorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedScrollBox.html">PresentedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PresentedVertScrollBox.html">PresentedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomScrollBox.html">CustomScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FlowLayout.html">FlowLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedScrollBox.html">FramedScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FramedVertScrollBox.html">FramedVertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridLayout.html">GridLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.GridPanelLayout.html">GridPanelLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.HorzScrollBox.html">HorzScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Layout.html">Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScaledLayout.html">ScaledLayout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.ScrollBox.html">ScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.VertScrollBox.html">VertScrollBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Edit.html">Edit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.CustomEdit.html">CustomEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateAction.html">FMXBindNavigateAction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateApplyUpdates.html">FMXBindNavigateApplyUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateDelete.html">FMXBindNavigateDelete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateEdit.html">FMXBindNavigateEdit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateFirst.html">FMXBindNavigateFirst</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateInsert.html">FMXBindNavigateInsert</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateLast.html">FMXBindNavigateLast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateNext.html">FMXBindNavigateNext</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePost.html">FMXBindNavigatePost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigatePrior.html">FMXBindNavigatePrior</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateRefresh.html">FMXBindNavigateRefresh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancel.html">FMXBindNavigateCancel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.FMXBindNavigateCancelUpdates.html">FMXBindNavigateCancelUpdates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MainMenu.html">MainMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuBar.html">MenuBar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.MenuItem.html">MenuItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PopupMenu.html">PopupMenu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Object.html">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.OpenDialog.html">OpenDialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Point.html">Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.PointF.html">PointF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Rect.html">Rect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.RectF.html">RectF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Size.html">Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SizeF.html">SizeF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SearchBox.html">SearchBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.SpinBox.html">SpinBox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleManager.html">StyleManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.Stream.html">Stream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.StyleStreaming.html">StyleStreaming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TabControl.html">TabControl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delphifmx.TabItem.html">TabItem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../changelog.html">Changelog</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Changelog</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.3-changelog.html">v1.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.4-changelog.html">v1.0.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.5-changelog.html">v1.0.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog/1.0.6-changelog.html">v1.0.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="presentedlistview">
+<h1>PresentedListView<a class="headerlink" href="#presentedlistview" title="Link to this heading">¶</a></h1>
+<p>Qualified name: <code class="docutils literal notranslate"><span class="pre">delphifmx.PresentedListView</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PresentedListView</span></span><a class="headerlink" href="#delphifmx.PresentedListView" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="delphifmx.ListViewBase.html#delphifmx.ListViewBase" title="delphifmx.ListViewBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ListViewBase</span></code></a></p>
+<p class="rubric">Methods</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.ApplyStyleLookup" title="delphifmx.PresentedListView.ApplyStyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyStyleLookup</span></code></a></p></td>
+<td><p>TStyledControl.ApplyStyleLookup() Gets and applies the style of a TStyledControl.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.BeforeDestruction" title="delphifmx.PresentedListView.BeforeDestruction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeforeDestruction</span></code></a></p></td>
+<td><p>Performs any necessary actions before the first destructor is called.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.Hide" title="delphifmx.PresentedListView.Hide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hide</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.Inflate" title="delphifmx.PresentedListView.Inflate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Inflate</span></code></a></p></td>
+<td><p>TStyledControl.Inflate() Call this procedure to get and apply its style lookup.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.NeedStyleLookup" title="delphifmx.PresentedListView.NeedStyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NeedStyleLookup</span></code></a></p></td>
+<td><p>TStyledControl.NeedStyleLookup() Call this procedure to indicate that this control requires to get and apply its style lookup.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.Paint" title="delphifmx.PresentedListView.Paint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Paint</span></code></a></p></td>
+<td><p>Renders the list view.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.RebuildList" title="delphifmx.PresentedListView.RebuildList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RebuildList</span></code></a></p></td>
+<td><p>Recreates the list and updates the visible items content in native presentation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.RecalcEnabled" title="delphifmx.PresentedListView.RecalcEnabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecalcEnabled</span></code></a></p></td>
+<td><p>Forces the current control to recalculate its enabled state.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.RecalcOpacity" title="delphifmx.PresentedListView.RecalcOpacity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecalcOpacity</span></code></a></p></td>
+<td><p>Forces the current control to recalculate its Opacity property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.Resize" title="delphifmx.PresentedListView.Resize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Resize</span></code></a></p></td>
+<td><p>OnResize event dispatcher.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.Show" title="delphifmx.PresentedListView.Show"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Show</span></code></a></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.StopPullRefresh" title="delphifmx.PresentedListView.StopPullRefresh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StopPullRefresh</span></code></a></p></td>
+<td><p>This method should be called when 'pull to refresh' mode has been triggered to stop the spinning wheel.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="rubric">Attributes</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteClipRect</span></code></p></td>
+<td><p>Specifies the absolute rectangle of the control after all its parent controls clip it.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteEnabled</span></code></p></td>
+<td><p>Specifies whether the control is absolutely enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteHeight</span></code></p></td>
+<td><p>Specifies the absolute height of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteMatrix</span></code></p></td>
+<td><p>Specifies the absolute transformation matrix of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteOpacity</span></code></p></td>
+<td><p>Specifies the absolute opacity of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteRect</span></code></p></td>
+<td><p>Specifies the absolute rectangle that bounds the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteScale</span></code></p></td>
+<td><p>Specifies the absolute scale of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AbsoluteWidth</span></code></p></td>
+<td><p>Specifies the absolute width of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActionClient</span></code></p></td>
+<td><p>Specifies whether the component object has an associated action.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Adapter</span></code></p></td>
+<td><p>Object that handles all interactions between the list view control and its list view items.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.AdjustSizeValue" title="delphifmx.PresentedListView.AdjustSizeValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustSizeValue</span></code></a></p></td>
+<td><p>Updates the width and height of this control according to its current style</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.AdjustType" title="delphifmx.PresentedListView.AdjustType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AdjustType</span></code></a></p></td>
+<td><p>Determines if and how the width and height of this control should be modified to take the fixed space dictated by the style of this control</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Align</span></code></p></td>
+<td><p>Specifies the alignment options (top, left, client, and so on) of this control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AllowSelection</span></code></p></td>
+<td><p>Specifies whether the items are selectable or not.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AlternatingColors</span></code></p></td>
+<td><p>Specifies whether the fill colors for odd and even elements are rendered as alternating or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Anchors</span></code></p></td>
+<td><p>Specifies how the control is anchored to its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ApplyingEffect</span></code></p></td>
+<td><p>A flag that signals when a control is in the process of applying an effect.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoCapture</span></code></p></td>
+<td><p>Specifies whether the control captures mouse events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoTapScroll</span></code></p></td>
+<td><p>Specifies whether tapping on the topmost side of this list view automatically scrolls to the top of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoTapTreshold</span></code></p></td>
+<td><p>Specifies the threshold value for the auto tap scrolling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.AutoTranslate" title="delphifmx.PresentedListView.AutoTranslate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoTranslate</span></code></a></p></td>
+<td><p>Specifies whether the control's text should be translated</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AxisAlignedRect</span></code></p></td>
+<td><p>A TRectF defined by the width and height of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoundsRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CanParentFocus</span></code></p></td>
+<td><p>Specifies whether the parent of this control should be evaluated to receive focus.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CanSwipeDelete</span></code></p></td>
+<td><p>Sets the swipe-to-delete feature on list view items.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Canvas</span></code></p></td>
+<td><p>Provides the drawing surface of the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Children</span></code></p></td>
+<td><p>Stores an array of children attached to this parent component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChildrenCount</span></code></p></td>
+<td><p>Read-only property that specifies the number of children in the children list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChildrenRect</span></code></p></td>
+<td><p>Specifies the bigger rectangle area occupied by parent and children controls.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClassName</span></code></p></td>
+<td><p>Returns the TObject.ClassName</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipChildren</span></code></p></td>
+<td><p>Specifies if children of the control should be clipped to the control's on-screen region.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipParent</span></code></p></td>
+<td><p>Specifies whether the current control has clipped its parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClipRect</span></code></p></td>
+<td><p>Specifies the bound rectangle to be clipped.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComObject</span></code></p></td>
+<td><p>Specifies the interface reference implemented by the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentCount</span></code></p></td>
+<td><p>Returns the owned component count</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentIndex</span></code></p></td>
+<td><p>Indicates the position of the component in its owner's Components property array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentState</span></code></p></td>
+<td><p>Describes the current state of the component, indicating when a component needs to avoid certain actions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ComponentStyle</span></code></p></td>
+<td><p>Governs the behavior of the component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Components</span></code></p></td>
+<td><p>Returns an iterator over the owned components</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlType</span></code></p></td>
+<td><p>Describes if the Control type is Styled or Native.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Controls</span></code></p></td>
+<td><p>Returns an iterator over contained controls</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ControlsCount</span></code></p></td>
+<td><p>Returns the count of contained controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cursor</span></code></p></td>
+<td><p>Image to use to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Data</span></code></p></td>
+<td><p>Stores a Tvalue, which is a data structure that can store different kinds of data types.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultSize</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.DefaultStyleLookupName" title="delphifmx.PresentedListView.DefaultStyleLookupName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DefaultStyleLookupName</span></code></a></p></td>
+<td><p>Returns a string with the name of the default style of this control</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DeleteButtonText</span></code></p></td>
+<td><p>Specifies the name of the Delete button designed to delete the TListView items.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignInfo</span></code></p></td>
+<td><p>Contains information used by the Form designer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableDisappear</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableFocusEffect</span></code></p></td>
+<td><p>Specifies whether the control has the focus effect disabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisableMouseWheel</span></code></p></td>
+<td><p>Specifies whether scrolling this list view using the mouse wheel works or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DragMode</span></code></p></td>
+<td><p>Specifies how the control initiates drag-and-drop operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EditMode</span></code></p></td>
+<td><p>Specifies whether this list view component is in the edit mode (True) or in the regular mode (False).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">EnableDragHighlight</span></code></p></td>
+<td><p>Specifies whether the control is highlighted when the dragged object is over it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Enabled</span></code></p></td>
+<td><p>Specifies whether the control responds to mouse, keyboard, and timer events.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedSize</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasAfterPaintEffect</span></code></p></td>
+<td><p>Specifies whether the control has an effect that is applied after the control is painted.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasClipParent</span></code></p></td>
+<td><p>Control that is a direct child of this control and has clipped this control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasDisablePaintEffect</span></code></p></td>
+<td><p>Specifies whether the control's effect is painted.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HasEffect</span></code></p></td>
+<td><p>Specifies whether the control has an applied effect.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Height</span></code></p></td>
+<td><p>Height specifies the vertical size of the control (in dp).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpContext</span></code></p></td>
+<td><p>Contains the numeric context ID that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpKeyword</span></code></p></td>
+<td><p>Contains the keyword string that identifies the Help topic for the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HelpType</span></code></p></td>
+<td><p>Specifies whether the control's context-sensitive Help topic is identified by a context ID or by keyword.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hint</span></code></p></td>
+<td><p>Specifies the text string that appears when the user moves the mouse over a control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HitTest</span></code></p></td>
+<td><p>Enables the control to capture mouse events.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Images</span></code></p></td>
+<td><p>Defines the reference to a TCustomImageList list of images to be used to draw images on the component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InPaintTo</span></code></p></td>
+<td><p>Specifies whether the control is currently being painted.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Index</span></code></p></td>
+<td><p>Specifies the index of the child object in the children array attached to this object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InheritedCursor</span></code></p></td>
+<td><p>Image used to represent the mouse pointer when it passes into the region covered by the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">InvertAbsoluteMatrix</span></code></p></td>
+<td><p>Specifies the inverse matrix of AbsoluteMatrix.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsDragOver</span></code></p></td>
+<td><p>Specifies whether a dragged object is over the area of the current control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsFocused</span></code></p></td>
+<td><p>Determines whether the control has input focus.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsInflated</span></code></p></td>
+<td><p>Whether the current style of this control has been actually applied to the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsMouseOver</span></code></p></td>
+<td><p>Specifies whether the mouse cursor is over the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IsVisible</span></code></p></td>
+<td><p>Specifies whether the control is visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ItemCount</span></code></p></td>
+<td><p>Specifies the number of items in this list view component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ItemIndex</span></code></p></td>
+<td><p>Specifies the index of the selected item in this list view component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ItemSpaces</span></code></p></td>
+<td><p>Specifies the space in logical units around the content of each list item.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LocalRect</span></code></p></td>
+<td><p>Specifies the local rectangle for painting the control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Locked</span></code></p></td>
+<td><p>Specifies whether the control is locked at design time.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Margins</span></code></p></td>
+<td><p>Aligns the component to the margins points of other components.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Name</span></code></p></td>
+<td><p>Specifies the name of the component as referenced in code.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NativeOptions</span></code></p></td>
+<td><p>Set of properties to customize the appearance and behavior of the list view when ControlType is Platform.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Observers</span></code></p></td>
+<td><p>Indicates the TObservers object added to the TComponent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OnGesture</span></code></p></td>
+<td><p>Callable[[Object, GestureEventInfo, bool], None]:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Opacity</span></code></p></td>
+<td><p>Specifies the control opacity.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Owner</span></code></p></td>
+<td><p>Returns the Component Owner</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Padding</span></code></p></td>
+<td><p>Aligns the component to the padding points of other components.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parent</span></code></p></td>
+<td><p>Returns/Sets the Control Visibility</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentClassStyleLookupName</span></code></p></td>
+<td><p>The name of the default style of the parent class of this control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentControl</span></code></p></td>
+<td><p>Specifies the parent control of this control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentedRect</span></code></p></td>
+<td><p>Specifies the bounding rectangle of the control within its parent.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParentedVisible</span></code></p></td>
+<td><p>Specifies whether all the control's parents are visible.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PopupMenu</span></code></p></td>
+<td><p>Specifies the context (pop-up) menu object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Position</span></code></p></td>
+<td><p>Returns an access to the position of the control inside its parent</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pressed</span></code></p></td>
+<td><p>Indicates whether the control is currently pressed.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PressedPosition</span></code></p></td>
+<td><p>A point that indicates where exactly on the control the click occured.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PullRefreshWait</span></code></p></td>
+<td><p>Determines if the spinning wheel disappears automatically or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PullToRefresh</span></code></p></td>
+<td><p>Determines whether the &quot;pull list to refresh&quot; feature is enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Root</span></code></p></td>
+<td><p>Specifies the root parent of this object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Scene</span></code></p></td>
+<td><p>Specifies the current scene in which the control is drawn.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScrollViewPos</span></code></p></td>
+<td><p>Specifies the position of the vertical scroll in the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SearchAlwaysOnTop</span></code></p></td>
+<td><p>Search box partially hidden in a list view where SearchAlwaysOnTop is False Your list view component keeps the search box on top as you scroll.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SearchVisible</span></code></p></td>
+<td><p>Set SearchVisible to True to show a search box on top of your list view Shows a search box on top of your list view that can filter the content of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Selected</span></code></p></td>
+<td><p>List item that is currently selected on the list view.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelectionCrossfade</span></code></p></td>
+<td><p>Enables the selection of Crossfade animation .</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowHint</span></code></p></td>
+<td><p>Specifies whether the Hint can be shown.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShowSelection</span></code></p></td>
+<td><p>Determines whether the selection is visible when selecting list view items.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SideSpace</span></code></p></td>
+<td><p>Specifies the space in logical units on all sides around the list box, encompassing the items.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Size</span></code></p></td>
+<td><p>Specifies the vertical and horizontal size (Size.Height and Size.Width) of the control (in pixels).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stored</span></code></p></td>
+<td><p>Specifies whether this object is stored in the .XFM file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.StyleLookup" title="delphifmx.PresentedListView.StyleLookup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleLookup</span></code></a></p></td>
+<td><p>Specifies the name of the resource object to which the current TStyledControl is linked</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleName</span></code></p></td>
+<td><p>Specifies the style name for this FMX component.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#delphifmx.PresentedListView.StyleState" title="delphifmx.PresentedListView.StyleState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StyleState</span></code></a></p></td>
+<td><p>This property allows you to define the current state of style</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StylesData</span></code></p></td>
+<td><p>Value:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabOrder</span></code></p></td>
+<td><p>Indicates the position of the control in its parent's tab order.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabStop</span></code></p></td>
+<td><p>Embarcadero Technologies does not currently have any additional information.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tag</span></code></p></td>
+<td><p>Stores a NativeInt integral value as a part of a component.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagFloat</span></code></p></td>
+<td><p>Custom property that stores any floating-point value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagObject</span></code></p></td>
+<td><p>Custom property that stores any object value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TagString</span></code></p></td>
+<td><p>Custom property that stores any string value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Touch</span></code></p></td>
+<td><p>Specifies the touch manager component associated with the control.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TouchTargetExpansion</span></code></p></td>
+<td><p>Set of optional pixel values you can specify to expand the touch target of a FireMonkey styled control.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Transparent</span></code></p></td>
+<td><p>Specifies whether this list view control is transparent or not.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">UpdateRect</span></code></p></td>
+<td><p>Specifies the rectangle area of the control that needs to be updated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">VCLComObject</span></code></p></td>
+<td><p>Represents information used internally by components that support COM.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Visible</span></code></p></td>
+<td><p>Returns/Sets the Control Visibility</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Width</span></code></p></td>
+<td><p>Specifies the horizontal size of the control (in pixels).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.AdjustSizeValue">
+<span class="sig-name descname"><span class="pre">AdjustSizeValue</span></span><a class="headerlink" href="#delphifmx.PresentedListView.AdjustSizeValue" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the width and height of this control according to its current style</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.AdjustType">
+<span class="sig-name descname"><span class="pre">AdjustType</span></span><a class="headerlink" href="#delphifmx.PresentedListView.AdjustType" title="Link to this definition">¶</a></dt>
+<dd><p>Determines if and how the width and height of this control should be modified to take the fixed space dictated by the style of this control</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.ApplyStyleLookup">
+<span class="sig-name descname"><span class="pre">ApplyStyleLookup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.ApplyStyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Gets and applies the style of a TStyledControl.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.AutoTranslate">
+<span class="sig-name descname"><span class="pre">AutoTranslate</span></span><a class="headerlink" href="#delphifmx.PresentedListView.AutoTranslate" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies whether the control’s text should be translated</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.BeforeDestruction">
+<span class="sig-name descname"><span class="pre">BeforeDestruction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.BeforeDestruction" title="Link to this definition">¶</a></dt>
+<dd><p>Performs any necessary actions before the first destructor is called.
+Performs any necessary actions before the first destructor is called.
+FMX.ListView.TPresentedListView.BeforeDestruction inherits from System.Classes.TComponent.BeforeDestruction. All content below this line refers to System.Classes.TComponent.BeforeDestruction.
+Performs any necessary actions before the first destructor is called.
+BeforeDestruction is called automatically immediately before the component’s first destructor executes. Do not call it explicitly in your applications.
+As implemented in TComponent, BeforeDestruction checks whether the Destroying method has been called, and if not, calls it. Descendants that override this method to perform other actions before a component is destroyed should call the inherited method first to ensure that this check takes place.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.DefaultStyleLookupName">
+<span class="sig-name descname"><span class="pre">DefaultStyleLookupName</span></span><a class="headerlink" href="#delphifmx.PresentedListView.DefaultStyleLookupName" title="Link to this definition">¶</a></dt>
+<dd><p>Returns a string with the name of the default style of this control</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.Hide">
+<span class="sig-name descname"><span class="pre">Hide</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.Hide" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.Inflate">
+<span class="sig-name descname"><span class="pre">Inflate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.Inflate" title="Link to this definition">¶</a></dt>
+<dd><p>Call this procedure to get and apply its style lookup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.NeedStyleLookup">
+<span class="sig-name descname"><span class="pre">NeedStyleLookup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.NeedStyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Call this procedure to indicate that this control requires to get and apply its style lookup.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.Paint">
+<span class="sig-name descname"><span class="pre">Paint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.Paint" title="Link to this definition">¶</a></dt>
+<dd><p>Renders the list view.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.RebuildList">
+<span class="sig-name descname"><span class="pre">RebuildList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.RebuildList" title="Link to this definition">¶</a></dt>
+<dd><p>Recreates the list and updates the visible items content in native presentation.
+When using native presentation, RebuildList recreates the list and updates the visible items content.
+To use the native presentation, you must set the ControlType property to Platform.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.RecalcEnabled">
+<span class="sig-name descname"><span class="pre">RecalcEnabled</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.RecalcEnabled" title="Link to this definition">¶</a></dt>
+<dd><p>Forces the current control to recalculate its enabled state.
+FMX.ListView.TPresentedListView.RecalcEnabled inherits from FMX.Controls.TControl.RecalcEnabled. All content below this line refers to FMX.Controls.TControl.RecalcEnabled.
+Forces the current control to recalculate its enabled state.  RecalcEnabled also forces the control’s children to recalculate their enabled state.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.RecalcOpacity">
+<span class="sig-name descname"><span class="pre">RecalcOpacity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.RecalcOpacity" title="Link to this definition">¶</a></dt>
+<dd><p>Forces the current control to recalculate its Opacity property.
+FMX.ListView.TPresentedListView.RecalcOpacity inherits from FMX.Controls.TControl.RecalcOpacity. All content below this line refers to FMX.Controls.TControl.RecalcOpacity.
+Forces the current control to recalculate its Opacity property.  RecalcOpacity also forces the control’s children to recalculate their Opacity property.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.Resize">
+<span class="sig-name descname"><span class="pre">Resize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.Resize" title="Link to this definition">¶</a></dt>
+<dd><p>OnResize event dispatcher.
+FMX.ListView.TPresentedListView.Resize inherits from FMX.Controls.TControl.Resize. All content below this line refers to FMX.Controls.TControl.Resize.
+OnResize event dispatcher.
+A control calls Resize when the dimensions of the control change.
+Derived classes can override the protected Resize method to implement specific responses to control resizing.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.Show">
+<span class="sig-name descname"><span class="pre">Show</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.Show" title="Link to this definition">¶</a></dt>
+<dd><p>Embarcadero Technologies does not currently have any additional information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.StopPullRefresh">
+<span class="sig-name descname"><span class="pre">StopPullRefresh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#delphifmx.PresentedListView.StopPullRefresh" title="Link to this definition">¶</a></dt>
+<dd><p>This method should be called when ‘pull to refresh’ mode has been triggered to stop the spinning wheel.
+StopPullRefresh has only effect in native iOS control and only when the PullRefreshWait property is set to True.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.StyleLookup">
+<span class="sig-name descname"><span class="pre">StyleLookup</span></span><a class="headerlink" href="#delphifmx.PresentedListView.StyleLookup" title="Link to this definition">¶</a></dt>
+<dd><p>Specifies the name of the resource object to which the current TStyledControl is linked</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="delphifmx.PresentedListView.StyleState">
+<span class="sig-name descname"><span class="pre">StyleState</span></span><a class="headerlink" href="#delphifmx.PresentedListView.StyleState" title="Link to this definition">¶</a></dt>
+<dd><p>This property allows you to define the current state of style</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="delphifmx.AniIndicator.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">AniIndicator</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="delphifmx.ListViewBase.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">ListViewBase</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2020-2023, Embarcadero Python Dev Team
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">PresentedListView</a><ul>
+<li><a class="reference internal" href="#delphifmx.PresentedListView"><code class="docutils literal notranslate"><span class="pre">PresentedListView</span></code></a><ul>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.AdjustSizeValue"><code class="docutils literal notranslate"><span class="pre">PresentedListView.AdjustSizeValue</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.AdjustType"><code class="docutils literal notranslate"><span class="pre">PresentedListView.AdjustType</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.ApplyStyleLookup"><code class="docutils literal notranslate"><span class="pre">PresentedListView.ApplyStyleLookup()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.AutoTranslate"><code class="docutils literal notranslate"><span class="pre">PresentedListView.AutoTranslate</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.BeforeDestruction"><code class="docutils literal notranslate"><span class="pre">PresentedListView.BeforeDestruction()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.DefaultStyleLookupName"><code class="docutils literal notranslate"><span class="pre">PresentedListView.DefaultStyleLookupName</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.Hide"><code class="docutils literal notranslate"><span class="pre">PresentedListView.Hide()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.Inflate"><code class="docutils literal notranslate"><span class="pre">PresentedListView.Inflate()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.NeedStyleLookup"><code class="docutils literal notranslate"><span class="pre">PresentedListView.NeedStyleLookup()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.Paint"><code class="docutils literal notranslate"><span class="pre">PresentedListView.Paint()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.RebuildList"><code class="docutils literal notranslate"><span class="pre">PresentedListView.RebuildList()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.RecalcEnabled"><code class="docutils literal notranslate"><span class="pre">PresentedListView.RecalcEnabled()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.RecalcOpacity"><code class="docutils literal notranslate"><span class="pre">PresentedListView.RecalcOpacity()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.Resize"><code class="docutils literal notranslate"><span class="pre">PresentedListView.Resize()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.Show"><code class="docutils literal notranslate"><span class="pre">PresentedListView.Show()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.StopPullRefresh"><code class="docutils literal notranslate"><span class="pre">PresentedListView.StopPullRefresh()</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.StyleLookup"><code class="docutils literal notranslate"><span class="pre">PresentedListView.StyleLookup</span></code></a></li>
+<li><a class="reference internal" href="#delphifmx.PresentedListView.StyleState"><code class="docutils literal notranslate"><span class="pre">PresentedListView.StyleState</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/responsiveSvg.js?v=f1528c9d"></script>
+    </body>
+</html>

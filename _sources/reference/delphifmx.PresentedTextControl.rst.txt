@@ -1,0 +1,163 @@
+﻿PresentedTextControl
+====================
+
+Qualified name: ``delphifmx.PresentedTextControl``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: PresentedTextControl
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~PresentedTextControl.AfterConstruction
+      ~PresentedTextControl.ApplyStyleLookup
+      ~PresentedTextControl.ApplyTriggerEffect
+      ~PresentedTextControl.BeforeDestruction
+      ~PresentedTextControl.Change
+      ~PresentedTextControl.FindStyleResource
+      ~PresentedTextControl.HasPresentationProxy
+      ~PresentedTextControl.Inflate
+      ~PresentedTextControl.LoadPresentation
+      ~PresentedTextControl.NeedStyleLookup
+      ~PresentedTextControl.PointInObjectLocal
+      ~PresentedTextControl.RecalcEnabled
+      ~PresentedTextControl.RecalcOpacity
+      ~PresentedTextControl.ReloadPresentation
+      ~PresentedTextControl.StartTriggerAnimation
+      ~PresentedTextControl.StartTriggerAnimationWait
+      ~PresentedTextControl.ToString
+      ~PresentedTextControl.UnloadPresentation
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~PresentedTextControl.AbsoluteClipRect
+     ~PresentedTextControl.AbsoluteEnabled
+     ~PresentedTextControl.AbsoluteHeight
+     ~PresentedTextControl.AbsoluteMatrix
+     ~PresentedTextControl.AbsoluteOpacity
+     ~PresentedTextControl.AbsoluteRect
+     ~PresentedTextControl.AbsoluteScale
+     ~PresentedTextControl.AbsoluteWidth
+     ~PresentedTextControl.ActionClient
+     ~PresentedTextControl.AdjustSizeValue
+     ~PresentedTextControl.AdjustType
+     ~PresentedTextControl.Align
+     ~PresentedTextControl.Anchors
+     ~PresentedTextControl.ApplyingEffect
+     ~PresentedTextControl.AutoCapture
+     ~PresentedTextControl.AutoTranslate
+     ~PresentedTextControl.AxisAlignedRect
+     ~PresentedTextControl.BoundsRect
+     ~PresentedTextControl.CanParentFocus
+     ~PresentedTextControl.Canvas
+     ~PresentedTextControl.Children
+     ~PresentedTextControl.ChildrenCount
+     ~PresentedTextControl.ChildrenRect
+     ~PresentedTextControl.ClassName
+     ~PresentedTextControl.ClipChildren
+     ~PresentedTextControl.ClipParent
+     ~PresentedTextControl.ClipRect
+     ~PresentedTextControl.ComObject
+     ~PresentedTextControl.ComponentCount
+     ~PresentedTextControl.ComponentIndex
+     ~PresentedTextControl.ComponentState
+     ~PresentedTextControl.ComponentStyle
+     ~PresentedTextControl.Components
+     ~PresentedTextControl.ControlType
+     ~PresentedTextControl.Controls
+     ~PresentedTextControl.ControlsCount
+     ~PresentedTextControl.Cursor
+     ~PresentedTextControl.Data
+     ~PresentedTextControl.DefaultSize
+     ~PresentedTextControl.DefaultStyleLookupName
+     ~PresentedTextControl.DefaultTextSettings
+     ~PresentedTextControl.DesignInfo
+     ~PresentedTextControl.DisableDisappear
+     ~PresentedTextControl.DisableFocusEffect
+     ~PresentedTextControl.DragMode
+     ~PresentedTextControl.EnableDragHighlight
+     ~PresentedTextControl.Enabled
+     ~PresentedTextControl.FixedSize
+     ~PresentedTextControl.Font
+     ~PresentedTextControl.FontColor
+     ~PresentedTextControl.HasAfterPaintEffect
+     ~PresentedTextControl.HasClipParent
+     ~PresentedTextControl.HasDisablePaintEffect
+     ~PresentedTextControl.HasEffect
+     ~PresentedTextControl.Height
+     ~PresentedTextControl.HelpContext
+     ~PresentedTextControl.HelpKeyword
+     ~PresentedTextControl.HelpType
+     ~PresentedTextControl.Hint
+     ~PresentedTextControl.HitTest
+     ~PresentedTextControl.InPaintTo
+     ~PresentedTextControl.Index
+     ~PresentedTextControl.InheritedCursor
+     ~PresentedTextControl.InvertAbsoluteMatrix
+     ~PresentedTextControl.IsDragOver
+     ~PresentedTextControl.IsFocused
+     ~PresentedTextControl.IsInflated
+     ~PresentedTextControl.IsMouseOver
+     ~PresentedTextControl.IsVisible
+     ~PresentedTextControl.LocalRect
+     ~PresentedTextControl.Locked
+     ~PresentedTextControl.Margins
+     ~PresentedTextControl.Model
+     ~PresentedTextControl.Name
+     ~PresentedTextControl.Observers
+     ~PresentedTextControl.OnGesture
+     ~PresentedTextControl.Opacity
+     ~PresentedTextControl.Owner
+     ~PresentedTextControl.Padding
+     ~PresentedTextControl.Parent
+     ~PresentedTextControl.ParentClassStyleLookupName
+     ~PresentedTextControl.ParentControl
+     ~PresentedTextControl.ParentedRect
+     ~PresentedTextControl.ParentedVisible
+     ~PresentedTextControl.PopupMenu
+     ~PresentedTextControl.Position
+     ~PresentedTextControl.PrefixStyle
+     ~PresentedTextControl.Presentation
+     ~PresentedTextControl.PresentationProxy
+     ~PresentedTextControl.PresentationState
+     ~PresentedTextControl.Pressed
+     ~PresentedTextControl.PressedPosition
+     ~PresentedTextControl.ResultingTextSettings
+     ~PresentedTextControl.Root
+     ~PresentedTextControl.Scene
+     ~PresentedTextControl.ShowHint
+     ~PresentedTextControl.Size
+     ~PresentedTextControl.Stored
+     ~PresentedTextControl.StyleLookup
+     ~PresentedTextControl.StyleName
+     ~PresentedTextControl.StyleState
+     ~PresentedTextControl.StyledSettings
+     ~PresentedTextControl.StylesData
+     ~PresentedTextControl.TabOrder
+     ~PresentedTextControl.TabStop
+     ~PresentedTextControl.Tag
+     ~PresentedTextControl.TagFloat
+     ~PresentedTextControl.TagObject
+     ~PresentedTextControl.TagString
+     ~PresentedTextControl.Text
+     ~PresentedTextControl.TextAlign
+     ~PresentedTextControl.TextSettings
+     ~PresentedTextControl.Touch
+     ~PresentedTextControl.TouchTargetExpansion
+     ~PresentedTextControl.Trimming
+     ~PresentedTextControl.UpdateRect
+     ~PresentedTextControl.VCLComObject
+     ~PresentedTextControl.VertTextAlign
+     ~PresentedTextControl.Visible
+     ~PresentedTextControl.Width
+     ~PresentedTextControl.WordWrap
+   

@@ -1,0 +1,160 @@
+﻿Panel
+=====
+
+Qualified name: ``delphifmx.Panel``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: Panel
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Panel.AfterConstruction
+      ~Panel.ApplyStyleLookup
+      ~Panel.ApplyTriggerEffect
+      ~Panel.BeforeDestruction
+      ~Panel.FindStyleResource
+      ~Panel.HasPresentationProxy
+      ~Panel.Inflate
+      ~Panel.LoadPresentation
+      ~Panel.NeedStyleLookup
+      ~Panel.PointInObjectLocal
+      ~Panel.RecalcEnabled
+      ~Panel.RecalcOpacity
+      ~Panel.ReloadPresentation
+      ~Panel.StartTriggerAnimation
+      ~Panel.StartTriggerAnimationWait
+      ~Panel.UnloadPresentation
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Panel.AbsoluteClipRect
+     ~Panel.AbsoluteEnabled
+     ~Panel.AbsoluteHeight
+     ~Panel.AbsoluteMatrix
+     ~Panel.AbsoluteOpacity
+     ~Panel.AbsoluteRect
+     ~Panel.AbsoluteScale
+     ~Panel.AbsoluteWidth
+     ~Panel.Action
+     ~Panel.ActionClient
+     ~Panel.AdjustSizeValue
+     ~Panel.AdjustType
+     ~Panel.Align
+     ~Panel.Anchors
+     ~Panel.ApplyingEffect
+     ~Panel.AutoCapture
+     ~Panel.AutoTranslate
+     ~Panel.AxisAlignedRect
+     ~Panel.BoundsRect
+     ~Panel.CanParentFocus
+     ~Panel.Canvas
+     ~Panel.Children
+     ~Panel.ChildrenCount
+     ~Panel.ChildrenRect
+     ~Panel.ClassName
+     ~Panel.ClipChildren
+     ~Panel.ClipParent
+     ~Panel.ClipRect
+     ~Panel.ComObject
+     ~Panel.ComponentCount
+     ~Panel.ComponentIndex
+     ~Panel.ComponentState
+     ~Panel.ComponentStyle
+     ~Panel.Components
+     ~Panel.ControlType
+     ~Panel.Controls
+     ~Panel.ControlsCount
+     ~Panel.Cursor
+     ~Panel.Data
+     ~Panel.DefaultSize
+     ~Panel.DefaultStyleLookupName
+     ~Panel.DesignInfo
+     ~Panel.DisableDisappear
+     ~Panel.DisableFocusEffect
+     ~Panel.DragMode
+     ~Panel.EnableDragHighlight
+     ~Panel.Enabled
+     ~Panel.FixedSize
+     ~Panel.HasAfterPaintEffect
+     ~Panel.HasClipParent
+     ~Panel.HasDisablePaintEffect
+     ~Panel.HasEffect
+     ~Panel.Height
+     ~Panel.HelpContext
+     ~Panel.HelpKeyword
+     ~Panel.HelpType
+     ~Panel.Hint
+     ~Panel.HitTest
+     ~Panel.InPaintTo
+     ~Panel.Index
+     ~Panel.InheritedCursor
+     ~Panel.InvertAbsoluteMatrix
+     ~Panel.IsDragOver
+     ~Panel.IsFocused
+     ~Panel.IsInflated
+     ~Panel.IsMouseOver
+     ~Panel.IsVisible
+     ~Panel.LocalRect
+     ~Panel.Locked
+     ~Panel.Margins
+     ~Panel.Model
+     ~Panel.Name
+     ~Panel.Observers
+     ~Panel.OnCanFocus
+     ~Panel.OnDragDrop
+     ~Panel.OnDragEnter
+     ~Panel.OnDragOver
+     ~Panel.OnGesture
+     ~Panel.OnPaint
+     ~Panel.OnPainting
+     ~Panel.Opacity
+     ~Panel.Owner
+     ~Panel.Padding
+     ~Panel.Parent
+     ~Panel.ParentClassStyleLookupName
+     ~Panel.ParentControl
+     ~Panel.ParentShowHint
+     ~Panel.ParentedRect
+     ~Panel.ParentedVisible
+     ~Panel.PopupMenu
+     ~Panel.Position
+     ~Panel.Presentation
+     ~Panel.PresentationProxy
+     ~Panel.PresentationState
+     ~Panel.Pressed
+     ~Panel.PressedPosition
+     ~Panel.Root
+     ~Panel.RotationAngle
+     ~Panel.RotationCenter
+     ~Panel.Scale
+     ~Panel.Scene
+     ~Panel.ShowHint
+     ~Panel.Size
+     ~Panel.Stored
+     ~Panel.StyleLookup
+     ~Panel.StyleName
+     ~Panel.StyleState
+     ~Panel.StylesData
+     ~Panel.TabOrder
+     ~Panel.TabStop
+     ~Panel.Tag
+     ~Panel.TagFloat
+     ~Panel.TagObject
+     ~Panel.TagString
+     ~Panel.Touch
+     ~Panel.TouchTargetExpansion
+     ~Panel.UpdateRect
+     ~Panel.VCLComObject
+     ~Panel.Visible
+     ~Panel.Width
+   

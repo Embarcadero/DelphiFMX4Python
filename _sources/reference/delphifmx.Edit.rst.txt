@@ -1,0 +1,182 @@
+﻿Edit
+====
+
+Qualified name: ``delphifmx.Edit``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: Edit
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~Edit.ApplyStyleLookup
+      ~Edit.Inflate
+      ~Edit.NeedStyleLookup
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~Edit.AbsoluteClipRect
+     ~Edit.AbsoluteEnabled
+     ~Edit.AbsoluteHeight
+     ~Edit.AbsoluteMatrix
+     ~Edit.AbsoluteOpacity
+     ~Edit.AbsoluteRect
+     ~Edit.AbsoluteScale
+     ~Edit.AbsoluteWidth
+     ~Edit.Action
+     ~Edit.ActionClient
+     ~Edit.AdjustSizeValue
+     ~Edit.AdjustType
+     ~Edit.Align
+     ~Edit.Anchors
+     ~Edit.ApplyingEffect
+     ~Edit.AutoCapture
+     ~Edit.AutoSelect
+     ~Edit.AutoTranslate
+     ~Edit.AxisAlignedRect
+     ~Edit.BoundsRect
+     ~Edit.ButtonsContent
+     ~Edit.CanFocus
+     ~Edit.CanParentFocus
+     ~Edit.Canvas
+     ~Edit.Caret
+     ~Edit.CaretPosition
+     ~Edit.CharCase
+     ~Edit.CheckSpelling
+     ~Edit.Children
+     ~Edit.ChildrenCount
+     ~Edit.ChildrenRect
+     ~Edit.ClassName
+     ~Edit.ClipChildren
+     ~Edit.ClipParent
+     ~Edit.ClipRect
+     ~Edit.ComObject
+     ~Edit.ComponentCount
+     ~Edit.ComponentIndex
+     ~Edit.ComponentState
+     ~Edit.ComponentStyle
+     ~Edit.Components
+     ~Edit.ControlType
+     ~Edit.Controls
+     ~Edit.ControlsCount
+     ~Edit.Cursor
+     ~Edit.Data
+     ~Edit.DefaultSize
+     ~Edit.DefaultStyleLookupName
+     ~Edit.DefaultTextSettings
+     ~Edit.DesignInfo
+     ~Edit.DisableDisappear
+     ~Edit.DisableFocusEffect
+     ~Edit.DragMode
+     ~Edit.EnableDragHighlight
+     ~Edit.Enabled
+     ~Edit.FilterChar
+     ~Edit.FixedSize
+     ~Edit.Font
+     ~Edit.FontColor
+     ~Edit.HasAfterPaintEffect
+     ~Edit.HasClipParent
+     ~Edit.HasDisablePaintEffect
+     ~Edit.HasEffect
+     ~Edit.Height
+     ~Edit.HelpContext
+     ~Edit.HelpKeyword
+     ~Edit.HelpType
+     ~Edit.HideSelectionOnExit
+     ~Edit.Hint
+     ~Edit.HitTest
+     ~Edit.ImeMode
+     ~Edit.InPaintTo
+     ~Edit.Index
+     ~Edit.InheritedCursor
+     ~Edit.InvertAbsoluteMatrix
+     ~Edit.IsDragOver
+     ~Edit.IsFocused
+     ~Edit.IsInflated
+     ~Edit.IsMouseOver
+     ~Edit.IsVisible
+     ~Edit.KeyboardType
+     ~Edit.KillFocusByReturn
+     ~Edit.LocalRect
+     ~Edit.Locked
+     ~Edit.Margins
+     ~Edit.MaxLength
+     ~Edit.Model
+     ~Edit.Name
+     ~Edit.Observers
+     ~Edit.OnCanFocus
+     ~Edit.OnDragDrop
+     ~Edit.OnDragEnter
+     ~Edit.OnDragOver
+     ~Edit.OnGesture
+     ~Edit.OnPaint
+     ~Edit.OnPainting
+     ~Edit.OnPresentationNameChoosing
+     ~Edit.OnValidate
+     ~Edit.OnValidating
+     ~Edit.Opacity
+     ~Edit.Owner
+     ~Edit.Padding
+     ~Edit.Parent
+     ~Edit.ParentClassStyleLookupName
+     ~Edit.ParentControl
+     ~Edit.ParentShowHint
+     ~Edit.ParentedRect
+     ~Edit.ParentedVisible
+     ~Edit.Password
+     ~Edit.PopupMenu
+     ~Edit.Position
+     ~Edit.Presentation
+     ~Edit.PresentationProxy
+     ~Edit.PresentationState
+     ~Edit.Pressed
+     ~Edit.PressedPosition
+     ~Edit.ReadOnly
+     ~Edit.ResultingTextSettings
+     ~Edit.ReturnKeyType
+     ~Edit.Root
+     ~Edit.RotationAngle
+     ~Edit.RotationCenter
+     ~Edit.Scale
+     ~Edit.Scene
+     ~Edit.SelLength
+     ~Edit.SelStart
+     ~Edit.SelText
+     ~Edit.SelectionFill
+     ~Edit.ShowHint
+     ~Edit.Size
+     ~Edit.Stored
+     ~Edit.StyleLookup
+     ~Edit.StyleName
+     ~Edit.StyleState
+     ~Edit.StyledSettings
+     ~Edit.StylesData
+     ~Edit.TabOrder
+     ~Edit.TabStop
+     ~Edit.Tag
+     ~Edit.TagFloat
+     ~Edit.TagObject
+     ~Edit.TagString
+     ~Edit.Text
+     ~Edit.TextAlign
+     ~Edit.TextContentRect
+     ~Edit.TextPrompt
+     ~Edit.TextSettings
+     ~Edit.Touch
+     ~Edit.TouchTargetExpansion
+     ~Edit.Typing
+     ~Edit.UpdateRect
+     ~Edit.VCLComObject
+     ~Edit.VertTextAlign
+     ~Edit.Visible
+     ~Edit.Width
+   

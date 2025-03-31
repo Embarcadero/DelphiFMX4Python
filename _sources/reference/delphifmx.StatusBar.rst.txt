@@ -1,0 +1,162 @@
+﻿StatusBar
+=========
+
+Qualified name: ``delphifmx.StatusBar``
+
+.. currentmodule:: delphifmx
+
+.. autoclass:: StatusBar
+   :show-inheritance:
+   :members:
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+      
+      ~StatusBar.AfterConstruction
+      ~StatusBar.ApplyStyleLookup
+      ~StatusBar.ApplyTriggerEffect
+      ~StatusBar.BeforeDestruction
+      ~StatusBar.FindStyleResource
+      ~StatusBar.HasPresentationProxy
+      ~StatusBar.Inflate
+      ~StatusBar.LoadPresentation
+      ~StatusBar.NeedStyleLookup
+      ~StatusBar.PointInObjectLocal
+      ~StatusBar.RecalcEnabled
+      ~StatusBar.RecalcOpacity
+      ~StatusBar.ReloadPresentation
+      ~StatusBar.StartTriggerAnimation
+      ~StatusBar.StartTriggerAnimationWait
+      ~StatusBar.UnloadPresentation
+
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+     
+     ~StatusBar.AbsoluteClipRect
+     ~StatusBar.AbsoluteEnabled
+     ~StatusBar.AbsoluteHeight
+     ~StatusBar.AbsoluteMatrix
+     ~StatusBar.AbsoluteOpacity
+     ~StatusBar.AbsoluteRect
+     ~StatusBar.AbsoluteScale
+     ~StatusBar.AbsoluteWidth
+     ~StatusBar.Action
+     ~StatusBar.ActionClient
+     ~StatusBar.AdjustSizeValue
+     ~StatusBar.AdjustType
+     ~StatusBar.Align
+     ~StatusBar.Anchors
+     ~StatusBar.ApplyingEffect
+     ~StatusBar.AutoCapture
+     ~StatusBar.AutoHint
+     ~StatusBar.AutoTranslate
+     ~StatusBar.AxisAlignedRect
+     ~StatusBar.BoundsRect
+     ~StatusBar.CanParentFocus
+     ~StatusBar.Canvas
+     ~StatusBar.Children
+     ~StatusBar.ChildrenCount
+     ~StatusBar.ChildrenRect
+     ~StatusBar.ClassName
+     ~StatusBar.ClipChildren
+     ~StatusBar.ClipParent
+     ~StatusBar.ClipRect
+     ~StatusBar.ComObject
+     ~StatusBar.ComponentCount
+     ~StatusBar.ComponentIndex
+     ~StatusBar.ComponentState
+     ~StatusBar.ComponentStyle
+     ~StatusBar.Components
+     ~StatusBar.ControlType
+     ~StatusBar.Controls
+     ~StatusBar.ControlsCount
+     ~StatusBar.Cursor
+     ~StatusBar.Data
+     ~StatusBar.DefaultSize
+     ~StatusBar.DefaultStyleLookupName
+     ~StatusBar.DesignInfo
+     ~StatusBar.DisableDisappear
+     ~StatusBar.DisableFocusEffect
+     ~StatusBar.DragMode
+     ~StatusBar.EnableDragHighlight
+     ~StatusBar.Enabled
+     ~StatusBar.FixedSize
+     ~StatusBar.HasAfterPaintEffect
+     ~StatusBar.HasClipParent
+     ~StatusBar.HasDisablePaintEffect
+     ~StatusBar.HasEffect
+     ~StatusBar.Height
+     ~StatusBar.HelpContext
+     ~StatusBar.HelpKeyword
+     ~StatusBar.HelpType
+     ~StatusBar.Hint
+     ~StatusBar.HitTest
+     ~StatusBar.InPaintTo
+     ~StatusBar.Index
+     ~StatusBar.InheritedCursor
+     ~StatusBar.InvertAbsoluteMatrix
+     ~StatusBar.IsDragOver
+     ~StatusBar.IsFocused
+     ~StatusBar.IsInflated
+     ~StatusBar.IsMouseOver
+     ~StatusBar.IsVisible
+     ~StatusBar.LocalRect
+     ~StatusBar.Locked
+     ~StatusBar.Margins
+     ~StatusBar.Model
+     ~StatusBar.Name
+     ~StatusBar.Observers
+     ~StatusBar.OnCanFocus
+     ~StatusBar.OnDragDrop
+     ~StatusBar.OnDragEnter
+     ~StatusBar.OnDragOver
+     ~StatusBar.OnGesture
+     ~StatusBar.OnPaint
+     ~StatusBar.OnPainting
+     ~StatusBar.Opacity
+     ~StatusBar.Owner
+     ~StatusBar.Padding
+     ~StatusBar.Parent
+     ~StatusBar.ParentClassStyleLookupName
+     ~StatusBar.ParentControl
+     ~StatusBar.ParentShowHint
+     ~StatusBar.ParentedRect
+     ~StatusBar.ParentedVisible
+     ~StatusBar.PopupMenu
+     ~StatusBar.Position
+     ~StatusBar.Presentation
+     ~StatusBar.PresentationProxy
+     ~StatusBar.PresentationState
+     ~StatusBar.Pressed
+     ~StatusBar.PressedPosition
+     ~StatusBar.Root
+     ~StatusBar.RotationAngle
+     ~StatusBar.RotationCenter
+     ~StatusBar.Scale
+     ~StatusBar.Scene
+     ~StatusBar.ShowHint
+     ~StatusBar.ShowSizeGrip
+     ~StatusBar.Size
+     ~StatusBar.Stored
+     ~StatusBar.StyleLookup
+     ~StatusBar.StyleName
+     ~StatusBar.StyleState
+     ~StatusBar.StylesData
+     ~StatusBar.TabOrder
+     ~StatusBar.TabStop
+     ~StatusBar.Tag
+     ~StatusBar.TagFloat
+     ~StatusBar.TagObject
+     ~StatusBar.TagString
+     ~StatusBar.Touch
+     ~StatusBar.TouchTargetExpansion
+     ~StatusBar.UpdateRect
+     ~StatusBar.VCLComObject
+     ~StatusBar.Visible
+     ~StatusBar.Width
+   
